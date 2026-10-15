@@ -1,0 +1,747 @@
+{
+  "release_candidate_id": "stage12u_ui_rc_20260905T110205Z",
+  "created_at": "2026-09-05T11:02:05.396001+00:00",
+  "stage": "12U",
+  "gcs_software": "FINAL_UI_RELEASE_CANDIDATE",
+  "architecture_changed": false,
+  "hardware_gate_h1": "PENDING",
+  "physical_hardware_touched": false,
+  "physical_pi4_browser_measured": false,
+  "frontend_version": "0.12.0-rc.1",
+  "frontend_build_sha256": "c36332569ba092439572179ff5ddd64caa75f7542fd39fe3e030d79a36975a0f",
+  "frontend_bundle": [
+    {
+      "path": "ground/frontend/dist/assets/camera-P5sWTq5o.js",
+      "bytes": 3784,
+      "sha256": "9f14472586ce1ad087ee0127037b3a3062f5a82d3cbd1ee273ce6cb08c339dcd"
+    },
+    {
+      "path": "ground/frontend/dist/assets/digitalTwinLayer-D9ZGzfwl.js",
+      "bytes": 1901,
+      "sha256": "6c368589ba163549b9400d8e2decf5a1df1378db00687d70ddc7f4b40a9b7c35"
+    },
+    {
+      "path": "ground/frontend/dist/assets/DigitalTwinView-brEYnaoz.js",
+      "bytes": 28021,
+      "sha256": "dbb67583657bc3dfb1b729c1aeb51066ba594e72a76f319280a182ad49c5ec06"
+    },
+    {
+      "path": "ground/frontend/dist/assets/EngineeringPage-Ru1PD3T_.js",
+      "bytes": 18305,
+      "sha256": "e96fbddf433568c6b91ab482a643692f5e998a85f86bebed42dfe682a5e98833"
+    },
+    {
+      "path": "ground/frontend/dist/assets/index-D51srdyU.js",
+      "bytes": 211559,
+      "sha256": "23a04d63f0fa7b1219bab2696909813081d3c9fd32adc9c8be555ff2bb32df1c"
+    },
+    {
+      "path": "ground/frontend/dist/assets/index-Eqi2BYR7.css",
+      "bytes": 31807,
+      "sha256": "72bdabb6928083fc8957b9ca86bf911fb35a1f40fd27d06ac733c02958499db8"
+    },
+    {
+      "path": "ground/frontend/dist/assets/MapView-CXyevqP4.js",
+      "bytes": 1064913,
+      "sha256": "7fad46bd30655851dc98a577b645fec839429d61b24ff9fcfbd5d81c3321914d"
+    },
+    {
+      "path": "ground/frontend/dist/assets/MapView-DNVN2dqC.css",
+      "bytes": 69918,
+      "sha256": "768b9ff0c135536afbbee9f20232ac261e8b2b89ce60a29f838024be9dd172e3"
+    },
+    {
+      "path": "ground/frontend/dist/assets/MissionPage-BOHo_Aod.js",
+      "bytes": 15218,
+      "sha256": "7b12f0c8595d7d4087c4e887c27fc3dcaf6782161c9cd5502c77bbec0cb1f79a"
+    },
+    {
+      "path": "ground/frontend/dist/assets/ReviewPage-BmzAWjlU.js",
+      "bytes": 11496,
+      "sha256": "ce159fdcc548f83404343246e3961061bfdd782267c792626353320cc3064652"
+    },
+    {
+      "path": "ground/frontend/dist/assets/SetupPage-BBIzrHII.js",
+      "bytes": 10476,
+      "sha256": "f0f5b21834feadc97dffc1d72f297be0b561e0122e81ede5ef1eb0e2d5e67c78"
+    },
+    {
+      "path": "ground/frontend/dist/assets/SpatialMissionView-CHELzIYc.js",
+      "bytes": 3145,
+      "sha256": "b0a710d5f754ba3160f4f909f618eacf098688bf15bb29bd3f3b591219aaa799"
+    },
+    {
+      "path": "ground/frontend/dist/assets/three.module-DhiX05Jm.js",
+      "bytes": 481986,
+      "sha256": "552287fa82828ad4abedb6b44081b8b9fd116e0ad8ba79fd2f72ccc251a3ebfb"
+    },
+    {
+      "path": "ground/frontend/dist/index.html",
+      "bytes": 459,
+      "sha256": "c348522e488ae49ac8209b8dda57f23775ea973458cd077351ebf6ae1a49cce5"
+    }
+  ],
+  "source_hashes": [
+    {
+      "path": "config/ground.yaml",
+      "bytes": 3713,
+      "sha256": "ccecc5d27b4a395f5feab01b534fe54fba57ce1b515e5bdf5615863c3815719d"
+    },
+    {
+      "path": "ground/frontend/index.html",
+      "bytes": 361,
+      "sha256": "fc9ab91efe85c0db18717a9e7dd091ce8756f290f45aba91260de910255951e4"
+    },
+    {
+      "path": "ground/frontend/package-lock.json",
+      "bytes": 117794,
+      "sha256": "d7b5c870a5953679513472bfc6c2d6874ed9bcf029630a941cc7df2a48530109"
+    },
+    {
+      "path": "ground/frontend/package.json",
+      "bytes": 746,
+      "sha256": "6b92bd32ec11dfb680108dd9c526d25170c7ea2ec10877bd7dc09ae6b5681a7b"
+    },
+    {
+      "path": "ground/frontend/src/app/App.tsx",
+      "bytes": 5046,
+      "sha256": "2f0133b503625b187b96b3c5775b99b8fb6d151e866982dcd25f67b0b88e06e1"
+    },
+    {
+      "path": "ground/frontend/src/components/AttitudeIndicator.tsx",
+      "bytes": 894,
+      "sha256": "25c0796e04206e124d15162d62412a9c59cf870776c1d0a36b21a56e3adf3f02"
+    },
+    {
+      "path": "ground/frontend/src/components/CopyButton.tsx",
+      "bytes": 548,
+      "sha256": "d6a63d569db4569b21086ce21ad8db7fe121b57f22531bdcc80502c22dc4eee4"
+    },
+    {
+      "path": "ground/frontend/src/components/DigitalTwinView.tsx",
+      "bytes": 14635,
+      "sha256": "a2f51803dd3467df34edab20c45055b88f1cfd87a8e1446b8cc7886e85b7d104"
+    },
+    {
+      "path": "ground/frontend/src/components/EventFeed.tsx",
+      "bytes": 2166,
+      "sha256": "52d0c119dacd84e7009e95b3bf6b7a514825dac5069a1ae406d13a5e7c477fc8"
+    },
+    {
+      "path": "ground/frontend/src/components/FleetPanel.tsx",
+      "bytes": 1197,
+      "sha256": "d1fdcec4de86cd98ad9b8218ffd413fa1b031eee9db264a570f47f2246d551ea"
+    },
+    {
+      "path": "ground/frontend/src/components/HealthPanel.tsx",
+      "bytes": 1792,
+      "sha256": "89f5306114185b72e6262b42e5828b4f8247ce4424df682486d4928ca0b88022"
+    },
+    {
+      "path": "ground/frontend/src/components/MapView.tsx",
+      "bytes": 17671,
+      "sha256": "6446b4548e405bcf015a1ccaae28bb5be5b907518fb9d8216345c9b1d18fe871"
+    },
+    {
+      "path": "ground/frontend/src/components/MissionSummary.tsx",
+      "bytes": 1121,
+      "sha256": "797f0de851c171daf63ef50694edd0486cf93499def791d17745bb6aea9218f7"
+    },
+    {
+      "path": "ground/frontend/src/components/ModeNav.tsx",
+      "bytes": 791,
+      "sha256": "8b2b5af8dfe6f6dd708671fe563895755d0ebc3532d43ad01d0fe19d7bd87115"
+    },
+    {
+      "path": "ground/frontend/src/components/PanelDisclosure.tsx",
+      "bytes": 562,
+      "sha256": "d905aac43da28ce79350f299a6228e31797342958c63edbcb6a50e929b1cd028"
+    },
+    {
+      "path": "ground/frontend/src/components/ReplayPlayer.tsx",
+      "bytes": 4735,
+      "sha256": "2bc1f7b342621de8de460b5e820f4269bac6052a822cff138e1ce89f4077668b"
+    },
+    {
+      "path": "ground/frontend/src/components/ResiliencePanel.tsx",
+      "bytes": 2643,
+      "sha256": "59d5347443c3837f19b985cb4310b5382e86e7ea8f9fc17941c5c34d508d6378"
+    },
+    {
+      "path": "ground/frontend/src/components/SpatialInspector.tsx",
+      "bytes": 8207,
+      "sha256": "3e77aab76689700836f25dbed8c4b558a9a992b72588ae77a7375b7e0158087a"
+    },
+    {
+      "path": "ground/frontend/src/components/SpatialMissionView.tsx",
+      "bytes": 1852,
+      "sha256": "7fa43538591f8ac76140a058049851d03930185803ff4c58cbcbb066c3b4024b"
+    },
+    {
+      "path": "ground/frontend/src/components/StatusBar.tsx",
+      "bytes": 3089,
+      "sha256": "fc6e4975f92b10f39f447e16a7b2c74bc9585fc9103f219150a893c5481d9dfc"
+    },
+    {
+      "path": "ground/frontend/src/components/TargetList.tsx",
+      "bytes": 2559,
+      "sha256": "545530c4d32f73c35095565e8198c8036b5c6682af9de42d76f8dc2857c82d34"
+    },
+    {
+      "path": "ground/frontend/src/components/VehiclePanel.tsx",
+      "bytes": 2712,
+      "sha256": "7b46c6e425eb970a8a2ccea9edd0dcd05a38f58b0cdd7c56f672874807fd09af"
+    },
+    {
+      "path": "ground/frontend/src/components/VideoPanel.tsx",
+      "bytes": 424,
+      "sha256": "dc9a79084e043e5c61f9dba47221b921e3ee39b36f9d6e645c390a56c76f87bc"
+    },
+    {
+      "path": "ground/frontend/src/components/ViewControls.tsx",
+      "bytes": 1962,
+      "sha256": "fe5985753773bb09404eb17e78a1b6906a010623de7660c2b3ff7fd9160667f0"
+    },
+    {
+      "path": "ground/frontend/src/components/digitalTwinLayer.ts",
+      "bytes": 3715,
+      "sha256": "ee4bf0dfb3be5e8635c6eac60a0bfe64cad027ce41f01bd0e88984651f923c64"
+    },
+    {
+      "path": "ground/frontend/src/components/mapStyle.ts",
+      "bytes": 355,
+      "sha256": "6f5ef2c686da08c43c9516536eed20bcb27b9467139b1e92dd2e718addec202c"
+    },
+    {
+      "path": "ground/frontend/src/hooks/useDigitalTwin.ts",
+      "bytes": 665,
+      "sha256": "1fb450c4857ab479c116ffde93b79ac680e10f045984bf5c83b861911d67575d"
+    },
+    {
+      "path": "ground/frontend/src/hooks/useMissionSocket.ts",
+      "bytes": 1758,
+      "sha256": "4e00e47618f12daf84085d3b7223c789fa5f39e1f12689de50cbd2c42c7d390f"
+    },
+    {
+      "path": "ground/frontend/src/main.tsx",
+      "bytes": 234,
+      "sha256": "6d40a09986b852b40d7d00573ad18457b25604c34bfb651d55d3a1d827102589"
+    },
+    {
+      "path": "ground/frontend/src/pages/EngineeringPage.tsx",
+      "bytes": 12254,
+      "sha256": "40645508f0cbc48c6c1f86dd2c9d77364da90574dadf204618e5a0a332ec5ca5"
+    },
+    {
+      "path": "ground/frontend/src/pages/MissionPage.tsx",
+      "bytes": 5970,
+      "sha256": "2b6b2707b2c4ff015d4e2d2af991bb3ef42a8ef9defd5d57c1cf34623bee552d"
+    },
+    {
+      "path": "ground/frontend/src/pages/ReviewPage.tsx",
+      "bytes": 9180,
+      "sha256": "470e8a549b875b2b443534ee51dc9073b0765b07547ba131bf722e19d18c0216"
+    },
+    {
+      "path": "ground/frontend/src/pages/SetupPage.tsx",
+      "bytes": 11696,
+      "sha256": "d96bf364b3f9ff1f1a8a249a0b45feb1b1ae1c876f7b7c6f1ef0ad239511095e"
+    },
+    {
+      "path": "ground/frontend/src/services/api.ts",
+      "bytes": 5729,
+      "sha256": "091fd2f507937a528ad1b5a2eb7fec2d87f7b76c8f9b2ae7c9e49ca95f1d583f"
+    },
+    {
+      "path": "ground/frontend/src/spatial/camera.ts",
+      "bytes": 4409,
+      "sha256": "178b83a9b1b836362f93b5b82c817c8b08836184f48bf9613219a05fcfa7fea7"
+    },
+    {
+      "path": "ground/frontend/src/spatial/frames.ts",
+      "bytes": 6226,
+      "sha256": "a34cc7ec74a90081f0ab57f0f2f90deada36257d6150ebf85e83ae1b43259581"
+    },
+    {
+      "path": "ground/frontend/src/spatial/replay.ts",
+      "bytes": 1918,
+      "sha256": "a4c131c767dfc320ed9a513707981f0384560d1f002d3fcbf648bafb82517d9c"
+    },
+    {
+      "path": "ground/frontend/src/stores/gcsStore.ts",
+      "bytes": 13718,
+      "sha256": "fc21996bc0eccbeba12caee544130c1fec45485e024e49a2e33f6dcc9b96ce40"
+    },
+    {
+      "path": "ground/frontend/src/styles.css",
+      "bytes": 37625,
+      "sha256": "c5603947ecceb8328583524a84b786fcbdc978da7e9f4b30487a7f4fba0d7c10"
+    },
+    {
+      "path": "ground/frontend/src/test/mapConfig.test.ts",
+      "bytes": 355,
+      "sha256": "beb8feec3b90edeaa9ded8a6058955a4efc443e6a4d3891f7dfcec2d3d67b7f9"
+    },
+    {
+      "path": "ground/frontend/src/test/modes.test.tsx",
+      "bytes": 684,
+      "sha256": "fde94bc4ff4ae52dc475e9b88ba055c238d2ef4144938927446c060c446cbeb0"
+    },
+    {
+      "path": "ground/frontend/src/test/rendering.test.tsx",
+      "bytes": 4017,
+      "sha256": "7451dde859988a7fba2ff84629f6d024066a51981e10f1fd8f6ce717bf244e73"
+    },
+    {
+      "path": "ground/frontend/src/test/setup.ts",
+      "bytes": 354,
+      "sha256": "2dfce5b7b71d9d18e532b37daafa5af3da6cede880cb6126ee056c3c037ca683"
+    },
+    {
+      "path": "ground/frontend/src/test/spatial.test.ts",
+      "bytes": 4058,
+      "sha256": "5a174c9f8bfa8095e0be8cee238d9f8d51d1b46b310a456c4e4323820b2a8297"
+    },
+    {
+      "path": "ground/frontend/src/test/stage11s_ui.test.tsx",
+      "bytes": 5466,
+      "sha256": "3961eb2b7a9c95dc02d581c2341a10f9ebebd92056be9a6bcc2f4a2764ae3ee7"
+    },
+    {
+      "path": "ground/frontend/src/test/stage12u_acceptance.test.tsx",
+      "bytes": 5406,
+      "sha256": "bf93444825bb58437c29610d43dae1bbc685e3ddd95237ebe1c6b8c80817ff21"
+    },
+    {
+      "path": "ground/frontend/src/test/store.test.ts",
+      "bytes": 4423,
+      "sha256": "6ecd20e3462ac4b48db33850a2d25e1b895312ec7f114505b6918fa3849be486"
+    },
+    {
+      "path": "ground/frontend/src/types/domain.ts",
+      "bytes": 10988,
+      "sha256": "2deee15f850efa822aec9e311f4ea4af2bfefaa03846b63fca41556ca54fecf8"
+    },
+    {
+      "path": "ground/frontend/src/vite-env.d.ts",
+      "bytes": 105,
+      "sha256": "08c81811955ca39a9d0f1286066495c4e047101dfea8283fd25f968389ea7a3a"
+    },
+    {
+      "path": "ground/frontend/vite.config.ts",
+      "bytes": 621,
+      "sha256": "d5f4c444ce100f13b4a7f0b5a51c863f7323abbef85e24e44619b94f9b725959"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "data/stage12u_screenshots/emergency_recall_controls_1366x768.png",
+      "bytes": 52727,
+      "sha256": "a8757bdaacf168f12a2501ae387c630e9a1ebf4f4b7463a310996cd7114f9c23"
+    },
+    {
+      "path": "data/stage12u_screenshots/engineering_1536x864.png",
+      "bytes": 67442,
+      "sha256": "d685ae4c5abbc01f14b1679309a6220182586e9b398575f3f6138e6c27bf6342"
+    },
+    {
+      "path": "data/stage12u_screenshots/engineering_3d_camera_geometry_1920x1080.png",
+      "bytes": 124316,
+      "sha256": "72d33d8317cd9b37a18362f9e8853f019af34141e1116acfedf03674af21de52"
+    },
+    {
+      "path": "data/stage12u_screenshots/fleet_delivery_1366x768.png",
+      "bytes": 52751,
+      "sha256": "91e554529db05f7919d3dbc8ff7fd638a6068bcd2811096ab0166e5ee12ad8c5"
+    },
+    {
+      "path": "data/stage12u_screenshots/map_debug.png",
+      "bytes": 54042,
+      "sha256": "680bf7b91cff336cd306c9ce956d289aa463c8e9dbcd426d2a25e42ec64a1b94"
+    },
+    {
+      "path": "data/stage12u_screenshots/mission_125pct_zoom.png",
+      "bytes": 51536,
+      "sha256": "06a2165b520a196a56b4fed511d0a1332c38ef8c14529c4006ffe731ed33bdac"
+    },
+    {
+      "path": "data/stage12u_screenshots/mission_1366x768.png",
+      "bytes": 47539,
+      "sha256": "2d3500d4b1b4af30ba59c8d25456fbd4eb6d84d754a3f5c74e8855d767b034bc"
+    },
+    {
+      "path": "data/stage12u_screenshots/mission_1920x1080.png",
+      "bytes": 84154,
+      "sha256": "409cbc7e9b9bfd44d856974aa402f4dc758b95ff242bb16d8c47cb576d848094"
+    },
+    {
+      "path": "data/stage12u_screenshots/mission_parallel_search_1366x768.png",
+      "bytes": 52685,
+      "sha256": "b3e892fa3419f1f4d2813ebaa0c5743ce1efea73333f27f547b9e78dc4a10c5f"
+    },
+    {
+      "path": "data/stage12u_screenshots/mission_parallel_search_1920x1080.png",
+      "bytes": 73833,
+      "sha256": "2294243596ac569fa3d092996a5c165c34bc68162ce610c8368e72aae1206cd8"
+    },
+    {
+      "path": "data/stage12u_screenshots/mission_split_1536x864.png",
+      "bytes": 131427,
+      "sha256": "ecbc9f25a120d5c2cc6a6b7e1b62ebc13bbbeb5e08aef386e03713b861a9a11d"
+    },
+    {
+      "path": "data/stage12u_screenshots/review_1366x768.png",
+      "bytes": 118494,
+      "sha256": "ee25a714ed13ec719ee24a8e3bd064bef0dcc07f8736b40ce0b6ca6202e1dbf2"
+    },
+    {
+      "path": "data/stage12u_screenshots/review_replay_1366x768.png",
+      "bytes": 159841,
+      "sha256": "02811d6b8ef8a9e80b92743360f7d50116221811a94720aa431dcba9db8bb38a"
+    },
+    {
+      "path": "data/stage12u_screenshots/setup_1366x768.png",
+      "bytes": 221003,
+      "sha256": "d51bd62f0d725e011c18a9fb33e5680f2af84061140760ec4c7b85dc71f62cce"
+    },
+    {
+      "path": "data/stage12u_screenshots/target_service_1920x1080.png",
+      "bytes": 73825,
+      "sha256": "29916715c4839456f8b45bb52974ec566aed001f5a80a7b736273302f22a13d4"
+    }
+  ],
+  "browser_acceptance": {
+    "stage": "12U",
+    "source": "LOCAL_HEADLESS_CHROME_DEV_MACHINE",
+    "physical_pi4_browser_measured": false,
+    "hardware_gate_h1": "PENDING",
+    "cases": [
+      {
+        "title": "RescueSwarm Offline GCS",
+        "viewport_css_px": [
+          1366,
+          768
+        ],
+        "device_pixel_ratio": 1,
+        "horizontal_overflow_px": 0,
+        "status_bar_visible": true,
+        "navigation_visible": true,
+        "mission_state_visible": false,
+        "map_visible": false,
+        "fleet_panel_visible": false,
+        "alert_surface_visible": true,
+        "start_visible": true,
+        "engineering_visible": false,
+        "review_visible": false,
+        "canvas_count": 1,
+        "button_count": 20,
+        "disabled_button_count": 4,
+        "dom_nodes": 228,
+        "rendered_events": 0,
+        "rendered_targets": 0,
+        "render_metrics": null,
+        "js_heap_mb": 19.7,
+        "case": "setup_1366x768",
+        "screenshot": "data/stage12u_screenshots/setup_1366x768.png",
+        "required_surfaces": [
+          "status_bar_visible",
+          "navigation_visible",
+          "alert_surface_visible",
+          "start_visible"
+        ],
+        "pass": true
+      },
+      {
+        "title": "RescueSwarm Offline GCS",
+        "viewport_css_px": [
+          1366,
+          768
+        ],
+        "device_pixel_ratio": 1,
+        "horizontal_overflow_px": 0,
+        "status_bar_visible": true,
+        "navigation_visible": true,
+        "mission_state_visible": true,
+        "map_visible": true,
+        "fleet_panel_visible": true,
+        "alert_surface_visible": true,
+        "start_visible": false,
+        "engineering_visible": false,
+        "review_visible": false,
+        "canvas_count": 1,
+        "button_count": 17,
+        "disabled_button_count": 0,
+        "dom_nodes": 356,
+        "rendered_events": 0,
+        "rendered_targets": 0,
+        "render_metrics": null,
+        "js_heap_mb": 18.3,
+        "case": "mission_parallel_search_1366x768",
+        "screenshot": "data/stage12u_screenshots/mission_parallel_search_1366x768.png",
+        "required_surfaces": [
+          "status_bar_visible",
+          "navigation_visible",
+          "alert_surface_visible",
+          "mission_state_visible",
+          "map_visible",
+          "fleet_panel_visible"
+        ],
+        "pass": true
+      },
+      {
+        "title": "RescueSwarm Offline GCS",
+        "viewport_css_px": [
+          1920,
+          1080
+        ],
+        "device_pixel_ratio": 1,
+        "horizontal_overflow_px": 0,
+        "status_bar_visible": true,
+        "navigation_visible": true,
+        "mission_state_visible": true,
+        "map_visible": true,
+        "fleet_panel_visible": true,
+        "alert_surface_visible": true,
+        "start_visible": false,
+        "engineering_visible": false,
+        "review_visible": false,
+        "canvas_count": 1,
+        "button_count": 17,
+        "disabled_button_count": 0,
+        "dom_nodes": 356,
+        "rendered_events": 0,
+        "rendered_targets": 0,
+        "render_metrics": null,
+        "js_heap_mb": 30.6,
+        "case": "mission_parallel_search_1920x1080",
+        "screenshot": "data/stage12u_screenshots/mission_parallel_search_1920x1080.png",
+        "required_surfaces": [
+          "status_bar_visible",
+          "navigation_visible",
+          "alert_surface_visible",
+          "mission_state_visible",
+          "map_visible",
+          "fleet_panel_visible"
+        ],
+        "pass": true
+      },
+      {
+        "title": "RescueSwarm Offline GCS",
+        "viewport_css_px": [
+          1536,
+          864
+        ],
+        "device_pixel_ratio": 1,
+        "horizontal_overflow_px": 0,
+        "status_bar_visible": true,
+        "navigation_visible": true,
+        "mission_state_visible": true,
+        "map_visible": true,
+        "fleet_panel_visible": true,
+        "alert_surface_visible": true,
+        "start_visible": false,
+        "engineering_visible": false,
+        "review_visible": false,
+        "canvas_count": 2,
+        "button_count": 28,
+        "disabled_button_count": 0,
+        "dom_nodes": 379,
+        "rendered_events": 0,
+        "rendered_targets": 0,
+        "render_metrics": null,
+        "js_heap_mb": 51.7,
+        "case": "mission_split_1536x864",
+        "screenshot": "data/stage12u_screenshots/mission_split_1536x864.png",
+        "required_surfaces": [
+          "status_bar_visible",
+          "navigation_visible",
+          "alert_surface_visible",
+          "mission_state_visible",
+          "map_visible",
+          "fleet_panel_visible"
+        ],
+        "pass": true
+      },
+      {
+        "title": "RescueSwarm Offline GCS",
+        "viewport_css_px": [
+          1920,
+          1080
+        ],
+        "device_pixel_ratio": 1,
+        "horizontal_overflow_px": 0,
+        "status_bar_visible": true,
+        "navigation_visible": true,
+        "mission_state_visible": false,
+        "map_visible": false,
+        "fleet_panel_visible": false,
+        "alert_surface_visible": true,
+        "start_visible": false,
+        "engineering_visible": true,
+        "review_visible": false,
+        "canvas_count": 1,
+        "button_count": 29,
+        "disabled_button_count": 0,
+        "dom_nodes": 185,
+        "rendered_events": 0,
+        "rendered_targets": 0,
+        "render_metrics": "100 FPS \u00b7 P50 7.0 ms \u00b7 P95 14.0 ms \u00b7 20 objects \u00b7 42 MB",
+        "js_heap_mb": 45.3,
+        "case": "engineering_3d_camera_geometry_1920x1080",
+        "screenshot": "data/stage12u_screenshots/engineering_3d_camera_geometry_1920x1080.png",
+        "required_surfaces": [
+          "status_bar_visible",
+          "navigation_visible",
+          "alert_surface_visible",
+          "engineering_visible"
+        ],
+        "pass": true
+      },
+      {
+        "title": "RescueSwarm Offline GCS",
+        "viewport_css_px": [
+          1366,
+          768
+        ],
+        "device_pixel_ratio": 1,
+        "horizontal_overflow_px": 0,
+        "status_bar_visible": true,
+        "navigation_visible": true,
+        "mission_state_visible": false,
+        "map_visible": false,
+        "fleet_panel_visible": false,
+        "alert_surface_visible": true,
+        "start_visible": false,
+        "engineering_visible": false,
+        "review_visible": true,
+        "canvas_count": 2,
+        "button_count": 56,
+        "disabled_button_count": 0,
+        "dom_nodes": 454,
+        "rendered_events": 62,
+        "rendered_targets": 0,
+        "render_metrics": null,
+        "js_heap_mb": 44.6,
+        "case": "review_replay_1366x768",
+        "screenshot": "data/stage12u_screenshots/review_replay_1366x768.png",
+        "required_surfaces": [
+          "status_bar_visible",
+          "navigation_visible",
+          "alert_surface_visible",
+          "review_visible"
+        ],
+        "pass": true
+      },
+      {
+        "title": "RescueSwarm Offline GCS",
+        "viewport_css_px": [
+          1093,
+          614
+        ],
+        "device_pixel_ratio": 1.25,
+        "horizontal_overflow_px": 0,
+        "status_bar_visible": true,
+        "navigation_visible": true,
+        "mission_state_visible": true,
+        "map_visible": true,
+        "fleet_panel_visible": true,
+        "alert_surface_visible": true,
+        "start_visible": false,
+        "engineering_visible": false,
+        "review_visible": false,
+        "canvas_count": 1,
+        "button_count": 16,
+        "disabled_button_count": 0,
+        "dom_nodes": 356,
+        "rendered_events": 0,
+        "rendered_targets": 0,
+        "render_metrics": null,
+        "js_heap_mb": 59.8,
+        "case": "mission_125pct_zoom",
+        "screenshot": "data/stage12u_screenshots/mission_125pct_zoom.png",
+        "required_surfaces": [
+          "status_bar_visible",
+          "navigation_visible",
+          "alert_surface_visible",
+          "mission_state_visible",
+          "map_visible",
+          "fleet_panel_visible"
+        ],
+        "pass": true
+      }
+    ],
+    "accelerated_lifecycle_soak": {
+      "method": "ACCELERATED_6_CYCLE_ENGINEERING_REVIEW_MISSION_ROUTE_SOAK",
+      "physical_pi4_browser_measured": false,
+      "samples": [
+        {
+          "cycle": 1,
+          "used_js_heap_mb": 26.67,
+          "documents": 9,
+          "dom_nodes": 4108,
+          "event_listeners": 1366
+        },
+        {
+          "cycle": 2,
+          "used_js_heap_mb": 24.56,
+          "documents": 8,
+          "dom_nodes": 3353,
+          "event_listeners": 988
+        },
+        {
+          "cycle": 3,
+          "used_js_heap_mb": 24.2,
+          "documents": 8,
+          "dom_nodes": 3356,
+          "event_listeners": 929
+        },
+        {
+          "cycle": 4,
+          "used_js_heap_mb": 24.94,
+          "documents": 8,
+          "dom_nodes": 3359,
+          "event_listeners": 938
+        },
+        {
+          "cycle": 5,
+          "used_js_heap_mb": 24.53,
+          "documents": 8,
+          "dom_nodes": 3362,
+          "event_listeners": 935
+        },
+        {
+          "cycle": 6,
+          "used_js_heap_mb": 24.56,
+          "documents": 8,
+          "dom_nodes": 3365,
+          "event_listeners": 938
+        }
+      ],
+      "heap_growth_mb": -2.11,
+      "dom_node_growth": -743,
+      "listener_growth": -428,
+      "pass": true
+    },
+    "pass": true
+  },
+  "test_results": {
+    "python": {
+      "tests": 305,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 9,
+      "passed": 296,
+      "status": "PASS"
+    },
+    "frontend": {
+      "status": "PASS",
+      "passed": 32,
+      "source": "final npm test run"
+    },
+    "browser": "PASS"
+  },
+  "offline_compliance": "PASS",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "evidence_notice": "SITL/synthetic UI evidence only. Hardware Gate H1 remains pending."
+}

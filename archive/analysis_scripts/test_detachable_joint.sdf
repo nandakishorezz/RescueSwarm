@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="default">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"></plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"></plugin>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.8 0.8 0.8 1</ambient></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="drone_01">
+      <pose>0 0 2.0 0 0 0</pose>
+      <static>true</static>
+      <link name="payload_mount_1">
+        <collision name="collision">
+          <geometry><box><size>0.5 0.5 0.1</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.5 0.5 0.1</size></box></geometry>
+        </visual>
+      </link>
+      <plugin filename="gz-sim-detachable-joint-system" name="gz::sim::systems::DetachableJoint">
+        <parent_link>payload_mount_1</parent_link>
+        <child_model>payload_slot_1</child_model>
+        <child_link>body</child_link>
+        <detach_topic>/rescueswarm/payload/slot_1/detach</detach_topic>
+        <attach_topic>/rescueswarm/payload/slot_1/attach</attach_topic>
+        <output_topic>/rescueswarm/payload/slot_1/state</output_topic>
+      </plugin>
+    </model>
+
+    <model name="payload_slot_1">
+      <pose>0 0 1.9 0 0 0</pose>
+      <link name="body">
+        <inertial>
+          <mass>0.2</mass>
+          <inertia>
+            <ixx>0.001</ixx> <iyy>0.001</iyy> <izz>0.001</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry><box><size>0.2 0.1 0.05</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.2 0.1 0.05</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

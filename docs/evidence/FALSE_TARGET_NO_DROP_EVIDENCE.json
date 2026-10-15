@@ -1,0 +1,14 @@
+{
+  "classification": "ENGINEERING_SAFETY_CONTROL_NOT_PERCEPTION_GOLD",
+  "evidence": [
+    "tests/test_stage7s_autonomy.py::test_target_loss_yields_no_alignment_command_or_payload_release",
+    "stage13sim_phase4_single_gold_20260909g REACQUIRE_FAILED control"
+  ],
+  "expected": "bounded reacquisition failure, gate closed, no release, resume",
+  "gate_passed": false,
+  "input": "recorded autonomy target without subsequent valid visual observations",
+  "passed": true,
+  "payload_release_count": 0,
+  "search_resumed": true,
+  "truth_used_by_autonomy": false
+}

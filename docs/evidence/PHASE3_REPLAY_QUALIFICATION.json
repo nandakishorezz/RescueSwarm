@@ -1,0 +1,305 @@
+{
+  "classification": "SIMULATION_OBSERVER_REPLAY",
+  "frame_id": "drone_01_gazebo_camera:000000000422",
+  "capture_sim_time_ns": 72799000000,
+  "delivery_host_monotonic_ns": 399591984704400,
+  "camera_latency_ms": 100.0,
+  "capture_ekf_pose": {
+    "absolute_altitude_m": 592.79,
+    "accuracy_sources": {
+      "horizontal": "GPS_RAW_INT_TELEMETRY",
+      "vertical": "GPS_RAW_INT_TELEMETRY"
+    },
+    "autopilot_boot_time_ns": 72789027949,
+    "gps_fix": 6,
+    "horizontal_accuracy_m": 0.8,
+    "host_monotonic_time_ns": 399591725851400,
+    "host_wall_time_ns": 1788939863301006592,
+    "latitude": 17.450131872442267,
+    "local_position_ned_m": [
+      -10.40403725602989,
+      18.302938010597728,
+      -7.789965216300191
+    ],
+    "longitude": 78.3805488,
+    "pitch_rad": null,
+    "quaternion_body_to_ned": [
+      0.9803246942075009,
+      -0.14261989060196503,
+      -0.13640635051846686,
+      -0.004045771853027184
+    ],
+    "relative_altitude_m": 7.954327557731262,
+    "roll_rad": null,
+    "satellites": 10,
+    "sim_source_time_ns": 72789027949,
+    "source_message_ids": [
+      "ATTITUDE_QUATERNION",
+      "GLOBAL_POSITION_INT_MISSION_FRAME",
+      "GPS_RAW_INT"
+    ],
+    "timestamp_source": "SITL_SIM_SOURCE_SIDECAR",
+    "vehicle_id": "drone_01",
+    "velocity_ned_m_s": [
+      2.7215096950531006,
+      -0.18648523092269897,
+      -0.03753475099802017
+    ],
+    "vertical_accuracy_m": 0.8,
+    "yaw_rad": null
+  },
+  "receipt_ekf_pose_observer_diagnostic_only": {
+    "classification": "AUTOPILOT_ESTIMATE_AND_SENSOR_MEASUREMENT",
+    "ap_sim_source_time_ns": 72842112000,
+    "host_monotonic_time_ns": 399591913793000,
+    "host_wall_time_ns": 1788939863464060500,
+    "simulation_elapsed_s": 23.720025,
+    "latitude": 17.4501332,
+    "longitude": 78.3805488,
+    "relative_altitude_m": 7.954,
+    "velocity_ned_mps": [
+      2.7215096950531006,
+      -0.18648523092269897,
+      -0.03753475099802017
+    ],
+    "quaternion_body_to_ned": [
+      0.9806833018748948,
+      -0.14031231047859788,
+      -0.1362294669207313,
+      -0.0037748237581082594
+    ],
+    "gps_measurement": {
+      "latitude": 17.4501222,
+      "longitude": 78.3805538,
+      "altitude_msl_m": 591.82,
+      "fix_type": 6,
+      "satellites": 10,
+      "eph_m": 1.21,
+      "epv_m": 2.0
+    },
+    "imu_measurement": {
+      "xacc_mg": -275,
+      "yacc_mg": 255,
+      "zacc_mg": -943,
+      "xgyro_millirad_s": -220,
+      "ygyro_millirad_s": 9,
+      "zgyro_millirad_s": 3,
+      "xmag_mgauss": 431,
+      "ymag_mgauss": -26,
+      "zmag_mgauss": 60
+    },
+    "barometer_measurement": {
+      "absolute_pressure_hpa": 944.0321655273438,
+      "differential_pressure_hpa": 0.0,
+      "temperature_cdeg": 3060
+    },
+    "timestamp_source": "SITL_SIM_SOURCE_SIDECAR"
+  },
+  "yolo_bbox": {
+    "bbox_area_percent": 0.4095118280260067,
+    "bbox_area_px": 4193.401118986309,
+    "bbox_bottom_center_pixels": [
+      392.88824462890625,
+      86.00740051269531
+    ],
+    "bbox_center_pixels": [
+      392.88824462890625,
+      44.0576171875
+    ],
+    "bbox_height_px": 83.89956665039062,
+    "bbox_normalized": [
+      0.28742003440856934,
+      0.0026347923278808596,
+      0.32646784782409666,
+      0.10750925064086914
+    ],
+    "bbox_pixels": [
+      367.89764404296875,
+      2.1078338623046875,
+      417.87884521484375,
+      86.00740051269531
+    ],
+    "bbox_width_px": 49.981201171875,
+    "class_id": 0,
+    "class_name": "person",
+    "confidence": 0.3113207519054413,
+    "frame_size_pixels": [
+      1280,
+      800
+    ]
+  },
+  "camera_ray": [
+    -0.27633883466849063,
+    -0.3511299934175521,
+    0.8946197942012297
+  ],
+  "stage5_observation": {
+    "altitude_source": "LOCAL_POSITION_NED+KNOWN_GROUND_MODEL",
+    "bbox_original_px": [
+      367.89764404296875,
+      2.1078338623046875,
+      417.87884521484375,
+      86.00740051269531
+    ],
+    "camera_calibration_id": "ov9281_phase2_oblique_simulation_intrinsics",
+    "camera_origin_enu_m": [
+      18.32539651773625,
+      -10.425340537041233,
+      7.716196756405324
+    ],
+    "camera_ray": [
+      -0.27633883466849063,
+      -0.3511299934175521,
+      0.8946197942012297
+    ],
+    "capture_timestamp_monotonic_ns": 399591876639800,
+    "capture_timestamp_wall_ns": 1788939863425908000,
+    "chosen_pixel": [
+      392.88824462890625,
+      86.00740051269531
+    ],
+    "created_at": "2026-09-09T07:44:23.781438Z",
+    "detection_confidence": 0.3113207519054413,
+    "evidence_references": [
+      "drone_01_gazebo_camera:000000000422"
+    ],
+    "extrinsics_id": "ov9281_phase2_oblique_simulation_extrinsics",
+    "frame_id": "drone_01_gazebo_camera:000000000422",
+    "interpolated_pose": {
+      "diagnostics": {
+        "clock_sync_quality": "SYNCED",
+        "extrapolated": false,
+        "frame_host_monotonic_ns": 399591725851400,
+        "interpolation_fraction": 0.6724422687373396,
+        "interpolation_gap_ms": 39.987,
+        "nearest_sample_age_ms": 13.098051,
+        "pose_after_autopilot_ns": 72802126000,
+        "pose_after_host_ns": 399591762398400,
+        "pose_before_autopilot_ns": 72762139000,
+        "pose_before_host_ns": 399591725851400,
+        "target_autopilot_time_ns": 72789027949
+      },
+      "sample": {
+        "absolute_altitude_m": 592.79,
+        "accuracy_sources": {
+          "horizontal": "GPS_RAW_INT_TELEMETRY",
+          "vertical": "GPS_RAW_INT_TELEMETRY"
+        },
+        "autopilot_boot_time_ns": 72789027949,
+        "gps_fix": 6,
+        "horizontal_accuracy_m": 0.8,
+        "host_monotonic_time_ns": 399591725851400,
+        "host_wall_time_ns": 1788939863301006592,
+        "latitude": 17.450131872442267,
+        "local_position_ned_m": [
+          -10.40403725602989,
+          18.302938010597728,
+          -7.789965216300191
+        ],
+        "longitude": 78.3805488,
+        "pitch_rad": null,
+        "quaternion_body_to_ned": [
+          0.9803246942075009,
+          -0.14261989060196503,
+          -0.13640635051846686,
+          -0.004045771853027184
+        ],
+        "relative_altitude_m": 7.954327557731262,
+        "roll_rad": null,
+        "satellites": 10,
+        "sim_source_time_ns": 72789027949,
+        "source_message_ids": [
+          "ATTITUDE_QUATERNION",
+          "GLOBAL_POSITION_INT_MISSION_FRAME",
+          "GPS_RAW_INT"
+        ],
+        "timestamp_source": "SITL_SIM_SOURCE_SIDECAR",
+        "vehicle_id": "drone_01",
+        "velocity_ned_m_s": [
+          2.7215096950531006,
+          -0.18648523092269897,
+          -0.03753475099802017
+        ],
+        "vertical_accuracy_m": 0.8,
+        "yaw_rad": null
+      }
+    },
+    "observation_id": "4ae10f18-a8ff-59d4-814b-b3922fe36970",
+    "pixel_strategy": "BBOX_BOTTOM_CENTER",
+    "position_uncertainty_m": 1.4660645497156177,
+    "quality": "STANDARD_GNSS_LIMITED",
+    "range_m": 9.86618430643243,
+    "target_east_m": 17.426640744649966,
+    "target_latitude": 17.450186631422778,
+    "target_longitude": 78.38054055183177,
+    "target_north_m": -4.343059842657128,
+    "target_track_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa",
+    "target_up_m": 0.0,
+    "uncertainty_components": {
+      "attitude_m": 0.08610088604149502,
+      "calibration_pixel_m": 0.024665460766081074,
+      "clock_sync_m": 0.0,
+      "common_bias_floor_m": 1.316,
+      "gnss_horizontal_confidence_multiplier": 1.645,
+      "gnss_horizontal_m": 1.316,
+      "gnss_horizontal_raw_m": 0.8,
+      "gnss_horizontal_source": "GPS_RAW_INT_TELEMETRY",
+      "ground_source": "SIMULATION_FLAT_GROUND",
+      "mount_m": 0.043049623390664864,
+      "pose_age_m": 0.03573006133129221,
+      "vertical_geometry_m": 0.637446161682779,
+      "vertical_m": 0.8,
+      "vertical_source": "GPS_RAW_INT_TELEMETRY"
+    },
+    "vehicle_id": "drone_01",
+    "view_angle_from_nadir_deg": 38.54810689317053,
+    "world_ray_enu": [
+      -0.09109456555563485,
+      0.6164775059410411,
+      -0.7820852030277415
+    ]
+  },
+  "truth_target_observer_only": {
+    "simulation_entity": "survivor_hidden_01",
+    "survivor_id": "hidden_01",
+    "position_gazebo_m": [
+      17.499999999151644,
+      -2.9999999988941037,
+      -2.4706626717163616e-05
+    ],
+    "position_enu_m": [
+      17.499999999151644,
+      -2.9999999988941037,
+      -2.4706626717163616e-05
+    ],
+    "position_wgs84": [
+      17.450198765559694,
+      78.38054124236027,
+      585.0
+    ],
+    "body_state": "standing",
+    "enabled": true,
+    "truth_notice": "SIMULATION_ONLY_GROUND_TRUTH"
+  },
+  "truth_label": "SIMULATION GROUND TRUTH \u2014 OBSERVER ONLY",
+  "timeline": [
+    {
+      "event": "CAMERA_CAPTURE",
+      "sim_time_ns": 72799000000
+    },
+    {
+      "event": "CAMERA_DELIVERY",
+      "host_monotonic_ns": 399591984704400
+    },
+    {
+      "event": "YOLO_INFERENCE",
+      "host_monotonic_ns": 399592042065000
+    },
+    {
+      "event": "STAGE5_GEOLOCATION",
+      "ap_source_time_ns": 72789027949
+    }
+  ],
+  "current_latest_pose_used_for_old_frame": false,
+  "passed": true
+}

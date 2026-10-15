@@ -1,0 +1,22 @@
+schema_version: "1.0"
+asset_id: GAZEBO_MINGFEI_ACTOR_CC_BY_4_0
+source: https://fuel.gazebosim.org/1.0/Mingfei/models/actor
+fuel_version: 1
+license: CC-BY-4.0
+license_file: LICENSE.md
+metric_unit: m
+up_axis: Z_UP
+provenance: REFERENCE_PRESET
+poses:
+  standing:
+    file: meshes/stand.dae
+    sha256: ba1e23e637389ab10dfb029ebf9e5bef9771562a15cf0ff444b88e27043989be
+  sitting:
+    file: meshes/sitting.dae
+    sha256: f0c3a122133152e62c5eadff0fb19b0cb87d865178cf199d5a2c6bf7dbe26afe
+  walking_reference:
+    file: meshes/walk.dae
+    sha256: 49af0df3a319d1cb8ca2cebf02dbd00f625e5d5bec820bc5e109925b18b65c6e
+notes: >-
+  Locally packaged offline simulation asset. Gold survivor scale remains 1.0;
+  no detector-specific enlargement, fluorescent texture, or camera billboard.

@@ -1,0 +1,22 @@
+{
+  "run_id": "phase4_multitarget_gold_final",
+  "source_run_directory": "C:\\Users\\nanda\\Downloads\\SURVIVOR_DETECTION\\data\\simulation_runs\\phase4_multitarget_gold_final",
+  "sensor_profile": "REFERENCE_NOMINAL",
+  "survivor_count": "MISSING_EVIDENCE",
+  "inventory_initial": "MISSING_EVIDENCE",
+  "inventory_final": "MISSING_EVIDENCE",
+  "services": [],
+  "sequential_services_completed": 0,
+  "duplicate_service_count": "MISSING_EVIDENCE",
+  "duplicate_release_count": "MISSING_EVIDENCE",
+  "inventory_underflow": "MISSING_EVIDENCE",
+  "restart_from_beginning": "MISSING_EVIDENCE",
+  "unfinished_work_preserved": "MISSING_EVIDENCE",
+  "rtl": "MISSING_EVIDENCE",
+  "landed": "MISSING_EVIDENCE",
+  "native_disarm": "MISSING_EVIDENCE",
+  "manual_interventions": "MISSING_EVIDENCE",
+  "truth_assist": "MISSING_EVIDENCE",
+  "passed": false,
+  "failure_reason": "[WinError 10061] SITL environment actively refused connection"
+}

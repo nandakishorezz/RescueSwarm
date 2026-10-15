@@ -1,0 +1,46 @@
+# STAGE 7S SITL ENGINEERING DEFAULTS ONLY. These are not approved physical-flight values.
+execution_source: sitl
+engineering_defaults_only: true
+
+target:
+  max_geolocation_uncertainty_m: 8.0
+  priority_policy: FIRST_CONFIRMED
+  minimum_battery_percent: 25.0
+
+guided:
+  approach_altitude_m: 8.0
+  arrival_radius_m: 2.0
+  arrival_altitude_tolerance_m: 1.5
+  arrival_speed_m_s: 2.0
+  arrival_dwell_s: 0.5
+  max_approach_time_s: 90.0
+  setpoint_rate_hz: 5.0
+
+reacquisition:
+  timeout_s: 90.0
+  search_radius_m: 5.0
+  search_pattern: CROSS
+
+alignment:
+  kp: 0.45
+  max_horizontal_speed_m_s: 1.5
+  deadband_m: 0.10
+  alignment_radius_m: 0.45
+  stable_dwell_s: 1.0
+  observation_stale_s: 0.75
+
+delivery:
+  delivery_altitude_m: 2.0
+  max_descent_rate_m_s: 0.75
+  max_horizontal_speed_at_drop_m_s: 0.5
+  verification_latency_s: 0.25
+  payload_slots: 4
+
+resume:
+  policy: ARDUPILOT_NATIVE_RESUME
+
+safety:
+  operational_boundary_margin_m: 0.0
+  guided_command_timeout_s: 3.5
+  maximum_mission_duration_s: 2400.0
+  delivery_time_reserve_s: 90.0

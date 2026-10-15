@@ -1,0 +1,17 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Stage 3 official SITL fixture",
+    "note": "Small WGS84 test rectangle near the ArduPilot CMAC home; not an operational boundary"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [[
+      [149.1652300, -35.3632610],
+      [149.1656929, -35.3632610],
+      [149.1656929, -35.3630095],
+      [149.1652300, -35.3630095],
+      [149.1652300, -35.3632610]
+    ]]
+  }
+}

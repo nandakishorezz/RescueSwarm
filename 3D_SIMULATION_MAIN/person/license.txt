@@ -1,0 +1,8 @@
+Model Information:
+* title:	MERCENARY
+* source:	https://sketchfab.com/3d-models/mercenary-61a9ad749bc14ca68664602aed1de561
+* author:	agungliu.mobile (https://sketchfab.com/agungliu.mobile)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

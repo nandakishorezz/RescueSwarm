@@ -1,0 +1,17 @@
+{
+  "use_impact_predictor": true,
+  "evaluation_radius_m": 2.0,
+  "engineering_trials": [
+    1.357,
+    1.268,
+    1.318
+  ],
+  "mean_impact_error_m": 1.314,
+  "max_impact_error_m": 1.357,
+  "min_impact_error_m": 1.268,
+  "payload_detach_reliability": "3/3",
+  "payload_fall_reliability": "3/3",
+  "payload_impact_reliability": "3/3",
+  "delivery_accuracy_within_2m": "3/3",
+  "configuration_status": "FROZEN_FOR_GOLD"
+}

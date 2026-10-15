@@ -1,0 +1,109 @@
+{
+  "actuator_command": {
+    "autonomy_physical_delivery_score_known": false,
+    "command_id": "29030717-de2b-49ec-a8b8-f90e140bfff0",
+    "completed_at": "2026-09-11T07:35:15.795419+00:00",
+    "detach_topic": "/rescueswarm/payload/slot_1/detach",
+    "host_monotonic_ns": 43338620766900,
+    "release_pwm": 1900,
+    "requested_at": "2026-09-11T07:35:15.699213+00:00",
+    "servo_number": 9,
+    "slot_id": "slot_1",
+    "target_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa"
+  },
+  "ap_source_time_ns": 96584846000,
+  "bbox_source": "GAZEBO_RENDERED_YOLO",
+  "capture_monotonic_ns": 43337957362200,
+  "capture_time_historical": true,
+  "delivery_gate": {
+    "all_passed": true,
+    "ap_sim_source_time_ns": 96584846000,
+    "conditions": {
+      "alignment_error_m": {
+        "passed": true,
+        "threshold": 0.5,
+        "value": 0.35531614131439865
+      },
+      "clock_pose_valid": {
+        "passed": true,
+        "threshold": true,
+        "value": "SITL_SIM_SOURCE_SIDECAR"
+      },
+      "consecutive_observations": {
+        "passed": true,
+        "threshold": 3,
+        "value": 193
+      },
+      "delivery_altitude_error_m": {
+        "passed": true,
+        "threshold": 0.5,
+        "value": 0.019970291781588045
+      },
+      "emergency_recall_inactive": {
+        "passed": true,
+        "threshold": true,
+        "value": true
+      },
+      "flight_mode_guided": {
+        "passed": true,
+        "threshold": true,
+        "value": "GUIDED"
+      },
+      "geolocation_valid": {
+        "passed": true,
+        "threshold": true,
+        "value": "STANDARD_GNSS_LIMITED"
+      },
+      "horizontal_speed_m_s": {
+        "passed": true,
+        "threshold": 0.5,
+        "value": 0.3640054944640259
+      },
+      "inside_geofence": {
+        "passed": true,
+        "threshold": true,
+        "value": [
+          18.526017495988086,
+          -5.973599601074745
+        ]
+      },
+      "native_failsafe_inactive": {
+        "passed": true,
+        "threshold": true,
+        "value": "GUIDED"
+      },
+      "payload_available": {
+        "passed": true,
+        "threshold": true,
+        "value": 3
+      },
+      "target_owned": {
+        "passed": true,
+        "threshold": true,
+        "value": "664443fa-3e89-5be1-a8d0-6114927fa1fa"
+      },
+      "target_visible": {
+        "passed": true,
+        "threshold": true,
+        "value": true
+      },
+      "track_fresh_s": {
+        "passed": true,
+        "threshold": 2.0,
+        "value": 0.143951567
+      },
+      "vehicle_armed": {
+        "passed": true,
+        "threshold": true,
+        "value": true
+      }
+    },
+    "frame_id": "drone_01_gazebo_camera:000000001188"
+  },
+  "ekf_pose_source": "ARDUPILOT_EKF_AT_CAPTURE",
+  "latest_pose_substitution": false,
+  "passed": true,
+  "payload_trajectory_overlay": "EVALUATOR_TRUTH_LABELED",
+  "run_id": "phase4_multitarget_gold_v2",
+  "selected_frame_id": "drone_01_gazebo_camera:000000001188"
+}

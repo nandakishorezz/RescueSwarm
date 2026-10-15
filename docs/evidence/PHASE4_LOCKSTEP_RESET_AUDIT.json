@@ -1,0 +1,47 @@
+{
+  "run_id": "phase4_lockstep_health_gold",
+  "reset_events": [
+    {
+      "index": 1,
+      "host_time": null,
+      "source_time_s": "before first recorded sample",
+      "mission_phase": "B. STARTUP / INITIAL HANDSHAKE",
+      "plugin_code_condition": "ArduPilotPlugin.cc:1599 (assumed pkt_frame_count < fcu_frame_count; COUNTER VALUES NOT OBSERVABLE)",
+      "classification": "EXPECTED_STARTUP_SYNC"
+    },
+    {
+      "index": 2,
+      "host_time": null,
+      "source_time_s": "before first recorded sample",
+      "mission_phase": "B. STARTUP / INITIAL HANDSHAKE",
+      "plugin_code_condition": "ArduPilotPlugin.cc:1599 (assumed pkt_frame_count < fcu_frame_count; COUNTER VALUES NOT OBSERVABLE)",
+      "classification": "EXPECTED_STARTUP_SYNC"
+    },
+    {
+      "index": 3,
+      "host_time": null,
+      "source_time_s": "before first recorded sample",
+      "mission_phase": "B. STARTUP / INITIAL HANDSHAKE",
+      "plugin_code_condition": "ArduPilotPlugin.cc:1599 (assumed pkt_frame_count < fcu_frame_count; COUNTER VALUES NOT OBSERVABLE)",
+      "classification": "EXPECTED_STARTUP_SYNC"
+    }
+  ],
+  "qualification_interval": {
+    "start_source_time_s": 52.121,
+    "end_source_time_s": 174.001,
+    "duration_s": 121.880
+  },
+  "controller_resets_before_interval": 3,
+  "controller_resets_inside_interval": 0,
+  "controller_resets_after_interval": 0,
+  "source_time_continuous_inside_interval": true,
+  "pose_fresh_inside_interval": true,
+  "mavlink_healthy_inside_interval": true,
+  "ekf_healthy_inside_interval": true,
+  "nan_inf_inside_interval": 0,
+  "solver_failures_inside_interval": 0,
+  "missed_input_failures_inside_interval": 0,
+  "clean_shutdown": true,
+  "stale_process_hypothesis": "SUPPORTED",
+  "lockstep_engineering_gate": "PASS"
+}

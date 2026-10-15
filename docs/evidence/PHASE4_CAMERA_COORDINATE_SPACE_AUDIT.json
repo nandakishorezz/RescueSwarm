@@ -1,0 +1,231 @@
+{
+  "classification": "ZERO_RERUN_COORDINATE_SPACE_FORENSIC",
+  "production_modified": false,
+  "camera_modified": false,
+  "qualification_run_launched": false,
+  "image_spaces": {
+    "RAW_CAMERA_SPACE": {
+      "width": 1280,
+      "height": 800,
+      "origin": "top-left",
+      "x_direction": "right",
+      "y_direction": "down",
+      "units": "captured-image pixels",
+      "scale_from_raw": [1.0, 1.0],
+      "evidence": [
+        "generated_vehicle.sdf camera image is 1280x800",
+        "GazeboCameraSource rejects any frame not 1280x800",
+        "retry25 latest_camera_frame.json records 1280x800"
+      ]
+    },
+    "DETECTOR_INPUT_SPACE": {
+      "width": 640,
+      "height": 640,
+      "origin": "top-left",
+      "x_direction": "right",
+      "y_direction": "down",
+      "units": "letterboxed tensor pixels",
+      "raw_content_transform": {
+        "scale": 0.5,
+        "resized_content": [640, 400],
+        "pad_left": 0,
+        "pad_top": 120,
+        "pad_right": 0,
+        "pad_bottom": 120
+      }
+    },
+    "YOLO_OUTPUT_SPACE": {
+      "width": 640,
+      "height": 640,
+      "origin": "top-left",
+      "x_direction": "right",
+      "y_direction": "down",
+      "units": "model-input pixels before restoration",
+      "scale_from_raw_content": [0.5, 0.5]
+    },
+    "SERIALIZED_DETECTION_SPACE": {
+      "width": 1280,
+      "height": 800,
+      "origin": "top-left",
+      "x_direction": "right",
+      "y_direction": "down",
+      "units": "original captured-image pixels after inverse letterbox",
+      "scale_from_raw": [1.0, 1.0],
+      "evidence": "Every retry24/retry25 Detection has frame_size_pixels=[1280,800]; VisionPreprocessor.restore subtracts padding and divides by 0.5."
+    },
+    "VISION_EVENTS_SPACE": {
+      "width": 1280,
+      "height": 800,
+      "origin": "top-left",
+      "units": "same restored Detection.as_dict coordinates",
+      "scale_from_raw": [1.0, 1.0]
+    },
+    "TRUTH_EVALUATOR_SPACE": {
+      "width": 1280,
+      "height": 800,
+      "origin": "top-left",
+      "x_direction": "right",
+      "y_direction": "down",
+      "units": "matched segmentation-image pixels",
+      "scale_from_raw": [1.0, 1.0]
+    },
+    "GEOMETRY_PROJECTION_SPACE": {
+      "width": 1280,
+      "height": 800,
+      "origin": "top-left",
+      "x_direction": "right",
+      "y_direction": "down",
+      "units": "profile-intrinsic pixels",
+      "intrinsics": {"fx": 800.0, "fy": 800.0, "cx": 640.0, "cy": 400.0},
+      "scale_from_raw": [1.0, 1.0]
+    }
+  },
+  "preprocessing_chain": [
+    "Gazebo MONO8 1280x800",
+    "replicate MONO8 to RGB",
+    "resize by 0.5 to 640x400",
+    "letterbox on 640x640 canvas with 120 pixels above and below",
+    "normalize to float32 [0,1] CHW tensor",
+    "YOLO outputs 640x640 tensor coordinates",
+    "subtract letterbox padding and divide by 0.5",
+    "clip and serialize in original 1280x800 coordinates"
+  ],
+  "why_boxes_ended_near_392": {
+    "choice": "E_PREVIOUS_FORENSIC_WAS_WRONG",
+    "explanation": "392-394 is not an image edge. The stored detector and evaluator boxes are already in 1280x800 raw-camera coordinates. y=392 is near the optical principal row y=400 and was the rendered survivor/ground-contact region in these frames.",
+    "actual_bottom_edge_y": 800,
+    "normalized_392": 0.49
+  },
+  "retry25_example": {
+    "frame_id": "drone_01_gazebo_camera:000000001430",
+    "serialized_bbox": [440.57135009765625, 187.25582885742188, 538.04248046875, 389.9975891113281],
+    "serialized_frame_size": [1280, 800],
+    "raw_equivalent_bbox": [440.57135009765625, 187.25582885742188, 538.04248046875, 389.9975891113281],
+    "normalized_bbox": [0.34419636726379393, 0.23406978607177734, 0.42034568786621096, 0.48749698638916017],
+    "normalized_center_y": 0.36078338623046874,
+    "normalized_bottom_y": 0.48749698638916017,
+    "confidence": 0.31074774265289307
+  },
+  "previous_detector_band": {
+    "original_coordinate_space": "SERIALIZED_DETECTION_SPACE_1280x800",
+    "center_y_pixels": [30.7, 300.0],
+    "bottom_y_pixels": [60.6, 350.0],
+    "center_y_normalized": [0.038375, 0.375],
+    "bottom_y_normalized": [0.07575, 0.4375],
+    "classification": "EMPIRICAL_OBSERVED_REGION_ONLY",
+    "not_a_hard_limit_evidence": [
+      "retry25 YOLO succeeded at bottom_y=390.9251 (normalized 0.488656)",
+      "no production crop, mask, or detector rejection exists at y=350"
+    ]
+  },
+  "actual_clipping_limits": {
+    "raw": {"x": [0, 1280], "y": [0, 800]},
+    "normalized": {"x": [0.0, 1.0], "y": [0.0, 1.0]},
+    "evaluator_edge_clipped_rule": "x1==0 or y1==0 or x2==1280 or y2==800"
+  },
+  "zero_degree_centered_example": {
+    "projected_raw_y": 400.0,
+    "coordinate_space": "GEOMETRY_PROJECTION_SPACE_1280x800",
+    "projected_normalized_y": 0.5,
+    "previous_empirical_bottom_max_normalized": 0.4375,
+    "inside_raw_fov": true,
+    "inside_previous_empirical_band": false,
+    "infeasibility_proven": false,
+    "reason": "The empirical band is not a hard clipping or detector limit."
+  },
+  "current_35_degree_level_ground_point_projection": {
+    "note": "Normalized projection of the assigned ground point for a level vehicle with target along camera-forward horizontal axis; bbox bottom/extent is not inferred.",
+    "rows": [
+      {"error_m": 1.36, "y_norm_at_altitudes_1_5_2_0_2_5": [0.373714, 0.513689, 0.613119]},
+      {"error_m": 0.95, "y_norm_at_altitudes_1_5_2_0_2_5": [0.546329, 0.668999, 0.752913]},
+      {"error_m": 0.75, "y_norm_at_altitudes_1_5_2_0_2_5": [0.64829, 0.757574, 0.830733]},
+      {"error_m": 0.5, "y_norm_at_altitudes_1_5_2_0_2_5": [0.797449, 0.883138, 0.938763]},
+      {"error_m": 0.3, "y_norm_at_altitudes_1_5_2_0_2_5": [0.938763, 0.997911, 1.035235]},
+      {"error_m": 0.1, "y_norm_at_altitudes_1_5_2_0_2_5": [1.105286, 1.128214, 1.14222]},
+      {"error_m": 0.0, "y_norm_at_altitudes_1_5_2_0_2_5": [1.200208, 1.200208, 1.200208]}
+    ]
+  },
+  "retry24_normalized_audit": {
+    "representative_frames": 13,
+    "frame_size": [1280, 800],
+    "raw_y1_range": [313, 391],
+    "raw_y2_range": [392, 393],
+    "normalized_y1_range": [0.39125, 0.48875],
+    "normalized_y2_range": [0.49, 0.49125],
+    "actual_image_boundary_clipped_count": 0,
+    "classification": "INVALID",
+    "visible_fraction": "NOT_OBSERVABLE_FROM_COMPACT_SEGMENTATION; visible pixel counts exist but an unoccluded reference area does not"
+  },
+  "retry25_normalized_audit": {
+    "last_truth_visible_frame": {
+      "sim_time_s": 111.145,
+      "bbox_raw": [363, 383, 393, 392],
+      "bbox_normalized": [0.28359375, 0.47875, 0.30703125, 0.49],
+      "visible_pixels": 99,
+      "touches_raw_boundary": false
+    },
+    "ground_point_projection_at_111_211_s": {"raw": [400.3489, 544.5811], "normalized": [0.3127726, 0.6807264], "inside_raw_fov": true},
+    "previous_below_frame_raw_fov_claim": "INVALID",
+    "supported_interpretation": "The segmentation footprint collapsed near y_norm=0.49 and vanished without reaching y_norm=1.0; raw evidence supports loss/occlusion or behind-surface geometry, not bottom-edge clipping."
+  },
+  "corrected_pitch_sweep": {
+    "method": "All historical bboxes were treated as raw 1280x800 and transformed through camera rays; comparisons were normalized. Hard raw FOV and empirical observed-band results were kept separate.",
+    "pitch_range_tested_deg": [0, 35],
+    "coarse_step_deg": 1.0,
+    "search_current_route_geometric_range_deg": [31, 35],
+    "search_current_route_note": "All three preserved initial search/confirmation boxes retain some raw-frame intersection from 31 degrees; all are fully framed only at 35 degrees. This is geometric replay, not a detector guarantee.",
+    "delivery_center_ground_point_raw_fov_range_deg": [0, 26.5],
+    "delivery_note": "At exact horizontal center the ground point is inside the raw frame for pitch < vertical half-FOV (26.565 degrees). Human-mesh extent and YOLO detectability require pixel evidence.",
+    "joint_current_route_range_deg": null,
+    "fixed_camera_solution_proven": false,
+    "previous_ranges_invalidated": true
+  },
+  "static_rendered_pixel_validation": {
+    "performed": true,
+    "type": "headless Gazebo static scene with the preserved stand.dae survivor mesh and the real yolo11n_person_onnx pipeline",
+    "results": [
+      {"pitch_deg": 35, "altitude_m": 8.0, "range_m": 12.4, "detections": 0},
+      {"pitch_deg": 30, "altitude_m": 8.0, "range_m": 12.4, "detections": 0},
+      {"pitch_deg": 25, "altitude_m": 8.0, "range_m": 12.4, "detections": 0},
+      {"pitch_deg": 35, "altitude_m": 7.86, "range_m": 7.37, "detections": 0},
+      {"pitch_deg": 30, "altitude_m": 7.86, "range_m": 7.37, "detections": 0},
+      {"pitch_deg": 25, "altitude_m": 7.86, "range_m": 7.37, "detections": 0},
+      {"pitch_deg": 20, "altitude_m": 1.5, "range_m": 1.0, "detections": 0},
+      {"pitch_deg": 20, "altitude_m": 2.0, "range_m": 1.0, "detections": 0},
+      {"pitch_deg": 20, "altitude_m": 2.5, "range_m": 1.0, "detections": 0},
+      {"pitch_deg": 25, "altitude_m": 2.0, "range_m": 1.0, "detections": 0},
+      {"pitch_deg": 35, "altitude_m": 2.0, "range_m": 0.5, "detections": 0},
+      {"pitch_deg": 25, "altitude_m": 2.0, "range_m": 0.5, "detections": 0},
+      {"pitch_deg": 20, "altitude_m": 2.0, "range_m": 0.5, "detections": 0},
+      {"pitch_deg": 20, "altitude_m": 2.0, "range_m": 0.1, "detections": 0},
+      {"pitch_deg": 15, "altitude_m": 2.0, "range_m": 0.1, "detections": 0}
+    ],
+    "limitation": "These static poses do not reproduce the exact vehicle attitude and survivor relative azimuth of the live run; zero detections prevent qualification of a corrected pitch but do not restore the invalid empirical-band impossibility proof."
+  },
+  "delivery_pitch_search_footprint": {
+    "candidate_pitch_deg": 20,
+    "search_altitude_m": 8.0,
+    "near_edge_forward_m": -0.9206868259981964,
+    "far_edge_forward_m": 8.449432912401237,
+    "maximum_cross_track_width_m": 16.651867555211776,
+    "route_feasibility": "YES_GEOMETRICALLY_WITH_REDUCED_LEG_SPACING",
+    "detector_validation": "INDETERMINATE"
+  },
+  "primary_forensic_classification": "PREVIOUS_GEOMETRY_CONCLUSION_OVERCONSERVATIVE_DETECTOR_BAND",
+  "confidence": "HIGH",
+  "fixed_camera_solution_exists": "NOT_PROVEN",
+  "final_architecture_classification": "INDETERMINATE_NEED_REPRESENTATIVE_STATIC_PIXEL_VALIDATION",
+  "source_files": [
+    "rescue_core/vision/preprocess.py",
+    "rescue_core/vision/models.py",
+    "rescue_core/vision/detectors.py",
+    "rescue_core/simulation/perception/camera_source.py",
+    "rescue_core/simulation/evaluator/perception.py",
+    "rescue_core/geolocation/camera_models.py",
+    "simulation/profiles/ov9281_phase2_oblique_simulation.yaml",
+    "data/simulation_runs/phase4_alignment_qualification_1_retry24/perception_evaluation.json",
+    "data/simulation_runs/phase4_alignment_qualification_1_retry25/perception_detections.jsonl",
+    "data/simulation_runs/phase4_alignment_qualification_1_retry25/perception_evaluation.json",
+    "data/simulation_runs/phase4_alignment_qualification_1_retry25/vision_events.jsonl"
+  ]
+}

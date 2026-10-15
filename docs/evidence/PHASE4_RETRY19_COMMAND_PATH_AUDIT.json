@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "run_id": "phase4_alignment_qualification_1_retry19",
+  "audit_type": "ZERO_RERUN_FORENSIC",
+  "command_count_semantics": {
+    "definition": "The length of Phase4TargetServiceController._command_times, which is appended by _send_goto() and _send_velocity(). It is not a PrecisionAlignmentController call counter and excludes direct navigator.hold(), face_local(), and resume commands.",
+    "source_file": "ground/backend/app/sitl/phase4_service.py",
+    "increment_logic": [
+      "_send_goto(): navigator.goto_local(point), then append time.monotonic()",
+      "_send_velocity(): navigator.set_velocity_local(east,north,down), then append time.monotonic()"
+    ],
+    "serialization_logic": "scripts/run_stage13sim_phase2.py serializes dataclasses.asdict(result)",
+    "assignment_defect": "result.command_count is assigned only at the successful post-release path. ALIGNMENT_ABORTED returns before that assignment, leaving the dataclass default 0."
+  },
+  "controller_called": true,
+  "controller_command_samples": {
+    "count": 712,
+    "first": {
+      "ap_sim_source_time_ns": 89123002000,
+      "error_m": 6.598123,
+      "command_enu_mps": [-0.037322, 0.799129],
+      "command_magnitude_mps": 0.8
+    },
+    "last": {
+      "ap_sim_source_time_ns": 170522794000,
+      "error_m": 3.1751,
+      "command_enu_mps": [0.045196, -0.798722],
+      "command_magnitude_mps": 0.8
+    },
+    "minimum_command_magnitude_mps": 0.022901,
+    "maximum_command_magnitude_mps": 0.8,
+    "observed_sim_domain_frequency_hz": 8.7347,
+    "representative_runtime_logged": [
+      {"elapsed_s": 0.0, "error_m": 6.598, "actual_speed_mps": 0.701, "command_enu_mps": [-0.037, 0.799]},
+      {"elapsed_s": 8.0, "error_m": 1.244, "actual_speed_mps": 0.560, "command_enu_mps": [0.045, 0.254]},
+      {"elapsed_s": 24.0, "error_m": 2.186, "actual_speed_mps": 0.953, "command_enu_mps": [-0.759, 0.096]},
+      {"elapsed_s": 51.6, "error_m": 0.588, "actual_speed_mps": 2.431, "command_enu_mps": [-0.023, -0.800]},
+      {"elapsed_s": 81.4, "error_m": 3.175, "actual_speed_mps": 0.576, "command_enu_mps": [0.045, -0.799]}
+    ]
+  },
+  "runtime_commands_directly_logged": true,
+  "runtime_command_log_source": "ALIGNMENT_EVIDENCE.jsonl command_enu_mps, written immediately after _send_velocity() returns",
+  "computed_command_count": 712,
+  "alignment_setpoint_send_calls": 712,
+  "setpoint_send_count": 712,
+  "outbound_mavlink_observable": false,
+  "outbound_mavlink_message_count": null,
+  "outbound_mavlink_count_status": "OUTBOUND_SETPOINT_COUNT_NOT_DIRECTLY_OBSERVABLE",
+  "mavlink_message_type": "SET_POSITION_TARGET_LOCAL_NED",
+  "mavlink_dispatch": {
+    "call": "master.mav.set_position_target_local_ned_send",
+    "target_system_component": "heartbeat-derived master.target_system/master.target_component; numeric values were not persisted in retry19",
+    "coordinate_frame": "MAV_FRAME_LOCAL_NED",
+    "type_mask": 2503,
+    "type_mask_semantics": "ignore x/y/z, acceleration x/y/z, and yaw rate; accept vx/vy/vz and commanded yaw",
+    "field_mapping": {
+      "vx_north_mps": "controller velocity_north_m_s",
+      "vy_east_mps": "controller velocity_east_m_s",
+      "vz_down_mps": "alignment descent command",
+      "x_y_z": [0, 0, 0],
+      "afx_afy_afz": [0, 0, 0],
+      "yaw_rate": 0
+    }
+  },
+  "flight_mode_during_alignment": "GUIDED",
+  "flight_mode_samples": 712,
+  "mode_accepts_command": true,
+  "pinned_ardupilot_handler": "GCS_MAVLINK_Copter::handle_message_set_position_target_local_ned accepts MAV_FRAME_LOCAL_NED when flightmode->in_guided_mode(), then dispatches velocity-only input to mode_guided.set_vel_accel_NED_m",
+  "vehicle_response_classification": "PARTIALLY_FOLLOWING",
+  "vehicle_response_method": "0.5 s subsequent ENU velocity derived from source-time EKF position displacement; direct component telemetry was not retained during the blocking target-service interval, while scalar speed was directly logged from GLOBAL_POSITION_INT",
+  "vehicle_response_summary": {
+    "sampled_every_fifth_command": 143,
+    "positive_command_velocity_dot_products": 101,
+    "negative_command_velocity_dot_products": 15,
+    "near_zero_dot_products": 27,
+    "mean_dot_product_m2_s2": 0.1196,
+    "minimum_alignment_error_m": 0.3729,
+    "speed_at_minimum_error_mps": 1.2181,
+    "position_and_speed_gate_overlap_samples": 0,
+    "error_slope_reversals": 131,
+    "interpretation": "The vehicle usually accelerated/moved in the commanded direction, but inertia and command reversals produced a control limit cycle and never satisfied position and speed gates together."
+  },
+  "vehicle_response_samples": [
+    {"elapsed_s": 0.0, "source_time_ns": 89123002000, "error_m": 6.598, "command_enu_mps": [-0.037, 0.799], "command_magnitude_mps": 0.800, "actual_enu_after_0_5s_mps": [0.152, -0.435], "actual_speed_at_command_mps": 0.701, "dot_command_actual": -0.353},
+    {"elapsed_s": 8.0, "source_time_ns": 97123313000, "error_m": 1.244, "command_enu_mps": [0.045, 0.254], "command_magnitude_mps": 0.258, "actual_enu_after_0_5s_mps": [0.143, 0.426], "actual_speed_at_command_mps": 0.560, "dot_command_actual": 0.115},
+    {"elapsed_s": 15.72, "source_time_ns": 104842718000, "error_m": 0.513, "command_enu_mps": [0.094, 0.119], "command_magnitude_mps": 0.152, "actual_enu_after_0_5s_mps": [0.783, -0.078], "actual_speed_at_command_mps": 0.045, "dot_command_actual": 0.065},
+    {"elapsed_s": 24.0, "source_time_ns": 113122935000, "error_m": 2.186, "command_enu_mps": [-0.759, 0.096], "command_magnitude_mps": 0.765, "actual_enu_after_0_5s_mps": [-0.961, 0.192], "actual_speed_at_command_mps": 0.953, "dot_command_actual": 0.747},
+    {"elapsed_s": 32.0, "source_time_ns": 121123246000, "error_m": 0.681, "command_enu_mps": [-0.228, -0.046], "command_magnitude_mps": 0.232, "actual_enu_after_0_5s_mps": [0.041, -0.021], "actual_speed_at_command_mps": 0.170, "dot_command_actual": -0.008},
+    {"elapsed_s": 32.8, "source_time_ns": 121922977000, "error_m": 0.559, "command_enu_mps": [-0.109, -0.051], "command_magnitude_mps": 0.120, "actual_enu_after_0_5s_mps": [-0.085, -0.178], "actual_speed_at_command_mps": 0.214, "dot_command_actual": 0.018},
+    {"elapsed_s": 51.6, "source_time_ns": 140722801000, "error_m": 0.588, "command_enu_mps": [-0.023, -0.800], "command_magnitude_mps": 0.800, "actual_enu_after_0_5s_mps": [0.190, 2.491], "actual_speed_at_command_mps": 2.431, "dot_command_actual": -1.996},
+    {"elapsed_s": 55.96, "source_time_ns": 145083069000, "error_m": 0.949, "command_enu_mps": [0.169, 0.225], "command_magnitude_mps": 0.282, "actual_enu_after_0_5s_mps": [0.020, -0.021], "actual_speed_at_command_mps": 0.117, "dot_command_actual": -0.001},
+    {"elapsed_s": 62.44, "source_time_ns": 151562980000, "error_m": 0.539, "command_enu_mps": [0.288, 0.130], "command_magnitude_mps": 0.316, "actual_enu_after_0_5s_mps": [0.685, -0.048], "actual_speed_at_command_mps": 0.209, "dot_command_actual": 0.191},
+    {"elapsed_s": 72.0, "source_time_ns": 161123374000, "error_m": 1.293, "command_enu_mps": [-0.306, -0.008], "command_magnitude_mps": 0.306, "actual_enu_after_0_5s_mps": [-0.347, 0.149], "actual_speed_at_command_mps": 0.509, "dot_command_actual": 0.105},
+    {"elapsed_s": 81.0, "source_time_ns": 170122861000, "error_m": 3.387, "command_enu_mps": [0.075, -0.796], "command_magnitude_mps": 0.800, "actual_enu_after_0_5s_mps": [0.345, -0.692], "actual_speed_at_command_mps": 0.624, "dot_command_actual": 0.577}
+  ],
+  "retry19_cmd_column_source": "RUNTIME_LOGGED",
+  "retry19_cmd_column_derivation": "Euclidean magnitude of ALIGNMENT_EVIDENCE.jsonl command_enu_mps; not recomputed from the controller law",
+  "command_count_zero_explanation": "Instrumentation is incomplete on failure paths: ALIGNMENT_ABORTED returns before result.command_count is populated. Zero therefore does not mean no controller calls or no velocity dispatch.",
+  "primary_root_cause": "COMMANDS_FLOW_CORRECTLY_AND_RETRY19_IS_TRUE_CONTROL_LIMIT_CYCLE",
+  "confidence": "HIGH",
+  "production_code_change_required": true,
+  "smallest_fix": "Return to control-law tuning; the controller-to-MAVLink dispatch wiring is already intact.",
+  "successful_alignment_trials": "0 / 3",
+  "ready_for_retry20": false,
+  "multi_target": "NOT_AUTHORIZED",
+  "phase4": "NOT_CLOSED"
+}

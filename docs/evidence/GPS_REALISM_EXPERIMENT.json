@@ -1,0 +1,165 @@
+{
+  "classification": "SIMULATION_EVALUATOR_ONLY",
+  "model": "ArduPilot SITL GPS sensor backend (HNSE/NOISE/HZ/LAG_MS/DRFTALT/ACC) before EKF3",
+  "controls_held_constant": [
+    "route",
+    "survivor",
+    "camera",
+    "detector",
+    "wind seed",
+    "IMU",
+    "compass",
+    "barometer"
+  ],
+  "profiles": {
+    "IDEAL_CONTROL": {
+      "profile_id": "IDEAL_CONTROL",
+      "isolation_component": "GPS",
+      "ekf_horizontal_position_error_m": {
+        "count": 1118,
+        "unit": "m",
+        "p50": 0.0849237001064902,
+        "p95": 0.20889404733502492,
+        "maximum": 0.24969626719230953
+      },
+      "ekf_altitude_error_m": {
+        "count": 1118,
+        "unit": "m",
+        "p50": 0.0926645955123222,
+        "p95": 0.134501513801297,
+        "maximum": 0.15870725719469414
+      },
+      "ekf_attitude_error_deg": {
+        "count": 1118,
+        "unit": "deg",
+        "p50": 0.5434503001320077,
+        "p95": 1.6950705961619572,
+        "maximum": 3.0373670146419056
+      },
+      "ekf_heading_error_deg": {
+        "count": 1118,
+        "unit": "deg",
+        "p50": 0.459000174243954,
+        "p95": 1.5869031191723382,
+        "maximum": 3.0529203589009626
+      },
+      "target_best_geolocation_error_m": 0.717369711742607,
+      "target_geolocated_observations": 27,
+      "measurement_horizontal_error_m": {
+        "count": 1118,
+        "unit": "m",
+        "p50": 0.7949205625060927,
+        "p95": 1.1351776159990818,
+        "maximum": 1.4383371850178297
+      },
+      "measurement_vertical_error_m": {
+        "count": 1118,
+        "unit": "m",
+        "p50": 0.008179331140361512,
+        "p95": 0.543071145834948,
+        "maximum": 0.9268209714222904
+      },
+      "measured_update_rate_hz": 5.001675561313003
+    },
+    "REFERENCE_NOMINAL_GPS_ONLY": {
+      "profile_id": "REFERENCE_NOMINAL",
+      "isolation_component": "GPS",
+      "ekf_horizontal_position_error_m": {
+        "count": 788,
+        "unit": "m",
+        "p50": 0.5299108638145218,
+        "p95": 0.7466851830783947,
+        "maximum": 0.8951383354367892
+      },
+      "ekf_altitude_error_m": {
+        "count": 788,
+        "unit": "m",
+        "p50": 0.1356162110285304,
+        "p95": 0.17879662984640815,
+        "maximum": 0.25108756229705964
+      },
+      "ekf_attitude_error_deg": {
+        "count": 788,
+        "unit": "deg",
+        "p50": 0.9337222605752218,
+        "p95": 2.062246481837908,
+        "maximum": 3.6907833016531053
+      },
+      "ekf_heading_error_deg": {
+        "count": 788,
+        "unit": "deg",
+        "p50": 0.6447292100737343,
+        "p95": 2.007297962708337,
+        "maximum": 3.5991994567366135
+      },
+      "target_best_geolocation_error_m": 1.6450590531006308,
+      "target_geolocated_observations": 19,
+      "measurement_horizontal_error_m": {
+        "count": 788,
+        "unit": "m",
+        "p50": 0.9019450011005089,
+        "p95": 1.8654930956211542,
+        "maximum": 2.1088129718384696
+      },
+      "measurement_vertical_error_m": {
+        "count": 788,
+        "unit": "m",
+        "p50": 0.7933493853928444,
+        "p95": 1.2092487204322184,
+        "maximum": 1.2332827237539359
+      },
+      "measured_update_rate_hz": 5.000000000000018
+    },
+    "REFERENCE_CHALLENGING_GPS_ONLY": {
+      "profile_id": "REFERENCE_CHALLENGING",
+      "isolation_component": "GPS",
+      "ekf_horizontal_position_error_m": {
+        "count": 784,
+        "unit": "m",
+        "p50": 0.7215953504274548,
+        "p95": 1.417513636867871,
+        "maximum": 1.6293048800401932
+      },
+      "ekf_altitude_error_m": {
+        "count": 784,
+        "unit": "m",
+        "p50": 0.09430349507549263,
+        "p95": 0.17340150213698874,
+        "maximum": 0.28604324340022247
+      },
+      "ekf_attitude_error_deg": {
+        "count": 784,
+        "unit": "deg",
+        "p50": 0.6150411363072896,
+        "p95": 1.892399633868983,
+        "maximum": 2.9187634507497426
+      },
+      "ekf_heading_error_deg": {
+        "count": 784,
+        "unit": "deg",
+        "p50": 0.3611681647489604,
+        "p95": 1.697949505936982,
+        "maximum": 2.9242561302065155
+      },
+      "target_best_geolocation_error_m": 2.5864436811419873,
+      "target_geolocated_observations": 19,
+      "measurement_horizontal_error_m": {
+        "count": 784,
+        "unit": "m",
+        "p50": 1.922542882877166,
+        "p95": 3.073155782365555,
+        "maximum": 3.4750640179057144
+      },
+      "measurement_vertical_error_m": {
+        "count": 784,
+        "unit": "m",
+        "p50": 1.734515347074783,
+        "p95": 2.8892074701390262,
+        "maximum": 2.934235390767398
+      },
+      "measured_update_rate_hz": 5.001675561313003
+    }
+  },
+  "truth_fed_to_ekf_directly": false,
+  "passed": true
+}

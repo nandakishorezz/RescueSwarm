@@ -1,0 +1,49 @@
+# Stage 13SIM Phase-4 engineering references; not physical-flight approval.
+execution_source: sitl
+engineering_defaults_only: true
+
+target:
+  max_geolocation_uncertainty_m: 8.0
+  priority_policy: FIRST_CONFIRMED
+  minimum_battery_percent: 25.0
+
+guided:
+  approach_altitude_m: 8.0
+  arrival_radius_m: 1.0
+  arrival_altitude_tolerance_m: 1.0
+  arrival_speed_m_s: 1.0
+  arrival_dwell_s: 0.75
+  max_approach_time_s: 90.0
+  setpoint_rate_hz: 5.0
+
+reacquisition:
+  timeout_s: 90.0
+  search_radius_m: 5.0
+  standoff_m: 2.0
+  search_pattern: CROSS
+
+alignment:
+  kp: 0.35
+  max_horizontal_speed_m_s: 0.8
+  deadband_m: 0.1
+  alignment_radius_m: 0.5
+  stable_dwell_s: 2.0
+  observation_stale_s: 0.75
+  target_pixel_y_ratio: 0.5
+
+delivery:
+  delivery_altitude_m: 2.0
+  visual_standoff_m: 0.01
+  max_descent_rate_m_s: 0.6
+  max_horizontal_speed_at_drop_m_s: 0.5
+  verification_latency_s: 0.0
+  payload_slots: 1
+
+resume:
+  policy: REPLAY_FROM_LAST_REACHED
+
+safety:
+  operational_boundary_margin_m: 1.0
+  guided_command_timeout_s: 1.0
+  maximum_mission_duration_s: 900.0
+  delivery_time_reserve_s: 90.0

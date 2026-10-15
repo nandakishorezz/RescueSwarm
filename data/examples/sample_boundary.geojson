@@ -1,0 +1,17 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Stage 2 simulated demonstration boundary"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [[
+      [77.5900, 12.9700],
+      [77.5910, 12.9700],
+      [77.5910, 12.9710],
+      [77.5900, 12.9710],
+      [77.5900, 12.9700]
+    ]]
+  }
+}
+

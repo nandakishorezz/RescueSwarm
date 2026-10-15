@@ -1,0 +1,10 @@
+{
+  "successful_alignment_trials": 0,
+  "runs": [
+    {
+      "run_id": "phase4_alignment_qualification_1_retry1",
+      "result": "INFRASTRUCTURE_FAILURE",
+      "first_failed_predicate": "heartbeat == false (MAVLINK_STALL)"
+    }
+  ]
+}

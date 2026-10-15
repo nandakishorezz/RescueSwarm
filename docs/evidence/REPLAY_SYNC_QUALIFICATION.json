@@ -1,0 +1,164 @@
+{
+  "frame_id": "drone_01_gazebo_camera:000000000425",
+  "camera_frame_artifact": "perception_evidence\\drone_01_gazebo_camera_000000000425_AUTONOMY_INPUT_MONO8.png",
+  "capture_sim_time_ns": 72040000000,
+  "ap_source_time_ns": 72029918123,
+  "ekf_position_ned_m": [
+    -10.556095658817423,
+    18.217947935215697,
+    -7.919965206736466
+  ],
+  "ekf_quaternion_body_to_ned": [
+    0.9833165665425785,
+    -0.12775854264355221,
+    -0.12942854438603732,
+    -0.0038126949290673406
+  ],
+  "camera_world_pose": {
+    "origin_enu_m": [
+      18.23812722530427,
+      -10.576380799222319,
+      7.845257045667712
+    ],
+    "world_ray_enu": [
+      -0.0654953243922356,
+      0.6491314561806865,
+      -0.7578513806014326
+    ]
+  },
+  "yolo_bbox": [
+    414.898681640625,
+    2.2015914916992188,
+    462.693115234375,
+    72.38312530517578
+  ],
+  "camera_ray": [
+    -0.22668587350434408,
+    -0.36910836726601315,
+    0.9013171073311492
+  ],
+  "stage5_observation_enu_m": [
+    17.560121394215457,
+    -3.8565894779680514,
+    0.0
+  ],
+  "confirmed_fused_target": {
+    "assigned_vehicle_id": "drone_01",
+    "camera_calibration_ids": [
+      "ov9281_phase2_oblique_simulation_intrinsics"
+    ],
+    "delivery_state": "PENDING",
+    "detection_confidence": 0.48639121651649475,
+    "east_m": 17.575707546853657,
+    "evidence_references": [
+      "drone_01_gazebo_camera:000000000425",
+      "drone_01_gazebo_camera:000000000427",
+      "drone_01_gazebo_camera:000000000429",
+      "drone_01_gazebo_camera:000000000430",
+      "drone_01_gazebo_camera:000000000433",
+      "drone_01_gazebo_camera:000000000434",
+      "drone_01_gazebo_camera:000000000435",
+      "drone_01_gazebo_camera:000000000437",
+      "drone_01_gazebo_camera:000000000438",
+      "drone_01_gazebo_camera:000000000439",
+      "drone_01_gazebo_camera:000000000441",
+      "drone_01_gazebo_camera:000000000443",
+      "drone_01_gazebo_camera:000000000444",
+      "drone_01_gazebo_camera:000000000445",
+      "drone_01_gazebo_camera:000000000446",
+      "drone_01_gazebo_camera:000000000448",
+      "drone_01_gazebo_camera:000000000450",
+      "drone_01_gazebo_camera:000000000451",
+      "drone_01_gazebo_camera:000000000455",
+      "drone_01_gazebo_camera:000000000456",
+      "drone_01_gazebo_camera:000000000457",
+      "drone_01_gazebo_camera:000000000459",
+      "drone_01_gazebo_camera:000000000463",
+      "drone_01_gazebo_camera:000000000464",
+      "drone_01_gazebo_camera:000000000468",
+      "drone_01_gazebo_camera:000000000472",
+      "drone_01_gazebo_camera:000000000475",
+      "drone_01_gazebo_camera:000000000476",
+      "drone_01_gazebo_camera:000000000483"
+    ],
+    "extrinsics_ids": [
+      "ov9281_phase2_oblique_simulation_extrinsics"
+    ],
+    "first_seen_at": "2026-09-08T20:30:24.616702Z",
+    "inlier_count": 29,
+    "inlier_observation_ids": [
+      "1e5fc88c-f1b5-511b-bcbc-1df156cdfc80",
+      "8f948354-1ecb-59ed-b339-45bd32d6ad06",
+      "17c57f71-c5ad-526e-9fdf-91ebdcf1a0f1",
+      "91b9fae2-d0fa-594c-80a4-2d22edfc6b9a",
+      "47a503c6-1650-5b32-8c4f-9aa06cfc4890",
+      "3121280a-ad42-5d4f-9e39-664df888128a",
+      "c6c560ec-46c6-548f-966a-312b20330c08",
+      "918f3080-46ae-5259-82b4-fcbdcc6a2aa7",
+      "fba9feb6-9d31-5311-ace0-faae575e6d21",
+      "1002e78c-cd95-5360-ac19-adf6e9e7496e",
+      "7c81c4d5-4084-5602-96c0-e0cc6787255e",
+      "b99da7bc-5086-5a48-b796-e1414e6c2632",
+      "2fb68c69-b721-5a94-a0eb-07f19659226d",
+      "cae86053-43de-5292-96b6-cdb1a1a9f71a",
+      "f018806c-3426-5d63-b648-d7250a4f088c",
+      "87ac2196-d1a4-5e1a-b4d8-2aded3708447",
+      "90d1f17f-1cf8-56e9-8091-2b1bd10bcf25",
+      "816b10b8-13a0-550d-8795-9686b1bec029",
+      "81f5bc19-2b04-5dfc-81c8-5a52f3256150",
+      "f5e8cb12-eef6-5200-84d2-733a7772f6d6",
+      "3116bd25-1ec1-56d3-b85a-fc435ef476e2",
+      "189bfcb3-ddb5-5b31-b205-3afea2475207",
+      "37983a6b-faf7-5c05-84d4-97b2d259fe27",
+      "38ec39dd-ed23-5088-942a-5ac6171b4228",
+      "3dc5b132-bb00-5595-8785-14dcd4bffc4b",
+      "8d05da6e-3489-5445-a968-bf5f55515067",
+      "2ca37f1a-8578-52e1-a405-6085f9becad0",
+      "4cba8826-d5ba-5e71-8b6c-09ac6bfe333a",
+      "4f234bc6-7cb3-54e9-92aa-adc7b3bd4bf0"
+    ],
+    "last_seen_at": "2026-09-08T20:30:36.590656Z",
+    "latitude": 17.450190889405025,
+    "longitude": 78.38054195497486,
+    "mission_id": "stage13sim_phase2_pixel_only",
+    "north_m": -3.871767464147031,
+    "observation_count": 29,
+    "outlier_count": 0,
+    "outlier_observation_ids": [],
+    "quality": "STANDARD_GNSS_LIMITED",
+    "simulated": true,
+    "state": "CONFIRMED",
+    "target_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa",
+    "uncertainty_m": 1.0
+  },
+  "latest_vehicle_pose_used": false,
+  "observer_truth": {
+    "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+    "target_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa",
+    "survivor_id": "hidden_01",
+    "estimated_enu_m": [
+      17.575707546853657,
+      -3.871767464147031
+    ],
+    "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+      17.499999999151644,
+      -2.9999999988941037
+    ],
+    "horizontal_error_m": 0.8750486536487938,
+    "reported_uncertainty_m": 1.0,
+    "estimated_wgs84": [
+      17.450190889405025,
+      78.38054195497486
+    ],
+    "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+      17.450198765559694,
+      78.38054124236027,
+      585.0
+    ],
+    "truth_inside_uncertainty": true,
+    "proof_source": "CAMERA_PIXELS",
+    "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE"
+  },
+  "truth_label": "SIMULATION_EVALUATOR_ONLY",
+  "passed": true
+}

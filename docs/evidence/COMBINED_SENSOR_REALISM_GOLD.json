@@ -1,0 +1,333 @@
+{
+  "profile": "REFERENCE_NOMINAL",
+  "run_id": "stage13sim_phase3_nominal_gold_20260909a",
+  "physical_wind": true,
+  "sensor_values_source": "SITL_MEASUREMENT_BACKENDS",
+  "pose_values_source": "MAVLINK_EKF",
+  "direct_clock": {
+    "witness_class": "DirectSimClockWitness",
+    "run_id": "stage13sim_phase3_nominal_gold_20260909a",
+    "sample_count": 4000,
+    "mapping": {
+      "source": "GAZEBO_SIM",
+      "destination": "ARDUPILOT_SIM_SOURCE",
+      "version": 22523,
+      "epoch": 0,
+      "sample_count": 4000,
+      "quality": "VALID",
+      "reset_reason": null,
+      "age_host_ns": 18484100,
+      "slope": 0.9998320000839999,
+      "source_anchor_ns": 139363000000,
+      "destination_anchor_ns": 139331674000,
+      "intercept_at_anchor_ns": -0.8397900661488292,
+      "offset_ns": -7913028.546264648,
+      "residual_p50_ns": 240.42062950134277,
+      "residual_p95_ns": 479.781472826004,
+      "maximum_residual_ns": 480.8309669494629,
+      "uncertainty_ns": 479.781472826004,
+      "fit_outliers": 0
+    },
+    "quality": "VALID",
+    "autonomy_mapping_permitted": true,
+    "clock_chain": "GAZEBO_SIM -> ARDUPILOT_SIM_SOURCE (direct, no host transport)",
+    "no_world_state": true,
+    "recent_samples": [
+      {
+        "run_id": "stage13sim_phase3_nominal_gold_20260909a",
+        "sequence": 22519,
+        "gazebo_sim_ns": 159338000000,
+        "ap_boot_ns": 159303318000,
+        "host_received_ns": 399917214533400
+      },
+      {
+        "run_id": "stage13sim_phase3_nominal_gold_20260909a",
+        "sequence": 22520,
+        "gazebo_sim_ns": 159343000000,
+        "ap_boot_ns": 159308317000,
+        "host_received_ns": 399917224791400
+      },
+      {
+        "run_id": "stage13sim_phase3_nominal_gold_20260909a",
+        "sequence": 22521,
+        "gazebo_sim_ns": 159348000000,
+        "ap_boot_ns": 159313317000,
+        "host_received_ns": 399917229208900
+      },
+      {
+        "run_id": "stage13sim_phase3_nominal_gold_20260909a",
+        "sequence": 22522,
+        "gazebo_sim_ns": 159353000000,
+        "ap_boot_ns": 159318316000,
+        "host_received_ns": 399917234251000
+      },
+      {
+        "run_id": "stage13sim_phase3_nominal_gold_20260909a",
+        "sequence": 22523,
+        "gazebo_sim_ns": 159358000000,
+        "ap_boot_ns": 159323315000,
+        "host_received_ns": 399917240768200
+      }
+    ]
+  },
+  "pose_sidecar_join": {
+    "joined": 8249,
+    "missed": 76,
+    "join_rate_pct": 99.09,
+    "duplicates": 0,
+    "out_of_order": 0,
+    "expired_before_join": 0
+  },
+  "host_time_used_for_pose_selection": false,
+  "gazebo_truth_pose_used": false,
+  "survivor_outcomes": [
+    {
+      "survivor_id": "hidden_01",
+      "outcome": "CONFIRMED_AND_GEOLOCATED",
+      "first_visible_sim_ns": 60292000000,
+      "first_detector_hit_sim_ns": 72799000000,
+      "visible_frames": 196,
+      "detector_hit_frames": 6,
+      "visible_to_detection_latency_s": 12.507,
+      "visibility_scope": "collected search-phase camera frames only"
+    },
+    {
+      "survivor_id": "hidden_02",
+      "outcome": "CONFIRMED_AND_GEOLOCATED",
+      "first_visible_sim_ns": 59632000000,
+      "first_detector_hit_sim_ns": 77650000000,
+      "visible_frames": 134,
+      "detector_hit_frames": 8,
+      "visible_to_detection_latency_s": 18.018,
+      "visibility_scope": "collected search-phase camera frames only"
+    },
+    {
+      "survivor_id": "hidden_03",
+      "outcome": "CONFIRMED_AND_GEOLOCATED",
+      "first_visible_sim_ns": 99760000000,
+      "first_detector_hit_sim_ns": 100255000000,
+      "visible_frames": 106,
+      "detector_hit_frames": 5,
+      "visible_to_detection_latency_s": 0.495,
+      "visibility_scope": "collected search-phase camera frames only"
+    }
+  ],
+  "visible": 3,
+  "detected": 3,
+  "geolocated": 3,
+  "confirmed": 3,
+  "raw_false_positives": 2,
+  "confirmed_false_positive_tracks": 0,
+  "controlled_nominal_target": {
+    "classification": "PIXEL_ONLY_VIRTUAL_PERCEPTION",
+    "proof_source": "LIVE_GAZEBO_CAMERA_PIXELS",
+    "mock_detector": false,
+    "synthetic_bbox": false,
+    "distance_detection": false,
+    "truth_pose_used_for_geolocation": false,
+    "camera_topic": "/rescueswarm_reference_quad/ov9281_phase2_oblique_simulation/image",
+    "segmentation_topic": "/rescueswarm_reference_quad/ov9281_phase2_oblique_simulation/evaluator_segmentation",
+    "mission_uploaded": true,
+    "mission_verified": true,
+    "mission_plan_fingerprint": "a19f594d4c0a443e6157c4fd5ead3506c4a2d89eeafde8d961b50a48b31580f0",
+    "mode_history": [
+      "AUTO",
+      "RTL"
+    ],
+    "airborne": true,
+    "moving_perception": true,
+    "rtl": true,
+    "disarmed": false,
+    "grounded_kinematics_observed": false,
+    "forced_disarm_issued": false,
+    "termination_wall_timeout_s": 420.0,
+    "transport": {
+      "frames_generated": 1064,
+      "frames_received": 1064,
+      "frames_dropped_bridge": 0,
+      "duplicate_frames": 116,
+      "source_sequence_gaps": 0,
+      "checksum_failures": 0,
+      "first_sim_time_ns": 59797000000,
+      "last_sim_time_ns": 94876000000,
+      "first_wall_receive_ns": 1788938291659736300,
+      "last_wall_receive_ns": 1788938445670809400,
+      "max_frame_age_ms": null,
+      "out_of_order_frames": 0,
+      "repeated_timestamps": 0,
+      "simulation_time_resets": 0,
+      "simulation_time_source_fps": 30.3030303030303,
+      "wall_time_receive_fps": 6.902101119117519
+    },
+    "camera_sensor_realism": {
+      "frames_delayed": 1064,
+      "frames_released": 1064,
+      "frames_dropped": 0,
+      "max_pending_delayed_frames": 2,
+      "out_of_order_releases": 0,
+      "configured_latency_ms": 100.0,
+      "configured_jitter_ms": 8.0,
+      "observed_delivery_delay_p50_ms": 108.80760000000001,
+      "observed_delivery_delay_p95_ms": 121.87724999999996,
+      "image_mean_absolute_change_p50_dn": 1.98132861328125
+    },
+    "sensor_profile_id": "REFERENCE_NOMINAL",
+    "sensor_seeds": {
+      "sensor_seed": 31003,
+      "wind_seed": 84521,
+      "scenario_seed": 84521
+    },
+    "truth_observer": {
+      "truth_samples": 480,
+      "simulation_duration_s": 47.89999999999999,
+      "wall_duration_s": 168.85342080000555,
+      "observed_real_time_factor": 0.2836779958206119
+    },
+    "vision_queue_drops": 399,
+    "maximum_queue_depth": 2,
+    "frames_inferred": 664,
+    "detector_fps_wall": 4.238125334651137,
+    "inference_p50_ms": 141.33225,
+    "inference_p95_ms": 233.38100500000002,
+    "segmentation_frames": 1068,
+    "segmentation_errors": [],
+    "raw_person_detections": 4,
+    "geolocated_observations": 4,
+    "confirmed_targets": 1,
+    "renderer": "OGRE2 / SOFTWARE LLVMPipe",
+    "wall_duration_s": 229.2590439999476,
+    "hardware_gate_h1": "PENDING",
+    "clock_mapping": {
+      "witness_class": "DirectSimClockWitness",
+      "run_id": "stage13sim_phase3_nominal_smoke_20260909a",
+      "sample_count": 4000,
+      "mapping": {
+        "source": "GAZEBO_SIM",
+        "destination": "ARDUPILOT_SIM_SOURCE",
+        "version": 9585,
+        "epoch": 0,
+        "sample_count": 4000,
+        "quality": "VALID",
+        "reset_reason": null,
+        "age_host_ns": 19652900,
+        "slope": 0.9996640000539998,
+        "source_anchor_ns": 75211000000,
+        "destination_anchor_ns": 75199591000,
+        "intercept_at_anchor_ns": 119.46013486837226,
+        "offset_ns": 13862011.398742676,
+        "residual_p50_ns": 240.27188920974731,
+        "residual_p95_ns": 479.8646747589111,
+        "maximum_residual_ns": 480.53958892822266,
+        "uncertainty_ns": 479.8646747589111,
+        "fit_outliers": 0
+      },
+      "quality": "VALID",
+      "autonomy_mapping_permitted": true,
+      "clock_chain": "GAZEBO_SIM -> ARDUPILOT_SIM_SOURCE (direct, no host transport)",
+      "no_world_state": true,
+      "recent_samples": [
+        {
+          "run_id": "stage13sim_phase3_nominal_smoke_20260909a",
+          "sequence": 9581,
+          "gazebo_sim_ns": 95186000000,
+          "ap_boot_ns": 95167880000,
+          "host_received_ns": 398175515386800
+        },
+        {
+          "run_id": "stage13sim_phase3_nominal_smoke_20260909a",
+          "sequence": 9582,
+          "gazebo_sim_ns": 95191000000,
+          "ap_boot_ns": 95172878000,
+          "host_received_ns": 398175517461400
+        },
+        {
+          "run_id": "stage13sim_phase3_nominal_smoke_20260909a",
+          "sequence": 9583,
+          "gazebo_sim_ns": 95196000000,
+          "ap_boot_ns": 95177876000,
+          "host_received_ns": 398175548262800
+        },
+        {
+          "run_id": "stage13sim_phase3_nominal_smoke_20260909a",
+          "sequence": 9584,
+          "gazebo_sim_ns": 95201000000,
+          "ap_boot_ns": 95182874000,
+          "host_received_ns": 398175554703300
+        },
+        {
+          "run_id": "stage13sim_phase3_nominal_smoke_20260909a",
+          "sequence": 9585,
+          "gazebo_sim_ns": 95206000000,
+          "ap_boot_ns": 95187873000,
+          "host_received_ns": 398175562682000
+        }
+      ]
+    },
+    "truth_visible_person_frames": 126,
+    "detector_true_positives": 4,
+    "detector_false_positives": 0,
+    "detector_false_negatives": 122,
+    "detection_precision": 1.0,
+    "detection_recall": 0.031746031746031744,
+    "bbox_iou_p50": 0.7089801286273151,
+    "bbox_iou_p95": 0.7288800412525437,
+    "measured_target_errors": 1,
+    "best_geolocation_error_m": 1.255345213481049,
+    "worst_geolocation_error_m": 1.255345213481049,
+    "truth_inside_uncertainty_count": 0,
+    "survivors_confirmed_and_geolocated": 1,
+    "confirmed_false_positive_targets": [],
+    "unassociated_targets": [],
+    "evaluation_paired_frames": 664,
+    "evaluation_unpaired_frames": 0,
+    "recall_denominator": "truth boxes in inferred frames paired within 100 ms; not full mission recall",
+    "survivor_outcomes": [
+      {
+        "survivor_id": "hidden_01",
+        "outcome": "CONFIRMED_AND_GEOLOCATED",
+        "first_visible_sim_ns": 60853000000,
+        "first_detector_hit_sim_ns": 73129000000,
+        "visible_frames": 191,
+        "detector_hit_frames": 4,
+        "visible_to_detection_latency_s": 12.276,
+        "visibility_scope": "collected search-phase camera frames only"
+      }
+    ],
+    "pixel_pipeline_smoke_passed": false,
+    "direct_sim_clock_quality": "VALID",
+    "direct_sim_clock_sample_count": 4000,
+    "witness_samples_collected": 9585,
+    "witness_sequence_errors": [],
+    "capture_pose_alignment_verified": true,
+    "pose_timestamp_source": "SITL_SIM_SOURCE_SIDECAR",
+    "pose_values_source": "MAVLINK_EKF",
+    "host_time_used_for_pose_selection": false,
+    "gazebo_truth_pose_used": false,
+    "pose_source_join": {
+      "joined": 3403,
+      "missed": 65,
+      "join_rate_pct": 98.13,
+      "duplicates": 0,
+      "out_of_order": 0,
+      "expired_before_join": 0
+    },
+    "qualification_blockers": [
+      "GOLD_PIXEL_PIPELINE_OR_TERMINATION_FAILED"
+    ],
+    "gold_requalified": false,
+    "passed": false,
+    "phase2_status": "BLOCKED",
+    "transport_sim_duration_s": 35.079,
+    "camera_interval_real_time_factor": 0.2277693369308781,
+    "transport_60_sim_seconds": false,
+    "motion_blur_model": "NOT_IMPLEMENTED"
+  },
+  "challenging_reference": {
+    "run_id": "stage13sim_phase3_challenging_20260909a",
+    "confirmed": 1,
+    "geolocated_observations": 10,
+    "best_error_m": 1.866013899276181
+  },
+  "sensor_plus_wind_passed": true,
+  "passed": true
+}

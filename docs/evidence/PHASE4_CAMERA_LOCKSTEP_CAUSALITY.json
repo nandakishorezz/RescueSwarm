@@ -1,0 +1,22 @@
+{
+  "run_id": "phase4_alignment_qualification_1_retry1",
+  "last_camera_frame_host_time": 246193908682500,
+  "last_detector_frame_host_time": 246193610927200,
+  "camera_error_host_time": 246213000000000,
+  "last_pose_host_time": 246176739056400,
+  "last_source_progress_host_time": 246176739056400,
+  "last_mavlink_host_time": 246176739056400,
+  "mavlink_stall_host_time": 246186739056400,
+  "first_gazebo_fdm_failure_host_time": 246176739056400,
+  "port_55751_listener_ever_ready": "UNKNOWN",
+  "port_55751_connection_ever_established": false,
+  "bridge_producer": "python3 image_bridge.py",
+  "bridge_consumer": "GazeboCameraSource",
+  "bridge_blocking_semantics": "Gazebo image publisher is non-blocking (gz-transport). Bridge is a separate Python process.",
+  "phase4_service_creates_additional_bridge_client": true,
+  "first_failure_component": "gz-transport Node initialization (deadlocked Gazebo)",
+  "causal_classification": "COMMON_UPSTREAM_FAILURE",
+  "root_cause_confidence": "HIGH",
+  "production_code_change_required": true,
+  "smallest_fix": "Staggered gz-transport Node initialization by sleeping 2.0s in collect_segmentation thread before start() to prevent concurrent discovery deadlock."
+}

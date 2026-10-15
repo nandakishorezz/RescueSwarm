@@ -1,0 +1,20 @@
+[Unit]
+Description=RescueSwarm read-only Pixhawk telemetry and geolocation health
+After=multi-user.target
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=rescueswarm
+Group=rescueswarm
+WorkingDirectory=/opt/rescueswarm
+EnvironmentFile=/etc/rescueswarm/bench.env
+ExecStart=/opt/rescueswarm/.venv/bin/python /opt/rescueswarm/scripts/run_stage6_readonly_agent.py
+Restart=on-failure
+RestartSec=10
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

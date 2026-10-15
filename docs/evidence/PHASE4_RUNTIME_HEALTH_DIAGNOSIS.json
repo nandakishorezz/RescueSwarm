@@ -1,0 +1,30 @@
+{
+  "logical_cpu_count": 16,
+  "process_cpu": {
+    "gazebo_avg": 12.0,
+    "gazebo_peak": 17.4,
+    "perception_avg": 0,
+    "perception_peak": 0,
+    "runner_avg": 40.0,
+    "runner_peak": 98.8,
+    "ardupilot_avg": 0,
+    "ardupilot_peak": 0
+  },
+  "system_cpu_avg": 35.0,
+  "system_cpu_peak": 61.3,
+  "camera_fps": 30.0,
+  "detector_fps": 18.0,
+  "detector_latency_avg_ms": 109.1,
+  "detector_latency_peak_ms": 124.5,
+  "detector_queue_peak": 2,
+  "observation_age_peak_s": 1.945,
+  "simulation_continued_after_alignment_log": true,
+  "simulation_continued_after_alignment_abort": false,
+  "ardupilot_exit_classification": "CRASH_OR_WSL_KILLED_PROCESS",
+  "ardupilot_exit_time": "181.547s sim time",
+  "mavlink_post_service_block_function": "adapter.router.latest() polling loop in run_stage13sim_phase4.py",
+  "busy_loop_found": "YES (while time.monotonic() < wall_deadline in run_stage13sim_phase4.py)",
+  "resource_starvation_proven": false,
+  "root_cause": "The main script polls for max_sim_time_s using a sim clock. When ArduPilot crashed at 181.5s, the sim clock froze. The script continued polling the frozen clock until the 20-minute wall timeout. CPU starvation was not the cause, as 484% CPU means ~5 cores out of 16.",
+  "runtime_fix_required": true
+}

@@ -1,0 +1,117 @@
+{
+  "targets": [
+    {
+      "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+      "target_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa",
+      "survivor_id": "hidden_01",
+      "estimated_enu_m": [
+        17.575707546853657,
+        -3.871767464147031
+      ],
+      "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+        17.499999999151644,
+        -2.9999999988941037
+      ],
+      "horizontal_error_m": 0.8750486536487938,
+      "reported_uncertainty_m": 1.0,
+      "estimated_wgs84": [
+        17.450190889405025,
+        78.38054195497486
+      ],
+      "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+        17.450198765559694,
+        78.38054124236027,
+        585.0
+      ],
+      "truth_inside_uncertainty": true,
+      "proof_source": "CAMERA_PIXELS",
+      "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE",
+      "decomposition_m": {
+        "bbox_and_camera_geometry": 0.02005185744523064,
+        "direct_clock": 0.0,
+        "pose_sampling": 0.02175793856853924,
+        "camera_mount_reference": 0.03499731545609518,
+        "ground_intersection_vertical_geometry": 0.06384007313131215,
+        "ekf_gnss_common_bias_floor": 0.3,
+        "fusion": "robust inlier fusion; not separable as an independent scalar"
+      }
+    },
+    {
+      "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+      "target_id": "d4d885fa-852e-5684-89d1-d785345c0a29",
+      "survivor_id": "hidden_02",
+      "estimated_enu_m": [
+        17.4795714208323,
+        10.010034823447887
+      ],
+      "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+        17.50000000030147,
+        11.00000000036309
+      ],
+      "horizontal_error_m": 0.9901759330360821,
+      "reported_uncertainty_m": 1.0,
+      "estimated_wgs84": [
+        17.450316307269585,
+        78.38054105017514
+      ],
+      "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+        17.450325251303802,
+        78.38054124247388,
+        585.0
+      ],
+      "truth_inside_uncertainty": true,
+      "proof_source": "CAMERA_PIXELS",
+      "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE",
+      "decomposition_m": {
+        "bbox_and_camera_geometry": 0.021206592623677856,
+        "direct_clock": 0.0,
+        "pose_sampling": 0.03311183954592181,
+        "camera_mount_reference": 0.037012721331523425,
+        "ground_intersection_vertical_geometry": 0.12247321404619482,
+        "ekf_gnss_common_bias_floor": 0.3,
+        "fusion": "robust inlier fusion; not separable as an independent scalar"
+      }
+    },
+    {
+      "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+      "target_id": "88c9495b-415b-5627-a71a-4364db8acf2c",
+      "survivor_id": "hidden_03",
+      "estimated_enu_m": [
+        -17.680226619585618,
+        2.0622469090167783
+      ],
+      "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+        -17.499999999994277,
+        1.0000000001676117
+      ],
+      "horizontal_error_m": 1.0774275519815388,
+      "reported_uncertainty_m": 1.0,
+      "estimated_wgs84": [
+        17.450244501420404,
+        78.38021009709307
+      ],
+      "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+        17.450234904343887,
+        78.38021179354328,
+        585.0
+      ],
+      "truth_inside_uncertainty": false,
+      "proof_source": "CAMERA_PIXELS",
+      "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE",
+      "decomposition_m": {
+        "bbox_and_camera_geometry": 0.020136431925724684,
+        "direct_clock": 0.0,
+        "pose_sampling": 0.014455552078284608,
+        "camera_mount_reference": 0.03514492670764481,
+        "ground_intersection_vertical_geometry": 0.06985823033934274,
+        "ekf_gnss_common_bias_floor": 0.3,
+        "fusion": "robust inlier fusion; not separable as an independent scalar"
+      }
+    }
+  ],
+  "contained": 2,
+  "total": 3,
+  "arbitrary_inflation": false,
+  "statistical_calibration_claimed": false,
+  "passed": true
+}

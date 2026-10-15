@@ -1,0 +1,284 @@
+{
+  "classification": "EVALUATOR_ONLY_OCCLUSION_AFTER_AUTONOMY_INFERENCE",
+  "actual_gazebo_geometry": true,
+  "detector_side_occlusion_logic": false,
+  "cases": [
+    {
+      "case": "VISIBLE",
+      "survivor_truth_position_enu_m": [
+        5.0,
+        0.0,
+        0.0
+      ],
+      "camera_pose": {
+        "position_enu_m": [
+          0.0,
+          0.0,
+          1.15
+        ],
+        "sdf_pitch_deg_down": 0
+      },
+      "occluder_width_m": 0.0,
+      "visible_pixels": 3331,
+      "truth_bbox": [
+        622,
+        479,
+        668,
+        581
+      ],
+      "edge_clipped": false,
+      "yolo_result": true,
+      "yolo_confidence": 0.749197244644165,
+      "yolo_bbox": [
+        610.9138793945312,
+        478.1101379394531,
+        668.5045776367188,
+        624.0566101074219
+      ],
+      "frames": [
+        {
+          "frame_id": "gazebo_camera:000000000000",
+          "capture_sim_ns": 2047000000,
+          "visible_pixels": 3331,
+          "truth_bbox": [
+            622,
+            479,
+            668,
+            581
+          ],
+          "edge_clipped": false,
+          "yolo_result": true,
+          "yolo_confidence": 0.749197244644165,
+          "yolo_bbox": [
+            610.9138793945312,
+            478.1101379394531,
+            668.5045776367188,
+            624.0566101074219
+          ]
+        },
+        {
+          "frame_id": "gazebo_camera:000000000001",
+          "capture_sim_ns": 2080000000,
+          "visible_pixels": 3331,
+          "truth_bbox": [
+            622,
+            479,
+            668,
+            581
+          ],
+          "edge_clipped": false,
+          "yolo_result": true,
+          "yolo_confidence": 0.749197244644165,
+          "yolo_bbox": [
+            610.9138793945312,
+            478.1101379394531,
+            668.5045776367188,
+            624.0566101074219
+          ]
+        },
+        {
+          "frame_id": "gazebo_camera:000000000002",
+          "capture_sim_ns": 2113000000,
+          "visible_pixels": 3331,
+          "truth_bbox": [
+            622,
+            479,
+            668,
+            581
+          ],
+          "edge_clipped": false,
+          "yolo_result": true,
+          "yolo_confidence": 0.749197244644165,
+          "yolo_bbox": [
+            610.9138793945312,
+            478.1101379394531,
+            668.5045776367188,
+            624.0566101074219
+          ]
+        },
+        {
+          "frame_id": "gazebo_camera:000000000003",
+          "capture_sim_ns": 2146000000,
+          "visible_pixels": 3331,
+          "truth_bbox": [
+            622,
+            479,
+            668,
+            581
+          ],
+          "edge_clipped": false,
+          "yolo_result": true,
+          "yolo_confidence": 0.749197244644165,
+          "yolo_bbox": [
+            610.9138793945312,
+            478.1101379394531,
+            668.5045776367188,
+            624.0566101074219
+          ]
+        }
+      ],
+      "autonomy_received": "CAMERA_PIXELS_ONLY",
+      "visible_fraction": 1.0
+    },
+    {
+      "case": "PARTIALLY_OCCLUDED",
+      "survivor_truth_position_enu_m": [
+        5.0,
+        0.0,
+        0.0
+      ],
+      "camera_pose": {
+        "position_enu_m": [
+          0.0,
+          0.0,
+          1.15
+        ],
+        "sdf_pitch_deg_down": 0
+      },
+      "occluder_width_m": 0.08,
+      "visible_pixels": 841,
+      "truth_bbox": [
+        622,
+        482,
+        668,
+        581
+      ],
+      "edge_clipped": false,
+      "yolo_result": false,
+      "yolo_confidence": null,
+      "yolo_bbox": null,
+      "frames": [
+        {
+          "frame_id": "gazebo_camera:000000000000",
+          "capture_sim_ns": 1882000000,
+          "visible_pixels": 841,
+          "truth_bbox": [
+            622,
+            482,
+            668,
+            581
+          ],
+          "edge_clipped": false,
+          "yolo_result": false,
+          "yolo_confidence": null,
+          "yolo_bbox": null
+        },
+        {
+          "frame_id": "gazebo_camera:000000000001",
+          "capture_sim_ns": 1915000000,
+          "visible_pixels": 841,
+          "truth_bbox": [
+            622,
+            482,
+            668,
+            581
+          ],
+          "edge_clipped": false,
+          "yolo_result": false,
+          "yolo_confidence": null,
+          "yolo_bbox": null
+        },
+        {
+          "frame_id": "gazebo_camera:000000000002",
+          "capture_sim_ns": 1948000000,
+          "visible_pixels": 841,
+          "truth_bbox": [
+            622,
+            482,
+            668,
+            581
+          ],
+          "edge_clipped": false,
+          "yolo_result": false,
+          "yolo_confidence": null,
+          "yolo_bbox": null
+        },
+        {
+          "frame_id": "gazebo_camera:000000000003",
+          "capture_sim_ns": 1981000000,
+          "visible_pixels": 841,
+          "truth_bbox": [
+            622,
+            482,
+            668,
+            581
+          ],
+          "edge_clipped": false,
+          "yolo_result": false,
+          "yolo_confidence": null,
+          "yolo_bbox": null
+        }
+      ],
+      "autonomy_received": "CAMERA_PIXELS_ONLY",
+      "visible_fraction": 0.2524767337135995
+    },
+    {
+      "case": "FULLY_OCCLUDED",
+      "survivor_truth_position_enu_m": [
+        5.0,
+        0.0,
+        0.0
+      ],
+      "camera_pose": {
+        "position_enu_m": [
+          0.0,
+          0.0,
+          1.15
+        ],
+        "sdf_pitch_deg_down": 0
+      },
+      "occluder_width_m": 1.4,
+      "visible_pixels": 0,
+      "truth_bbox": null,
+      "edge_clipped": false,
+      "yolo_result": false,
+      "yolo_confidence": null,
+      "yolo_bbox": null,
+      "frames": [
+        {
+          "frame_id": "gazebo_camera:000000000000",
+          "capture_sim_ns": 1849000000,
+          "visible_pixels": 0,
+          "truth_bbox": null,
+          "edge_clipped": false,
+          "yolo_result": false,
+          "yolo_confidence": null,
+          "yolo_bbox": null
+        },
+        {
+          "frame_id": "gazebo_camera:000000000001",
+          "capture_sim_ns": 1882000000,
+          "visible_pixels": 0,
+          "truth_bbox": null,
+          "edge_clipped": false,
+          "yolo_result": false,
+          "yolo_confidence": null,
+          "yolo_bbox": null
+        },
+        {
+          "frame_id": "gazebo_camera:000000000002",
+          "capture_sim_ns": 1915000000,
+          "visible_pixels": 0,
+          "truth_bbox": null,
+          "edge_clipped": false,
+          "yolo_result": false,
+          "yolo_confidence": null,
+          "yolo_bbox": null
+        },
+        {
+          "frame_id": "gazebo_camera:000000000003",
+          "capture_sim_ns": 1948000000,
+          "visible_pixels": 0,
+          "truth_bbox": null,
+          "edge_clipped": false,
+          "yolo_result": false,
+          "yolo_confidence": null,
+          "yolo_bbox": null
+        }
+      ],
+      "autonomy_received": "CAMERA_PIXELS_ONLY",
+      "visible_fraction": 0.0
+    }
+  ],
+  "passed": true
+}

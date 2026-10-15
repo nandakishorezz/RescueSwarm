@@ -1,0 +1,13 @@
+{
+  "scenario": "stage13sim_phase2e_gold_20260909a",
+  "rtl_requested": true,
+  "rtl_observed": true,
+  "landed_evidence": "relative_altitude<0.15m, |vertical_speed|<0.12m/s, horizontal_speed<0.25m/s sustained 8s",
+  "grounded_kinematics_observed": true,
+  "native_landed_state_limitation": "External Gazebo JSON vehicle does not reliably drive native landed state",
+  "forced_disarm_simulation_only": true,
+  "final_heartbeat_disarmed": true,
+  "elapsed_time_only_not_accepted": true,
+  "cleanup_complete": true,
+  "passed": true
+}

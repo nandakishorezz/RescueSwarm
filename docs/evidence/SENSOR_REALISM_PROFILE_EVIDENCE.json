@@ -1,0 +1,273 @@
+{
+  "schema_version": "3.0",
+  "physical_calibration": false,
+  "provenance_rule": "Unmeasured parameters are REFERENCE_PRESET, ENGINEERING_ESTIMATE, or SIMULATION_ONLY",
+  "profiles": {
+    "IDEAL_CONTROL": {
+      "schema_version": "3.0",
+      "profile_id": "IDEAL_CONTROL",
+      "label": "Ideal control",
+      "physical_calibration": false,
+      "gps": {
+        "horizontal_noise_m": 0.0,
+        "vertical_noise_m": 0.0,
+        "update_rate_hz": 5.0,
+        "lag_ms": 100.0,
+        "vertical_drift_m": 0.0,
+        "accuracy_m": 0.3,
+        "provenance": "SIMULATION_ONLY"
+      },
+      "imu": {
+        "gyro_motor_noise": 0.0,
+        "accelerometer_motor_noise": 0.0,
+        "accelerometer_bias_mps2": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "provenance": "SIMULATION_ONLY"
+      },
+      "compass": {
+        "noise_mgauss": 0.0,
+        "bias_mgauss": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delay_ms": 0.0,
+        "provenance": "SIMULATION_ONLY"
+      },
+      "barometer": {
+        "noise_m": 0.2,
+        "drift_mps": 0.0,
+        "delay_ms": 0.0,
+        "provenance": "SIMULATION_ONLY"
+      },
+      "camera": {
+        "latency_ms": 0.0,
+        "jitter_ms": 0.0,
+        "gaussian_noise_stddev_dn": 0.0,
+        "brightness_gain": 1.0,
+        "contrast_gain": 1.0,
+        "exposure_preset": "NORMAL_DAY",
+        "exposure_time_us": 1000.0,
+        "max_pending_frames": 16,
+        "motion_blur_model": "NOT_IMPLEMENTED",
+        "rolling_shutter_model": "NOT_APPLICABLE_TO_REFERENCE_CAMERA",
+        "provenance": "SIMULATION_ONLY"
+      },
+      "isolation_component": null,
+      "ardupilot_sensor_parameters": {
+        "SIM_GPS1_HNSE": 0.0,
+        "SIM_GPS1_NOISE": 0.0,
+        "SIM_GPS1_HZ": 5.0,
+        "SIM_GPS1_LAG_MS": 100.0,
+        "SIM_GPS1_DRFTALT": 0.0,
+        "SIM_GPS1_ACC": 0.3,
+        "SIM_GYR1_RND": 0.0,
+        "SIM_ACC1_RND": 0.0,
+        "SIM_ACC1_BIAS_X": 0.0,
+        "SIM_ACC1_BIAS_Y": 0.0,
+        "SIM_ACC1_BIAS_Z": 0.0,
+        "SIM_MAG_RND": 0.0,
+        "SIM_MAG_DELAY": 0.0,
+        "SIM_BARO_RND": 0.2,
+        "SIM_BARO_DRIFT": 0.0,
+        "SIM_BARO_DELAY": 0.0
+      }
+    },
+    "REFERENCE_NOMINAL": {
+      "schema_version": "3.0",
+      "profile_id": "REFERENCE_NOMINAL",
+      "label": "Reference nominal",
+      "physical_calibration": false,
+      "gps": {
+        "horizontal_noise_m": 0.8,
+        "vertical_noise_m": 1.2,
+        "update_rate_hz": 5.0,
+        "lag_ms": 120.0,
+        "vertical_drift_m": 0.05,
+        "accuracy_m": 0.8,
+        "provenance": "REFERENCE_PRESET"
+      },
+      "imu": {
+        "gyro_motor_noise": 0.02,
+        "accelerometer_motor_noise": 0.06,
+        "accelerometer_bias_mps2": [
+          0.015,
+          -0.01,
+          0.02
+        ],
+        "provenance": "ENGINEERING_ESTIMATE"
+      },
+      "compass": {
+        "noise_mgauss": 2.0,
+        "bias_mgauss": [
+          4.0,
+          -3.0,
+          2.0
+        ],
+        "delay_ms": 20.0,
+        "provenance": "ENGINEERING_ESTIMATE"
+      },
+      "barometer": {
+        "noise_m": 0.3,
+        "drift_mps": 0.002,
+        "delay_ms": 20.0,
+        "provenance": "REFERENCE_PRESET"
+      },
+      "camera": {
+        "latency_ms": 100.0,
+        "jitter_ms": 8.0,
+        "gaussian_noise_stddev_dn": 2.5,
+        "brightness_gain": 1.0,
+        "contrast_gain": 1.0,
+        "exposure_preset": "NORMAL_DAY",
+        "exposure_time_us": 1000.0,
+        "max_pending_frames": 16,
+        "motion_blur_model": "NOT_IMPLEMENTED",
+        "rolling_shutter_model": "NOT_APPLICABLE_TO_REFERENCE_CAMERA",
+        "provenance": "REFERENCE_PRESET"
+      },
+      "isolation_component": null,
+      "ardupilot_sensor_parameters": {
+        "SIM_GPS1_HNSE": 0.8,
+        "SIM_GPS1_NOISE": 1.2,
+        "SIM_GPS1_HZ": 5.0,
+        "SIM_GPS1_LAG_MS": 120.0,
+        "SIM_GPS1_DRFTALT": 0.05,
+        "SIM_GPS1_ACC": 0.8,
+        "SIM_GYR1_RND": 0.02,
+        "SIM_ACC1_RND": 0.06,
+        "SIM_ACC1_BIAS_X": 0.015,
+        "SIM_ACC1_BIAS_Y": -0.01,
+        "SIM_ACC1_BIAS_Z": 0.02,
+        "SIM_MAG_RND": 2.0,
+        "SIM_MAG_DELAY": 20.0,
+        "SIM_BARO_RND": 0.3,
+        "SIM_BARO_DRIFT": 0.002,
+        "SIM_BARO_DELAY": 20.0,
+        "SIM_MAG1_OFS_X": 4.0,
+        "SIM_MAG1_OFS_Y": -3.0,
+        "SIM_MAG1_OFS_Z": 2.0
+      }
+    },
+    "REFERENCE_CHALLENGING": {
+      "schema_version": "3.0",
+      "profile_id": "REFERENCE_CHALLENGING",
+      "label": "Reference challenging",
+      "physical_calibration": false,
+      "gps": {
+        "horizontal_noise_m": 1.8,
+        "vertical_noise_m": 2.8,
+        "update_rate_hz": 5.0,
+        "lag_ms": 220.0,
+        "vertical_drift_m": 0.15,
+        "accuracy_m": 1.8,
+        "provenance": "REFERENCE_PRESET"
+      },
+      "imu": {
+        "gyro_motor_noise": 0.06,
+        "accelerometer_motor_noise": 0.15,
+        "accelerometer_bias_mps2": [
+          0.04,
+          -0.03,
+          0.05
+        ],
+        "provenance": "ENGINEERING_ESTIMATE"
+      },
+      "compass": {
+        "noise_mgauss": 6.0,
+        "bias_mgauss": [
+          12.0,
+          -9.0,
+          5.0
+        ],
+        "delay_ms": 45.0,
+        "provenance": "ENGINEERING_ESTIMATE"
+      },
+      "barometer": {
+        "noise_m": 0.8,
+        "drift_mps": 0.006,
+        "delay_ms": 50.0,
+        "provenance": "REFERENCE_PRESET"
+      },
+      "camera": {
+        "latency_ms": 200.0,
+        "jitter_ms": 18.0,
+        "gaussian_noise_stddev_dn": 6.0,
+        "brightness_gain": 0.82,
+        "contrast_gain": 0.92,
+        "exposure_preset": "DIMMER_DAY",
+        "exposure_time_us": 2000.0,
+        "max_pending_frames": 16,
+        "motion_blur_model": "NOT_IMPLEMENTED",
+        "rolling_shutter_model": "NOT_APPLICABLE_TO_REFERENCE_CAMERA",
+        "provenance": "REFERENCE_PRESET"
+      },
+      "isolation_component": null,
+      "ardupilot_sensor_parameters": {
+        "SIM_GPS1_HNSE": 1.8,
+        "SIM_GPS1_NOISE": 2.8,
+        "SIM_GPS1_HZ": 5.0,
+        "SIM_GPS1_LAG_MS": 220.0,
+        "SIM_GPS1_DRFTALT": 0.15,
+        "SIM_GPS1_ACC": 1.8,
+        "SIM_GYR1_RND": 0.06,
+        "SIM_ACC1_RND": 0.15,
+        "SIM_ACC1_BIAS_X": 0.04,
+        "SIM_ACC1_BIAS_Y": -0.03,
+        "SIM_ACC1_BIAS_Z": 0.05,
+        "SIM_MAG_RND": 6.0,
+        "SIM_MAG_DELAY": 45.0,
+        "SIM_BARO_RND": 0.8,
+        "SIM_BARO_DRIFT": 0.006,
+        "SIM_BARO_DELAY": 50.0,
+        "SIM_MAG1_OFS_X": 12.0,
+        "SIM_MAG1_OFS_Y": -9.0,
+        "SIM_MAG1_OFS_Z": 5.0
+      }
+    }
+  },
+  "exposure_presets": {
+    "NORMAL_DAY": {
+      "brightness_gain": 1.0,
+      "contrast_gain": 1.0,
+      "provenance": "REFERENCE_PRESET"
+    },
+    "DIMMER_DAY": {
+      "brightness_gain": 0.75,
+      "contrast_gain": 0.92,
+      "provenance": "ENGINEERING_ESTIMATE"
+    },
+    "BRIGHT_DAY": {
+      "brightness_gain": 1.18,
+      "contrast_gain": 1.02,
+      "provenance": "ENGINEERING_ESTIMATE"
+    }
+  },
+  "seeds": {
+    "IDEAL_CONTROL": {
+      "sensor_seed": 31003,
+      "wind_seed": 84521,
+      "scenario_seed": 84521
+    },
+    "REFERENCE_NOMINAL": {
+      "sensor_seed": 31003,
+      "wind_seed": 84521,
+      "scenario_seed": 84521
+    },
+    "REFERENCE_CHALLENGING": {
+      "sensor_seed": 31003,
+      "wind_seed": 84521,
+      "scenario_seed": 84521
+    }
+  },
+  "sensor_injection_layer": "ARDUPILOT_SITL_SENSOR_BACKENDS_BEFORE_EKF3",
+  "ekf_output_modified_directly": false,
+  "target_or_bbox_modified_directly": false,
+  "deterministic_camera_schedule": true,
+  "ardupilot_noise_seed": "SIM_SENSOR_SEED SITL-only environment hook seeds the upstream libc random() measurement schedule",
+  "estimator_invalid_geolocation_gate": "PASS: GPS_INVALID rejects detections before Stage-5 target creation",
+  "passed": true
+}

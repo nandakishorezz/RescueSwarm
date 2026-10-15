@@ -1,0 +1,130 @@
+{
+  "elements": [
+    {
+      "name": "polygon 1",
+      "rect": {
+        "x": 0,
+        "y": 268.53125,
+        "width": 939,
+        "height": 598.140625
+      },
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1",
+      "position": "absolute",
+      "left": "0px",
+      "top": "0px"
+    },
+    {
+      "name": "survivor 1",
+      "rect": {
+        "x": 82.4140625,
+        "y": 470.25,
+        "width": 51.859375,
+        "height": 49
+      },
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1",
+      "position": "absolute",
+      "left": "108.344px",
+      "top": "226.219px"
+    },
+    {
+      "name": "survivor 2",
+      "rect": {
+        "x": 213.6328125,
+        "y": 470.25,
+        "width": 51.859375,
+        "height": 49
+      },
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1",
+      "position": "absolute",
+      "left": "239.562px",
+      "top": "226.219px"
+    },
+    {
+      "name": "survivor 3",
+      "rect": {
+        "x": 148.0234375,
+        "y": 773.140625,
+        "width": 51.859375,
+        "height": 49
+      },
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1",
+      "position": "absolute",
+      "left": "173.953px",
+      "top": "529.109px"
+    },
+    {
+      "name": "drone START 1",
+      "rect": {
+        "x": 145.734375,
+        "y": 308.546875,
+        "width": 43.9375,
+        "height": 58
+      },
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "0.6",
+      "position": "absolute",
+      "left": "167.703px",
+      "top": "69.0156px"
+    },
+    {
+      "name": "live drone 1",
+      "rect": {
+        "x": 892.7578125,
+        "y": 622.8125,
+        "width": 54.921875,
+        "height": 70
+      },
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1",
+      "position": "absolute",
+      "left": "920.219px",
+      "top": "389.281px"
+    },
+    {
+      "name": "trail point 1",
+      "rect": {
+        "x": 918.21875,
+        "y": 655.8125,
+        "width": 4,
+        "height": 4
+      },
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1",
+      "position": "absolute",
+      "left": "920.219px",
+      "top": "389.281px"
+    },
+    {
+      "name": "trail point 2",
+      "rect": {
+        "x": 918.21875,
+        "y": 655.8125,
+        "width": 4,
+        "height": 4
+      },
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1",
+      "position": "absolute",
+      "left": "920.219px",
+      "top": "389.281px"
+    }
+  ],
+  "viewportRect": {
+    "x": 0,
+    "y": 268.53125,
+    "width": 939,
+    "height": 598.140625
+  }
+}

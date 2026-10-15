@@ -1,0 +1,40 @@
+vehicle:
+  id: prototype_01
+  fleet_size: 1
+
+autopilot:
+  type: ardupilot
+  flight_controller: pixhawk_2_4_8
+  connection: /dev/serial0
+  baud: 57600
+  heartbeat_timeout_seconds: 30
+  collection_seconds: 15
+
+gps:
+  type: ublox_m8n
+  precision_gnss: false
+
+edge:
+  type: raspberry_pi_5
+  ram_gb: 8
+  ai_accelerator: none
+
+camera:
+  type: ov9281
+  global_shutter: true
+  status: unknown
+
+ground:
+  type: raspberry_pi_4
+  ram_gb: 4
+
+rangefinder:
+  present: false
+
+payload:
+  type: unknown
+  feedback: unknown
+
+network:
+  external_internet_required: false
+

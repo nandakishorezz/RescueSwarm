@@ -1,0 +1,446 @@
+{
+  "control_only_not_gold": true,
+  "frames": 8,
+  "person_detections": 8,
+  "transport": {
+    "frames_generated": 13,
+    "frames_received": 8,
+    "frames_dropped_bridge": 5,
+    "duplicate_frames": 11,
+    "source_sequence_gaps": 0,
+    "checksum_failures": 0,
+    "first_sim_time_ns": 1750000000,
+    "last_sim_time_ns": 1981000000,
+    "first_wall_receive_ns": 1788898864722498200,
+    "last_wall_receive_ns": 1788898866189466500,
+    "max_frame_age_ms": null,
+    "out_of_order_frames": 0,
+    "repeated_timestamps": 0,
+    "simulation_time_resets": 0,
+    "simulation_time_source_fps": 30.3030303030303,
+    "wall_time_receive_fps": 4.771745919799358
+  },
+  "semantic_label_ids": [
+    101
+  ],
+  "visible_survivor_pixels": 3331,
+  "model_hash": "417c59a7ff8ddd316d9863fb8ba0e7f3cfc5a27264c774a4ad3ec7526f2a5e2d",
+  "results": [
+    {
+      "frame_id": "gazebo_camera:000000000000",
+      "source_id": "gazebo_camera",
+      "capture_timestamp_monotonic_ns": 358598399052100,
+      "capture_timestamp_wall_ns": 1788898864722498200,
+      "inference_started_ns": 358598472852000,
+      "inference_finished_ns": 358598613743700,
+      "model_id": "yolo11n_person_onnx",
+      "backend": "onnx",
+      "original_channel_format": "MONO8",
+      "model_input_format": "RGB_FLOAT32_CHW",
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "confidence": 0.7694023847579956,
+          "bbox_pixels": [
+            610.9217529296875,
+            478.7257080078125,
+            668.4495849609375,
+            623.996826171875
+          ],
+          "frame_size_pixels": [
+            1280,
+            800
+          ],
+          "bbox_normalized": [
+            0.47728261947631834,
+            0.5984071350097656,
+            0.5222262382507324,
+            0.7799960327148437
+          ],
+          "bbox_center_pixels": [
+            639.6856689453125,
+            551.3612670898438
+          ],
+          "bbox_bottom_center_pixels": [
+            639.6856689453125,
+            623.996826171875
+          ],
+          "bbox_width_px": 57.52783203125,
+          "bbox_height_px": 145.2711181640625,
+          "bbox_area_px": 8357.132484734058,
+          "bbox_area_percent": 0.8161262192123104
+        }
+      ],
+      "preprocess_ms": 27.4512,
+      "inference_ms": 140.8924,
+      "postprocess_ms": 0.5623,
+      "end_to_end_ms": 214.6916,
+      "capture_timestamp_sim_ns": 1750000000
+    },
+    {
+      "frame_id": "gazebo_camera:000000000001",
+      "source_id": "gazebo_camera",
+      "capture_timestamp_monotonic_ns": 358598671056500,
+      "capture_timestamp_wall_ns": 1788898864994501600,
+      "inference_started_ns": 358598702195800,
+      "inference_finished_ns": 358598826418000,
+      "model_id": "yolo11n_person_onnx",
+      "backend": "onnx",
+      "original_channel_format": "MONO8",
+      "model_input_format": "RGB_FLOAT32_CHW",
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "confidence": 0.7694023847579956,
+          "bbox_pixels": [
+            610.9217529296875,
+            478.7257080078125,
+            668.4495849609375,
+            623.996826171875
+          ],
+          "frame_size_pixels": [
+            1280,
+            800
+          ],
+          "bbox_normalized": [
+            0.47728261947631834,
+            0.5984071350097656,
+            0.5222262382507324,
+            0.7799960327148437
+          ],
+          "bbox_center_pixels": [
+            639.6856689453125,
+            551.3612670898438
+          ],
+          "bbox_bottom_center_pixels": [
+            639.6856689453125,
+            623.996826171875
+          ],
+          "bbox_width_px": 57.52783203125,
+          "bbox_height_px": 145.2711181640625,
+          "bbox_area_px": 8357.132484734058,
+          "bbox_area_percent": 0.8161262192123104
+        }
+      ],
+      "preprocess_ms": 31.0614,
+      "inference_ms": 124.2232,
+      "postprocess_ms": 1.2024,
+      "end_to_end_ms": 155.3615,
+      "capture_timestamp_sim_ns": 1783000000
+    },
+    {
+      "frame_id": "gazebo_camera:000000000002",
+      "source_id": "gazebo_camera",
+      "capture_timestamp_monotonic_ns": 358598877838700,
+      "capture_timestamp_wall_ns": 1788898865201283600,
+      "inference_started_ns": 358598907910800,
+      "inference_finished_ns": 358599016892100,
+      "model_id": "yolo11n_person_onnx",
+      "backend": "onnx",
+      "original_channel_format": "MONO8",
+      "model_input_format": "RGB_FLOAT32_CHW",
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "confidence": 0.7694023847579956,
+          "bbox_pixels": [
+            610.9217529296875,
+            478.7257080078125,
+            668.4495849609375,
+            623.996826171875
+          ],
+          "frame_size_pixels": [
+            1280,
+            800
+          ],
+          "bbox_normalized": [
+            0.47728261947631834,
+            0.5984071350097656,
+            0.5222262382507324,
+            0.7799960327148437
+          ],
+          "bbox_center_pixels": [
+            639.6856689453125,
+            551.3612670898438
+          ],
+          "bbox_bottom_center_pixels": [
+            639.6856689453125,
+            623.996826171875
+          ],
+          "bbox_width_px": 57.52783203125,
+          "bbox_height_px": 145.2711181640625,
+          "bbox_area_px": 8357.132484734058,
+          "bbox_area_percent": 0.8161262192123104
+        }
+      ],
+      "preprocess_ms": 30.0036,
+      "inference_ms": 108.9821,
+      "postprocess_ms": 0.7069,
+      "end_to_end_ms": 139.0534,
+      "capture_timestamp_sim_ns": 1816000000
+    },
+    {
+      "frame_id": "gazebo_camera:000000000003",
+      "source_id": "gazebo_camera",
+      "capture_timestamp_monotonic_ns": 358599065525500,
+      "capture_timestamp_wall_ns": 1788898865388969900,
+      "inference_started_ns": 358599093198200,
+      "inference_finished_ns": 358599216332500,
+      "model_id": "yolo11n_person_onnx",
+      "backend": "onnx",
+      "original_channel_format": "MONO8",
+      "model_input_format": "RGB_FLOAT32_CHW",
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "confidence": 0.7694023847579956,
+          "bbox_pixels": [
+            610.9217529296875,
+            478.7257080078125,
+            668.4495849609375,
+            623.996826171875
+          ],
+          "frame_size_pixels": [
+            1280,
+            800
+          ],
+          "bbox_normalized": [
+            0.47728261947631834,
+            0.5984071350097656,
+            0.5222262382507324,
+            0.7799960327148437
+          ],
+          "bbox_center_pixels": [
+            639.6856689453125,
+            551.3612670898438
+          ],
+          "bbox_bottom_center_pixels": [
+            639.6856689453125,
+            623.996826171875
+          ],
+          "bbox_width_px": 57.52783203125,
+          "bbox_height_px": 145.2711181640625,
+          "bbox_area_px": 8357.132484734058,
+          "bbox_area_percent": 0.8161262192123104
+        }
+      ],
+      "preprocess_ms": 27.6278,
+      "inference_ms": 123.1352,
+      "postprocess_ms": 0.7076,
+      "end_to_end_ms": 150.807,
+      "capture_timestamp_sim_ns": 1849000000
+    },
+    {
+      "frame_id": "gazebo_camera:000000000004",
+      "source_id": "gazebo_camera",
+      "capture_timestamp_monotonic_ns": 358599253359400,
+      "capture_timestamp_wall_ns": 1788898865576803900,
+      "inference_started_ns": 358599282670400,
+      "inference_finished_ns": 358599405116200,
+      "model_id": "yolo11n_person_onnx",
+      "backend": "onnx",
+      "original_channel_format": "MONO8",
+      "model_input_format": "RGB_FLOAT32_CHW",
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "confidence": 0.7694023847579956,
+          "bbox_pixels": [
+            610.9217529296875,
+            478.7257080078125,
+            668.4495849609375,
+            623.996826171875
+          ],
+          "frame_size_pixels": [
+            1280,
+            800
+          ],
+          "bbox_normalized": [
+            0.47728261947631834,
+            0.5984071350097656,
+            0.5222262382507324,
+            0.7799960327148437
+          ],
+          "bbox_center_pixels": [
+            639.6856689453125,
+            551.3612670898438
+          ],
+          "bbox_bottom_center_pixels": [
+            639.6856689453125,
+            623.996826171875
+          ],
+          "bbox_width_px": 57.52783203125,
+          "bbox_height_px": 145.2711181640625,
+          "bbox_area_px": 8357.132484734058,
+          "bbox_area_percent": 0.8161262192123104
+        }
+      ],
+      "preprocess_ms": 29.2629,
+      "inference_ms": 122.4464,
+      "postprocess_ms": 0.5774,
+      "end_to_end_ms": 151.7568,
+      "capture_timestamp_sim_ns": 1882000000
+    },
+    {
+      "frame_id": "gazebo_camera:000000000005",
+      "source_id": "gazebo_camera",
+      "capture_timestamp_monotonic_ns": 358599445138800,
+      "capture_timestamp_wall_ns": 1788898865768583800,
+      "inference_started_ns": 358599478435100,
+      "inference_finished_ns": 358599590514800,
+      "model_id": "yolo11n_person_onnx",
+      "backend": "onnx",
+      "original_channel_format": "MONO8",
+      "model_input_format": "RGB_FLOAT32_CHW",
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "confidence": 0.7694023847579956,
+          "bbox_pixels": [
+            610.9217529296875,
+            478.7257080078125,
+            668.4495849609375,
+            623.996826171875
+          ],
+          "frame_size_pixels": [
+            1280,
+            800
+          ],
+          "bbox_normalized": [
+            0.47728261947631834,
+            0.5984071350097656,
+            0.5222262382507324,
+            0.7799960327148437
+          ],
+          "bbox_center_pixels": [
+            639.6856689453125,
+            551.3612670898438
+          ],
+          "bbox_bottom_center_pixels": [
+            639.6856689453125,
+            623.996826171875
+          ],
+          "bbox_width_px": 57.52783203125,
+          "bbox_height_px": 145.2711181640625,
+          "bbox_area_px": 8357.132484734058,
+          "bbox_area_percent": 0.8161262192123104
+        }
+      ],
+      "preprocess_ms": 33.2384,
+      "inference_ms": 112.0802,
+      "postprocess_ms": 0.4947,
+      "end_to_end_ms": 145.376,
+      "capture_timestamp_sim_ns": 1915000000
+    },
+    {
+      "frame_id": "gazebo_camera:000000000006",
+      "source_id": "gazebo_camera",
+      "capture_timestamp_monotonic_ns": 358599666935500,
+      "capture_timestamp_wall_ns": 1788898865990380400,
+      "inference_started_ns": 358599694919800,
+      "inference_finished_ns": 358599829578700,
+      "model_id": "yolo11n_person_onnx",
+      "backend": "onnx",
+      "original_channel_format": "MONO8",
+      "model_input_format": "RGB_FLOAT32_CHW",
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "confidence": 0.7694023847579956,
+          "bbox_pixels": [
+            610.9217529296875,
+            478.7257080078125,
+            668.4495849609375,
+            623.996826171875
+          ],
+          "frame_size_pixels": [
+            1280,
+            800
+          ],
+          "bbox_normalized": [
+            0.47728261947631834,
+            0.5984071350097656,
+            0.5222262382507324,
+            0.7799960327148437
+          ],
+          "bbox_center_pixels": [
+            639.6856689453125,
+            551.3612670898438
+          ],
+          "bbox_bottom_center_pixels": [
+            639.6856689453125,
+            623.996826171875
+          ],
+          "bbox_width_px": 57.52783203125,
+          "bbox_height_px": 145.2711181640625,
+          "bbox_area_px": 8357.132484734058,
+          "bbox_area_percent": 0.8161262192123104
+        }
+      ],
+      "preprocess_ms": 27.9381,
+      "inference_ms": 134.6599,
+      "postprocess_ms": 0.6232,
+      "end_to_end_ms": 162.6432,
+      "capture_timestamp_sim_ns": 1948000000
+    },
+    {
+      "frame_id": "gazebo_camera:000000000007",
+      "source_id": "gazebo_camera",
+      "capture_timestamp_monotonic_ns": 358599866021200,
+      "capture_timestamp_wall_ns": 1788898866189466500,
+      "inference_started_ns": 358599900583600,
+      "inference_finished_ns": 358600029951100,
+      "model_id": "yolo11n_person_onnx",
+      "backend": "onnx",
+      "original_channel_format": "MONO8",
+      "model_input_format": "RGB_FLOAT32_CHW",
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "confidence": 0.7694023847579956,
+          "bbox_pixels": [
+            610.9217529296875,
+            478.7257080078125,
+            668.4495849609375,
+            623.996826171875
+          ],
+          "frame_size_pixels": [
+            1280,
+            800
+          ],
+          "bbox_normalized": [
+            0.47728261947631834,
+            0.5984071350097656,
+            0.5222262382507324,
+            0.7799960327148437
+          ],
+          "bbox_center_pixels": [
+            639.6856689453125,
+            551.3612670898438
+          ],
+          "bbox_bottom_center_pixels": [
+            639.6856689453125,
+            623.996826171875
+          ],
+          "bbox_width_px": 57.52783203125,
+          "bbox_height_px": 145.2711181640625,
+          "bbox_area_px": 8357.132484734058,
+          "bbox_area_percent": 0.8161262192123104
+        }
+      ],
+      "preprocess_ms": 27.8736,
+      "inference_ms": 129.3678,
+      "postprocess_ms": 0.7594,
+      "end_to_end_ms": 163.9299,
+      "capture_timestamp_sim_ns": 1981000000
+    }
+  ]
+}

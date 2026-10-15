@@ -1,0 +1,11 @@
+{
+  "scenario": "stage13sim_phase2e_gold_20260909a",
+  "method": "deterministic recorded scenario evaluator branch replay",
+  "evaluator_enabled_autonomy_fingerprint": "3782e37287fc4a87055605afa9a48a8c93d9ab002a90404aa62e8235719563c5",
+  "evaluator_disabled_autonomy_fingerprint": "3782e37287fc4a87055605afa9a48a8c93d9ab002a90404aa62e8235719563c5",
+  "mission_plan_fingerprint_enabled": "a19f594d4c0a443e6157c4fd5ead3506c4a2d89eeafde8d961b50a48b31580f0",
+  "mission_plan_fingerprint_disabled": "a19f594d4c0a443e6157c4fd5ead3506c4a2d89eeafde8d961b50a48b31580f0",
+  "differences": [],
+  "evaluator_executes_after_inference": true,
+  "passed": true
+}

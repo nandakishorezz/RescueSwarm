@@ -1,0 +1,495 @@
+diff --git a/libraries/AP_HAL_SITL/UARTDriver.cpp b/libraries/AP_HAL_SITL/UARTDriver.cpp
+index 0c4ea42..0082216 100644
+--- a/libraries/AP_HAL_SITL/UARTDriver.cpp
++++ b/libraries/AP_HAL_SITL/UARTDriver.cpp
+@@ -851,6 +851,88 @@ uint16_t UARTDriver::read_from_async_csv(uint8_t *buffer, uint16_t space)
+     return i;
+ }
+ 
++#include <unistd.h>
++#include <fcntl.h>
++#include <time.h>
++#include <unistd.h>
++#include <fcntl.h>
++#include <time.h>
++/* ---- Phase-2 time-debug instrumentation (SITL only) ---- */
++namespace {
++__attribute__((unused))
++void mavlink_gpi_trace_append(uint8_t chan, int fd, int port, const char *layer,
++                      const uint8_t *buf, size_t len) {
++    static int logfd = -1;
++    static unsigned lines = 0;
++    if (logfd < 0) {
++        logfd = ::open("/tmp/mavlink_wire_trace.jsonl",
++                       O_WRONLY | O_CREAT | O_APPEND, 0644);
++    }
++    if (logfd < 0 || lines >= 20000) {
++        return;
++    }
++    size_t pos = 0;
++    while (pos + 8 <= len && lines < 20000) {
++        uint8_t tag = buf[pos];
++        size_t hdr, body, total;
++        unsigned msgid;
++        uint8_t seq, sid, cid;
++        if (tag == 0xFD) {
++            if (pos + 12 > len) break;
++            msgid = (unsigned)buf[pos+7] | ((unsigned)buf[pos+8] << 8) | ((unsigned)buf[pos+9] << 16);
++            body = buf[pos+1];
++            hdr = 10;
++            total = 12 + body;
++            seq = buf[pos+4];
++            sid = buf[pos+5];
++            cid = buf[pos+6];
++        } else if (tag == 0xFE) {
++            if (pos + 8 > len) break;
++            msgid = buf[pos+5];
++            body = buf[pos+1];
++            hdr = 6;
++            total = 8 + body;
++            seq = buf[pos+2];
++            sid = buf[pos+3];
++            cid = buf[pos+4];
++        } else {
++            pos++;
++            continue;
++        }
++        if (pos + total > len) break;
++        if (msgid == 33 && body >= 4) {
++            uint32_t boot = (uint32_t)buf[pos+hdr] | ((uint32_t)buf[pos+hdr+1] << 8)
++                          | ((uint32_t)buf[pos+hdr+2] << 16) | ((uint32_t)buf[pos+hdr+3] << 24);
++            struct timespec ts; clock_gettime(CLOCK_MONOTONIC, &ts);
++            const unsigned long long now_ns =
++                (unsigned long long)ts.tv_sec * 1000000000ULL + (unsigned long long)ts.tv_nsec;
++            char line[256];
++            int want = snprintf(line, sizeof(line),
++                "{\"l\":\"%s\",\"fd\":%d,\"port\":%u,\"chan\":%u,"
++                "\"boot\":%u,\"seq\":%u,\"sysid\":%u,\"compid\":%u,"
++                "\"body\":%u,\"v\":%d,\"wsl_ns\":%llu,\"head\":\"%02x%02x%02x%02x%02x%02x%02x%02x\"}\n",
++                layer, fd, (unsigned)port, (unsigned)chan,
++                boot, seq, sid, cid, (unsigned)body,
++                (tag==0xFD)?2:1, now_ns,
++                buf[pos+0], buf[pos+1], buf[pos+2], buf[pos+3],
++                buf[pos+4], buf[pos+5], buf[pos+6], buf[pos+7]);
++            int off = want;
++            if (off >= (int)sizeof(line)) {
++                off = (int)sizeof(line) - 1;
++            }
++            if (off < 0) {
++                off = 0;
++            }
++            ssize_t w = ::write(logfd, line, off);
++            (void)w;
++            lines++;
++        }
++        pos += total;
++    }
++}
++}
++/* ---- end Phase-2 time-debug instrumentation ---- */
++
+ void UARTDriver::handle_writing_from_writebuffer_to_device()
+ {
+     WITH_SEMAPHORE(write_mtx);
+@@ -883,6 +965,7 @@ void UARTDriver::handle_writing_from_writebuffer_to_device()
+             // keep as a single UDP packet
+             uint8_t tmpbuf[n];
+             _writebuffer.peekbytes(tmpbuf, n);
++            mavlink_gpi_trace_append(0xFF, _fd, _portNumber, "TXSOCK", tmpbuf, n);
+             ssize_t ret = send(_fd, tmpbuf, n, MSG_DONTWAIT);
+             if (ret > 0) {
+                 _writebuffer.advance(ret);
+@@ -911,6 +994,7 @@ void UARTDriver::handle_writing_from_writebuffer_to_device()
+                     }
+                 }
+                 if (!cts_blocked) {
++                    mavlink_gpi_trace_append(0xFF, _fd, _portNumber, "TXSOCK", readptr, navail);
+                     nwritten = ::write(_fd, readptr, navail);
+                     if (nwritten == -1 && errno != EAGAIN && _uart_path) {
+                         close(_fd);
+@@ -934,6 +1018,7 @@ void UARTDriver::handle_writing_from_writebuffer_to_device()
+                     }
+                 }
+             } else {
++                mavlink_gpi_trace_append(0xFF, _fd, _portNumber, "TXSOCK", readptr, navail);
+                 nwritten = send(_fd, readptr, navail, MSG_DONTWAIT);
+             }
+             if (nwritten > 0) {
+diff --git a/libraries/GCS_MAVLink/GCS_Common.cpp b/libraries/GCS_MAVLink/GCS_Common.cpp
+index a90eeb0..a7a3f63 100644
+--- a/libraries/GCS_MAVLink/GCS_Common.cpp
++++ b/libraries/GCS_MAVLink/GCS_Common.cpp
+@@ -38,6 +38,15 @@
+ #include <AP_Camera/AP_Camera.h>
+ #include <AP_Gripper/AP_Gripper.h>
+ #include <AC_Sprayer/AC_Sprayer.h>
++#include <AP_HAL_SITL/Scheduler.h>
++#if CONFIG_HAL_BOARD == HAL_BOARD_SITL
++#include <unistd.h>
++#include <sys/syscall.h>
++#include <sys/socket.h>
++#include <netinet/in.h>
++#include <arpa/inet.h>
++#include <string.h>
++#endif
+ #include <AP_BLHeli/AP_BLHeli.h>
+ #include <AP_Relay/AP_Relay.h>
+ #include <AP_RSSI/AP_RSSI.h>
+@@ -6091,9 +6100,50 @@ void GCS_MAVLINK::send_extended_sys_state() const
+     mavlink_msg_extended_sys_state_send(chan, vtol_state(), landed_state());
+ }
+ 
++// Phase-2C pose-source-time sidecar (SITL only).  Emits ONLY message identity +
++// ArduPilot simulation source time for the estimator telemetry message being
++// serialized by the caller.  Contains NO pose values, so it can never
++// reconstruct aircraft state.  ap_sim_us is the ArduPilot sim epoch (SIM loop
++// time_now_us, refreshed from fill_fdm each FDM) captured at the send point --
++// NOT the wall-fallback micros64.  seq is read from the channel status BEFORE
++// serialization, i.e. it is exactly the sequence the receiver will see in the
++// message header.  Inert unless SIM_JSON_CLOCK_WITNESS_PORT is set.
++static void emit_pose_source_witness(const mavlink_channel_t chan, const uint32_t msgid, const uint32_t ap_boot_ms)
++{
++#if CONFIG_HAL_BOARD == HAL_BOARD_SITL
++    const char *wport = getenv("SIM_JSON_CLOCK_WITNESS_PORT");
++    if (wport != nullptr) {
++        static int posesock = -1;
++        if (posesock == -1) {
++            posesock = socket(AF_INET, SOCK_DGRAM, 0);
++            if (posesock >= 0) { int rz = 1; setsockopt(posesock, SOL_SOCKET, SO_REUSEADDR, &rz, sizeof(rz)); }
++        }
++        if (posesock >= 0) {
++            mavlink_status_t *ps = mavlink_get_channel_status(chan);
++            const uint8_t pseq = (ps != nullptr) ? ps->current_tx_seq : 0;
++            SITL::SIM *psitl = AP::sitl();
++            const uint64_t ap_sim_us = SITL::ap_sim_source_time_now_us.load(std::memory_order_relaxed);
++            const uint64_t ap_sim_fdm_us = (psitl != nullptr) ? psitl->state.timestamp_us : 0;
++            char pbuf[512];
++            snprintf(pbuf, sizeof(pbuf),
++                                          "{ \"kind\":\"pose_src_time\",\"msgid\":%u,\"chan\":%u,\"seq\":%u,\"ap_boot_ms\":%u,\"sysid\":%u,\"compid\":%u,\"ap_sim_us\":%llu,\"ap_sim_fdm_us\":%llu }",
++                     (unsigned)msgid, (unsigned)chan, (unsigned)pseq, (unsigned)ap_boot_ms,
++                     (unsigned)mavlink_system.sysid, (unsigned)mavlink_system.compid,
++                     (unsigned long long)ap_sim_us, (unsigned long long)ap_sim_fdm_us);
++            struct sockaddr_in psa; memset(&psa, 0, sizeof(psa));
++            psa.sin_family = AF_INET; psa.sin_port = htons((uint16_t)strtol(wport, nullptr, 10));
++            psa.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
++            sendto(posesock, pbuf, strlen(pbuf), 0, (struct sockaddr *)&psa, sizeof(psa));
++        }
++    }
++#endif
++}
++
+ void GCS_MAVLINK::send_attitude() const
+ {
+ #if AP_AHRS_ENABLED
++    const uint32_t attitude_boot_ms = AP_HAL::millis();
++    emit_pose_source_witness(chan, MAVLINK_MSG_ID_ATTITUDE, attitude_boot_ms);
+     const AP_AHRS &ahrs = AP::ahrs();
+     const Vector3f omega = ahrs.get_gyro();
+     mavlink_msg_attitude_send(
+@@ -6111,6 +6161,8 @@ void GCS_MAVLINK::send_attitude() const
+ void GCS_MAVLINK::send_attitude_quaternion() const
+ {
+ #if AP_AHRS_ENABLED
++    const uint32_t atq_boot_ms = AP_HAL::millis();
++    emit_pose_source_witness(chan, MAVLINK_MSG_ID_ATTITUDE_QUATERNION, atq_boot_ms);
+     const AP_AHRS &ahrs = AP::ahrs();
+     Quaternion quat;
+     if (!ahrs.get_quaternion(quat)) {
+@@ -6147,6 +6199,7 @@ int32_t GCS_MAVLINK::global_position_int_relative_alt() const {
+ #endif
+ }
+ 
++
+ void GCS_MAVLINK::send_global_position_int()
+ {
+ #if AP_AHRS_ENABLED
+@@ -6159,9 +6212,41 @@ void GCS_MAVLINK::send_global_position_int()
+         vel.zero();
+     }
+ 
+-    mavlink_msg_global_position_int_send(
+-        chan,
+-        AP_HAL::millis(),
++    {
++        const uint32_t gcs_boot_ms = AP_HAL::millis();
++        emit_pose_source_witness(chan, MAVLINK_MSG_ID_GLOBAL_POSITION_INT, gcs_boot_ms);
++        static uint64_t gcs_seq = 0;
++        gcs_seq++;
++#if CONFIG_HAL_BOARD == HAL_BOARD_SITL
++        const char *wport = getenv("SIM_JSON_CLOCK_WITNESS_PORT");
++        if (wport != nullptr) {
++            static int gcs_sock = -1;
++            if (gcs_sock == -1) {
++                gcs_sock = socket(AF_INET, SOCK_DGRAM, 0);
++                if (gcs_sock >= 0) { int rz = 1; setsockopt(gcs_sock, SOL_SOCKET, SO_REUSEADDR, &rz, sizeof(rz)); }
++            }
++            if (gcs_sock >= 0) {
++                const uint64_t gcs_micros64 = AP_HAL::micros64();
++                const HALSITL::Scheduler *g_sched = HALSITL::Scheduler::from(hal.scheduler);
++                const uint64_t g_stopped_us = (g_sched != nullptr) ? g_sched->stopped_clock_usec() : 0;
++                struct timespec gts; clock_gettime(CLOCK_MONOTONIC, &gts);
++                const uint64_t g_host_ns = (uint64_t)(gts.tv_sec) * 1000000000ULL + (uint64_t)(gts.tv_nsec);
++                char gbuf[320];
++                snprintf(gbuf, sizeof(gbuf),
++                         "{ \"kind\":\"gcs_gpi\",\"seq\":%llu,\"pid\":%d,\"tid\":%ld,\"chan\":%d,\"time_boot_ms\":%u,\"millis_ms\":%u,\"micros64_us\":%llu,\"stopped_clock_us\":%llu,\"wsl_host_mono_ns\":%llu }",
++                         (unsigned long long)gcs_seq, (int)getpid(), (long)syscall(SYS_gettid), (int)chan,
++                         gcs_boot_ms, gcs_boot_ms, (unsigned long long)gcs_micros64,
++                         (unsigned long long)g_stopped_us, (unsigned long long)g_host_ns);
++                struct sockaddr_in sa; memset(&sa, 0, sizeof(sa));
++                sa.sin_family = AF_INET; sa.sin_port = htons((uint16_t)strtol(wport, nullptr, 10));
++                sa.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
++                sendto(gcs_sock, gbuf, strlen(gbuf), 0, (struct sockaddr *)&sa, sizeof(sa));
++            }
++        }
++#endif
++        mavlink_msg_global_position_int_send(
++            chan,
++            gcs_boot_ms,
+         global_position_current_loc.lat, // in 1E7 degrees
+         global_position_current_loc.lng, // in 1E7 degrees
+         global_position_int_alt(),       // millimeters above ground/sea level
+@@ -6170,6 +6255,7 @@ void GCS_MAVLINK::send_global_position_int()
+         vel.y * 100,                     // Y speed cm/s (+ve East)
+         vel.z * 100,                     // Z speed cm/s (+ve Down)
+         ahrs.yaw_sensor);                // compass heading in 1/100 degree
++        }
+ #endif  // AP_AHRS_ENABLED
+ }
+ 
+diff --git a/libraries/GCS_MAVLink/GCS_MAVLink.cpp b/libraries/GCS_MAVLink/GCS_MAVLink.cpp
+index ffbc502..0532a44 100644
+--- a/libraries/GCS_MAVLink/GCS_MAVLink.cpp
++++ b/libraries/GCS_MAVLink/GCS_MAVLink.cpp
+@@ -130,6 +130,88 @@ uint16_t comm_get_txspace(mavlink_channel_t chan)
+ /*
+   send a buffer out a MAVLink channel
+  */
++#include <unistd.h>
++#include <fcntl.h>
++#include <time.h>
++#include <unistd.h>
++#include <fcntl.h>
++#include <time.h>
++/* ---- Phase-2 time-debug instrumentation (SITL only) ---- */
++namespace {
++__attribute__((unused))
++void mavlink_gpi_trace_append(uint8_t chan, int fd, int port, const char *layer,
++                      const uint8_t *buf, size_t len) {
++    static int logfd = -1;
++    static unsigned lines = 0;
++    if (logfd < 0) {
++        logfd = ::open("/tmp/mavlink_wire_trace.jsonl",
++                       O_WRONLY | O_CREAT | O_APPEND, 0644);
++    }
++    if (logfd < 0 || lines >= 20000) {
++        return;
++    }
++    size_t pos = 0;
++    while (pos + 8 <= len && lines < 20000) {
++        uint8_t tag = buf[pos];
++        size_t hdr, body, total;
++        unsigned msgid;
++        uint8_t seq, sid, cid;
++        if (tag == 0xFD) {
++            if (pos + 12 > len) break;
++            msgid = (unsigned)buf[pos+7] | ((unsigned)buf[pos+8] << 8) | ((unsigned)buf[pos+9] << 16);
++            body = buf[pos+1];
++            hdr = 10;
++            total = 12 + body;
++            seq = buf[pos+4];
++            sid = buf[pos+5];
++            cid = buf[pos+6];
++        } else if (tag == 0xFE) {
++            if (pos + 8 > len) break;
++            msgid = buf[pos+5];
++            body = buf[pos+1];
++            hdr = 6;
++            total = 8 + body;
++            seq = buf[pos+2];
++            sid = buf[pos+3];
++            cid = buf[pos+4];
++        } else {
++            pos++;
++            continue;
++        }
++        if (pos + total > len) break;
++        if (msgid == 33 && body >= 4) {
++            uint32_t boot = (uint32_t)buf[pos+hdr] | ((uint32_t)buf[pos+hdr+1] << 8)
++                          | ((uint32_t)buf[pos+hdr+2] << 16) | ((uint32_t)buf[pos+hdr+3] << 24);
++            struct timespec ts; clock_gettime(CLOCK_MONOTONIC, &ts);
++            const unsigned long long now_ns =
++                (unsigned long long)ts.tv_sec * 1000000000ULL + (unsigned long long)ts.tv_nsec;
++            char line[256];
++            int want = snprintf(line, sizeof(line),
++                "{\"l\":\"%s\",\"fd\":%d,\"port\":%u,\"chan\":%u,"
++                "\"boot\":%u,\"seq\":%u,\"sysid\":%u,\"compid\":%u,"
++                "\"body\":%u,\"v\":%d,\"wsl_ns\":%llu,\"head\":\"%02x%02x%02x%02x%02x%02x%02x%02x\"}\n",
++                layer, fd, (unsigned)port, (unsigned)chan,
++                boot, seq, sid, cid, (unsigned)body,
++                (tag==0xFD)?2:1, now_ns,
++                buf[pos+0], buf[pos+1], buf[pos+2], buf[pos+3],
++                buf[pos+4], buf[pos+5], buf[pos+6], buf[pos+7]);
++            int off = want;
++            if (off >= (int)sizeof(line)) {
++                off = (int)sizeof(line) - 1;
++            }
++            if (off < 0) {
++                off = 0;
++            }
++            ssize_t w = ::write(logfd, line, off);
++            (void)w;
++            lines++;
++        }
++        pos += total;
++    }
++}
++}
++/* ---- end Phase-2 time-debug instrumentation ---- */
++
+ void comm_send_buffer(mavlink_channel_t chan, const uint8_t *buf, uint8_t len)
+ {
+     if (!valid_channel(chan) || mavlink_comm_port[chan] == nullptr || chan_discard[chan]) {
+diff --git a/libraries/SITL/SIM_JSON.cpp b/libraries/SITL/SIM_JSON.cpp
+index bba93e8..dfb4bc6 100644
+--- a/libraries/SITL/SIM_JSON.cpp
++++ b/libraries/SITL/SIM_JSON.cpp
+@@ -18,8 +18,14 @@
+ 
+ #include "SIM_config.h"
+ 
++
+ #if AP_SIM_JSON_ENABLED
+ 
++#include <atomic>
++
++namespace SITL {
++std::atomic<uint64_t> ap_sim_source_time_now_us{0};
++}
+ #include "SIM_JSON.h"
+ 
+ #include <stdio.h>
+@@ -31,6 +37,12 @@
+ #include <AP_HAL/utility/replace.h>
+ #include <SRV_Channel/SRV_Channel.h>
+ #include <AP_Filesystem/AP_Filesystem.h>
++#include <AP_HAL_SITL/Scheduler.h>
++#include <unistd.h>
++#include <sys/syscall.h>
++#include <unistd.h>
++#include <sys/syscall.h>
++#include <AP_HAL_SITL/Scheduler.h>
+ 
+ #define UDP_TIMEOUT_MS 100
+ 
+@@ -65,6 +77,10 @@ JSON::JSON(const char *frame_str) :
+     sock(true)
+ {
+     printf("Starting SITL: JSON\n");
++    const char *wport = getenv("SIM_JSON_CLOCK_WITNESS_PORT");
++    clock_witness_port = (wport != nullptr) ? (uint16_t)strtol(wport, nullptr, 10) : 0;
++    clock_witness_enabled = (clock_witness_port > 0);
++    clock_witness_emit_count = 0;
+ 
+     const char *colon = strchr(frame_str, ':');
+     if (colon) {
+@@ -526,6 +542,41 @@ void JSON::recv_fdm(const struct sitl_input &input)
+     last_timestamp_s = state.timestamp_s;
+     frame_counter++;
++    ap_sim_source_time_now_us.store(time_now_us, std::memory_order_relaxed);
+ 
++#if CONFIG_HAL_BOARD == HAL_BOARD_SITL
++    // Phase-2C direct clock witness.  Every 5th FDM update emit a same-update
++    // source-domain pair as a UDP datagram to the listener.  Contains ONLY
++    // timing values and a sequence number: no pose, attitude, or world state.
++    if (clock_witness_enabled && (frame_counter % 5) == 0) {
++        if (clock_witness_emit_count == 1) {
++            clock_witness_sock.set_blocking(false);
++            clock_witness_sock.reuseaddress();
++        }
++        clock_witness_emit_count++;
++        char witness_msg[520];
++        const int64_t gazebo_fdm_timestamp_ns = (int64_t)(state.timestamp_s * 1.0e9);
++        const uint64_t ardupilot_time_now_us = time_now_us;
++        const uint64_t ardupilot_micros64_us = AP_HAL::micros64();
++        const uint64_t ardupilot_millis_ms = AP_HAL::millis();
++        struct timespec host_ts;
++        clock_gettime(CLOCK_MONOTONIC, &host_ts);
++        const uint64_t host_mono_ns = (uint64_t)(host_ts.tv_sec) * 1000000000ULL + (uint64_t)(host_ts.tv_nsec);
++        const HALSITL::Scheduler *w_sched = HALSITL::Scheduler::from(hal.scheduler);
++        const uint64_t w_stopped_us = (w_sched != nullptr) ? w_sched->stopped_clock_usec() : 0;
++        snprintf(witness_msg, sizeof(witness_msg),
++                 "{ \"seq\":%llu,\"gazebo_fdm_timestamp_ns\":%lld,\"ardupilot_time_now_us\":%llu,\"ardupilot_micros64_us\":%llu,\"ardupilot_millis_ms\":%llu,\"wsl_host_mono_ns\":%llu,\"kind\":\"witness\",\"pid\":%d,\"tid\":%ld,\"stopped_clock_us\":%llu }",
++                 (unsigned long long)clock_witness_emit_count,
++                 (long long)gazebo_fdm_timestamp_ns,
++                 (unsigned long long)ardupilot_time_now_us,
++                 (unsigned long long)ardupilot_micros64_us,
++                 (unsigned long long)ardupilot_millis_ms,
++                 (unsigned long long)host_mono_ns,
++                 (int)getpid(), (long)syscall(SYS_gettid),
++                 (unsigned long long)w_stopped_us);
++        clock_witness_sock.sendto(witness_msg, strlen(witness_msg), "127.0.0.1", clock_witness_port);
++    }
++#endif
++
+ #if 0
+ 
+     float roll, pitch, yaw;
+diff --git a/libraries/SITL/SIM_JSON.h b/libraries/SITL/SIM_JSON.h
+index 48af85f..68efad9 100644
+--- a/libraries/SITL/SIM_JSON.h
++++ b/libraries/SITL/SIM_JSON.h
+@@ -25,6 +25,13 @@
+ 
+ namespace SITL {
+ 
++// Latest SIM_JSON simulation clock (JSON::time_now_us), updated in recv_fdm on
++// every FDM update.  The GCS thread reads back the EXACT same value the
++// SIM_JSON clock-witness pairs against gazebo, so pose-sidecar timestamps and
++// the direct sim clock fit share one source of truth.
++extern std::atomic<uint64_t> ap_sim_source_time_now_us;
++
++
+ class JSON : public Aircraft {
+ public:
+     JSON(const char *frame_str);
+@@ -69,6 +76,18 @@ private:
+     SocketAPM sock;
+ #endif
+ 
++#if CONFIG_HAL_BOARD == HAL_BOARD_SITL
++    // Phase-2C direct clock witness.  Emits same-update (gazebo_fdm_timestamp_ns,
++    // ardupilot_time_now_us, ardupilot_micros64_us) source-domain pairs on UDP to
++    // a host listener when
++    // SIM_JSON_CLOCK_WITNESS_PORT is set.  Compiles in all SITL builds but is
++    // inert (no socket, no datagram) unless the env var is present.
++    SocketAPM_native clock_witness_sock{true};
++    uint16_t clock_witness_port;
++    uint64_t clock_witness_emit_count;
++    bool clock_witness_enabled;
++#endif
++
+     uint32_t frame_counter;
+     double last_timestamp_s;
+ 
+diff --git a/libraries/SITL/SITL.h b/libraries/SITL/SITL.h
+index 9a0511e..55c953d 100644
+--- a/libraries/SITL/SITL.h
++++ b/libraries/SITL/SITL.h
+@@ -36,8 +36,17 @@
+ #include "SIM_Volz.h"
+ #include "SIM_AIS.h"
+ 
++#include <atomic>
++
+ namespace SITL {
+ 
++// Latest SIM_JSON simulation clock (JSON::time_now_us), updated in recv_fdm on
++// every FDM update.  Declared here (SITL.h is included by GCS_MAVLink) and
++// defined in SIM_JSON.cpp so the GCS-side pose source-time sidecar reads back
++// the exact same value the SIM_JSON clock witness pairs against gazebo.
++extern std::atomic<uint64_t> ap_sim_source_time_now_us;
++
++
+ enum class LedLayout {
+     ROWS=0,
+     LUMINOUSBEE=1,

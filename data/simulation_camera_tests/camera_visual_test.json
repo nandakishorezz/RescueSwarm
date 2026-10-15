@@ -1,0 +1,48 @@
+{
+  "classification": "SIMULATION_OBSERVER_PIXEL_EVIDENCE_ONLY",
+  "detector_connected": false,
+  "camera_profile": "ov9281_reference_simulation",
+  "hardware_gate_h1": "PENDING",
+  "cases": [
+    {
+      "case": "survivor_inside_fov",
+      "frame": "data\\simulation_camera_tests\\survivor_inside_fov.png",
+      "minimum": 8,
+      "maximum": 220,
+      "mean": 51.2178916015625,
+      "unique_values": 157,
+      "frequency_basis": "GAZEBO_SIMULATION_TIME",
+      "frequency_sample_count": 11,
+      "measured_frequency_hz": 30.30303030303038
+    },
+    {
+      "case": "survivor_outside_fov",
+      "frame": "data\\simulation_camera_tests\\survivor_outside_fov.png",
+      "minimum": 51,
+      "maximum": 51,
+      "mean": 51.0,
+      "unique_values": 1
+    },
+    {
+      "case": "camera_pitch_20deg",
+      "frame": "data\\simulation_camera_tests\\camera_pitch_20deg.png",
+      "minimum": 8,
+      "maximum": 220,
+      "mean": 51.2495859375,
+      "unique_values": 159
+    },
+    {
+      "case": "camera_roll_15deg",
+      "frame": "data\\simulation_camera_tests\\camera_roll_15deg.png",
+      "minimum": 8,
+      "maximum": 220,
+      "mean": 51.248974609375,
+      "unique_values": 158
+    }
+  ],
+  "inside_vs_outside_mean_abs_difference": 0.5743662109375,
+  "pitch_change_mean_abs_difference": 1.2700341796875,
+  "roll_change_mean_abs_difference": 1.2078349609375,
+  "frequency_within_tolerance": true,
+  "pass": true
+}

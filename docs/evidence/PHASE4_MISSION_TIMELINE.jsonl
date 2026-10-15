@@ -1,0 +1,7 @@
+{"event":"TARGET_ASSIGNED","host_monotonic_ns":43238554664800,"source":"AUTONOMY","target_id":"664443fa-3e89-5be1-a8d0-6114927fa1fa","target_source":"AUTONOMY_FUSED_ESTIMATE"}
+{"event":"APPROACH_START","host_monotonic_ns":43238557439600,"source":"AUTONOMY","target_id":"664443fa-3e89-5be1-a8d0-6114927fa1fa","coarse_target_enu_m":[17.52071930106368,-4.619542907067412],"visual_standoff_m":2.0,"truth_used":false,"path":[{"east_m":17.81092834756431,"north_m":-6.598375570363931,"altitude_m":8.0}]}
+{"event":"APPROACH_ARRIVAL","host_monotonic_ns":43239343117600,"source":"AUTONOMY","target_id":"664443fa-3e89-5be1-a8d0-6114927fa1fa"}
+{"event":"REACQUIRED","host_monotonic_ns":43239421324000,"source":"AUTONOMY","target_id":"664443fa-3e89-5be1-a8d0-6114927fa1fa","frame_id":"drone_01_gazebo_camera:000000000491"}
+{"event":"PIXEL_COARSE_CORRECTION","host_monotonic_ns":43239436895000,"source":"AUTONOMY","target_id":"664443fa-3e89-5be1-a8d0-6114927fa1fa","frame_id":"drone_01_gazebo_camera:000000000491","error_enu_m":[0.2177288456919122,-1.7519589649450342],"bounded_distance_m":1.7654365083733847,"truth_used":false}
+{"event":"PAYLOAD_RELEASE","host_monotonic_ns":43338643566700,"source":"AUTONOMY","target_id":"664443fa-3e89-5be1-a8d0-6114927fa1fa","command_id":"29030717-de2b-49ec-a8b8-f90e140bfff0","autonomy_physical_score_known":false}
+{"event":"RESUME_SEARCH","host_monotonic_ns":43339445434500,"source":"AUTONOMY","sequence":3,"completed_before":3,"remaining_from":3,"restart_from_beginning":false}

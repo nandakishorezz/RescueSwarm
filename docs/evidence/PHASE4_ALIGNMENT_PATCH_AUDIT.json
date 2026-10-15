@@ -1,0 +1,23 @@
+{
+  "changed_files": [
+    "ground/backend/app/sitl/phase4_service.py"
+  ],
+  "retained_changes": [
+    "Distance-based early exit from _move_until_visible.",
+    "Iterator exhaustion StopIteration exception handler restart loop."
+  ],
+  "reverted_debug_changes": [
+    "Removed OSError try/except in router.py _receive_loop.",
+    "Restored time.sleep(10) in manager.py launcher.start.",
+    "Restored 180s GPS timeout in run_stage13sim_phase4.py.",
+    "Restored 90.0s reacquisition.timeout_s in rescue_orchestration.yaml.",
+    "Removed 50.0s simulated sensor dropout test hook in phase4_service.py."
+  ],
+  "global_alignment_timeout_s": 90.0,
+  "per_point_timeout_s": 8.0,
+  "arrival_tolerance_m": 1.0,
+  "iterator_restart_behavior": "When StopIteration is caught, the iterator is recreated with the current target coordinates and the next search point is yielded.",
+  "authoritative_receive_loop_count": 1,
+  "truth_firewall_unchanged": true,
+  "payload_physics_unchanged": true
+}

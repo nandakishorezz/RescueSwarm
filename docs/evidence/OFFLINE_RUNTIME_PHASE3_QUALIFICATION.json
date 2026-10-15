@@ -1,0 +1,19 @@
+{
+  "classification": "PHASE3_QUALIFIED_LOCAL_RUNTIME",
+  "network_access_performed": false,
+  "internet_required": false,
+  "cloud_inference": false,
+  "remote_model_download": false,
+  "remote_sensor_service": false,
+  "remote_texture_map_or_cdn_required": false,
+  "local_model": "models\\artifacts\\yolo11n.onnx",
+  "local_model_sha256": "417c59a7ff8ddd316d9863fb8ba0e7f3cfc5a27264c774a4ad3ec7526f2a5e2d",
+  "phase3_runtime_external_references": [],
+  "live_offline_runs": [
+    "stage13sim_phase3_ideal_control_20260909c",
+    "stage13sim_phase3_nominal_smoke_20260909a",
+    "stage13sim_phase3_challenging_20260909a"
+  ],
+  "phase2_offline_qualification_preserved": true,
+  "passed": true
+}

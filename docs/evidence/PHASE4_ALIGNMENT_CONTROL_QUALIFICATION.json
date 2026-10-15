@@ -1,0 +1,10 @@
+{
+  "qualification_run": "phase4_alignment_qualification_1_retry17",
+  "controller_damping_implemented": true,
+  "unit_tests_passed": true,
+  "trial_result_gate_passed": false,
+  "trial_result_released": false,
+  "trial_result_aligned": false,
+  "trial_duration_s": 473.0,
+  "failure_reason": "Alignment timed out. The implemented velocity damping successfully opposed motion and passed all 20 strict unit tests, but in SITL flight, subtracting `kd * v_veh` from a position-proportional velocity command drastically reduced the terminal approach speed. This caused the drone to crawl toward the target and exceed the 90s reacquisition/alignment timeout before passing the distance gate."
+}

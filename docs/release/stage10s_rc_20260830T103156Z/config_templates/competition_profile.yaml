@@ -1,0 +1,36 @@
+profile_id: rescueswarm_stage10s_competition_rc
+evidence_class: SOFTWARE_SITL_ONLY
+competition:
+  max_search_area_hectares: 10.0
+  max_survivors: 10
+  minimum_drones: 2
+  max_mission_flight_time_s: 1800
+  max_setup_time_s: 300
+  external_network_allowed: false
+  allowed_operator_actions:
+    - MISSION_START
+    - SAFETY_ABORT
+    - EMERGENCY_RECALL
+physical_requirements:
+  evidence_status: PENDING_H1
+  combined_auw_limit_kg: 25.0
+  payload_mass_g: 200
+  payload_size_cm:
+    length: 20
+    width: 10
+    height: 5
+  launch_landing_zone_ft:
+    width: 12
+    length: 12
+qualification:
+  primary_fleet_size: 2
+  smoke_fleet_size: 3
+  coverage_requirement_percent: 98.0
+  rtl_reserve_s: 180
+  landing_queue_reserve_s: 60
+  target_service_estimate_s: 150
+  deadline_safety_factor: 1.25
+  setup_benchmark_iterations: 20
+  maximum_websocket_pending_messages: 1
+hardware_gate_h1: PENDING
+

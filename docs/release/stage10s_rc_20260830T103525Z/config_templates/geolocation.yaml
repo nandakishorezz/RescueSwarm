@@ -1,0 +1,62 @@
+application:
+  stage: 5
+  mode: development
+
+geolocation:
+  calibration_id: null          # Physical calibration must be selected explicitly.
+  extrinsics_id: null           # Physical mount transform must be selected explicitly.
+  target_pixel_strategy: BBOX_BOTTOM_CENTER
+
+  pose:
+    history_seconds: 10.0
+    max_interpolation_gap_ms: 250.0
+    max_extrapolation_ms: 50.0
+
+  clock_sync:
+    enabled: true
+    minimum_samples: 5
+    maximum_samples: 100
+    max_rtt_ms: 30.0
+    degraded_rtt_p95_ms: 20.0
+
+  ground_model:
+    type: flat
+    source: mission_origin
+    ground_up_m: 0.0
+
+  quality:
+    require_calibration: true
+    require_pose: true
+    require_valid_gps: true
+    minimum_gps_fix: 3
+    maximum_view_angle_from_nadir_deg: 70.0
+    mission_region_tolerance_m: 25.0
+
+  uncertainty:
+    # Development priors are used only when telemetry/calibration evidence is absent.
+    horizontal_position_prior_m: 3.0
+    vertical_position_prior_m: 5.0
+    pixel_prior_px: 2.0
+    attitude_prior_deg: 1.0
+    mount_prior_deg: 2.0
+    minimum_reported_uncertainty_m: 1.0
+
+  confirmation:
+    minimum_observations: 3
+    minimum_time_span_s: 0.15
+    time_window_s: 8.0
+    association_radius_m: 6.0
+    short_term_time_s: 1.0
+    short_term_pixel_radius_px: 50.0
+    minimum_detection_confidence: 0.25
+    maximum_geolocation_uncertainty_m: 20.0
+
+  fusion:
+    method: robust_weighted
+    outlier_mad_scale: 3.5
+    minimum_outlier_gate_m: 2.0
+    minimum_uncertainty_m: 1.0
+
+  worker:
+    queue_size: 32
+    drop_policy: drop_oldest

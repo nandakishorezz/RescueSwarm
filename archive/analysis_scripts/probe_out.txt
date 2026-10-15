@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\nanda\Downloads\SURVIVOR_DETECTION\scripts\run_stage13sim_phase4.py", line 1356, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\Users\nanda\Downloads\SURVIVOR_DETECTION\scripts\run_stage13sim_phase4.py", line 1340, in main
+    run_dir = manager.prepare(definition)
+  File "C:\Users\nanda\Downloads\SURVIVOR_DETECTION\rescue_core\simulation\orchestration\manager.py", line 95, in prepare
+    raise FileExistsError(f"simulation run already exists: {definition.run_id}")
+FileExistsError: simulation run already exists: phase4_alignment_qualification_1_retry28_probe

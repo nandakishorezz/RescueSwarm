@@ -1,0 +1,23 @@
+{
+  "python": {
+    "passed": 364,
+    "skipped": 9,
+    "failed": 0,
+    "duration_s": 32.94
+  },
+  "frontend": {
+    "test_files_passed": 9,
+    "tests_passed": 37,
+    "failed": 0,
+    "production_build": "PASS"
+  },
+  "live": {
+    "phase3_cases_completed": 9,
+    "direct_clock_valid_all": true,
+    "nominal_three_survivor_gold": "PASS"
+  },
+  "ardupilot_sitl_incremental_build": "PASS",
+  "offline": "PASS",
+  "automated_total_passed": 401,
+  "passed": true
+}

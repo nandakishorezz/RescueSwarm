@@ -1,0 +1,21 @@
+[Unit]
+Description=RescueSwarm independent airborne vision agent
+After=multi-user.target
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=rescueswarm
+Group=rescueswarm
+WorkingDirectory=/opt/rescueswarm
+EnvironmentFile=-/etc/rescueswarm/vision.env
+ExecStart=/opt/rescueswarm/.venv/bin/python /opt/rescueswarm/scripts/run_vision_agent.py --config /opt/rescueswarm/config/vision.yaml
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=15
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

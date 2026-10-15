@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "stable_hover": true,
+  "horizontal_correction": true,
+  "yaw_rotation": true,
+  "no_physics_explosion": true,
+  "physical_detach_observed": true,
+  "impact_observed": true
+}

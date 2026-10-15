@@ -1,0 +1,23 @@
+{
+  "run_id": "phase4_alignment_reacq_final_1_retry1",
+  "initial_error_m": 7.59,
+  "best_error_m": 0.7167,
+  "final_error_m": 1.267,
+  "best_error_sim_time_s": 156.347,
+  "final_alignment_sample_time_s": 164.667,
+  "error_trend_last_10s": "Diverging (1.09m -> 0.81m -> 1.26m)",
+  "final_vehicle_velocity": 0.659,
+  "final_commanded_correction": [0.128, -0.424],
+  "target_visible_at_end": true,
+  "final_observation_age_s": 1.945,
+  "last_controller_state": "REACQUIRING",
+  "last_command": "goto",
+  "last_blocking_function": "adapter.router (recv_match)",
+  "simulation_clock_continued_after_alignment_logging": true,
+  "ardupilot_alive_after_alignment_logging": false,
+  "gazebo_alive_after_alignment_logging": true,
+  "hang_classification": "MAVLINK_BLOCK",
+  "evidence_based_root_cause": "The global timeout DID trigger after 90 seconds (181.547s sim time). The user was misled by ALIGNMENT_EVIDENCE stopping at 47s. At 47s (164.667s sim time), the target observation became stale (1.945s age) due to CPU starvation (484% CPU, 652ms latency, dropped frames). The controller fell out of ALIGNING and into REACQUIRING, calling _move_until_visible. It spent the remaining 43 seconds of the 90s timeout looping in REACQUIRING and logging to TARGET_SERVICE_TRAJECTORY. At 90s, the timeout triggered, ALIGNMENT_ABORTED was logged, and the service returned. Then the main script hung in adapter.router because ArduPilot had crashed (Gazebo logged ArduPilot controller reset). The drone never reached 0.5m because the impact predictor (which adds v * t_fall) caused a 0.84m offset at 0.65m/s speed, leading to overshoot with Kp=0.35.",
+  "production_code_change_required": "NO",
+  "recommended_smallest_fix": "None yet. The bug is harness/process CPU starvation causing ArduPilot to crash and the vision pipeline to lag. Wait for further instructions before changing alignment code."
+}

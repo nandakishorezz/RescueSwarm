@@ -1,0 +1,191 @@
+# Stage 8S deterministic engineering scenarios. Native SITL scenarios are
+# explicitly identified; normalized-event scenarios do not claim sensor-level
+# ArduPilot evidence.
+scenarios:
+  - scenario_id: browser_loss_auto
+    description: Browser disappears while onboard AUTO continues
+    group: LINK
+    phase: AUTO_SEARCH
+    failure: GCS_BROWSER_DISCONNECT
+    expected_action: CONTINUE
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: websocket_drop_auto
+    description: Mission WebSocket drops without affecting MAVLink
+    group: LINK
+    phase: AUTO_SEARCH
+    failure: WEBSOCKET_DROP
+    expected_action: CONTINUE
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: mavlink_loss_guided
+    description: Control link disappears during active GUIDED service
+    group: LINK
+    phase: ALIGNMENT
+    critical: true
+    failure: MAVLINK_LINK_LOSS
+    expected_action: OBSERVE_AUTOPILOT_FAILSAFE
+    expected_final_states: [RETURNING]
+
+  - scenario_id: guided_watchdog
+    description: GUIDED setpoint refresh stops
+    group: LINK
+    phase: ALIGNMENT
+    critical: true
+    failure: GUIDED_COMMAND_STOP
+    parameters: {age_s: 5}
+    expected_action: REQUEST_RTL
+    expected_final_states: [RETURNING]
+
+  - scenario_id: low_battery_search
+    description: Battery is below target-diversion threshold
+    group: AUTOPILOT_SENSORS
+    phase: AUTO_SEARCH
+    failure: LOW_BATTERY
+    expected_action: DEFER_TARGET
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: critical_battery_guided
+    description: Native critical battery evidence during target service
+    group: AUTOPILOT_SENSORS
+    phase: GUIDED_APPROACH
+    critical: true
+    failure: CRITICAL_BATTERY
+    expected_action: OBSERVE_AUTOPILOT_FAILSAFE
+    expected_final_states: [RETURNING]
+
+  - scenario_id: ekf_failure_guided
+    description: EKF health becomes invalid during target service
+    group: AUTOPILOT_SENSORS
+    phase: ALIGNMENT
+    critical: true
+    failure: EKF_DEGRADED
+    expected_action: OBSERVE_AUTOPILOT_FAILSAFE
+    expected_final_states: [RETURNING]
+
+  - scenario_id: gps_loss_guided
+    description: GPS/pose becomes invalid during target service
+    group: AUTOPILOT_SENSORS
+    phase: GUIDED_APPROACH
+    failure: GPS_DEGRADED
+    expected_action: ABORT_TARGET_SERVICE
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: geofence_breach
+    description: Native geofence breach evidence during target service
+    group: AUTOPILOT_SENSORS
+    phase: GUIDED_APPROACH
+    critical: true
+    failure: GEOFENCE_BREACH
+    expected_action: OBSERVE_AUTOPILOT_FAILSAFE
+    expected_final_states: [RETURNING]
+
+  - scenario_id: vision_crash_search
+    description: Vision fails while onboard coverage remains autonomous
+    group: VISION
+    phase: AUTO_SEARCH
+    failure: VISION_PROCESS_CRASH
+    expected_action: CONTINUE
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: vision_crash_alignment
+    description: Vision fails where relative control requires it
+    group: VISION
+    phase: ALIGNMENT
+    critical: true
+    failure: VISION_PROCESS_CRASH
+    expected_action: ABORT_TARGET_SERVICE
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: camera_freeze_alignment
+    description: Camera process exists but frames become stale
+    group: VISION
+    phase: ALIGNMENT
+    failure: CAMERA_FREEZE
+    expected_action: ABORT_TARGET_SERVICE
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: detector_freeze_alignment
+    description: Frames continue but detections become stale
+    group: VISION
+    phase: ALIGNMENT
+    failure: DETECTOR_FREEZE
+    expected_action: ABORT_TARGET_SERVICE
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: stale_detection
+    description: Old detection must not become fresh confirmation evidence
+    group: VISION
+    phase: TARGET_CONFIRMATION
+    failure: STALE_DETECTION
+    expected_action: DEFER_TARGET
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: target_loss_before_drop
+    description: Persistent target loss closes drop gate
+    group: MISSION
+    phase: ALIGNMENT
+    critical: true
+    failure: TARGET_LOSS
+    expected_action: ABORT_TARGET_SERVICE
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: deadline_pressure_alignment
+    description: Active target service reaches RTL time reserve
+    group: MISSION
+    phase: ALIGNMENT
+    failure: MISSION_DEADLINE_PRESSURE
+    parameters: {remaining_s: 30}
+    expected_action: ABORT_TARGET_SERVICE
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: payload_verification_failure
+    description: Release without verification never becomes delivered
+    group: PAYLOAD
+    phase: DELIVERY
+    critical: true
+    failure: PAYLOAD_VERIFICATION_FAILURE
+    expected_action: ABORT_TARGET_SERVICE
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: database_outage
+    description: SQL unavailable while durable local outbox retains evidence
+    group: PERSISTENCE
+    phase: AUTO_SEARCH
+    failure: DATABASE_UNAVAILABLE
+    expected_action: CONTINUE
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: backend_restart_auto
+    description: Backend restarts while ArduCopter owns AUTO
+    group: PERSISTENCE
+    phase: AUTO_SEARCH
+    failure: GROUND_BACKEND_RESTART
+    expected_action: CONTINUE
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: orchestrator_restart_auto
+    description: Orchestrator restarts while onboard AUTO continues
+    group: PERSISTENCE
+    phase: AUTO_SEARCH
+    critical: true
+    failure: ORCHESTRATOR_CRASH
+    expected_action: CONTINUE
+    expected_final_states: [SEARCHING]
+
+  - scenario_id: orchestrator_restart_guided
+    description: Ambiguous GUIDED restart must not resume delivery
+    group: PERSISTENCE
+    phase: GUIDED_APPROACH
+    failure: ORCHESTRATOR_CRASH
+    expected_action: REQUEST_RTL
+    expected_final_states: [RETURNING]
+
+  - scenario_id: emergency_recall_guided
+    description: Operator recall interrupts precision alignment with no drop
+    group: OPERATOR
+    phase: ALIGNMENT
+    critical: true
+    failure: EMERGENCY_RECALL
+    expected_action: REQUEST_RTL
+    expected_final_states: [RETURNING]

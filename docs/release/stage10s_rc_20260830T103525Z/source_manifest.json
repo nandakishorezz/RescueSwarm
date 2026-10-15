@@ -1,0 +1,1213 @@
+{
+  "generated_at": "2026-08-30T10:35:38.898220+00:00",
+  "rescueswarm_commit": "UNKNOWN",
+  "file_count": 241,
+  "aggregate_sha256": "6eaad295d05ed645145f26687b33cf4c09ebe9816d41d68943ddc0eb42d57e65",
+  "files": [
+    {
+      "path": "rescue_core/__init__.py",
+      "sha256": "57c459f2f7437aefe3a43cd6b3cce82974186598b2d5e0c352896a2c7746b988",
+      "bytes": 100
+    },
+    {
+      "path": "rescue_core/adapters/__init__.py",
+      "sha256": "00efc55236b6e4b593c6deb00fb0aeb8f0e8fd360a0628d868b44f75edca1816",
+      "bytes": 36
+    },
+    {
+      "path": "rescue_core/adapters/autopilot/__init__.py",
+      "sha256": "0ef941b4b890b6ae9d0f8958bb58f6aaed7af83c1814cd49062e3177a5b36e5f",
+      "bytes": 217
+    },
+    {
+      "path": "rescue_core/adapters/autopilot/ardupilot_mavlink.py",
+      "sha256": "b471a8c35054b667b2e2a251dff99c9589375bed9e4487f3e4e4e32a924c796f",
+      "bytes": 7670
+    },
+    {
+      "path": "rescue_core/adapters/autopilot/base.py",
+      "sha256": "2abbc610159dafe56975c983a50bcdfd5389562a3b278419a03c2e65e6d6b45c",
+      "bytes": 2778
+    },
+    {
+      "path": "rescue_core/adapters/autopilot/telemetry.py",
+      "sha256": "a85c532006b03b42948375e33695c0599aa62f14697c34111eb6e802439774d0",
+      "bytes": 5224
+    },
+    {
+      "path": "rescue_core/autonomy/__init__.py",
+      "sha256": "2bea0cc54e49a11762ac6aaf5513f47466e071f804159b34b3cb8ca013221eb9",
+      "bytes": 201
+    },
+    {
+      "path": "rescue_core/autonomy/alignment.py",
+      "sha256": "42b7f228d9c7e79c3d451d30b238e0743944eb900d9c5d4429f305d42817d62e",
+      "bytes": 2336
+    },
+    {
+      "path": "rescue_core/autonomy/approach.py",
+      "sha256": "f066d2dcf61670ac595c42854c2e3ad70df20d32aaf3633a53047ba2785750ea",
+      "bytes": 4204
+    },
+    {
+      "path": "rescue_core/autonomy/config.py",
+      "sha256": "48e68362094955c44db830227b04bc81e47924e648d2426697685c69f823b12b",
+      "bytes": 2869
+    },
+    {
+      "path": "rescue_core/autonomy/guided.py",
+      "sha256": "c371a595e2f37ffac5ac8779986bc1ea26249a17b280559ebed8a3012fb62e19",
+      "bytes": 651
+    },
+    {
+      "path": "rescue_core/autonomy/models.py",
+      "sha256": "0e33b2d20ed453169c356bd33389d70e0205afad8a5fb161dbc68ce0e8b82d91",
+      "bytes": 3345
+    },
+    {
+      "path": "rescue_core/autonomy/orchestrator.py",
+      "sha256": "2c7d0189878c2fa981c64c4eed864ab52de1df7795443b3204779a7ace204719",
+      "bytes": 2986
+    },
+    {
+      "path": "rescue_core/autonomy/payload.py",
+      "sha256": "c31bda1cc7c31ad0e6d74ef24a31aa8b689bca2506f5007edbd25f60eaffef02",
+      "bytes": 3366
+    },
+    {
+      "path": "rescue_core/autonomy/policies.py",
+      "sha256": "aacd2220d73bea92cdd61ec4b51bd79cb798d62308639437c150da7fa5572b07",
+      "bytes": 4411
+    },
+    {
+      "path": "rescue_core/autonomy/reacquisition.py",
+      "sha256": "546c68269c35cf3e84ad99cad75bdf7fcf1528f184e3c59d665fcee11879c3cd",
+      "bytes": 2801
+    },
+    {
+      "path": "rescue_core/autonomy/resume.py",
+      "sha256": "370d3c2d23c1c5d875505a7d32038954058415862aecb25f384a5f1fded6ef44",
+      "bytes": 2056
+    },
+    {
+      "path": "rescue_core/autonomy/safety.py",
+      "sha256": "b3500a5324983a97a83ad397fc045e9b9caeb13cb3685763a24a5297431ad031",
+      "bytes": 2759
+    },
+    {
+      "path": "rescue_core/autonomy/states.py",
+      "sha256": "ba3d7c9bfd4c4fcb8197c76a04667f1bf6f2a222b58da5fbed6da21d45d1931f",
+      "bytes": 5370
+    },
+    {
+      "path": "rescue_core/common/__init__.py",
+      "sha256": "1ffd2c45625cfc97c60dc2c96a90bb641a18c0d60072777274a6cb094b3c4727",
+      "bytes": 257
+    },
+    {
+      "path": "rescue_core/common/capabilities.py",
+      "sha256": "9a7383596c6604b8cef6aaf4aefc085b3c002238b7d105632f55b40379176966",
+      "bytes": 3386
+    },
+    {
+      "path": "rescue_core/common/config.py",
+      "sha256": "3129bd7a9c4881c32adc7eef5c98da98571d4ff716381a820ccff0079ef4fd67",
+      "bytes": 1722
+    },
+    {
+      "path": "rescue_core/common/diagnostics.py",
+      "sha256": "8ade7abe5d77874fb2b10967f8780ae652be0d083ebc4b3edf5fdeac4123d0c4",
+      "bytes": 2103
+    },
+    {
+      "path": "rescue_core/common/hardware_gates.py",
+      "sha256": "7465d4ad23e1329686b7cf632936ac9c4d3a3a822a2b6c109c38cd397990340b",
+      "bytes": 644
+    },
+    {
+      "path": "rescue_core/common/models.py",
+      "sha256": "70789c94a73311707b78f32bc6ae43ea97c7853a8dbdefd210d0f94dc726715a",
+      "bytes": 1017
+    },
+    {
+      "path": "rescue_core/geolocation/__init__.py",
+      "sha256": "735d0ae2e44eb4ab7f4f320860aed31a4a68a533c07fddcf062d86c84c907367",
+      "bytes": 767
+    },
+    {
+      "path": "rescue_core/geolocation/artifacts.py",
+      "sha256": "24fd5ea49fc7696e3501232789d6f53eab09281ae45904928525d0b69d59a1f4",
+      "bytes": 2621
+    },
+    {
+      "path": "rescue_core/geolocation/calibration.py",
+      "sha256": "d010b6db5e00912dd711e21425c2a05efdb7a00c3bf8807bd37734776730ebfc",
+      "bytes": 10139
+    },
+    {
+      "path": "rescue_core/geolocation/calibration_workflow.py",
+      "sha256": "18cc004c35130677f6ed007c11c7b8be3c4a1891bdd94233cd5387a81bb167f3",
+      "bytes": 9837
+    },
+    {
+      "path": "rescue_core/geolocation/camera_models.py",
+      "sha256": "70c1f31a070d047ac6eacb50b7b5dea299e17b50eacefeff5fcc4d07d12b9a58",
+      "bytes": 3099
+    },
+    {
+      "path": "rescue_core/geolocation/clock_sync.py",
+      "sha256": "6944fb09806ebee35bae954eaadc16ff724f863e5d7310b2d0ab4072ca463125",
+      "bytes": 4363
+    },
+    {
+      "path": "rescue_core/geolocation/config.py",
+      "sha256": "fb0d2f5f8b1e7bc83434682898e06b0267f11a4ffd4ee1f2a6ada2c1768264a0",
+      "bytes": 3334
+    },
+    {
+      "path": "rescue_core/geolocation/evaluation.py",
+      "sha256": "0f51f1afc974bfb646a516f1442352dcd595fe8b66741ac893ad68d7ccf6d5ec",
+      "bytes": 1286
+    },
+    {
+      "path": "rescue_core/geolocation/events.py",
+      "sha256": "69337219c9f57407c760db981c405a5a68533a11589cad30ab990de970927052",
+      "bytes": 3195
+    },
+    {
+      "path": "rescue_core/geolocation/fusion.py",
+      "sha256": "a3fe6c69c8a8b4c255419626366ec08764d62cee7614739cd3d58e45b338226d",
+      "bytes": 9714
+    },
+    {
+      "path": "rescue_core/geolocation/geolocator.py",
+      "sha256": "6f5c6f85644b8846719cda2520eb65b464ce774086f3ca7e5888198147dfac18",
+      "bytes": 7608
+    },
+    {
+      "path": "rescue_core/geolocation/ground.py",
+      "sha256": "ebe62bafb3e1be44a333fa45174671fdb7a54fb47842acdb0b14c218bc2fb4b2",
+      "bytes": 2241
+    },
+    {
+      "path": "rescue_core/geolocation/models.py",
+      "sha256": "5ebeb2fc4da11494bc193914cc7111a37355c63dbd845b12b2dd456783a4c294",
+      "bytes": 5628
+    },
+    {
+      "path": "rescue_core/geolocation/pose.py",
+      "sha256": "4c335c4af82218e6928216086f1245c2eefaea5fc81874ff340c02eae30fea23",
+      "bytes": 10065
+    },
+    {
+      "path": "rescue_core/geolocation/projection.py",
+      "sha256": "e7e7aec5ca6afc17e5777da64dff8fe902d9cc864793b7dddea538b787f3e377",
+      "bytes": 1399
+    },
+    {
+      "path": "rescue_core/geolocation/transforms.py",
+      "sha256": "8ab49102e3b8de999023b813c21c3aa3bbe39e97e89be219156167710823eb34",
+      "bytes": 5458
+    },
+    {
+      "path": "rescue_core/geolocation/uncertainty.py",
+      "sha256": "3aa6bafacc9ddb4c1583c9d40082353177b41fbae22c11fdb123cbed5f39ee77",
+      "bytes": 5257
+    },
+    {
+      "path": "rescue_core/geolocation/worker.py",
+      "sha256": "5a4ba33f7604aeb1b4af91cf3bc8ee73e62a32b4e540fb84b4a2e57aca8343b7",
+      "bytes": 1666
+    },
+    {
+      "path": "rescue_core/hardware/__init__.py",
+      "sha256": "d34f934e6ef9142a6e57bd5bcafc79fddcc795d4c69b310a3574cf6dfc7c45d0",
+      "bytes": 469
+    },
+    {
+      "path": "rescue_core/hardware/baseline.py",
+      "sha256": "55d61a6968dab992af8c05a1f398dd0a8963384e654cf9159ccdb689ede9a8ba",
+      "bytes": 7250
+    },
+    {
+      "path": "rescue_core/hardware/live.py",
+      "sha256": "da7998965e868a09f38c2e1a787afab5a0ab8e73e5c6c3d514c8cb0fa026e610",
+      "bytes": 5123
+    },
+    {
+      "path": "rescue_core/hardware/metrics.py",
+      "sha256": "e333dc170ff149035f98288354ae34162daaca7643611de3af62b2d511774782",
+      "bytes": 7306
+    },
+    {
+      "path": "rescue_core/hardware/models.py",
+      "sha256": "12f0ea65b87a1362af7a9774a0196ce031e603a351f49ea602f276eba63a96be",
+      "bytes": 1551
+    },
+    {
+      "path": "rescue_core/hardware/power.py",
+      "sha256": "ce835c1ee555aff5e7da98e99965502f3b489f774de73c34ca0b615e1e368530",
+      "bytes": 1672
+    },
+    {
+      "path": "rescue_core/hardware/profiles.py",
+      "sha256": "383e6052703147bd32eb66db2ba0b1f60c6569ff1e3566c6b7fbfe3350606c2e",
+      "bytes": 2540
+    },
+    {
+      "path": "rescue_core/hardware/report.py",
+      "sha256": "93d464c7ba45dce53afc6eb81ee211aefe2317c04403af69cb0a2c32791918e0",
+      "bytes": 4762
+    },
+    {
+      "path": "rescue_core/hardware/safety.py",
+      "sha256": "86831a44a670b50b3277419d884bd3c061adbeb1b27016f1cb31b3ac31bf0506",
+      "bytes": 1858
+    },
+    {
+      "path": "rescue_core/qualification/__init__.py",
+      "sha256": "6c81eca6fd739abee4e090581f3c05fdf61686990acbd8d2a131666569d59e6f",
+      "bytes": 739
+    },
+    {
+      "path": "rescue_core/qualification/audit.py",
+      "sha256": "b5d84138a3e4534007fd23f9e64ed0aa3c4105a5a34bedb52bc948f99b9c09a5",
+      "bytes": 4699
+    },
+    {
+      "path": "rescue_core/qualification/models.py",
+      "sha256": "400579d7d40776c860dc217da0aaa3248a54307b4cf8b05f7b832224502bc4d8",
+      "bytes": 3644
+    },
+    {
+      "path": "rescue_core/qualification/qualification.py",
+      "sha256": "d8dea8edaa93f7b1b3e5b5314d541e161f7ecbb445781fb0e9de47b28ee06f70",
+      "bytes": 10393
+    },
+    {
+      "path": "rescue_core/resilience/__init__.py",
+      "sha256": "1b9e039031ee3f5892bc5a15d95214fae82db8c101538c2fc4d355496129dcc3",
+      "bytes": 376
+    },
+    {
+      "path": "rescue_core/resilience/failures.py",
+      "sha256": "29136ba4e5541b4a7d3651576650a7162726f993f8c29fc4ded14637f21a1666",
+      "bytes": 4093
+    },
+    {
+      "path": "rescue_core/resilience/invariants.py",
+      "sha256": "65bf81f83caf40bcd0ab23beeb97774339a0d523ca88d771c3867172774891f3",
+      "bytes": 3562
+    },
+    {
+      "path": "rescue_core/resilience/models.py",
+      "sha256": "9eda37d21c433a4916b60486235a2f718e061828419f6b697acb7addea623c68",
+      "bytes": 8607
+    },
+    {
+      "path": "rescue_core/resilience/persistence.py",
+      "sha256": "5934d2a349bc39af4a94310c77904654b98437a05d9c5b4f5957f3718e4d380d",
+      "bytes": 4413
+    },
+    {
+      "path": "rescue_core/resilience/policies.py",
+      "sha256": "bba6227d58b7f1df1278885d1c67729e29cac9d1dfd9fd538017e384429dd0d4",
+      "bytes": 7966
+    },
+    {
+      "path": "rescue_core/resilience/recovery.py",
+      "sha256": "37642cc930a1bb5885499f360aba87acefb4b2f7a80f81f3fd9aa615e67e038f",
+      "bytes": 2706
+    },
+    {
+      "path": "rescue_core/resilience/safety.py",
+      "sha256": "fa40cfda2904fba0556f839d23450b614697f9a2aec5e06988a5d8bdfdfb5d1f",
+      "bytes": 7666
+    },
+    {
+      "path": "rescue_core/resilience/scenarios.py",
+      "sha256": "12830c721da345fa8fff2af3a222e2ceba39d41b7314e2897252fbcf7a2b8f1b",
+      "bytes": 7143
+    },
+    {
+      "path": "rescue_core/vision/__init__.py",
+      "sha256": "b78f09117784e69527b91b24386363eb663938e8c6a0c7a1f00c31b1b4a3b447",
+      "bytes": 179
+    },
+    {
+      "path": "rescue_core/vision/agent.py",
+      "sha256": "ede83e7b9754f3ac08a5964552bc4825d0a56fd690bcf98253b7d6b2796a1728",
+      "bytes": 6742
+    },
+    {
+      "path": "rescue_core/vision/benchmark.py",
+      "sha256": "351cb8826850d178cdcdb6eb125d653bd76a0125318f27bdd99394e69953ff06",
+      "bytes": 14387
+    },
+    {
+      "path": "rescue_core/vision/camera.py",
+      "sha256": "ccc906c8758aae8c63a474a92c1fb02f6681628a6f39b17a537e838b2feb47b8",
+      "bytes": 9410
+    },
+    {
+      "path": "rescue_core/vision/config.py",
+      "sha256": "ae665bc5bc9fc553276d2607c6f3269b146ef6ed6cd219fcec3589f0223540bf",
+      "bytes": 2699
+    },
+    {
+      "path": "rescue_core/vision/detectors.py",
+      "sha256": "b5121629b7562ac024f5f918501c9f3d6001a7ce8d90820fb46ed019ed575f74",
+      "bytes": 9120
+    },
+    {
+      "path": "rescue_core/vision/evaluation.py",
+      "sha256": "7deb642a28a8a80b651d53934f1f8323bc586ca2a74da124860dc7e5d0319d3f",
+      "bytes": 3512
+    },
+    {
+      "path": "rescue_core/vision/events.py",
+      "sha256": "a69f45915dfd002a42d7f18cbb446fe1b79807a081a47ed283c11f612c0b3d5e",
+      "bytes": 953
+    },
+    {
+      "path": "rescue_core/vision/evidence.py",
+      "sha256": "2c8aae4cd7bd8f0c5174e9cb15925604fb9360af9e02bd44fdd49ba5e1e860eb",
+      "bytes": 3863
+    },
+    {
+      "path": "rescue_core/vision/factory.py",
+      "sha256": "b3cbba09aa573d0466be26a81e6541e405d796c5eaee23066199d0b4bce160e9",
+      "bytes": 3153
+    },
+    {
+      "path": "rescue_core/vision/health.py",
+      "sha256": "21c878ec82ce803e50e5a41f3720c9c57312bf61f8dd81ea873aad4940ae16dc",
+      "bytes": 1628
+    },
+    {
+      "path": "rescue_core/vision/manifest.py",
+      "sha256": "aae3ba415c73dc200fee349dba23547abdb8bdb923682b36b4078f7535b09520",
+      "bytes": 2830
+    },
+    {
+      "path": "rescue_core/vision/models.py",
+      "sha256": "88a1a8a789d08027c85a9f1efa5a7e295d406db2eea3bd00d32f08a81617c24f",
+      "bytes": 8001
+    },
+    {
+      "path": "rescue_core/vision/preprocess.py",
+      "sha256": "c778a9bcc1e1574f98222304155e7d08bfb600ec0927932245d85273f540f5de",
+      "bytes": 6663
+    },
+    {
+      "path": "rescue_core/vision/queue.py",
+      "sha256": "da3fcabdb88dce769beac3fca7bda727700bad7c0ac76a4bc8b2dc8e426ae902",
+      "bytes": 5094
+    },
+    {
+      "path": "rescue_core/vision/system_metrics.py",
+      "sha256": "7117e71873d461e66564a0ee74815155209c3da9d6d95e494206e9a1ea404c4b",
+      "bytes": 3766
+    },
+    {
+      "path": "ground/backend/app/__init__.py",
+      "sha256": "4b5164516a3e4df91336a6d765183c0fd29a7375703f20c4b04899a644566ef4",
+      "bytes": 43
+    },
+    {
+      "path": "ground/backend/app/api/__init__.py",
+      "sha256": "55dcea48413a429bb625b1e2dc686b7ff576d93082ec584be405f40c98367160",
+      "bytes": 30
+    },
+    {
+      "path": "ground/backend/app/api/dependencies.py",
+      "sha256": "1857389d06bbbc4ebcf034b962fb9d5803d1e23c692c4f14a2c81dd300c9d1bb",
+      "bytes": 402
+    },
+    {
+      "path": "ground/backend/app/api/engineering.py",
+      "sha256": "f7f365d736d09deb8f0ca9a19e4a08c67ef94ade65bedf18ff95bb192f4cb67d",
+      "bytes": 2564
+    },
+    {
+      "path": "ground/backend/app/api/fleet.py",
+      "sha256": "d65fc57deb258cc6eb0f8e9f86cb8d1fb2943d1e78fc3da4d61102d7fd0759e2",
+      "bytes": 1926
+    },
+    {
+      "path": "ground/backend/app/api/health.py",
+      "sha256": "bd772f69b5e27c5f20524623e458713fcde7cc774ff058582b1c88f5209f28f6",
+      "bytes": 618
+    },
+    {
+      "path": "ground/backend/app/api/missions.py",
+      "sha256": "975bfc50dc4aa62cc0c2130ff9cc11090adfadbe568a0d80a1d5ebd9efd1eea9",
+      "bytes": 5227
+    },
+    {
+      "path": "ground/backend/app/api/resilience.py",
+      "sha256": "a4fd50afbc7de9ee4ff6e03f9b8759e333206880ed2c3448661ca18e374b1efc",
+      "bytes": 2676
+    },
+    {
+      "path": "ground/backend/app/api/sitl.py",
+      "sha256": "4b75499cedafa898ed33750293a88b8c66c67f36b07f48000bc8c12e9b9cbe78",
+      "bytes": 2385
+    },
+    {
+      "path": "ground/backend/app/api/system.py",
+      "sha256": "751b6c91fbe1501a0b8140940be8abecb32e9b32e2eb80d1a7531ef9578a3221",
+      "bytes": 6302
+    },
+    {
+      "path": "ground/backend/app/api/vision.py",
+      "sha256": "d5bd94a370d3226e1d1cf85d027222667277a6c32665c0da5e7cbc1630d534e0",
+      "bytes": 1749
+    },
+    {
+      "path": "ground/backend/app/api/websocket.py",
+      "sha256": "82d13028a4460a48d48d394a5e77beb0ab14d466e91d0d23fa49a3dfc82267ed",
+      "bytes": 1662
+    },
+    {
+      "path": "ground/backend/app/config.py",
+      "sha256": "4e74e56c7125dda83bf6e8e5dbbb753af28cf9eb31d8ff8fd7557fd2b023dc47",
+      "bytes": 5889
+    },
+    {
+      "path": "ground/backend/app/domain/__init__.py",
+      "sha256": "8638495a45cf2cd1769d78cf62f7f1b4a73a145c4ab8e80d717fc7090a799fee",
+      "bytes": 451
+    },
+    {
+      "path": "ground/backend/app/domain/events.py",
+      "sha256": "211b694e2d84aafe8653a80808272b0ab02cef3c26d3edf524b3f6ea28ca1523",
+      "bytes": 4072
+    },
+    {
+      "path": "ground/backend/app/domain/execution.py",
+      "sha256": "e4eb25cc34abfc735cd0aa8825704b7dedc74579535f30a545fdbe2548ba42b5",
+      "bytes": 2092
+    },
+    {
+      "path": "ground/backend/app/domain/mission.py",
+      "sha256": "315ea95f899cd259ababf9b762624a88e201d64357f483d9a167c69ebdbeb11b",
+      "bytes": 1412
+    },
+    {
+      "path": "ground/backend/app/domain/target.py",
+      "sha256": "e0542dc39a58163a81bdc76271ab10474f9fe455f8c318a4533159229cec6b45",
+      "bytes": 1632
+    },
+    {
+      "path": "ground/backend/app/domain/vehicle.py",
+      "sha256": "e9fccd8f1022d917dc83790856b1a58f784b917b01393ae7bf1ab4f72159660c",
+      "bytes": 1188
+    },
+    {
+      "path": "ground/backend/app/fleet/__init__.py",
+      "sha256": "8ae22873503ff9a5d8c10bc713d3e12a90d719b8267586d0bc804626707d57f1",
+      "bytes": 202
+    },
+    {
+      "path": "ground/backend/app/fleet/allocation.py",
+      "sha256": "18e2fb631b19caa2844536ba9b0d05cb5b97975f7236a29011e000fe7b629e43",
+      "bytes": 8836
+    },
+    {
+      "path": "ground/backend/app/fleet/artifacts.py",
+      "sha256": "6dc23a06b2c6abdfa8310f41ee6be2f43409446f30f10ff28cf622b592044bb7",
+      "bytes": 1407
+    },
+    {
+      "path": "ground/backend/app/fleet/coordinator.py",
+      "sha256": "3a5b80a6ed489b8b306e230db3a1cdd09d6b4b9ecd81afa55ff0a5282f8a945c",
+      "bytes": 10615
+    },
+    {
+      "path": "ground/backend/app/fleet/manager.py",
+      "sha256": "c720fa588d39781148ed221b625be36320e5e86a93b974e1d3c92e38dcf4e0b9",
+      "bytes": 3837
+    },
+    {
+      "path": "ground/backend/app/fleet/models.py",
+      "sha256": "23ba3d90daa3fb3af96946b068cb79ea5bc171d4ece79ad6c0bfb1b194530988",
+      "bytes": 9704
+    },
+    {
+      "path": "ground/backend/app/fleet/partition.py",
+      "sha256": "0fc51a92985690f122b0cd9a2ffd56c7193731a12561664ac1aed7c3d16a0f7b",
+      "bytes": 11840
+    },
+    {
+      "path": "ground/backend/app/fleet/progress.py",
+      "sha256": "4044e3839b880809105c5f393f0ceaa59c208d59380311cea89d5683b6487da3",
+      "bytes": 2484
+    },
+    {
+      "path": "ground/backend/app/fleet/registry.py",
+      "sha256": "738e7a4db7c9dcde0d08f1259c1c741d7f73b604065c59d40476df7f6f07b71a",
+      "bytes": 9199
+    },
+    {
+      "path": "ground/backend/app/fleet/safety.py",
+      "sha256": "93febd10726f6f0530e78c6c37fac48ba5e38cdbe8421ac3a2396bbbc7065514",
+      "bytes": 5048
+    },
+    {
+      "path": "ground/backend/app/fleet/scheduling.py",
+      "sha256": "2b42340ecfa32c8a9ff432a2ee3005241f2f7312d2406f913ab5a36ba6b46875",
+      "bytes": 6594
+    },
+    {
+      "path": "ground/backend/app/main.py",
+      "sha256": "0193252fe9c0d76e960b8da8611a07c951ee3d67223fab45098fd2bb92aa04db",
+      "bytes": 6519
+    },
+    {
+      "path": "ground/backend/app/planning/__init__.py",
+      "sha256": "b70a3a296d8c68dde5563f613751875d3f234071442b85eb738bbc4a622dc650",
+      "bytes": 342
+    },
+    {
+      "path": "ground/backend/app/planning/coverage_planner.py",
+      "sha256": "54c7d4fde7fbef14c0961a7cc37e22b9c846bd3bfec7c3778d7360ff4bf86d56",
+      "bytes": 14559
+    },
+    {
+      "path": "ground/backend/app/planning/models.py",
+      "sha256": "383b966a6b58769a1047825ead4d14f73f08cf794ad2eaac056c7638bce8945a",
+      "bytes": 2435
+    },
+    {
+      "path": "ground/backend/app/repositories/__init__.py",
+      "sha256": "f39cca128089144a9039781a28ec1e4b1a0d179af65e4143b4e78e1115a6145d",
+      "bytes": 547
+    },
+    {
+      "path": "ground/backend/app/repositories/contracts.py",
+      "sha256": "de564bf4c497a285e614653d87e324d719fb83f8cd6d4eb41dfcd99fcd860e55",
+      "bytes": 1651
+    },
+    {
+      "path": "ground/backend/app/repositories/database.py",
+      "sha256": "bd9b52a6a6a16a9062077bb5d41e06ba966cdf699bf716b25e94d02b5295a131",
+      "bytes": 7027
+    },
+    {
+      "path": "ground/backend/app/repositories/sqlalchemy_repositories.py",
+      "sha256": "22ab01cc2c89cb55be45d463c87e6dd1a2413e9f24c3d719ab6c92e0d8812ee3",
+      "bytes": 11617
+    },
+    {
+      "path": "ground/backend/app/resilience/__init__.py",
+      "sha256": "2794aa550237e593da86f8c50bfaa44d6539f1c00ec7ea7a39a884874013f1b6",
+      "bytes": 51
+    },
+    {
+      "path": "ground/backend/app/resilience/manager.py",
+      "sha256": "741107953e5b84e80c2e2e83b70da9fc62db23bb5bd5e5f88cc54df86da9309a",
+      "bytes": 10427
+    },
+    {
+      "path": "ground/backend/app/services/__init__.py",
+      "sha256": "47c6d8498e9662e4bfca3a4a9bdaecbedee812c98319affb36f123641e3ae054",
+      "bytes": 44
+    },
+    {
+      "path": "ground/backend/app/services/boundary_service.py",
+      "sha256": "0da5b5fa0ca26027bbb9444d2a7697ff2008700cc96ebd34346fea3961c94a71",
+      "bytes": 7267
+    },
+    {
+      "path": "ground/backend/app/services/coordinates.py",
+      "sha256": "539417923f4f5ef7ec55b23df33f0e2b2c26d4cf450e80495dfaee39f529fdb0",
+      "bytes": 1739
+    },
+    {
+      "path": "ground/backend/app/services/geolocation_service.py",
+      "sha256": "f85268994f86b319c6ef41da47c1945665c0058556fbcabb26373a82f6257aea",
+      "bytes": 5561
+    },
+    {
+      "path": "ground/backend/app/services/mission_service.py",
+      "sha256": "55812eb8c846108f0a02efa4bca3f5223f8e7e48acbd692fe728454c2021ca99",
+      "bytes": 4777
+    },
+    {
+      "path": "ground/backend/app/services/offline_guard.py",
+      "sha256": "e4df62ec018b409dbd4b4c2b133c49196d6e499bced5750ac2b00db97ef18a7b",
+      "bytes": 3576
+    },
+    {
+      "path": "ground/backend/app/services/planning_service.py",
+      "sha256": "da8d8fd64a6207771479e322049b547ccd8460c29fce7c0a6b2591d31d24b5e2",
+      "bytes": 2589
+    },
+    {
+      "path": "ground/backend/app/services/telemetry_service.py",
+      "sha256": "68a4740da58fb3dde32673f1d06462f448a812246937a34868ede59e432505e0",
+      "bytes": 882
+    },
+    {
+      "path": "ground/backend/app/services/websocket_manager.py",
+      "sha256": "7f4f181ba72211955b49b5f48df6dc2139a0d1e7698eeb7cae33e505a93e0efa",
+      "bytes": 1808
+    },
+    {
+      "path": "ground/backend/app/simulation/__init__.py",
+      "sha256": "6b336b263fbdea80c0336aa8bd1695235055f52f1540ae316df4eb3830e02a8c",
+      "bytes": 246
+    },
+    {
+      "path": "ground/backend/app/simulation/drone_simulator.py",
+      "sha256": "b0052fb35fbdd0daf897e818b2fdfcf52f55e41176508f7bfa28f20c3036be35",
+      "bytes": 9229
+    },
+    {
+      "path": "ground/backend/app/simulation/simulator_manager.py",
+      "sha256": "5a2e9ebdbeb450c0fd5e2d5114f2e92ccbc939e56cec2535c470523572963f44",
+      "bytes": 10006
+    },
+    {
+      "path": "ground/backend/app/simulation/vehicle_source.py",
+      "sha256": "2b7dc009c7dff39cde9780d2684c5c321feae06e8189523e22bcb4899d9081eb",
+      "bytes": 427
+    },
+    {
+      "path": "ground/backend/app/sitl/__init__.py",
+      "sha256": "7ccd654de4e946e3a60b813facb046eb7b3635c637900c8d82671fc0f6b8eae4",
+      "bytes": 368
+    },
+    {
+      "path": "ground/backend/app/sitl/adapter.py",
+      "sha256": "2042f659cc99271f2e7c71d5b5450ee6a9c2df040f9ca46133e4c293a3cba087",
+      "bytes": 13757
+    },
+    {
+      "path": "ground/backend/app/sitl/artifacts.py",
+      "sha256": "4aea6d5b1ff4e4358bacbbdf225deccd11509c711538afb33139e79e8d7f72a2",
+      "bytes": 4907
+    },
+    {
+      "path": "ground/backend/app/sitl/coverage.py",
+      "sha256": "fac7fd6548e2607a1d22fa65ebca4c60a18d93f8c946d19b29dcda1360f13f7d",
+      "bytes": 3541
+    },
+    {
+      "path": "ground/backend/app/sitl/guard.py",
+      "sha256": "544d67a926fd5e197d0b61e15885627c9dbd2f466790123d12ec751c815e2d02",
+      "bytes": 2637
+    },
+    {
+      "path": "ground/backend/app/sitl/guided.py",
+      "sha256": "4441984a28a06a3c17196d596a18225ab9c1ca1fb5c117ecd315265c8855543e",
+      "bytes": 3996
+    },
+    {
+      "path": "ground/backend/app/sitl/launcher.py",
+      "sha256": "a8c2a2d9bcb4be664684aa41eef128b3cdc156bc909549594d79481ebdb19fd7",
+      "bytes": 5452
+    },
+    {
+      "path": "ground/backend/app/sitl/manager.py",
+      "sha256": "7fdb315882715b06e5e49a47536bee50c4140a59c5661683b256a8100a1f6a06",
+      "bytes": 18604
+    },
+    {
+      "path": "ground/backend/app/sitl/mission.py",
+      "sha256": "c04228da5e4cd5a2f92f0cc71a80e400598a7ec38202bb379b4320a995a2e5e7",
+      "bytes": 5024
+    },
+    {
+      "path": "ground/backend/app/sitl/multi_launcher.py",
+      "sha256": "b3278799bd65ce1ce5d9d97abaf3ce8d8aa8785e0ad6ee9aa512351ef7ca7d5d",
+      "bytes": 5650
+    },
+    {
+      "path": "ground/backend/app/sitl/pose.py",
+      "sha256": "4f5e21133c6f63719fc98797a5dfa806943eda2cea4c9126ed21fb5e04f9d826",
+      "bytes": 6800
+    },
+    {
+      "path": "ground/backend/app/sitl/protocol.py",
+      "sha256": "88b0e60132caf502cacb0e556c6bc9e1dd71cbaed3b66d3323dabcfa9b3fb5ab",
+      "bytes": 8661
+    },
+    {
+      "path": "ground/backend/app/sitl/rescue_artifacts.py",
+      "sha256": "280e331a251755c1f903fff4c1ac1ac574a123189de38988dafe79c495c0d7a8",
+      "bytes": 2343
+    },
+    {
+      "path": "ground/backend/app/sitl/rescue_perception.py",
+      "sha256": "081acaf6f65f32cbba00d21b24fe2bf5d8ec44d7dc8fcd58555ab46b157d0edf",
+      "bytes": 8114
+    },
+    {
+      "path": "ground/backend/app/sitl/rescue_runner.py",
+      "sha256": "57af404169edbdb41639db6766a97ec28600768a0bc4b9081a83e6ace937c059",
+      "bytes": 53303
+    },
+    {
+      "path": "ground/backend/app/sitl/router.py",
+      "sha256": "effd896c1bcf7cf7e77004254d10f0aaa164cdec07db6060bc90761d81b28a9b",
+      "bytes": 3300
+    },
+    {
+      "path": "ground/backend/app/sitl/runner.py",
+      "sha256": "2de91fbc2aac7fd316088d3a06ab684631025c1c88345ae88b26810cfd5a983d",
+      "bytes": 14661
+    },
+    {
+      "path": "ground/backend/app/sitl/scenario_parameters.py",
+      "sha256": "a09e11afce84122d000a11bfb270008b3f0073f23387f2f2d8a44556a0ef112e",
+      "bytes": 1498
+    },
+    {
+      "path": "ground/backend/app/sitl/telemetry.py",
+      "sha256": "1600f3cabe67abdebc34c376bae44635335c5523bbec9c13992728f5302e22a1",
+      "bytes": 4345
+    },
+    {
+      "path": "ground/backend/app/sitl/vehicle_source.py",
+      "sha256": "883d1b95af80dcf4ea5026de7cdbe9335d43eca48d35ef306877785e1f59fef5",
+      "bytes": 1623
+    },
+    {
+      "path": "ground/frontend/src/app/App.tsx",
+      "sha256": "49d57909ccc29552872ac862fbd04c8a8b0eb6858c6f7930f1ffc30a0dac12d3",
+      "bytes": 3786
+    },
+    {
+      "path": "ground/frontend/src/components/EventFeed.tsx",
+      "sha256": "03527f9194e30f745411fa463fd0347cbb96fb3841ee88242059a715f7993554",
+      "bytes": 659
+    },
+    {
+      "path": "ground/frontend/src/components/FleetPanel.tsx",
+      "sha256": "d1fdcec4de86cd98ad9b8218ffd413fa1b031eee9db264a570f47f2246d551ea",
+      "bytes": 1197
+    },
+    {
+      "path": "ground/frontend/src/components/mapStyle.ts",
+      "sha256": "6f5ef2c686da08c43c9516536eed20bcb27b9467139b1e92dd2e718addec202c",
+      "bytes": 355
+    },
+    {
+      "path": "ground/frontend/src/components/MapView.tsx",
+      "sha256": "d8709f18d821106f040716b1c97597b15d5688101e60a0596280dcd21fccec2e",
+      "bytes": 12078
+    },
+    {
+      "path": "ground/frontend/src/components/MissionSummary.tsx",
+      "sha256": "797f0de851c171daf63ef50694edd0486cf93499def791d17745bb6aea9218f7",
+      "bytes": 1121
+    },
+    {
+      "path": "ground/frontend/src/components/ModeNav.tsx",
+      "sha256": "186850096a16adf4c8d4c01314166cdfe07f2e169eb2fc1d0a51d78151203b3e",
+      "bytes": 717
+    },
+    {
+      "path": "ground/frontend/src/components/ResiliencePanel.tsx",
+      "sha256": "59d5347443c3837f19b985cb4310b5382e86e7ea8f9fc17941c5c34d508d6378",
+      "bytes": 2643
+    },
+    {
+      "path": "ground/frontend/src/components/StatusBar.tsx",
+      "sha256": "44b0805b76b4d1942432d5a1b66e0274a24d995c34bf6419db9d325fd80dc825",
+      "bytes": 1828
+    },
+    {
+      "path": "ground/frontend/src/components/TargetList.tsx",
+      "sha256": "6ad759b2817ce153da322cfa5f5e18292943ac2f5aa731e1e337eb0d65908f63",
+      "bytes": 1543
+    },
+    {
+      "path": "ground/frontend/src/components/VehiclePanel.tsx",
+      "sha256": "aa6ec8bc896326bcc4fff75eef6904520d425c33ecd2335c770c00e944648925",
+      "bytes": 1248
+    },
+    {
+      "path": "ground/frontend/src/components/VideoPanel.tsx",
+      "sha256": "7f426f253a6c4b25594501b52b651292c0f70d703bac33e3e7fc1e8f1a4da623",
+      "bytes": 411
+    },
+    {
+      "path": "ground/frontend/src/hooks/useMissionSocket.ts",
+      "sha256": "7b15e79db9f7931d658435f42dd7d1dc6e934e5ab1c0112d8f68c4b2c3a670e2",
+      "bytes": 1728
+    },
+    {
+      "path": "ground/frontend/src/main.tsx",
+      "sha256": "6d40a09986b852b40d7d00573ad18457b25604c34bfb651d55d3a1d827102589",
+      "bytes": 234
+    },
+    {
+      "path": "ground/frontend/src/pages/EngineeringPage.tsx",
+      "sha256": "32ef5813d3baaa2a39696ee010eb8cd207874020f2137ad56a137a76a27762fd",
+      "bytes": 10801
+    },
+    {
+      "path": "ground/frontend/src/pages/MissionPage.tsx",
+      "sha256": "836b936c5aefd90ab6adb1485a5d0d0f64937b77223094f1d53149d669755513",
+      "bytes": 2122
+    },
+    {
+      "path": "ground/frontend/src/pages/ReviewPage.tsx",
+      "sha256": "c7902e89e334a676b8e432bd5c025faed4d73d95acf1128acf6f5efb5b5cc512",
+      "bytes": 7882
+    },
+    {
+      "path": "ground/frontend/src/pages/SetupPage.tsx",
+      "sha256": "aa5e98823341506c0bef8f18b300eab031374fd0129bd801edb5d1ccade9f7cb",
+      "bytes": 6715
+    },
+    {
+      "path": "ground/frontend/src/services/api.ts",
+      "sha256": "dd9a201a9e4b68fa1afdaba4b9dbdba3792b6080f1a0a1c75b88bc416a813712",
+      "bytes": 5379
+    },
+    {
+      "path": "ground/frontend/src/stores/gcsStore.ts",
+      "sha256": "19e382c8e9d66aa1373af9199db3619d937d6e75c955b67809aa21fe3f6a397a",
+      "bytes": 9428
+    },
+    {
+      "path": "ground/frontend/src/test/mapConfig.test.ts",
+      "sha256": "beb8feec3b90edeaa9ded8a6058955a4efc443e6a4d3891f7dfcec2d3d67b7f9",
+      "bytes": 355
+    },
+    {
+      "path": "ground/frontend/src/test/modes.test.tsx",
+      "sha256": "fde94bc4ff4ae52dc475e9b88ba055c238d2ef4144938927446c060c446cbeb0",
+      "bytes": 684
+    },
+    {
+      "path": "ground/frontend/src/test/rendering.test.tsx",
+      "sha256": "7451dde859988a7fba2ff84629f6d024066a51981e10f1fd8f6ce717bf244e73",
+      "bytes": 4017
+    },
+    {
+      "path": "ground/frontend/src/test/setup.ts",
+      "sha256": "d494b5796f05a8593031aaac07417cfc85d53778b63681fd0cdb7be136448aff",
+      "bytes": 44
+    },
+    {
+      "path": "ground/frontend/src/test/store.test.ts",
+      "sha256": "6ecd20e3462ac4b48db33850a2d25e1b895312ec7f114505b6918fa3849be486",
+      "bytes": 4423
+    },
+    {
+      "path": "ground/frontend/src/types/domain.ts",
+      "sha256": "74c7b49c8316c0fad89611b9f235a25da3b04d92d5b408dbe33e7f84cf2f734a",
+      "bytes": 7215
+    },
+    {
+      "path": "ground/frontend/src/vite-env.d.ts",
+      "sha256": "08c81811955ca39a9d0f1286066495c4e047101dfea8283fd25f968389ea7a3a",
+      "bytes": 105
+    },
+    {
+      "path": "config/competition_profile.yaml",
+      "sha256": "b3d98b60cb746ff19fc2e34f6fc4cd53261ed8ee69fab1ef640e73f97fae5d64",
+      "bytes": 886
+    },
+    {
+      "path": "config/geolocation.yaml",
+      "sha256": "55934860f563d5ae69b9e576a6f908d0b812bc6c99e0880b8025b0bcc4027b8f",
+      "bytes": 1539
+    },
+    {
+      "path": "config/ground.yaml",
+      "sha256": "309d1c9a59e9057e768bb5f5be664d795204785f02d337fd8fdc309f3c6f11e6",
+      "bytes": 2723
+    },
+    {
+      "path": "config/logging.yaml",
+      "sha256": "8a46ba9c652476eca38ecc6543c85a722a70784bb8e21b93d71b419862d0f211",
+      "bytes": 294
+    },
+    {
+      "path": "config/prototype.yaml",
+      "sha256": "0d41b98682db34449e2032bbdd4ffc1653bbcbff5757b98fa3cf7ab88b2feb32",
+      "bytes": 553
+    },
+    {
+      "path": "config/rescue_orchestration.yaml",
+      "sha256": "447c8f0541f2999db587a37d097de25acf596ace3527e3f211fb9f6bdb17fc11",
+      "bytes": 1034
+    },
+    {
+      "path": "config/resilience_scenarios.yaml",
+      "sha256": "71da3e76997472b7a810fb448d26823058bc59d7e94d52f4ee1220f7bdba0acc",
+      "bytes": 6119
+    },
+    {
+      "path": "config/stage6.yaml",
+      "sha256": "4a5e55b2863e903861f8cc6c3eb7225f22e2ecfecbf6797dcd8dcfe4f3b26e7b",
+      "bytes": 697
+    },
+    {
+      "path": "config/vision.yaml",
+      "sha256": "6bfe32ee10f498d21049c8221b4c6a544cdd749d8d6781dd9ce934c829ba534e",
+      "bytes": 1314
+    },
+    {
+      "path": "scripts/benchmark_stage10s_setup.py",
+      "sha256": "126664c6a511510da14b4ec4c50e607b7c2a738a968c1b2a07665d29ac5aa64a",
+      "bytes": 5669
+    },
+    {
+      "path": "scripts/benchmark_stage8s_setup.py",
+      "sha256": "c60a40a66bd39ec8b2a79291f7ba94c6a8b8dd5bcb0c2cb023bb4469c326ddb1",
+      "bytes": 2739
+    },
+    {
+      "path": "scripts/build_competition_release.py",
+      "sha256": "582409733e003966a39db9a081607b86a940075e2c611982f7b47bf8482ef288",
+      "bytes": 6645
+    },
+    {
+      "path": "scripts/capture_stage6_physical_vision.py",
+      "sha256": "88dd914c0c8e1d4e9a6d641bac00de3e0bb1d671636f722f42bd960498456e96",
+      "bytes": 3462
+    },
+    {
+      "path": "scripts/find_pixhawk_connection.py",
+      "sha256": "95dabba26955fb3c55266d33dde7c60ea05ab0f838b9cf65e05594d3a41c2010",
+      "bytes": 3961
+    },
+    {
+      "path": "scripts/run_ground_backend.py",
+      "sha256": "ee3d5fc42c6728652e919f7520da0fd8a1b5fb0ce1980514b98e851ed58d940a",
+      "bytes": 732
+    },
+    {
+      "path": "scripts/run_stage10s_qualification.py",
+      "sha256": "1b734c10de8874a0e97407d1f9de8159fbfde88d5db7641107e05f9590311feb",
+      "bytes": 12847
+    },
+    {
+      "path": "scripts/run_stage2_demo.py",
+      "sha256": "fa0684514310a99b46065fe83eeef13c5bf3742e0960f3fa96e435e90f062146",
+      "bytes": 2090
+    },
+    {
+      "path": "scripts/run_stage3_demo.py",
+      "sha256": "def4b39f03ca8e69500f1bf77a97805cb5104010cc9d1b7f2b13b603422d88f3",
+      "bytes": 5505
+    },
+    {
+      "path": "scripts/run_stage4_pi_benchmark.py",
+      "sha256": "2006b1d3ec83c5616ed2066fce9bd16dd4b72b3d1ca59d1ddc3d4b1fc8211f11",
+      "bytes": 5074
+    },
+    {
+      "path": "scripts/run_stage5_demo.py",
+      "sha256": "d7f0a3b993495d5c3ce9903af31ff9e44a0f70fecd67bc15dc041a6e96c85179",
+      "bytes": 5498
+    },
+    {
+      "path": "scripts/run_stage6_hardware_baseline.py",
+      "sha256": "04b1242ac3054c3ce5c0b6fc8b2235f9b7c5ed4b5cb2c6c621c35460083cf4ae",
+      "bytes": 3556
+    },
+    {
+      "path": "scripts/run_stage6_physical_validation.py",
+      "sha256": "610815e1d11cf155f4eac98a45e133b8b0359ff73d0e32687be5c24c43d29b0d",
+      "bytes": 17867
+    },
+    {
+      "path": "scripts/run_stage6_readonly_agent.py",
+      "sha256": "bde36bb10028bba6836e9d53e148a9b60cf8d47978e4e17809f754a0913f02ea",
+      "bytes": 2259
+    },
+    {
+      "path": "scripts/run_stage6_static_geolocation.py",
+      "sha256": "b9160ddea2eb504beeec167d1eae5cacac5484b7e07c50d5634f8e65fb6b6a99",
+      "bytes": 8001
+    },
+    {
+      "path": "scripts/run_stage7s_coverage_baseline.py",
+      "sha256": "91fa286167669fa85675850e3f3563ce07dc137bbfec1418a168e07256ef6215",
+      "bytes": 9210
+    },
+    {
+      "path": "scripts/run_stage7s_sitl_rescue.py",
+      "sha256": "881a15dabdbe3c3e554f9ba5254f147385464bf2cc3dbf4c8a33322c4798f880",
+      "bytes": 4683
+    },
+    {
+      "path": "scripts/run_stage8s_fault_campaign.py",
+      "sha256": "4c298949d3fdcbad236e7ceba50a98311134cd79f2ac944aa4234de1194bb1b7",
+      "bytes": 8821
+    },
+    {
+      "path": "scripts/run_stage9s_fleet.py",
+      "sha256": "f77b81536d6c312e3035d656fb0201fceae1273b174bea9009938f08c53ade8c",
+      "bytes": 34252
+    },
+    {
+      "path": "scripts/run_vision_agent.py",
+      "sha256": "52bacbbef63d2308ccee4327a0090d2ab1816f4d2d551ffd4826bd09e8fc3269",
+      "bytes": 2495
+    },
+    {
+      "path": "tools/__init__.py",
+      "sha256": "2792b39fc1cccaaa10f49de12348505ae64873991b2c48e2a03f1a552951c9da",
+      "bytes": 62
+    },
+    {
+      "path": "tools/analyze_gps_stability.py",
+      "sha256": "058f4ba70ee0be52aa89376a208986c2ec51fe0cee452aae743193d10a3824cc",
+      "bytes": 978
+    },
+    {
+      "path": "tools/benchmark_fleet_planning.py",
+      "sha256": "f45225cec27dc61c21c97ce90422edb6978c281d4838790e33d615cdc34b8474",
+      "bytes": 3889
+    },
+    {
+      "path": "tools/benchmark_vision.py",
+      "sha256": "68b2d250defdcdc25634e7f6c44907ea004051b4b51abc5d0dff0c85e211556b",
+      "bytes": 3196
+    },
+    {
+      "path": "tools/calibrate_camera.py",
+      "sha256": "d16843f86f293ab907ab5737a0319681aa3266c86d46c150f0cf04319be049ac",
+      "bytes": 1930
+    },
+    {
+      "path": "tools/camera_probe.py",
+      "sha256": "b8680fdfde283138242bdd8624d36be4c6b8dad6c68f0c60cccd43b1911eaa9e",
+      "bytes": 4086
+    },
+    {
+      "path": "tools/capture_calibration_dataset.py",
+      "sha256": "b33ec69b1b622ced3a4c03bfc6de4bde1b152ba1ef113c2c780ac72900f58c4b",
+      "bytes": 2509
+    },
+    {
+      "path": "tools/check_offline_compliance.py",
+      "sha256": "ef97c311150c262d97750c1dac7269d1fd1fbb3a04be699fcd5b19d787598470",
+      "bytes": 10120
+    },
+    {
+      "path": "tools/compare_camera_calibrations.py",
+      "sha256": "864b3d19fb47b18ac70d45ac364bfa4d1f65931e349c9992e7d1adc9d87a52a1",
+      "bytes": 1564
+    },
+    {
+      "path": "tools/compare_pixel_anchors.py",
+      "sha256": "4a3826a4892f4435b34a33cf17cd9ad6383313c45262312900abf658e205e196",
+      "bytes": 1514
+    },
+    {
+      "path": "tools/compare_vision_runs.py",
+      "sha256": "a4ee0c8fe25360ee82f309949d8fd3491916c1e6b1318688969bd6ee1ec1f620",
+      "bytes": 3929
+    },
+    {
+      "path": "tools/create_camera_extrinsics.py",
+      "sha256": "c4bfa974da3a464395dceea529049afdccbe3b742f836d1f5933f7d26556cff5",
+      "bytes": 2301
+    },
+    {
+      "path": "tools/create_local_vision_profile.py",
+      "sha256": "7eab57de7357d612c4eddcbb7920b70987e1abfafe9e372fc116c8ad33d40b80",
+      "bytes": 2096
+    },
+    {
+      "path": "tools/detect_serial_ports.py",
+      "sha256": "111dc786b9c9042f2c3193fa7e2643c23a6e2f90003a20f178432bd674ea9a8c",
+      "bytes": 3892
+    },
+    {
+      "path": "tools/evaluate_geolocation.py",
+      "sha256": "b238eb72812257fb3c106f142145b6016ae3450733e2e9bbabcab6b32c4c9464",
+      "bytes": 2148
+    },
+    {
+      "path": "tools/evaluate_stage6_physical_geolocation.py",
+      "sha256": "c2a40ec2bc196a5decc5f3ac45a273a4e688dec6f854c677e5a4cc2a3a76aa48",
+      "bytes": 1967
+    },
+    {
+      "path": "tools/evaluate_vision.py",
+      "sha256": "ac43e484162d6c85d09e25d0ca3fe38651f49f11cebbc53f792298cbe49280c6",
+      "bytes": 3256
+    },
+    {
+      "path": "tools/export_model.py",
+      "sha256": "dfec827add8a4e4aff3c5cc64138ecb93d9dc85b05039168797372957c79bc2f",
+      "bytes": 1390
+    },
+    {
+      "path": "tools/generate_calibration_target.py",
+      "sha256": "125818251dd43f36281f5cf8574a06cf2573e3407ffa89ca0df5f2e8333ad1c4",
+      "bytes": 2121
+    },
+    {
+      "path": "tools/generate_stage1_report.py",
+      "sha256": "37d825d001ab7263efdd26d469b14a650ecfb16fb725cc77d8f40842993581a7",
+      "bytes": 6798
+    },
+    {
+      "path": "tools/generate_stage3_report.py",
+      "sha256": "cd5438e5e261c390b7725063be7cf8f8e23884edcf34c6a5e6fdf7dc8f10adad",
+      "bytes": 7465
+    },
+    {
+      "path": "tools/generate_stage4_report.py",
+      "sha256": "59566ac3b8fa33555803fe09954ad5f6047dc9f7a74a5859de602da0c7017ca4",
+      "bytes": 7117
+    },
+    {
+      "path": "tools/generate_stage5_report.py",
+      "sha256": "76b7cc4a27dd0f2f3e1863e087a715ceeee47b30a97ca900142f9b22aca77cf1",
+      "bytes": 3034
+    },
+    {
+      "path": "tools/generate_stage6_report.py",
+      "sha256": "35b0469f7cd174cadbe1e1cc8d6802e4f817d4e09dcc0edc002ccc0afbbb5346",
+      "bytes": 780
+    },
+    {
+      "path": "tools/list_camera_modes.py",
+      "sha256": "978e365f5b134b7cdfd624430d8b1e1810a8005fb48c487dc34951b72d86db27",
+      "bytes": 3399
+    },
+    {
+      "path": "tools/mavlink_probe.py",
+      "sha256": "adc9f7a4b8f9264d9f063827dda3820ad028df9c9f979efe7d437bcfdff3094c",
+      "bytes": 6834
+    },
+    {
+      "path": "tools/prepare_ov9281_config.py",
+      "sha256": "9af2299d6650c0f695d6de979cb2cadc6bb387c98634c239825777b250e0344c",
+      "bytes": 5175
+    },
+    {
+      "path": "tools/stage5_synthetic_validation.py",
+      "sha256": "6a3588f14d13693fc7ded8b98fec198846e304adc0e1abc170a77ad602de3530",
+      "bytes": 13752
+    },
+    {
+      "path": "tools/system_info.py",
+      "sha256": "537a1340dc7dff05dab1d88fd5f4d8c24974f9de923f24b340972b7b8789f89e",
+      "bytes": 3527
+    },
+    {
+      "path": "tools/validate_camera_calibration.py",
+      "sha256": "fe85acdd2b108c943d3b012e977b5638616cd383ab41220d814283eac706fbfb",
+      "bytes": 1303
+    },
+    {
+      "path": "tools/verify_stage2_live.py",
+      "sha256": "f00f69a2fbb94a60ed07fb5f00edf2aed7c975b25ce01f5f39da6552f2c748a9",
+      "bytes": 3664
+    }
+  ]
+}

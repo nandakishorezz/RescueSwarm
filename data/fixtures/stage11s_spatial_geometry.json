@@ -1,0 +1,32 @@
+{
+  "description": "Shared Python/TypeScript Stage 11S camera geometry gate; all values synthetic.",
+  "evidence_class": "SYNTHETIC",
+  "calibration": {
+    "calibration_id": "stage11s_shared_pinhole",
+    "distortion_model": "PINHOLE_BROWN",
+    "image_width": 1280,
+    "image_height": 800,
+    "camera_matrix": [[800, 0, 640], [0, 800, 400], [0, 0, 1]],
+    "distortion_coefficients": [0, 0, 0, 0, 0],
+    "resolution": [1280, 800],
+    "sensor_mode": "SYNTHETIC_1280x800",
+    "quality": "SYNTHETIC_TEST",
+    "evidence_class": "SYNTHETIC"
+  },
+  "extrinsics": {
+    "extrinsics_id": "stage11s_shared_nadir",
+    "mount_type": "FIXED",
+    "translation_body_m": [0, 0, 0],
+    "quaternion_camera_to_body": [0.7071067811865476, 0, 0, 0.7071067811865475],
+    "quality": "SYNTHETIC_TEST",
+    "evidence_class": "SYNTHETIC"
+  },
+  "vehicle_position_enu_m": [10, 20, 15],
+  "quaternion_body_to_enu": [0, 0.7071067811865476, 0.7071067811865475, 0],
+  "pixel": [640, 400],
+  "ground_up_m": 0,
+  "expected_camera_ray": [0, 0, 1],
+  "expected_world_ray_enu": [0, 0, -1],
+  "expected_intersection_enu_m": [10, 20, 0],
+  "expected_range_m": 15
+}

@@ -1,0 +1,68 @@
+{
+  "camera_pose": [
+    0.23,
+    0.0,
+    0.08,
+    0.0,
+    0.0,
+    90.0
+  ],
+  "payload_poses": [
+    [
+      0.0,
+      0.0,
+      -0.16,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -0.24,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -0.32,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "camera_optical_vector": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "payload_bbox_geometry": {
+    "x": 0.2,
+    "y": 0.1,
+    "z": 0.02
+  },
+  "camera_frustum": {
+    "horizontal_fov_rad": 1.3494818844471055,
+    "vertical_fov_rad": 0.9272952180016122,
+    "rotated_90_deg": true
+  },
+  "clearance": {
+    "camera_to_payload_x_gap_m": 0.13,
+    "camera_intersects_vehicle": false,
+    "camera_intersects_payload": false,
+    "payload_blocks_optical_center": false,
+    "payload_blocks_useful_raw_fov": false,
+    "frame_edge_obstruction_percent": 0
+  },
+  "CoM_values": {
+    "0_payloads_x_m": 0.0074193548387096785,
+    "1_payload_x_m": 0.006571428571428573,
+    "2_payloads_x_m": 0.0058974358974358985,
+    "3_payloads_x_m": 0.005348837209302327,
+    "mechanically_plausible": true
+  },
+  "OPAQUE_PAYLOAD_GEOMETRY": "PASS",
+  "CAMERA_FOV_CLEAR": "PASS"
+}

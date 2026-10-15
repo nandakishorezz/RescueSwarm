@@ -1,0 +1,131 @@
+{
+  "classification": "SIMULATION_EVALUATOR_ONLY",
+  "model": "ArduPilot SITL magnetometer measurement noise, offset and delay before EKF3",
+  "controls_held_constant": [
+    "route",
+    "survivor",
+    "camera",
+    "detector",
+    "GPS",
+    "IMU",
+    "barometer"
+  ],
+  "profiles": {
+    "IDEAL_CONTROL": {
+      "profile_id": "IDEAL_CONTROL",
+      "isolation_component": "COMPASS",
+      "ekf_horizontal_position_error_m": {
+        "count": 1118,
+        "unit": "m",
+        "p50": 0.0849237001064902,
+        "p95": 0.20889404733502492,
+        "maximum": 0.24969626719230953
+      },
+      "ekf_altitude_error_m": {
+        "count": 1118,
+        "unit": "m",
+        "p50": 0.0926645955123222,
+        "p95": 0.134501513801297,
+        "maximum": 0.15870725719469414
+      },
+      "ekf_attitude_error_deg": {
+        "count": 1118,
+        "unit": "deg",
+        "p50": 0.5434503001320077,
+        "p95": 1.6950705961619572,
+        "maximum": 3.0373670146419056
+      },
+      "ekf_heading_error_deg": {
+        "count": 1118,
+        "unit": "deg",
+        "p50": 0.459000174243954,
+        "p95": 1.5869031191723382,
+        "maximum": 3.0529203589009626
+      },
+      "target_best_geolocation_error_m": 0.717369711742607,
+      "target_geolocated_observations": 27,
+      "raw_magnetometer": {
+        "xmag_mgauss": {
+          "count": 1118,
+          "unit": "mGauss",
+          "p50": 393.0,
+          "p95": 432.0,
+          "maximum": 432.0
+        },
+        "ymag_mgauss": {
+          "count": 1118,
+          "unit": "mGauss",
+          "p50": -22.0,
+          "p95": 398.0,
+          "maximum": 398.0
+        },
+        "zmag_mgauss": {
+          "count": 1118,
+          "unit": "mGauss",
+          "p50": 172.0,
+          "p95": 262.0,
+          "maximum": 263.0
+        }
+      }
+    },
+    "REFERENCE_NOMINAL_COMPASS_ONLY": {
+      "profile_id": "REFERENCE_NOMINAL",
+      "isolation_component": "COMPASS",
+      "ekf_horizontal_position_error_m": {
+        "count": 783,
+        "unit": "m",
+        "p50": 0.043279935786277174,
+        "p95": 0.18750651442101837,
+        "maximum": 0.25586267215505154
+      },
+      "ekf_altitude_error_m": {
+        "count": 783,
+        "unit": "m",
+        "p50": 0.0841668329544003,
+        "p95": 0.1169992242830136,
+        "maximum": 0.1459512577582075
+      },
+      "ekf_attitude_error_deg": {
+        "count": 783,
+        "unit": "deg",
+        "p50": 0.47577824610020114,
+        "p95": 1.8735575451524258,
+        "maximum": 3.9117948995732523
+      },
+      "ekf_heading_error_deg": {
+        "count": 783,
+        "unit": "deg",
+        "p50": 0.21429644305061402,
+        "p95": 1.7549590943508586,
+        "maximum": 3.9539408838322743
+      },
+      "target_best_geolocation_error_m": 0.9155970386317607,
+      "target_geolocated_observations": 21,
+      "raw_magnetometer": {
+        "xmag_mgauss": {
+          "count": 783,
+          "unit": "mGauss",
+          "p50": 397.0,
+          "p95": 432.0,
+          "maximum": 432.0
+        },
+        "ymag_mgauss": {
+          "count": 783,
+          "unit": "mGauss",
+          "p50": -37.0,
+          "p95": -2.0,
+          "maximum": -1.0
+        },
+        "zmag_mgauss": {
+          "count": 783,
+          "unit": "mGauss",
+          "p50": 176.0,
+          "p95": 262.0,
+          "maximum": 263.0
+        }
+      }
+    }
+  },
+  "random_yaw_jumps": false,
+  "passed": true
+}

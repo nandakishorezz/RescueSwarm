@@ -1,0 +1,117 @@
+application:
+  mode: development
+  name: RescueSwarm GCS
+
+competition:
+  enabled: false
+  external_network_allowed: false
+  max_area_hectares: 10
+  minimum_deployed_drones: 2
+  maximum_survivors: 10
+  maximum_mission_duration_s: 1800
+  maximum_setup_duration_s: 300
+  maximum_combined_mass_kg: 25
+  payload_mass_g: 200
+  payload_dimensions_cm: [20, 10, 5]
+
+server:
+  host: 127.0.0.1
+  port: 8000
+  allowed_origins:
+    - http://127.0.0.1:5173
+    - http://localhost:5173
+
+database:
+  url: sqlite:///data/ground/rescue_swarm.db
+  telemetry_persist_interval_seconds: 2
+
+network:
+  external_internet_required: false
+  ground_ip: 10.42.0.1
+  subnet: 10.42.0.0/24
+  ssid: RescueSwarm-Local
+  mdns_name: rescue.local
+
+map:
+  style: local_blank
+  external_tile_sources: []
+
+realtime:
+  connected_threshold_seconds: 2
+  degraded_threshold_seconds: 5
+  trail_max_points: 500
+  recent_events_max: 100
+
+uploads:
+  max_bytes: 1048576
+  allowed_extensions: [.geojson, .json, .kml]
+
+simulator:
+  enabled: true
+  seed: 42
+  update_interval_seconds: 0.25
+  total_steps: 40
+
+# Stage 3 engineering defaults only. Vision testing must determine final flight values.
+coverage:
+  search_altitude_m: 15.0
+  lane_spacing_m: 10.0
+  effective_swath_m: 10.0
+  edge_margin_m: 2.0
+  search_speed_m_s: 4.0
+  sweep_strategy: auto_optimized
+  fixed_sweep_angle_deg: 0.0
+  turn_penalty_m: 3.0
+  min_planned_coverage_percent: 98.0
+  max_waypoints: 500
+
+sitl:
+  enabled: true
+  environment: sitl
+  command_authority: simulation_only
+  vehicle: ArduCopter
+  frame: quad
+  connection: tcp:127.0.0.1:5760
+  readiness_timeout_s: 60
+  heartbeat_timeout_s: 30
+  command_timeout_s: 10
+  mission_timeout_s: 600
+  rtl_timeout_s: 180
+  launcher_speedup: 1
+  ardupilot_home: null       # Prefer ARDUPILOT_HOME environment variable
+  wsl_distribution: Ubuntu
+  message_rates_hz:
+    GLOBAL_POSITION_INT: 10
+    ATTITUDE: 10
+    ATTITUDE_QUATERNION: 10
+    LOCAL_POSITION_NED: 10
+    GPS_RAW_INT: 5
+    SYSTEM_TIME: 2
+    SYS_STATUS: 2
+    MISSION_CURRENT: 2
+    EXTENDED_SYS_STATE: 2
+    EKF_STATUS_REPORT: 2
+    HOME_POSITION: 1
+
+# Stage 9S local multi-ArduCopter defaults. None are approved physical-flight values.
+fleet:
+  enabled: true
+  fleet_size: 2
+  allow_degraded_start: false
+  base_port: 5760
+  spawn_offset_bearing_deg: 90
+  spawn_offset_distance_m: 2
+  payload_slots_per_vehicle: 2
+  launch_zone_width_m: 3.6576
+  launch_zone_length_m: 3.6576
+  departure_clear_altitude_m: 3
+  separation_warning_horizontal_m: 8
+  separation_critical_horizontal_m: 3
+  separation_vertical_clear_m: 4
+  target_association_radius_m: 6
+  maximum_target_uncertainty_m: 15
+  minimum_delivery_battery_percent: 25
+
+external_services:
+  api_dependencies: []
+  auth_dependencies: []

@@ -1,0 +1,12 @@
+{
+  "bounded_structures": {
+    "camera_latency_queue": true,
+    "perception_histories": true,
+    "pose_history": true,
+    "target_service_files_streamed": true,
+    "vision_queue": true
+  },
+  "live_lifecycle_growth_test": "PASS",
+  "maximum_vision_queue_depth": 2,
+  "passed": true
+}

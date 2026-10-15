@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rescue-swarm"
+version = "0.12.0rc1"
+description = "RescueSwarm offline multi-drone ArduCopter SITL competition software release candidate"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.6,<3",
+  "pymavlink>=2.4.41,<3",
+  "numpy>=1.26,<3",
+  "Pillow>=10,<13",
+  "opencv-python-headless>=4.9,<6",
+  "psutil>=5.9,<8",
+  "PyYAML>=6.0,<7",
+  "defusedxml>=0.7,<1",
+  "fastapi>=0.115,<1",
+  "pyproj>=3.7,<4",
+  "python-multipart>=0.0.18,<1",
+  "shapely>=2.0,<3",
+  "SQLAlchemy>=2.0,<3",
+  "uvicorn>=0.34,<1",
+]
+
+[project.optional-dependencies]
+dev = ["httpx>=0.28,<1", "pytest>=8,<9", "websockets>=15,<17"]
+postgres = ["psycopg[binary]>=3.2,<4"]
+vision-onnx = ["onnxruntime>=1.18,<2"]
+vision-video = ["opencv-python-headless>=4.9,<5"]
+
+[tool.setuptools.packages.find]
+include = ["rescue_core*", "ground*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "ground/backend/tests"]
+addopts = "-ra"
+markers = [
+  "sitl: live official ArduPilot SITL integration (opt-in)",
+  "pi: Raspberry Pi-only integration test (opt-in)",
+  "camera: physical camera integration test (opt-in)",
+  "vision: local model or camera vision integration test (opt-in)",
+  "sitl_geo: live ArduCopter SITL telemetry plus synthetic-camera geolocation gold test (opt-in)",
+  "sitl_rescue: live ArduCopter SITL autonomous rescue gold test (opt-in)",
+  "sitl_resilience: live ArduCopter SITL Stage 8S failure/recall test (opt-in)",
+  "sitl_fleet: live multi-ArduCopter SITL Stage 9S fleet test (opt-in)",
+  "stage10s: Stage 10S software release qualification",
+  "stage11s: Stage 11S offline GCS and digital-twin qualification",
+  "stage12u: Stage 12U GCS production-hardening and operator acceptance",
+  "stage13sim: Stage 13SIM high-fidelity Gazebo simulation kernel",
+  "stress: bounded resource and competition-scale stress qualification",
+  "physical: tests requiring unavailable physical prototype evidence (opt-in)",
+  "pixhawk: physical Pixhawk read-only integration test (opt-in)",
+  "gps: physical GNSS integration test (opt-in)",
+  "physical_geo: static physical geolocation validation test (opt-in)",
+]

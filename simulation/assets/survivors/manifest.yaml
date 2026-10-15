@@ -1,0 +1,18 @@
+schema_version: "1.0"
+assets:
+  - asset_id: CESIUM_MAN_CC_BY_4_0
+    local_file: CesiumMan.glb
+    source: https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/CesiumMan
+    copyright: Copyright 2014 Cesium
+    license: CC-BY-4.0
+    license_file: CesiumMan.LICENSE.md
+    sha256: b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9
+    native_bounds_m:
+      minimum: [-0.131, -0.569, 0.0]
+      maximum: [0.180954, 0.569137, 1.50655]
+    native_height_m: 1.50655
+    provenance: REFERENCE_PRESET
+    redistribution_review: PASS
+    notes: >-
+      Locally packaged human mesh for rendered-camera simulation. The asset is
+      not a measured RescueSwarm survivor model and is never detector metadata.

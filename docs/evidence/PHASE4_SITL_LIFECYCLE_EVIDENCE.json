@@ -1,0 +1,27 @@
+{
+  "root_cause": "WSL processes (sim_vehicle.py, arducopter) remained orphaned after Windows process termination, holding the TCP port and preventing subsequent launches.",
+  "repair": "Modified SITLLauncher.stop() to explicitly run `killall -9 sim_vehicle.py arducopter mavproxy.py` inside WSL on Windows before terminating the wrapper.",
+  "cycles": [
+    {
+      "cycle": 1,
+      "success": true,
+      "heartbeat_latency_s": 27.569226264953613,
+      "heartbeat_count": 30,
+      "stale_processes_found": true
+    },
+    {
+      "cycle": 2,
+      "success": true,
+      "heartbeat_latency_s": 17.01453423500061,
+      "heartbeat_count": 30,
+      "stale_processes_found": true
+    },
+    {
+      "cycle": 3,
+      "success": true,
+      "heartbeat_latency_s": 17.207918643951416,
+      "heartbeat_count": 29,
+      "stale_processes_found": true
+    }
+  ]
+}

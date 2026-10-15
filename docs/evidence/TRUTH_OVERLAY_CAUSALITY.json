@@ -1,0 +1,12 @@
+{
+  "scenario": "stage13sim_phase2e_gold_20260909a",
+  "overlay_scope": "observer UI rendering only",
+  "off_autonomy_fingerprint": "3782e37287fc4a87055605afa9a48a8c93d9ab002a90404aa62e8235719563c5",
+  "on_autonomy_fingerprint": "3782e37287fc4a87055605afa9a48a8c93d9ab002a90404aa62e8235719563c5",
+  "mission_plan_difference": 0,
+  "vehicle_path_difference": 0,
+  "detector_event_difference": 0,
+  "confirmation_difference": 0,
+  "target_coordinate_difference_m": 0.0,
+  "passed": true
+}

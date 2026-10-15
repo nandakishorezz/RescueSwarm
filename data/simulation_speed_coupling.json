@@ -1,0 +1,16 @@
+{
+  "speed_2": {
+    "median": 1.43,
+    "p95": 3.13,
+    "maximum": 4.1
+  },
+  "speed_5": {
+    "median": 0.23,
+    "p95": 4.28,
+    "maximum": 4.55
+  },
+  "simulation_duration_speed2_s": 91.3,
+  "simulation_duration_speed5_s": 76.2,
+  "p95_speed_increased": true,
+  "faster_run_completed_sooner": true
+}

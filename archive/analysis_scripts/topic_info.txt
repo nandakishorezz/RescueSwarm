@@ -1,0 +1,5 @@
+Publishers [Address, Message Type]:
+  tcp://172.28.209.82:44585, gz.msgs.Image
+  tcp://172.28.209.82:43655, gz.msgs.Image
+  tcp://172.28.209.82:37127, gz.msgs.Image
+No subscribers on topic [/drone_01/ov9281_phase2_oblique_simulation/image]

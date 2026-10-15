@@ -1,0 +1,66 @@
+{
+  "network_access_performed": false,
+  "internet_required": false,
+  "cloud_inference": false,
+  "remote_model_download": false,
+  "remote_texture_or_human_model": false,
+  "remote_map_resource": false,
+  "local_model": "models\\artifacts\\yolo11n.onnx",
+  "local_model_sha256": "417c59a7ff8ddd316d9863fb8ba0e7f3cfc5a27264c774a4ad3ec7526f2a5e2d",
+  "offline_rendered_probe_frames": 8,
+  "offline_real_yolo_person_detections": 8,
+  "checks": [
+    {
+      "name": "Frontend assets local",
+      "passed": true,
+      "detail": "Production build present and runtime resource references are local"
+    },
+    {
+      "name": "External map sources",
+      "passed": true,
+      "detail": "No external tile/map source found"
+    },
+    {
+      "name": "External script sources",
+      "passed": true,
+      "detail": "No remote script, stylesheet, import, fetch, or CSS URL found"
+    },
+    {
+      "name": "Cloud backend dependency",
+      "passed": true,
+      "detail": "No cloud backend dependency configured"
+    },
+    {
+      "name": "External auth dependency",
+      "passed": true,
+      "detail": "No external authentication dependency configured"
+    },
+    {
+      "name": "External API dependency",
+      "passed": true,
+      "detail": "No external API dependency configured"
+    },
+    {
+      "name": "Vision runtime local",
+      "passed": true,
+      "detail": "Camera, model, and inference runtime contains no external network client"
+    },
+    {
+      "name": "Geolocation runtime local",
+      "passed": true,
+      "detail": "Calibration, pose, and geolocation runtime contains no external network client"
+    },
+    {
+      "name": "Physical bench runtime local",
+      "passed": true,
+      "detail": "Stage 6 diagnostics and static geolocation runtime contain no external network client"
+    },
+    {
+      "name": "Autonomy and fleet runtime local",
+      "passed": true,
+      "detail": "Stages 7S\u201312U autonomy, resilience, fleet, qualification, digital-twin, and UI release runtime contain no external network client"
+    }
+  ],
+  "violations": [],
+  "passed": true
+}

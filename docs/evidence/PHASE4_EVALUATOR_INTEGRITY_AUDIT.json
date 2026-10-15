@@ -1,0 +1,42 @@
+{
+  "threshold_m": 2.0,
+  "test_cases": [
+    {
+      "input_impact_error_m": 1.99,
+      "impact_present": true,
+      "expected": "PASS",
+      "actual": "PASS",
+      "passed": true
+    },
+    {
+      "input_impact_error_m": 2.0,
+      "impact_present": true,
+      "expected": "PASS",
+      "actual": "PASS",
+      "passed": true
+    },
+    {
+      "input_impact_error_m": 2.01,
+      "impact_present": true,
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "passed": true
+    },
+    {
+      "input_impact_error_m": 16.642174,
+      "impact_present": true,
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "passed": true
+    },
+    {
+      "input_impact_error_m": null,
+      "impact_present": false,
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "passed": true
+    }
+  ],
+  "all_boundary_tests_pass": true,
+  "evidence_generated_utc": "2026-09-11T12:29:47.344267+00:00"
+}

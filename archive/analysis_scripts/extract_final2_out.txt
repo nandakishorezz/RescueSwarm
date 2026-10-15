@@ -1,0 +1,28 @@
+Best err from ALIGNMENT_EVIDENCE: 0.7167317687270138
+
+--- FINAL 20s ALIGNS ---
+T-0.00s | Err=1.400203648907858 | Cmd=[0.11666595211649752, -0.475982050368051]
+T-0.00s | Err=1.3711271000273297 | Cmd=[0.11577264736453916, -0.4657203139919946]
+T-0.00s | Err=1.3629170417765644 | Cmd=[0.11567627971291188, -0.46278288537984025]
+T-0.00s | Err=1.3374359670903337 | Cmd=[0.11915315503884844, -0.452683729536945]
+T-0.00s | Err=1.324146854572532 | Cmd=[0.12262924682894347, -0.4469331797374988]
+T-0.00s | Err=1.324146854572532 | Cmd=[0.12262924682894347, -0.4469331797374988]
+T-0.00s | Err=1.2988838488214627 | Cmd=[0.12610454621256295, -0.43676916315584535]
+T-0.00s | Err=1.2940281167578283 | Cmd=[0.12967667770403804, -0.43394847990541446]
+T-0.00s | Err=1.2796076838627068 | Cmd=[0.13315069711042823, -0.42761183376114126]
+T-0.00s | Err=1.2675814360271231 | Cmd=[0.12872194361591252, -0.42456930130358383]
+
+--- MIN ALIGN ERROR & TREND ---
+Error 10s before minimum: 1.0988848722840125
+Error 5s before minimum: 0.8188011478092522
+Error final: 1.2675814360271231
+
+--- LAST GATE ---
+{'ap_sim_source_time_ns': 164667618000, 'frame_id': 'drone_01_gazebo_camera:000000002770', 'conditions': {'target_visible': {'value': True, 'threshold': True, 'passed': True}, 'track_fresh_s': {'value': 1.94567316, 'threshold': 2.0, 'passed': True}, 'consecutive_observations': {'value': 163, 'threshold': 3, 'passed': True}, 'vehicle_armed': {'value': True, 'threshold': True, 'passed': True}, 'flight_mode_guided': {'value': 'GUIDED', 'threshold': True, 'passed': True}, 'clock_pose_valid': {'value': 'SITL_SIM_SOURCE_SIDECAR', 'threshold': True, 'passed': True}, 'geolocation_valid': {'value': 'STANDARD_GNSS_LIMITED', 'threshold': True, 'passed': True}, 'payload_available': {'value': 1, 'threshold': True, 'passed': True}, 'target_owned': {'value': '664443fa-3e89-5be1-a8d0-6114927fa1fa', 'threshold': True, 'passed': True}, 'inside_geofence': {'value': [17.516765947579763, -0.6718161716647137], 'threshold': True, 'passed': True}, 'delivery_altitude_error_m': {'value': 5.509975920818759, 'threshold': 0.5, 'passed': False}, 'horizontal_speed_m_s': {'value': 0.6596969000988256, 'threshold': 0.5, 'passed': False}, 'alignment_error_m': {'value': 1.2675814360271231, 'threshold': 0.5, 'passed': False}, 'native_failsafe_inactive': {'value': 'GUIDED', 'threshold': True, 'passed': True}, 'emergency_recall_inactive': {'value': True, 'threshold': True, 'passed': True}}, 'all_passed': False}
+
+--- FINAL 5 TRAJS ---
+181387808000 | Err=None | Vel=1.672423391369542 | Gate=None
+181387808000 | Err=None | Vel=1.672423391369542 | Gate=None
+181387808000 | Err=None | Vel=1.5947727110782903 | Gate=None
+181467795000 | Err=None | Vel=1.5171684151734772 | Gate=None
+181547782000 | Err=None | Vel=1.3536986370680884 | Gate=None

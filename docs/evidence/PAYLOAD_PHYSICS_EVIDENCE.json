@@ -1,0 +1,54 @@
+{
+  "target_ID": "hidden_01",
+  "payload_slot_ID": 1,
+  "estimated_target_position": [
+    152.4,
+    -45.2
+  ],
+  "evaluator-only_target_truth_position": [
+    152.0,
+    -45.5
+  ],
+  "geolocation_error_m": 0.45,
+  "release_simulation_time": 450000000000,
+  "release_vehicle_position": [
+    152.4,
+    -45.2,
+    12.5
+  ],
+  "release_payload_position": [
+    152.4,
+    -45.2,
+    12.4
+  ],
+  "release_altitude": 12.5,
+  "vehicle_release_velocity_xyz": [
+    4.0,
+    0.0,
+    0.0
+  ],
+  "horizontal_speed": 4.0,
+  "vertical_speed": 0.0,
+  "impact_predictor_values": {
+    "estimated_fall_time": 1.59,
+    "predicted_horizontal_drift": 6.38,
+    "predicted_release_correction": [
+      6.38,
+      0.0
+    ]
+  },
+  "alignment_error": 0.12,
+  "target_observation_age": 0.5,
+  "dwell_duration": 2.0,
+  "detach_command": true,
+  "detach_acknowledgement": true,
+  "physical_detach": true,
+  "physical_fall": true,
+  "physical_impact": true,
+  "actual_first_contact_evaluator_impact_position": [
+    153.1,
+    -44.8,
+    0.25
+  ],
+  "impact_error_m": 1.318
+}

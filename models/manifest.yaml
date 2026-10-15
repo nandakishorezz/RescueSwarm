@@ -1,0 +1,71 @@
+schema_version: 1
+models:
+  - id: baseline_person_mock
+    path: null
+    architecture: deterministic_test_double
+    input_size: [640, 640]
+    classes: [person]
+    backend: mock
+    sha256: null
+    source: RescueSwarm test fixture
+    license: Internal test-only software
+    commercial_notes: Not a trained model and not usable for survivor detection.
+    exported_at: null
+    available: true
+    role: TEST_ONLY
+
+  - id: yolo11n_person_ncnn
+    path: artifacts/yolo11n_ncnn_model
+    architecture: YOLO11n
+    input_size: [640, 640]
+    classes: [person]
+    backend: ncnn
+    sha256: null
+    source: Provision explicitly during development; no runtime download is permitted.
+    license: VERIFY_BEFORE_USE
+    commercial_notes: Review the upstream model, dataset, and exporter licenses before deployment.
+    exported_at: null
+    available: false
+    role: BASELINE_GENERIC_PERSON_DETECTOR
+
+  - id: yolo11n_person_onnx
+    path: artifacts/yolo11n.onnx
+    architecture: YOLO11n
+    input_size: [640, 640]
+    classes: [person]
+    backend: onnx
+    sha256: 4d2650851887441d659eade25d9805be5b7388b2289935aa2bbf3b371f24b669
+    source: Stage13SIM nadir-domain V3 hard-negative fine-tune from the accepted V2 YOLO11n checkpoint using Ultralytics 8.3.241
+    license: AGPL-3.0 / Ultralytics Enterprise options documented upstream; verify selected terms
+    commercial_notes: No legal conclusion is made here; review model, COCO dataset, exporter, and intended product licensing before deployment.
+    exported_at: "2026-09-17"
+    available: true
+    role: STAGE13SIM_NADIR_PERSON_DETECTOR
+
+  - id: yolo26n_person_ncnn
+    path: artifacts/yolo26n_ncnn_model
+    architecture: YOLO26n
+    input_size: [640, 640]
+    classes: [person]
+    backend: ncnn
+    sha256: null
+    source: Candidate provisioning record; no runtime download is permitted.
+    license: VERIFY_BEFORE_USE
+    commercial_notes: Confirm artifact availability, export compatibility, and upstream licensing before use.
+    exported_at: null
+    available: false
+    role: BASELINE_GENERIC_PERSON_DETECTOR
+
+  - id: yolo26n_person_onnx
+    path: artifacts/yolo26n.onnx
+    architecture: YOLO26n
+    input_size: [640, 640]
+    classes: [person]
+    backend: onnx
+    sha256: null
+    source: Candidate provisioning record; no runtime download is permitted.
+    license: VERIFY_BEFORE_USE
+    commercial_notes: Confirm artifact availability, export compatibility, and upstream licensing before use.
+    exported_at: null
+    available: false
+    role: BASELINE_GENERIC_PERSON_DETECTOR

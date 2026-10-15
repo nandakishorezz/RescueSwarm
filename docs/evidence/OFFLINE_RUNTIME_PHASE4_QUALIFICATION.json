@@ -1,0 +1,8 @@
+{
+  "cloud_inference": false,
+  "internet_required": false,
+  "live_gold_local_assets_only": true,
+  "offline_compliance_scan": "PASS",
+  "passed": true,
+  "remote_model_download": false
+}

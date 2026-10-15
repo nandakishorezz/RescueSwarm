@@ -1,0 +1,33 @@
+{
+  "camera_health": {
+    "errors": 0,
+    "last_success_monotonic_ns": 210271844917000,
+    "reason": null,
+    "state": "READY"
+  },
+  "camera_sequence_gaps": 0,
+  "capture_fps": 4.71613046266296,
+  "connected": true,
+  "cpu_percent": 498.7,
+  "detector_fps": 3.1319476431584135,
+  "detector_health": {
+    "errors": 0,
+    "last_success_monotonic_ns": 210272096456900,
+    "reason": null,
+    "state": "READY"
+  },
+  "dropped_frames": 608,
+  "frames_captured": 1813,
+  "frames_processed": 1204,
+  "human_detections": 172,
+  "latest_end_to_end_ms": 472.563,
+  "p95_latency_ms": 697.644705,
+  "physical_camera_verified": false,
+  "ram_rss_bytes": 251236352,
+  "source": "SensorRealismCameraSource",
+  "source_metrics": null,
+  "status_write_failures": 14,
+  "temperature_c": null,
+  "throttling": null,
+  "updated_wall_ns": 1789279054006201300
+}

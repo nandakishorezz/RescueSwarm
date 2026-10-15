@@ -1,0 +1,115 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            149.16525200427967,
+            -35.363206925292545,
+            594.0000031450763
+          ],
+          [
+            149.1656700855932,
+            -35.36320692449328,
+            594.0001281080768
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "kind": "SEARCH",
+        "segment_id": "search_000"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            149.1656700855932,
+            -35.36320692449328,
+            594.0001281080768
+          ],
+          [
+            149.16567008520195,
+            -35.36313482488519,
+            594.0001406921074
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "kind": "TRANSIT",
+        "segment_id": "transit_001"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            149.16567008520195,
+            -35.36313482488519,
+            594.0001406921074
+          ],
+          [
+            149.1652520042601,
+            -35.36313482568446,
+            594.000015729107
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "kind": "SEARCH",
+        "segment_id": "search_001"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            149.1652520042601,
+            -35.36313482568446,
+            594.000015729107
+          ],
+          [
+            149.16525200424053,
+            -35.36306272607552,
+            594.000038378872
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "kind": "TRANSIT",
+        "segment_id": "transit_002"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            149.16525200424053,
+            -35.36306272607552,
+            594.000038378872
+          ],
+          [
+            149.16567008481067,
+            -35.363062725276244,
+            594.0001633409411
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "kind": "SEARCH",
+        "segment_id": "search_002"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

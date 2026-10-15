@@ -1,0 +1,32 @@
+{
+  "run_id": "phase4_lockstep_health_gold",
+  "configuration": {
+    "sensor_profile": "REFERENCE_NOMINAL",
+    "wind": "PERCEPTION_MODERATE",
+    "payload_slots": 3
+  },
+  "start_source_time_s": 52.121472,
+  "end_source_time_s": 174.001234,
+  "actual_sim_duration_s": 121.879762,
+  "heartbeat_healthy": true,
+  "max_mavlink_age_s": 0.0,
+  "pose_fresh": true,
+  "max_pose_age_s": 0.0,
+  "source_time_continuous": true,
+  "ardupilot_pid_stable": true,
+  "gazebo_pid_stable": true,
+  "ekf_healthy": true,
+  "camera_active": true,
+  "camera_frames": 3403,
+  "detector_active": true,
+  "detector_frames": 1685,
+  "plugin_controller_reset_count": 3,
+  "frame_counter_reset_count": 0,
+  "missed_input_failure_count": 0,
+  "nan_inf_count": 0,
+  "solver_failure_count": 0,
+  "health_guard_interventions": 0,
+  "clean_shutdown": true,
+  "manual_interventions": 0,
+  "passed": true
+}

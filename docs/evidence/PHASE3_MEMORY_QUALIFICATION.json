@@ -1,0 +1,40 @@
+{
+  "qualification": "ACCELERATED_DETERMINISTIC_EQUIVALENT",
+  "latency_time_compression": 100.0,
+  "equivalent_simulation_duration_s": 600.0,
+  "configured_camera_fps": 30,
+  "frames_exercised": 18000,
+  "frames_released": 18000,
+  "camera_queue": {
+    "configured_capacity": 16,
+    "max_observed": 4,
+    "drops": 0,
+    "bounded": true
+  },
+  "pose_history": {
+    "count": 301,
+    "bound_at_30hz_10s": 302
+  },
+  "timing_witness": {
+    "count": 0,
+    "configured_max": 512
+  },
+  "candidate_observations": {
+    "count": 4000,
+    "configured_max": 4000
+  },
+  "evaluator_working_set": {
+    "count": 600,
+    "configured_max": 600
+  },
+  "replay_working_set": {
+    "count": 300,
+    "configured_max": 300
+  },
+  "rss_start_bytes": 67031040,
+  "rss_end_bytes": 73732096,
+  "rss_delta_bytes": 6701056,
+  "segmentation_images_retained": 0,
+  "unbounded_growth": false,
+  "passed": true
+}

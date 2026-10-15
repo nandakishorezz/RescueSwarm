@@ -1,0 +1,394 @@
+{
+  "classification": "SIMULATION_EVALUATOR_ONLY",
+  "profiles": {
+    "IDEAL_CONTROL": {
+      "classification": "SIMULATION_EVALUATOR_ONLY",
+      "profile_id": "IDEAL_CONTROL",
+      "targets": [
+        {
+          "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+          "target_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa",
+          "survivor_id": "hidden_01",
+          "estimated_enu_m": [
+            17.573384167757112,
+            -3.7136063799780703
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+            17.499999999151644,
+            -2.9999999988941037
+          ],
+          "horizontal_error_m": 0.717369711742607,
+          "reported_uncertainty_m": 1.0,
+          "estimated_wgs84": [
+            17.450192318342364,
+            78.38054193310658
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+            17.450198765559694,
+            78.38054124236027,
+            585.0
+          ],
+          "truth_inside_uncertainty": true,
+          "proof_source": "CAMERA_PIXELS",
+          "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE"
+        }
+      ],
+      "contained": 1,
+      "total": 1,
+      "statistical_calibration_claimed": false,
+      "confidence_convention": "REFERENCE_PROFILE GPS accuracy multiplied by 1.645 for a 95% engineering bound"
+    },
+    "REFERENCE_NOMINAL": {
+      "classification": "SIMULATION_EVALUATOR_ONLY",
+      "profile_id": "REFERENCE_NOMINAL",
+      "targets": [
+        {
+          "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+          "target_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa",
+          "survivor_id": "hidden_01",
+          "estimated_enu_m": [
+            17.557266025335608,
+            -4.254038358456872
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+            17.499999999151644,
+            -2.9999999988941037
+          ],
+          "horizontal_error_m": 1.255345213481049,
+          "reported_uncertainty_m": 1.0,
+          "estimated_wgs84": [
+            17.45018743570382,
+            78.38054178138498
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+            17.450198765559694,
+            78.38054124236027,
+            585.0
+          ],
+          "truth_inside_uncertainty": false,
+          "proof_source": "CAMERA_PIXELS",
+          "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE"
+        }
+      ],
+      "contained": 0,
+      "total": 1,
+      "statistical_calibration_claimed": false,
+      "confidence_convention": "REFERENCE_PROFILE GPS accuracy multiplied by 1.645 for a 95% engineering bound"
+    },
+    "REFERENCE_CHALLENGING": {
+      "classification": "SIMULATION_EVALUATOR_ONLY",
+      "profile_id": "REFERENCE_CHALLENGING",
+      "targets": [
+        {
+          "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+          "target_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa",
+          "survivor_id": "hidden_01",
+          "estimated_enu_m": [
+            17.397893153773627,
+            -4.8632181998622155
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+            17.499999999151644,
+            -2.9999999988941037
+          ],
+          "horizontal_error_m": 1.866013899276181,
+          "reported_uncertainty_m": 2.9610000000000003,
+          "estimated_wgs84": [
+            17.450181931950333,
+            78.38054028123162
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+            17.450198765559694,
+            78.38054124236027,
+            585.0
+          ],
+          "truth_inside_uncertainty": true,
+          "proof_source": "CAMERA_PIXELS",
+          "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE"
+        }
+      ],
+      "contained": 1,
+      "total": 1,
+      "statistical_calibration_claimed": false,
+      "confidence_convention": "REFERENCE_PROFILE GPS accuracy multiplied by 1.645 for a 95% engineering bound"
+    },
+    "GPS_NOMINAL": {
+      "classification": "SIMULATION_EVALUATOR_ONLY",
+      "profile_id": "REFERENCE_NOMINAL",
+      "targets": [
+        {
+          "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+          "target_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa",
+          "survivor_id": "hidden_01",
+          "estimated_enu_m": [
+            17.744392046982835,
+            -4.626804171234838
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+            17.499999999151644,
+            -2.9999999988941037
+          ],
+          "horizontal_error_m": 1.6450590531006308,
+          "reported_uncertainty_m": 1.316,
+          "estimated_wgs84": [
+            17.450184067876517,
+            78.38054354276582
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+            17.450198765559694,
+            78.38054124236027,
+            585.0
+          ],
+          "truth_inside_uncertainty": false,
+          "proof_source": "CAMERA_PIXELS",
+          "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE"
+        }
+      ],
+      "contained": 0,
+      "total": 1,
+      "statistical_calibration_claimed": false,
+      "confidence_convention": "REFERENCE_PROFILE GPS accuracy multiplied by 1.645 for a 95% engineering bound"
+    },
+    "GPS_CHALLENGING": {
+      "classification": "SIMULATION_EVALUATOR_ONLY",
+      "profile_id": "REFERENCE_CHALLENGING",
+      "targets": [
+        {
+          "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+          "target_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa",
+          "survivor_id": "hidden_01",
+          "estimated_enu_m": [
+            17.36662515579133,
+            -5.583002528292386
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+            17.499999999151644,
+            -2.9999999988941037
+          ],
+          "horizontal_error_m": 2.5864436811419873,
+          "reported_uncertainty_m": 2.9610000000000003,
+          "estimated_wgs84": [
+            17.450175428917923,
+            78.38053998690575
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+            17.450198765559694,
+            78.38054124236027,
+            585.0
+          ],
+          "truth_inside_uncertainty": true,
+          "proof_source": "CAMERA_PIXELS",
+          "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE"
+        }
+      ],
+      "contained": 1,
+      "total": 1,
+      "statistical_calibration_claimed": false,
+      "confidence_convention": "REFERENCE_PROFILE GPS accuracy multiplied by 1.645 for a 95% engineering bound"
+    },
+    "IMU_NOMINAL": {
+      "classification": "SIMULATION_EVALUATOR_ONLY",
+      "profile_id": "REFERENCE_NOMINAL",
+      "targets": [
+        {
+          "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+          "target_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa",
+          "survivor_id": "hidden_01",
+          "estimated_enu_m": [
+            17.599184465784447,
+            -3.915784785908241
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+            17.499999999151644,
+            -2.9999999988941037
+          ],
+          "horizontal_error_m": 0.9211402360920744,
+          "reported_uncertainty_m": 1.0,
+          "estimated_wgs84": [
+            17.45019049172171,
+            78.38054217595855
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+            17.450198765559694,
+            78.38054124236027,
+            585.0
+          ],
+          "truth_inside_uncertainty": true,
+          "proof_source": "CAMERA_PIXELS",
+          "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE"
+        }
+      ],
+      "contained": 1,
+      "total": 1,
+      "statistical_calibration_claimed": false,
+      "confidence_convention": "REFERENCE_PROFILE GPS accuracy multiplied by 1.645 for a 95% engineering bound"
+    },
+    "COMPASS_NOMINAL": {
+      "classification": "SIMULATION_EVALUATOR_ONLY",
+      "profile_id": "REFERENCE_NOMINAL",
+      "targets": [
+        {
+          "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+          "target_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa",
+          "survivor_id": "hidden_01",
+          "estimated_enu_m": [
+            17.598405822497888,
+            -3.910293485129613
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+            17.499999999151644,
+            -2.9999999988941037
+          ],
+          "horizontal_error_m": 0.9155970386317607,
+          "reported_uncertainty_m": 1.0,
+          "estimated_wgs84": [
+            17.450190541333953,
+            78.38054216862938
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+            17.450198765559694,
+            78.38054124236027,
+            585.0
+          ],
+          "truth_inside_uncertainty": true,
+          "proof_source": "CAMERA_PIXELS",
+          "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE"
+        }
+      ],
+      "contained": 1,
+      "total": 1,
+      "statistical_calibration_claimed": false,
+      "confidence_convention": "REFERENCE_PROFILE GPS accuracy multiplied by 1.645 for a 95% engineering bound"
+    },
+    "BAROMETER_NOMINAL": {
+      "classification": "SIMULATION_EVALUATOR_ONLY",
+      "profile_id": "REFERENCE_NOMINAL",
+      "targets": [
+        {
+          "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+          "target_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa",
+          "survivor_id": "hidden_01",
+          "estimated_enu_m": [
+            17.560591265831572,
+            -3.900109388563545
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+            17.499999999151644,
+            -2.9999999988941037
+          ],
+          "horizontal_error_m": 0.9021464487371061,
+          "reported_uncertainty_m": 1.0,
+          "estimated_wgs84": [
+            17.450190633344466,
+            78.38054181268777
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+            17.450198765559694,
+            78.38054124236027,
+            585.0
+          ],
+          "truth_inside_uncertainty": true,
+          "proof_source": "CAMERA_PIXELS",
+          "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE"
+        }
+      ],
+      "contained": 1,
+      "total": 1,
+      "statistical_calibration_claimed": false,
+      "confidence_convention": "REFERENCE_PROFILE GPS accuracy multiplied by 1.645 for a 95% engineering bound"
+    },
+    "REFERENCE_NOMINAL_THREE_SURVIVOR_GOLD": {
+      "classification": "SIMULATION_EVALUATOR_ONLY",
+      "profile_id": "REFERENCE_NOMINAL",
+      "targets": [
+        {
+          "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+          "target_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa",
+          "survivor_id": "hidden_01",
+          "estimated_enu_m": [
+            17.463863044296613,
+            -4.395948341960453
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+            17.499999999151644,
+            -2.9999999988941037
+          ],
+          "horizontal_error_m": 1.3964160039242888,
+          "reported_uncertainty_m": 1.316,
+          "estimated_wgs84": [
+            17.450186153590977,
+            78.38054090219822
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+            17.450198765559694,
+            78.38054124236027,
+            585.0
+          ],
+          "truth_inside_uncertainty": false,
+          "proof_source": "CAMERA_PIXELS",
+          "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE"
+        },
+        {
+          "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+          "target_id": "d4d885fa-852e-5684-89d1-d785345c0a29",
+          "survivor_id": "hidden_02",
+          "estimated_enu_m": [
+            18.23380320613458,
+            10.1374597115909
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+            17.50000000030147,
+            11.00000000036309
+          ],
+          "horizontal_error_m": 1.1324499523803093,
+          "reported_uncertainty_m": 1.316,
+          "estimated_wgs84": [
+            17.45031745850871,
+            78.38054814963063
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+            17.450325251303802,
+            78.38054124247388,
+            585.0
+          ],
+          "truth_inside_uncertainty": true,
+          "proof_source": "CAMERA_PIXELS",
+          "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE"
+        },
+        {
+          "classification": "EVALUATOR_ONLY_PREDICTION_VS_TRUTH",
+          "target_id": "88c9495b-415b-5627-a71a-4364db8acf2c",
+          "survivor_id": "hidden_03",
+          "estimated_enu_m": [
+            -17.51852589931315,
+            1.6274501884018024
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_enu_m": [
+            -17.499999999994277,
+            1.0000000001676117
+          ],
+          "horizontal_error_m": 0.6277236236280218,
+          "reported_uncertainty_m": 1.316,
+          "estimated_wgs84": [
+            17.45024057316547,
+            78.38021161915715
+          ],
+          "SIMULATION_ONLY_GROUND_TRUTH_wgs84": [
+            17.450234904343887,
+            78.38021179354328,
+            585.0
+          ],
+          "truth_inside_uncertainty": true,
+          "proof_source": "CAMERA_PIXELS",
+          "truth_association_source": "MATCHED_SEGMENTATION_PIXELS_AFTER_INFERENCE"
+        }
+      ],
+      "contained": 2,
+      "total": 3,
+      "statistical_calibration_claimed": false,
+      "confidence_convention": "REFERENCE_PROFILE GPS accuracy multiplied by 1.645 for a 95% engineering bound"
+    }
+  },
+  "notes": "Small deterministic scenario; no statistical calibration claim. Radius is not enlarged from truth feedback.",
+  "passed": true
+}

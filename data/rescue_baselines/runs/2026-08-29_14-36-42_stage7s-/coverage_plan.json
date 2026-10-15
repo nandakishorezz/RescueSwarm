@@ -1,0 +1,281 @@
+{
+  "configuration": {
+    "edge_margin_m": 2.0,
+    "effective_swath_m": 8.0,
+    "fixed_sweep_angle_deg": 0.0,
+    "lane_spacing_m": 8.0,
+    "max_waypoints": 500,
+    "min_planned_coverage_percent": 98.0,
+    "search_altitude_m": 10.0,
+    "search_speed_m_s": 6.0,
+    "sweep_strategy": "AUTO_OPTIMIZED",
+    "turn_penalty_m": 3.0
+  },
+  "cost_m": 135.99999999936807,
+  "created_at": "2026-08-29T14:36:41.386076Z",
+  "estimated_path_length_m": 129.99999999936807,
+  "estimated_search_time_s": 21.666666666561344,
+  "metadata": {
+    "boundary_area_m2": 1176.0,
+    "candidate_angles_deg": [
+      0.0,
+      90.0
+    ],
+    "safe_area_m2": 912.0000000143473
+  },
+  "mission_fingerprint": "83b0af381dd035015420c309f9b15240bac05a5d6bce6a6bdb7d916dd389237a",
+  "mission_id": "stage7s-uninterrupted-control",
+  "number_of_search_lines": 3,
+  "number_of_turns": 2,
+  "path_points_enu": [
+    {
+      "east_m": 2.000000000297692,
+      "north_m": 5.999999996640371
+    },
+    {
+      "east_m": 40.00000000045192,
+      "north_m": 5.999999996640371
+    },
+    {
+      "east_m": 40.00000000005422,
+      "north_m": 13.999999996640371
+    },
+    {
+      "east_m": 2.000000000264859,
+      "north_m": 13.999999996640371
+    },
+    {
+      "east_m": 2.000000000232025,
+      "north_m": 21.99999999664037
+    },
+    {
+      "east_m": 39.99999999965652,
+      "north_m": 21.99999999664037
+    }
+  ],
+  "path_points_wgs84": [
+    {
+      "altitude_m": 594.0000031450763,
+      "latitude": -35.363206925292545,
+      "longitude": 149.16525200427967
+    },
+    {
+      "altitude_m": 594.0001281080768,
+      "latitude": -35.36320692449328,
+      "longitude": 149.1656700855932
+    },
+    {
+      "altitude_m": 594.0001406921074,
+      "latitude": -35.36313482488519,
+      "longitude": 149.16567008520195
+    },
+    {
+      "altitude_m": 594.000015729107,
+      "latitude": -35.36313482568446,
+      "longitude": 149.1652520042601
+    },
+    {
+      "altitude_m": 594.000038378872,
+      "latitude": -35.36306272607552,
+      "longitude": 149.16525200424053
+    },
+    {
+      "altitude_m": 594.0001633409411,
+      "latitude": -35.363062725276244,
+      "longitude": 149.16567008481067
+    }
+  ],
+  "plan_fingerprint": null,
+  "planner_version": "rescueswarm-coverage-v1",
+  "safe_polygon_enu": [
+    {
+      "east_m": 2.0000000003141087,
+      "north_m": 1.9999999966403714
+    },
+    {
+      "east_m": 2.0000000002156084,
+      "north_m": 25.999999997922515
+    },
+    {
+      "east_m": 39.999999999457664,
+      "north_m": 25.999999997095617
+    },
+    {
+      "east_m": 40.00000000065077,
+      "north_m": 1.9999999973565692
+    }
+  ],
+  "safe_polygon_wgs84": [
+    {
+      "altitude_m": 584.0000006295741,
+      "latitude": -35.36324297506791,
+      "longitude": 149.16525200432392
+    },
+    {
+      "altitude_m": 584.0000534811988,
+      "latitude": -35.36302667590212,
+      "longitude": 149.16525200426523
+    },
+    {
+      "altitude_m": 584.0001784423366,
+      "latitude": -35.36302667510286,
+      "longitude": 149.16567008530419
+    },
+    {
+      "altitude_m": 584.0001255925745,
+      "latitude": -35.36324297426863,
+      "longitude": 149.16567008647803
+    }
+  ],
+  "segments": [
+    {
+      "assigned_vehicle_id": "drone_01",
+      "kind": "SEARCH",
+      "points_enu": [
+        {
+          "east_m": 2.000000000297692,
+          "north_m": 5.999999996640371
+        },
+        {
+          "east_m": 40.00000000045192,
+          "north_m": 5.999999996640371
+        }
+      ],
+      "points_wgs84": [
+        {
+          "altitude_m": 594.0000031450763,
+          "latitude": -35.363206925292545,
+          "longitude": 149.16525200427967
+        },
+        {
+          "altitude_m": 594.0001281080768,
+          "latitude": -35.36320692449328,
+          "longitude": 149.1656700855932
+        }
+      ],
+      "search_line_index": 0,
+      "segment_id": "search_000"
+    },
+    {
+      "assigned_vehicle_id": "drone_01",
+      "kind": "TRANSIT",
+      "points_enu": [
+        {
+          "east_m": 40.00000000045192,
+          "north_m": 5.999999996640371
+        },
+        {
+          "east_m": 40.00000000005422,
+          "north_m": 13.999999996640371
+        }
+      ],
+      "points_wgs84": [
+        {
+          "altitude_m": 594.0001281080768,
+          "latitude": -35.36320692449328,
+          "longitude": 149.1656700855932
+        },
+        {
+          "altitude_m": 594.0001406921074,
+          "latitude": -35.36313482488519,
+          "longitude": 149.16567008520195
+        }
+      ],
+      "search_line_index": null,
+      "segment_id": "transit_001"
+    },
+    {
+      "assigned_vehicle_id": "drone_01",
+      "kind": "SEARCH",
+      "points_enu": [
+        {
+          "east_m": 40.00000000005422,
+          "north_m": 13.999999996640371
+        },
+        {
+          "east_m": 2.000000000264859,
+          "north_m": 13.999999996640371
+        }
+      ],
+      "points_wgs84": [
+        {
+          "altitude_m": 594.0001406921074,
+          "latitude": -35.36313482488519,
+          "longitude": 149.16567008520195
+        },
+        {
+          "altitude_m": 594.000015729107,
+          "latitude": -35.36313482568446,
+          "longitude": 149.1652520042601
+        }
+      ],
+      "search_line_index": 1,
+      "segment_id": "search_001"
+    },
+    {
+      "assigned_vehicle_id": "drone_01",
+      "kind": "TRANSIT",
+      "points_enu": [
+        {
+          "east_m": 2.000000000264859,
+          "north_m": 13.999999996640371
+        },
+        {
+          "east_m": 2.000000000232025,
+          "north_m": 21.99999999664037
+        }
+      ],
+      "points_wgs84": [
+        {
+          "altitude_m": 594.000015729107,
+          "latitude": -35.36313482568446,
+          "longitude": 149.1652520042601
+        },
+        {
+          "altitude_m": 594.000038378872,
+          "latitude": -35.36306272607552,
+          "longitude": 149.16525200424053
+        }
+      ],
+      "search_line_index": null,
+      "segment_id": "transit_002"
+    },
+    {
+      "assigned_vehicle_id": "drone_01",
+      "kind": "SEARCH",
+      "points_enu": [
+        {
+          "east_m": 2.000000000232025,
+          "north_m": 21.99999999664037
+        },
+        {
+          "east_m": 39.99999999965652,
+          "north_m": 21.99999999664037
+        }
+      ],
+      "points_wgs84": [
+        {
+          "altitude_m": 594.000038378872,
+          "latitude": -35.36306272607552,
+          "longitude": 149.16525200424053
+        },
+        {
+          "altitude_m": 594.0001633409411,
+          "latitude": -35.363062725276244,
+          "longitude": 149.16567008481067
+        }
+      ],
+      "search_line_index": 2,
+      "segment_id": "search_002"
+    }
+  ],
+  "sweep_angle_deg": 0.0,
+  "validation": {
+    "covered_area_m2": 911.9999999813367,
+    "errors": [],
+    "missed_area_m2": 3.301056494819932e-08,
+    "planned_coverage_percent": 99.99999999638042,
+    "valid": true,
+    "warnings": []
+  }
+}

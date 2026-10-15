@@ -1,0 +1,36 @@
+{
+  "classification": "EVALUATOR_ONLY_SAME_RECORDED_DETECTION",
+  "frame_id": "drone_01_gazebo_camera:000000000425",
+  "correct_pose_source_time_ns": 72029918123,
+  "autonomy_outputs_modified": false,
+  "cases": [
+    {
+      "pose_shift_ms": 0,
+      "estimated_enu_m": [
+        17.560121394215457,
+        -3.8565894779680514
+      ],
+      "horizontal_error_m": 0.8586967554408227,
+      "delta_from_correct_m": 0.0
+    },
+    {
+      "pose_shift_ms": 100,
+      "estimated_enu_m": [
+        17.588815685311225,
+        -3.5944203880048446
+      ],
+      "horizontal_error_m": 0.6010189889667062,
+      "delta_from_correct_m": 0.2637347039614329
+    },
+    {
+      "pose_shift_ms": 200,
+      "estimated_enu_m": [
+        17.580580316344957,
+        -3.321493943191035
+      ],
+      "horizontal_error_m": 0.3314385972372155,
+      "delta_from_correct_m": 0.5354865066768744
+    }
+  ],
+  "passed": true
+}

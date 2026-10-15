@@ -1,0 +1,89 @@
+{
+  "pipeline": "Gazebo rendered -> deterministic MONO8 -> sensor noise/exposure -> detector MONO replication",
+  "profiles": {
+    "IDEAL_CONTROL": {
+      "camera": {
+        "latency_ms": 0.0,
+        "jitter_ms": 0.0,
+        "gaussian_noise_stddev_dn": 0.0,
+        "brightness_gain": 1.0,
+        "contrast_gain": 1.0,
+        "exposure_preset": "NORMAL_DAY",
+        "exposure_time_us": 1000.0,
+        "max_pending_frames": 16,
+        "motion_blur_model": "NOT_IMPLEMENTED",
+        "rolling_shutter_model": "NOT_APPLICABLE_TO_REFERENCE_CAMERA",
+        "provenance": "SIMULATION_ONLY"
+      },
+      "truth_visible_frames": 167,
+      "true_positives": 27,
+      "false_positives": 0,
+      "false_negatives": 140,
+      "bbox_iou_p50": 0.6626497412485817,
+      "image_mean_absolute_change_p50_dn": 0.0
+    },
+    "REFERENCE_NOMINAL": {
+      "camera": {
+        "latency_ms": 100.0,
+        "jitter_ms": 8.0,
+        "gaussian_noise_stddev_dn": 2.5,
+        "brightness_gain": 1.0,
+        "contrast_gain": 1.0,
+        "exposure_preset": "NORMAL_DAY",
+        "exposure_time_us": 1000.0,
+        "max_pending_frames": 16,
+        "motion_blur_model": "NOT_IMPLEMENTED",
+        "rolling_shutter_model": "NOT_APPLICABLE_TO_REFERENCE_CAMERA",
+        "provenance": "REFERENCE_PRESET"
+      },
+      "truth_visible_frames": 126,
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 122,
+      "bbox_iou_p50": 0.7089801286273151,
+      "image_mean_absolute_change_p50_dn": 1.98132861328125
+    },
+    "REFERENCE_CHALLENGING": {
+      "camera": {
+        "latency_ms": 200.0,
+        "jitter_ms": 18.0,
+        "gaussian_noise_stddev_dn": 6.0,
+        "brightness_gain": 0.82,
+        "contrast_gain": 0.92,
+        "exposure_preset": "DIMMER_DAY",
+        "exposure_time_us": 2000.0,
+        "max_pending_frames": 16,
+        "motion_blur_model": "NOT_IMPLEMENTED",
+        "rolling_shutter_model": "NOT_APPLICABLE_TO_REFERENCE_CAMERA",
+        "provenance": "REFERENCE_PRESET"
+      },
+      "truth_visible_frames": 145,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 135,
+      "bbox_iou_p50": 0.7269233184024769,
+      "image_mean_absolute_change_p50_dn": 5.54494140625
+    }
+  },
+  "exposure_presets": {
+    "NORMAL_DAY": {
+      "brightness_gain": 1.0,
+      "contrast_gain": 1.0,
+      "provenance": "REFERENCE_PRESET"
+    },
+    "DIMMER_DAY": {
+      "brightness_gain": 0.75,
+      "contrast_gain": 0.92,
+      "provenance": "ENGINEERING_ESTIMATE"
+    },
+    "BRIGHT_DAY": {
+      "brightness_gain": 1.18,
+      "contrast_gain": 1.02,
+      "provenance": "ENGINEERING_ESTIMATE"
+    }
+  },
+  "motion_blur": "NOT_IMPLEMENTED: no defensible exposure/motion renderer coupling in the pinned Gazebo camera path",
+  "rolling_shutter_model": "NOT_APPLICABLE_TO_REFERENCE_CAMERA",
+  "color_information_injected": false,
+  "passed": true
+}

@@ -1,0 +1,869 @@
+{
+  "classification": "CONTROLLED_TRANSPORT_AND_EVALUATOR_ONLY_LATEST_POSE_CONTROL",
+  "cases": {
+    "0ms": {
+      "transport": {
+        "configured_latency_ms": 0.0,
+        "observed_delivery_delay_ms": 28.322,
+        "capture_timestamp_sim_ns": 10000000000,
+        "sensor_timestamp_ns": null,
+        "capture_timestamp_preserved": true,
+        "release_order_preserved": true,
+        "max_pending_frames": 1
+      },
+      "same_recorded_detection_evaluator_control": {
+        "classification": "SIMULATION_EVALUATOR_ONLY_NEGATIVE_CONTROL",
+        "autonomy_used_correct_frame_time": true,
+        "latest_pose_fed_to_autonomy": false,
+        "samples": [
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000427",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 72953964873,
+            "receipt_latest_ap_source_time_ns": 72962072000,
+            "correct_frame_time_error_m": 1.3660755583310757,
+            "latest_pose_error_m": 1.22434389078554,
+            "latest_minus_correct_error_m": -0.1417316675455358
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001257",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 100333872065,
+            "receipt_latest_ap_source_time_ns": 100364862000,
+            "correct_frame_time_error_m": 0.63932165873774,
+            "latest_pose_error_m": 0.43689374359338434,
+            "latest_minus_correct_error_m": -0.2024279151443557
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000575",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 77835856302,
+            "receipt_latest_ap_source_time_ns": 77842432000,
+            "correct_frame_time_error_m": 1.1547579368441288,
+            "latest_pose_error_m": 1.0474375624793792,
+            "latest_minus_correct_error_m": -0.1073203743647495
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000578",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 77934811183,
+            "receipt_latest_ap_source_time_ns": 77962391000,
+            "correct_frame_time_error_m": 1.0974601848978751,
+            "latest_pose_error_m": 0.9679133208322532,
+            "latest_minus_correct_error_m": -0.12954686406562188
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000436",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 73250847059,
+            "receipt_latest_ap_source_time_ns": 73244977000,
+            "correct_frame_time_error_m": 1.4308348755619604,
+            "latest_pose_error_m": 1.3453913972658624,
+            "latest_minus_correct_error_m": -0.085443478296098
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000571",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 77703912835,
+            "receipt_latest_ap_source_time_ns": 77722472000,
+            "correct_frame_time_error_m": 1.1829210991879824,
+            "latest_pose_error_m": 1.0383065600771852,
+            "latest_minus_correct_error_m": -0.14461453911079714
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001256",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 100300883152,
+            "receipt_latest_ap_source_time_ns": 100324875000,
+            "correct_frame_time_error_m": 0.6484027507037998,
+            "latest_pose_error_m": 0.46198415857120156,
+            "latest_minus_correct_error_m": -0.18641859213259826
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000588",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 78264665564,
+            "receipt_latest_ap_source_time_ns": 78282284000,
+            "correct_frame_time_error_m": 0.9812303881817679,
+            "latest_pose_error_m": 0.8640680666568893,
+            "latest_minus_correct_error_m": -0.1171623215248786
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000428",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 72986946077,
+            "receipt_latest_ap_source_time_ns": 73002059000,
+            "correct_frame_time_error_m": 1.3802792664477777,
+            "latest_pose_error_m": 1.2203280605890197,
+            "latest_minus_correct_error_m": -0.159951205858758
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001260",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 100432838801,
+            "receipt_latest_ap_source_time_ns": 100444835000,
+            "correct_frame_time_error_m": 0.621840261791266,
+            "latest_pose_error_m": 0.47793828116279596,
+            "latest_minus_correct_error_m": -0.14390198062846998
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000575",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 77835856302,
+            "receipt_latest_ap_source_time_ns": 77842432000,
+            "correct_frame_time_error_m": 1.2000604048884798,
+            "latest_pose_error_m": 1.1150136537286974,
+            "latest_minus_correct_error_m": -0.08504675115978233
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000422",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 72789027949,
+            "receipt_latest_ap_source_time_ns": 72802126000,
+            "correct_frame_time_error_m": 1.3450618291178298,
+            "latest_pose_error_m": 1.1787785199601564,
+            "latest_minus_correct_error_m": -0.16628330915767342
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000582",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 78066747605,
+            "receipt_latest_ap_source_time_ns": 78082351000,
+            "correct_frame_time_error_m": 1.0646007175858734,
+            "latest_pose_error_m": 0.9647061863432104,
+            "latest_minus_correct_error_m": -0.09989453124266301
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000578",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 77934811183,
+            "receipt_latest_ap_source_time_ns": 77962391000,
+            "correct_frame_time_error_m": 1.1745914901117869,
+            "latest_pose_error_m": 1.0683944109483678,
+            "latest_minus_correct_error_m": -0.10619707916341903
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000429",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 73019932353,
+            "receipt_latest_ap_source_time_ns": 73042045000,
+            "correct_frame_time_error_m": 1.392555842637105,
+            "latest_pose_error_m": 1.2159620419715393,
+            "latest_minus_correct_error_m": -0.17659380066556563
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000569",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 77637943896,
+            "receipt_latest_ap_source_time_ns": 77642499000,
+            "correct_frame_time_error_m": 1.1918652783065324,
+            "latest_pose_error_m": 1.0901854370147979,
+            "latest_minus_correct_error_m": -0.10167984129173457
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000446",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 73580712111,
+            "receipt_latest_ap_source_time_ns": 73604856000,
+            "correct_frame_time_error_m": 1.4592232474534326,
+            "latest_pose_error_m": 1.3146381731765375,
+            "latest_minus_correct_error_m": -0.14458507427689504
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001261",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 100465827711,
+            "receipt_latest_ap_source_time_ns": 100482822000,
+            "correct_frame_time_error_m": 0.5962262057466472,
+            "latest_pose_error_m": 0.432222839787712,
+            "latest_minus_correct_error_m": -0.16400336595893522
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001254",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 100234905327,
+            "receipt_latest_ap_source_time_ns": 100244902000,
+            "correct_frame_time_error_m": 0.6444041230990735,
+            "latest_pose_error_m": 0.49058309805648154,
+            "latest_minus_correct_error_m": -0.15382102504259193
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000573",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 77769885492,
+            "receipt_latest_ap_source_time_ns": 77762459000,
+            "correct_frame_time_error_m": 1.1548133724545666,
+            "latest_pose_error_m": 1.0738976028765754,
+            "latest_minus_correct_error_m": -0.08091576957799118
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000570",
+            "camera_latency_ms": 0.0,
+            "capture_ap_source_time_ns": 77670926964,
+            "receipt_latest_ap_source_time_ns": 77682485000,
+            "correct_frame_time_error_m": 1.172859242979542,
+            "latest_pose_error_m": 1.058558165621616,
+            "latest_minus_correct_error_m": -0.11430107735792583
+          }
+        ],
+        "correct_frame_time_error_p50_m": 1.172859242979542,
+        "latest_pose_error_p50_m": 1.058558165621616,
+        "latest_minus_correct_error_p50_m": -0.1417316675455358,
+        "receipt_time_pose_fallbacks": 0,
+        "latest_pose_fallbacks": 0,
+        "host_authoritative_for_pose": false
+      },
+      "correct_frame_time_geolocation_unchanged": true
+    },
+    "50ms": {
+      "transport": {
+        "configured_latency_ms": 50.0,
+        "observed_delivery_delay_ms": 52.1028,
+        "capture_timestamp_sim_ns": 10000000000,
+        "sensor_timestamp_ns": null,
+        "capture_timestamp_preserved": true,
+        "release_order_preserved": true,
+        "max_pending_frames": 1
+      },
+      "same_recorded_detection_evaluator_control": {
+        "classification": "SIMULATION_EVALUATOR_ONLY_NEGATIVE_CONTROL",
+        "autonomy_used_correct_frame_time": true,
+        "latest_pose_fed_to_autonomy": false,
+        "samples": [
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000427",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 72953964873,
+            "receipt_latest_ap_source_time_ns": 73002059000,
+            "correct_frame_time_error_m": 1.3660755583310757,
+            "latest_pose_error_m": 1.1104314257603107,
+            "latest_minus_correct_error_m": -0.255644132570765
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001257",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 100333872065,
+            "receipt_latest_ap_source_time_ns": 100364862000,
+            "correct_frame_time_error_m": 0.63932165873774,
+            "latest_pose_error_m": 0.43689374359338434,
+            "latest_minus_correct_error_m": -0.2024279151443557
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000575",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 77835856302,
+            "receipt_latest_ap_source_time_ns": 77882418000,
+            "correct_frame_time_error_m": 1.1547579368441288,
+            "latest_pose_error_m": 0.9563268593143303,
+            "latest_minus_correct_error_m": -0.1984310775297985
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000578",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 77934811183,
+            "receipt_latest_ap_source_time_ns": 77962391000,
+            "correct_frame_time_error_m": 1.0974601848978751,
+            "latest_pose_error_m": 0.9679133208322532,
+            "latest_minus_correct_error_m": -0.12954686406562188
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000436",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 73250847059,
+            "receipt_latest_ap_source_time_ns": 73284964000,
+            "correct_frame_time_error_m": 1.4308348755619604,
+            "latest_pose_error_m": 1.2263630238086862,
+            "latest_minus_correct_error_m": -0.2044718517532742
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000571",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 77703912835,
+            "receipt_latest_ap_source_time_ns": 77722472000,
+            "correct_frame_time_error_m": 1.1829210991879824,
+            "latest_pose_error_m": 1.0383065600771852,
+            "latest_minus_correct_error_m": -0.14461453911079714
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001256",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 100300883152,
+            "receipt_latest_ap_source_time_ns": 100324875000,
+            "correct_frame_time_error_m": 0.6484027507037998,
+            "latest_pose_error_m": 0.46198415857120156,
+            "latest_minus_correct_error_m": -0.18641859213259826
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000588",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 78264665564,
+            "receipt_latest_ap_source_time_ns": 78322270000,
+            "correct_frame_time_error_m": 0.9812303881817679,
+            "latest_pose_error_m": 0.8087517423056054,
+            "latest_minus_correct_error_m": -0.17247864587616246
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000428",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 72986946077,
+            "receipt_latest_ap_source_time_ns": 73042045000,
+            "correct_frame_time_error_m": 1.3802792664477777,
+            "latest_pose_error_m": 1.109803069211004,
+            "latest_minus_correct_error_m": -0.27047619723677374
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001260",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 100432838801,
+            "receipt_latest_ap_source_time_ns": 100482822000,
+            "correct_frame_time_error_m": 0.621840261791266,
+            "latest_pose_error_m": 0.3645185085347147,
+            "latest_minus_correct_error_m": -0.25732175325655127
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000575",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 77835856302,
+            "receipt_latest_ap_source_time_ns": 77882418000,
+            "correct_frame_time_error_m": 1.2000604048884798,
+            "latest_pose_error_m": 1.0350592041440267,
+            "latest_minus_correct_error_m": -0.165001200744453
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000422",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 72789027949,
+            "receipt_latest_ap_source_time_ns": 72842112000,
+            "correct_frame_time_error_m": 1.3450618291178298,
+            "latest_pose_error_m": 1.0631972397559402,
+            "latest_minus_correct_error_m": -0.28186458936188963
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000582",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 78066747605,
+            "receipt_latest_ap_source_time_ns": 78122338000,
+            "correct_frame_time_error_m": 1.0646007175858734,
+            "latest_pose_error_m": 0.869385470609799,
+            "latest_minus_correct_error_m": -0.1952152469760744
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000578",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 77934811183,
+            "receipt_latest_ap_source_time_ns": 77962391000,
+            "correct_frame_time_error_m": 1.1745914901117869,
+            "latest_pose_error_m": 1.0683944109483678,
+            "latest_minus_correct_error_m": -0.10619707916341903
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000429",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 73019932353,
+            "receipt_latest_ap_source_time_ns": 73042045000,
+            "correct_frame_time_error_m": 1.392555842637105,
+            "latest_pose_error_m": 1.2159620419715393,
+            "latest_minus_correct_error_m": -0.17659380066556563
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000569",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 77637943896,
+            "receipt_latest_ap_source_time_ns": 77682485000,
+            "correct_frame_time_error_m": 1.1918652783065324,
+            "latest_pose_error_m": 0.9968378892123725,
+            "latest_minus_correct_error_m": -0.19502738909415995
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000446",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 73580712111,
+            "receipt_latest_ap_source_time_ns": 73604856000,
+            "correct_frame_time_error_m": 1.4592232474534326,
+            "latest_pose_error_m": 1.3146381731765375,
+            "latest_minus_correct_error_m": -0.14458507427689504
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001261",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 100465827711,
+            "receipt_latest_ap_source_time_ns": 100522809000,
+            "correct_frame_time_error_m": 0.5962262057466472,
+            "latest_pose_error_m": 0.3291406248285369,
+            "latest_minus_correct_error_m": -0.2670855809181103
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001254",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 100234905327,
+            "receipt_latest_ap_source_time_ns": 100284889000,
+            "correct_frame_time_error_m": 0.6444041230990735,
+            "latest_pose_error_m": 0.3805157511760925,
+            "latest_minus_correct_error_m": -0.263888371922981
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000573",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 77769885492,
+            "receipt_latest_ap_source_time_ns": 77802445000,
+            "correct_frame_time_error_m": 1.1548133724545666,
+            "latest_pose_error_m": 1.019340147327833,
+            "latest_minus_correct_error_m": -0.13547322512673365
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000570",
+            "camera_latency_ms": 50.0,
+            "capture_ap_source_time_ns": 77670926964,
+            "receipt_latest_ap_source_time_ns": 77722472000,
+            "correct_frame_time_error_m": 1.172859242979542,
+            "latest_pose_error_m": 0.9496526725052717,
+            "latest_minus_correct_error_m": -0.22320657047427017
+          }
+        ],
+        "correct_frame_time_error_p50_m": 1.172859242979542,
+        "latest_pose_error_p50_m": 0.9968378892123725,
+        "latest_minus_correct_error_p50_m": -0.1952152469760744,
+        "receipt_time_pose_fallbacks": 0,
+        "latest_pose_fallbacks": 0,
+        "host_authoritative_for_pose": false
+      },
+      "correct_frame_time_geolocation_unchanged": true
+    },
+    "100ms": {
+      "transport": {
+        "configured_latency_ms": 100.0,
+        "observed_delivery_delay_ms": 104.2044,
+        "capture_timestamp_sim_ns": 10000000000,
+        "sensor_timestamp_ns": null,
+        "capture_timestamp_preserved": true,
+        "release_order_preserved": true,
+        "max_pending_frames": 1
+      },
+      "same_recorded_detection_evaluator_control": {
+        "classification": "SIMULATION_EVALUATOR_ONLY_NEGATIVE_CONTROL",
+        "autonomy_used_correct_frame_time": true,
+        "latest_pose_fed_to_autonomy": false,
+        "samples": [
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000427",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 72953964873,
+            "receipt_latest_ap_source_time_ns": 73002059000,
+            "correct_frame_time_error_m": 1.3660755583310757,
+            "latest_pose_error_m": 1.1104314257603107,
+            "latest_minus_correct_error_m": -0.255644132570765
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001257",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 100333872065,
+            "receipt_latest_ap_source_time_ns": 100364862000,
+            "correct_frame_time_error_m": 0.63932165873774,
+            "latest_pose_error_m": 0.43689374359338434,
+            "latest_minus_correct_error_m": -0.2024279151443557
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000575",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 77835856302,
+            "receipt_latest_ap_source_time_ns": 77882418000,
+            "correct_frame_time_error_m": 1.1547579368441288,
+            "latest_pose_error_m": 0.9563268593143303,
+            "latest_minus_correct_error_m": -0.1984310775297985
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000578",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 77934811183,
+            "receipt_latest_ap_source_time_ns": 77962391000,
+            "correct_frame_time_error_m": 1.0974601848978751,
+            "latest_pose_error_m": 0.9679133208322532,
+            "latest_minus_correct_error_m": -0.12954686406562188
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000436",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 73250847059,
+            "receipt_latest_ap_source_time_ns": 73284964000,
+            "correct_frame_time_error_m": 1.4308348755619604,
+            "latest_pose_error_m": 1.2263630238086862,
+            "latest_minus_correct_error_m": -0.2044718517532742
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000571",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 77703912835,
+            "receipt_latest_ap_source_time_ns": 77762459000,
+            "correct_frame_time_error_m": 1.1829210991879824,
+            "latest_pose_error_m": 0.9492725310744289,
+            "latest_minus_correct_error_m": -0.2336485681135535
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001256",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 100300883152,
+            "receipt_latest_ap_source_time_ns": 100364862000,
+            "correct_frame_time_error_m": 0.6484027507037998,
+            "latest_pose_error_m": 0.3538927717494619,
+            "latest_minus_correct_error_m": -0.29450997895433795
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000588",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 78264665564,
+            "receipt_latest_ap_source_time_ns": 78322270000,
+            "correct_frame_time_error_m": 0.9812303881817679,
+            "latest_pose_error_m": 0.8087517423056054,
+            "latest_minus_correct_error_m": -0.17247864587616246
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000428",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 72986946077,
+            "receipt_latest_ap_source_time_ns": 73042045000,
+            "correct_frame_time_error_m": 1.3802792664477777,
+            "latest_pose_error_m": 1.109803069211004,
+            "latest_minus_correct_error_m": -0.27047619723677374
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001260",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 100432838801,
+            "receipt_latest_ap_source_time_ns": 100482822000,
+            "correct_frame_time_error_m": 0.621840261791266,
+            "latest_pose_error_m": 0.3645185085347147,
+            "latest_minus_correct_error_m": -0.25732175325655127
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000575",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 77835856302,
+            "receipt_latest_ap_source_time_ns": 77882418000,
+            "correct_frame_time_error_m": 1.2000604048884798,
+            "latest_pose_error_m": 1.0350592041440267,
+            "latest_minus_correct_error_m": -0.165001200744453
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000422",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 72789027949,
+            "receipt_latest_ap_source_time_ns": 72842112000,
+            "correct_frame_time_error_m": 1.3450618291178298,
+            "latest_pose_error_m": 1.0631972397559402,
+            "latest_minus_correct_error_m": -0.28186458936188963
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000582",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 78066747605,
+            "receipt_latest_ap_source_time_ns": 78122338000,
+            "correct_frame_time_error_m": 1.0646007175858734,
+            "latest_pose_error_m": 0.869385470609799,
+            "latest_minus_correct_error_m": -0.1952152469760744
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000578",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 77934811183,
+            "receipt_latest_ap_source_time_ns": 77962391000,
+            "correct_frame_time_error_m": 1.1745914901117869,
+            "latest_pose_error_m": 1.0683944109483678,
+            "latest_minus_correct_error_m": -0.10619707916341903
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000429",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 73019932353,
+            "receipt_latest_ap_source_time_ns": 73082032000,
+            "correct_frame_time_error_m": 1.392555842637105,
+            "latest_pose_error_m": 1.1107517833554523,
+            "latest_minus_correct_error_m": -0.28180405928165264
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000569",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 77637943896,
+            "receipt_latest_ap_source_time_ns": 77682485000,
+            "correct_frame_time_error_m": 1.1918652783065324,
+            "latest_pose_error_m": 0.9968378892123725,
+            "latest_minus_correct_error_m": -0.19502738909415995
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000446",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 73580712111,
+            "receipt_latest_ap_source_time_ns": 73644843000,
+            "correct_frame_time_error_m": 1.4592232474534326,
+            "latest_pose_error_m": 1.2071145640407388,
+            "latest_minus_correct_error_m": -0.25210868341269377
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001261",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 100465827711,
+            "receipt_latest_ap_source_time_ns": 100522809000,
+            "correct_frame_time_error_m": 0.5962262057466472,
+            "latest_pose_error_m": 0.3291406248285369,
+            "latest_minus_correct_error_m": -0.2670855809181103
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001254",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 100234905327,
+            "receipt_latest_ap_source_time_ns": 100284889000,
+            "correct_frame_time_error_m": 0.6444041230990735,
+            "latest_pose_error_m": 0.3805157511760925,
+            "latest_minus_correct_error_m": -0.263888371922981
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000573",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 77769885492,
+            "receipt_latest_ap_source_time_ns": 77802445000,
+            "correct_frame_time_error_m": 1.1548133724545666,
+            "latest_pose_error_m": 1.019340147327833,
+            "latest_minus_correct_error_m": -0.13547322512673365
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000570",
+            "camera_latency_ms": 100.0,
+            "capture_ap_source_time_ns": 77670926964,
+            "receipt_latest_ap_source_time_ns": 77722472000,
+            "correct_frame_time_error_m": 1.172859242979542,
+            "latest_pose_error_m": 0.9496526725052717,
+            "latest_minus_correct_error_m": -0.22320657047427017
+          }
+        ],
+        "correct_frame_time_error_p50_m": 1.172859242979542,
+        "latest_pose_error_p50_m": 0.9679133208322532,
+        "latest_minus_correct_error_p50_m": -0.22320657047427017,
+        "receipt_time_pose_fallbacks": 0,
+        "latest_pose_fallbacks": 0,
+        "host_authoritative_for_pose": false
+      },
+      "correct_frame_time_geolocation_unchanged": true
+    },
+    "200ms": {
+      "transport": {
+        "configured_latency_ms": 200.0,
+        "observed_delivery_delay_ms": 207.6059,
+        "capture_timestamp_sim_ns": 10000000000,
+        "sensor_timestamp_ns": null,
+        "capture_timestamp_preserved": true,
+        "release_order_preserved": true,
+        "max_pending_frames": 1
+      },
+      "same_recorded_detection_evaluator_control": {
+        "classification": "SIMULATION_EVALUATOR_ONLY_NEGATIVE_CONTROL",
+        "autonomy_used_correct_frame_time": true,
+        "latest_pose_fed_to_autonomy": false,
+        "samples": [
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000427",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 72953964873,
+            "receipt_latest_ap_source_time_ns": 73042045000,
+            "correct_frame_time_error_m": 1.3660755583310757,
+            "latest_pose_error_m": 1.000311566649692,
+            "latest_minus_correct_error_m": -0.36576399168138374
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001257",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 100333872065,
+            "receipt_latest_ap_source_time_ns": 100404848000,
+            "correct_frame_time_error_m": 0.63932165873774,
+            "latest_pose_error_m": 0.33127292827528365,
+            "latest_minus_correct_error_m": -0.3080487304624564
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000575",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 77835856302,
+            "receipt_latest_ap_source_time_ns": 77922405000,
+            "correct_frame_time_error_m": 1.1547579368441288,
+            "latest_pose_error_m": 0.911729388959122,
+            "latest_minus_correct_error_m": -0.24302854788500672
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000578",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 77934811183,
+            "receipt_latest_ap_source_time_ns": 78002378000,
+            "correct_frame_time_error_m": 1.0974601848978751,
+            "latest_pose_error_m": 0.8631164036480097,
+            "latest_minus_correct_error_m": -0.23434378124986543
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000436",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 73250847059,
+            "receipt_latest_ap_source_time_ns": 73324950000,
+            "correct_frame_time_error_m": 1.4308348755619604,
+            "latest_pose_error_m": 1.115688406398622,
+            "latest_minus_correct_error_m": -0.3151464691633383
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000571",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 77703912835,
+            "receipt_latest_ap_source_time_ns": 77762459000,
+            "correct_frame_time_error_m": 1.1829210991879824,
+            "latest_pose_error_m": 0.9492725310744289,
+            "latest_minus_correct_error_m": -0.2336485681135535
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001256",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 100300883152,
+            "receipt_latest_ap_source_time_ns": 100364862000,
+            "correct_frame_time_error_m": 0.6484027507037998,
+            "latest_pose_error_m": 0.3538927717494619,
+            "latest_minus_correct_error_m": -0.29450997895433795
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000588",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 78264665564,
+            "receipt_latest_ap_source_time_ns": 78322270000,
+            "correct_frame_time_error_m": 0.9812303881817679,
+            "latest_pose_error_m": 0.8087517423056054,
+            "latest_minus_correct_error_m": -0.17247864587616246
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000428",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 72986946077,
+            "receipt_latest_ap_source_time_ns": 73042045000,
+            "correct_frame_time_error_m": 1.3802792664477777,
+            "latest_pose_error_m": 1.109803069211004,
+            "latest_minus_correct_error_m": -0.27047619723677374
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001260",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 100432838801,
+            "receipt_latest_ap_source_time_ns": 100522809000,
+            "correct_frame_time_error_m": 0.621840261791266,
+            "latest_pose_error_m": 0.27168104758930445,
+            "latest_minus_correct_error_m": -0.3501592142019615
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000575",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 77835856302,
+            "receipt_latest_ap_source_time_ns": 77922405000,
+            "correct_frame_time_error_m": 1.2000604048884798,
+            "latest_pose_error_m": 1.0140640051422887,
+            "latest_minus_correct_error_m": -0.1859963997461911
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000422",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 72789027949,
+            "receipt_latest_ap_source_time_ns": 72882099000,
+            "correct_frame_time_error_m": 1.3450618291178298,
+            "latest_pose_error_m": 0.9647267806227158,
+            "latest_minus_correct_error_m": -0.380335048495114
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000582",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 78066747605,
+            "receipt_latest_ap_source_time_ns": 78162324000,
+            "correct_frame_time_error_m": 1.0646007175858734,
+            "latest_pose_error_m": 0.7810481381215237,
+            "latest_minus_correct_error_m": -0.28355257946434964
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000578",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 77934811183,
+            "receipt_latest_ap_source_time_ns": 78002378000,
+            "correct_frame_time_error_m": 1.1745914901117869,
+            "latest_pose_error_m": 0.9705481392684017,
+            "latest_minus_correct_error_m": -0.2040433508433852
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000429",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 73019932353,
+            "receipt_latest_ap_source_time_ns": 73082032000,
+            "correct_frame_time_error_m": 1.392555842637105,
+            "latest_pose_error_m": 1.1107517833554523,
+            "latest_minus_correct_error_m": -0.28180405928165264
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000569",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 77637943896,
+            "receipt_latest_ap_source_time_ns": 77722472000,
+            "correct_frame_time_error_m": 1.1918652783065324,
+            "latest_pose_error_m": 0.8882692749711203,
+            "latest_minus_correct_error_m": -0.30359600333541215
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000446",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 73580712111,
+            "receipt_latest_ap_source_time_ns": 73644843000,
+            "correct_frame_time_error_m": 1.4592232474534326,
+            "latest_pose_error_m": 1.2071145640407388,
+            "latest_minus_correct_error_m": -0.25210868341269377
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001261",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 100465827711,
+            "receipt_latest_ap_source_time_ns": 100522809000,
+            "correct_frame_time_error_m": 0.5962262057466472,
+            "latest_pose_error_m": 0.3291406248285369,
+            "latest_minus_correct_error_m": -0.2670855809181103
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000001254",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 100234905327,
+            "receipt_latest_ap_source_time_ns": 100284889000,
+            "correct_frame_time_error_m": 0.6444041230990735,
+            "latest_pose_error_m": 0.3805157511760925,
+            "latest_minus_correct_error_m": -0.263888371922981
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000573",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 77769885492,
+            "receipt_latest_ap_source_time_ns": 77842432000,
+            "correct_frame_time_error_m": 1.1548133724545666,
+            "latest_pose_error_m": 0.9230234794219218,
+            "latest_minus_correct_error_m": -0.23178989303264486
+          },
+          {
+            "frame_id": "drone_01_gazebo_camera:000000000570",
+            "camera_latency_ms": 200.0,
+            "capture_ap_source_time_ns": 77670926964,
+            "receipt_latest_ap_source_time_ns": 77722472000,
+            "correct_frame_time_error_m": 1.172859242979542,
+            "latest_pose_error_m": 0.9496526725052717,
+            "latest_minus_correct_error_m": -0.22320657047427017
+          }
+        ],
+        "correct_frame_time_error_p50_m": 1.172859242979542,
+        "latest_pose_error_p50_m": 0.9230234794219218,
+        "latest_minus_correct_error_p50_m": -0.2670855809181103,
+        "receipt_time_pose_fallbacks": 0,
+        "latest_pose_fallbacks": 0,
+        "host_authoritative_for_pose": false
+      },
+      "correct_frame_time_geolocation_unchanged": true
+    }
+  },
+  "capture_timestamp_preserved_all": true,
+  "order_preserved_all": true,
+  "receipt_time_pose_fallbacks": 0,
+  "latest_pose_fallbacks": 0,
+  "host_authoritative_for_pose": false,
+  "gazebo_truth_pose_used": false,
+  "latest_pose_control_fed_to_autonomy": false,
+  "passed": true
+}

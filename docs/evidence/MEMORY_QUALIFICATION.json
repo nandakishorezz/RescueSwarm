@@ -1,0 +1,55 @@
+{
+  "classification": "ACCELERATED_DETERMINISTIC_EQUIVALENT",
+  "same_live_buffer_classes": true,
+  "simulated_duration_s": 600,
+  "samples_exercised": {
+    "frames": 18000,
+    "pose_attempts": 15000
+  },
+  "rss_bytes": [
+    67534848,
+    67657728,
+    69447680,
+    70504448,
+    71385088,
+    72024064,
+    72658944,
+    73080832,
+    73187328,
+    73187328,
+    73187328,
+    73187328
+  ],
+  "rss_growth_bytes": 5652480,
+  "frame_queue": {
+    "configured_max": 2,
+    "observed": 2,
+    "maximum_observed": 2
+  },
+  "pose_history": {
+    "configured_duration_s": 10,
+    "observed_count": 301,
+    "span_s": 10.0
+  },
+  "timing_sidecar": {
+    "test_max_entries": 100,
+    "observed_count": 100,
+    "production_max_entries": 200000,
+    "ten_minute_expected_records_at_75hz": 45000
+  },
+  "pipeline_evidence": {
+    "results": 10000,
+    "results_max": 10000,
+    "observations": 4000,
+    "observations_max": 4000,
+    "candidate_observations": 500,
+    "candidate_max": 500,
+    "evaluator_working_set": 5000,
+    "evaluator_max": 5000,
+    "replay_working_set": 300,
+    "replay_max": 300
+  },
+  "segmentation_images_retained": 0,
+  "unbounded_growth": false,
+  "passed": true
+}

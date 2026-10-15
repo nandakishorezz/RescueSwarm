@@ -1,0 +1,23 @@
+{
+  "evaluator_changed_autonomy": false,
+  "evaluator_disabled_fingerprint": "1eca39afbd2c3dcf99cd9a90bd3c908f6c883012431df6ef6ad1e0a766f59fe9",
+  "evaluator_enabled_fingerprint": "1eca39afbd2c3dcf99cd9a90bd3c908f6c883012431df6ef6ad1e0a766f59fe9",
+  "excluded_inputs": [
+    "SIMULATION_ONLY_GROUND_TRUTH_*",
+    "observer overlays",
+    "evaluator scores"
+  ],
+  "inputs": [
+    "PHASE4_MISSION_TIMELINE.jsonl",
+    "TARGET_SERVICE_TRAJECTORY.jsonl",
+    "ALIGNMENT_EVIDENCE.jsonl",
+    "DELIVERY_GATE_EVIDENCE.jsonl",
+    "payload_release_commands.json"
+  ],
+  "method": "DETERMINISTIC_REPLAY_OF_RECORDED_AUTONOMY_OUTPUT_STREAM",
+  "passed": true,
+  "run_id": "stage13sim_phase4_single_gold_20260909m",
+  "truth_overlay_changed_autonomy": false,
+  "truth_overlay_off_fingerprint": "1eca39afbd2c3dcf99cd9a90bd3c908f6c883012431df6ef6ad1e0a766f59fe9",
+  "truth_overlay_on_fingerprint": "1eca39afbd2c3dcf99cd9a90bd3c908f6c883012431df6ef6ad1e0a766f59fe9"
+}

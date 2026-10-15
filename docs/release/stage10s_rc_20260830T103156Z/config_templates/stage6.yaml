@@ -1,0 +1,29 @@
+# Stage 6 physical-bench defaults. These are procedures, not flight settings.
+stage6:
+  environment: physical_bench
+  read_only: true
+  require_propellers_removed: true
+
+power:
+  invalidate_precision_on_current_undervoltage: true
+  invalidate_precision_on_current_throttling: true
+
+mavlink:
+  heartbeat_timeout_s: 10
+  collection_duration_s: 60
+  approved_bauds: [57600, 115200, 921600]
+  gps_stability_duration_s: 600
+  timesync_interval_s: 1.0
+
+camera:
+  short_capture_frames: 100
+  stability_duration_s: 60
+  endurance_duration_s: 1800
+
+geolocation:
+  intended_uncertainty_coverage_percent: 95
+  physical_tests: [A, B, C]
+
+integration:
+  endurance_duration_s: 1800
+  persist_raw_mavlink: false

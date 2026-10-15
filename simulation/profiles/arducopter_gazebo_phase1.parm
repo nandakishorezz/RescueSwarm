@@ -1,0 +1,30 @@
+# Stage 13SIM Phase 1/2 generated reference quad.
+# Layered after the official gazebo-iris defaults in disposable SITL only.
+FRAME_CLASS 1
+FRAME_TYPE 1
+PLND_ENABLED 0
+RNGFND1_TYPE 0
+# Phase-2C: Explicit EKF3 selection.
+# With no_time_sync=0, ArduPilot no longer forces AHRS_EKF_TYPE=10.
+# These params make EKF3 authoritative; prevents SIM AHRS in gold runs.
+AHRS_EKF_TYPE 3
+EK3_ENABLE 1
+# ArduPilot 4.8 uses numbered receiver parameters.  The legacy GPS_TYPE
+# spelling is not sufficient to select the SITL receiver on this build.
+GPS1_TYPE 100
+SIM_GPS1_ENABLE 1
+# ArduPilot 4.8 can otherwise retain EKF3's no-aiding default after the
+# Gazebo JSON model starts.  Select the existing SITL GPS/barometer sources
+# explicitly; this does not bypass EKF health, it allows EKF3 to fuse the
+# GPS telemetry that readiness already verifies is present.
+EK3_SRC1_POSXY 3
+EK3_SRC1_VELXY 3
+EK3_SRC1_POSZ 1
+EK3_SRC1_VELZ 3
+# Ensure EKF2 is disabled to avoid ambiguity.
+EK2_ENABLE 0
+# Scale EKF3 preflight GPS alignment threshold to account for synthetic sensor noise in SITL.
+EK3_CHECK_SCALE 250
+# Bypass preflight noise check so synthetic GPS jitter does not indefinitely block EKF3 ground alignment in SITL.
+EK3_GPS_CHECK 0
+

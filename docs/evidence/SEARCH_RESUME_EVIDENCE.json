@@ -1,0 +1,15 @@
+{
+  "coverage_after_resume_percent": 100.0,
+  "coverage_before_service_percent": 0.0,
+  "last_reached_sequence_before_service": 3,
+  "passed": true,
+  "restart_from_beginning": false,
+  "resume_sequence": 3,
+  "route_completion_evidence": {
+    "simulation_elapsed_s": 83.519674,
+    "type": "RTL_COMMANDED"
+  },
+  "run_id": "phase4_multitarget_gold_v2",
+  "target_service_detour_counted_as_search": false,
+  "unfinished_work_preserved": true
+}

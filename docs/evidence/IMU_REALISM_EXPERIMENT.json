@@ -1,0 +1,177 @@
+{
+  "classification": "SIMULATION_EVALUATOR_ONLY",
+  "model": "ArduPilot SITL accelerometer/gyro measurement noise and bias before EKF3",
+  "controls_held_constant": [
+    "route",
+    "survivor",
+    "camera",
+    "detector",
+    "GPS",
+    "compass",
+    "barometer"
+  ],
+  "profiles": {
+    "IDEAL_CONTROL": {
+      "profile_id": "IDEAL_CONTROL",
+      "isolation_component": "IMU",
+      "ekf_horizontal_position_error_m": {
+        "count": 1118,
+        "unit": "m",
+        "p50": 0.0849237001064902,
+        "p95": 0.20889404733502492,
+        "maximum": 0.24969626719230953
+      },
+      "ekf_altitude_error_m": {
+        "count": 1118,
+        "unit": "m",
+        "p50": 0.0926645955123222,
+        "p95": 0.134501513801297,
+        "maximum": 0.15870725719469414
+      },
+      "ekf_attitude_error_deg": {
+        "count": 1118,
+        "unit": "deg",
+        "p50": 0.5434503001320077,
+        "p95": 1.6950705961619572,
+        "maximum": 3.0373670146419056
+      },
+      "ekf_heading_error_deg": {
+        "count": 1118,
+        "unit": "deg",
+        "p50": 0.459000174243954,
+        "p95": 1.5869031191723382,
+        "maximum": 3.0529203589009626
+      },
+      "target_best_geolocation_error_m": 0.717369711742607,
+      "target_geolocated_observations": 27,
+      "raw_gyro": {
+        "xgyro_millirad_s": {
+          "count": 1118,
+          "unit": "millirad/s",
+          "p50": 0.0,
+          "p95": 449.0,
+          "maximum": 761.0
+        },
+        "ygyro_millirad_s": {
+          "count": 1118,
+          "unit": "millirad/s",
+          "p50": 0.0,
+          "p95": 126.14999999999986,
+          "maximum": 332.0
+        },
+        "zgyro_millirad_s": {
+          "count": 1118,
+          "unit": "millirad/s",
+          "p50": 0.0,
+          "p95": 304.8499999999756,
+          "maximum": 1081.0
+        }
+      },
+      "raw_accelerometer": {
+        "xacc_mg": {
+          "count": 1118,
+          "unit": "mg",
+          "p50": -254.5,
+          "p95": 0.0,
+          "maximum": 41.0
+        },
+        "yacc_mg": {
+          "count": 1118,
+          "unit": "mg",
+          "p50": 12.0,
+          "p95": 226.0,
+          "maximum": 252.0
+        },
+        "zacc_mg": {
+          "count": 1118,
+          "unit": "mg",
+          "p50": -957.0,
+          "p95": -887.8500000000001,
+          "maximum": -866.0
+        }
+      }
+    },
+    "REFERENCE_NOMINAL_IMU_ONLY": {
+      "profile_id": "REFERENCE_NOMINAL",
+      "isolation_component": "IMU",
+      "ekf_horizontal_position_error_m": {
+        "count": 782,
+        "unit": "m",
+        "p50": 0.04604069707757054,
+        "p95": 0.1853745908189225,
+        "maximum": 0.25027151752982063
+      },
+      "ekf_altitude_error_m": {
+        "count": 782,
+        "unit": "m",
+        "p50": 0.10225452336078167,
+        "p95": 0.14993184336628007,
+        "maximum": 0.1740183576794283
+      },
+      "ekf_attitude_error_deg": {
+        "count": 782,
+        "unit": "deg",
+        "p50": 0.48847475871963464,
+        "p95": 1.8859099013202558,
+        "maximum": 3.2855029426988094
+      },
+      "ekf_heading_error_deg": {
+        "count": 782,
+        "unit": "deg",
+        "p50": 0.3466754377650858,
+        "p95": 1.7203996017178853,
+        "maximum": 3.2907951788874925
+      },
+      "target_best_geolocation_error_m": 0.9211402360920744,
+      "target_geolocated_observations": 21,
+      "raw_gyro": {
+        "xgyro_millirad_s": {
+          "count": 782,
+          "unit": "millirad/s",
+          "p50": 0.0,
+          "p95": 481.0,
+          "maximum": 817.0
+        },
+        "ygyro_millirad_s": {
+          "count": 782,
+          "unit": "millirad/s",
+          "p50": 0.0,
+          "p95": 117.8499999999998,
+          "maximum": 302.0
+        },
+        "zgyro_millirad_s": {
+          "count": 782,
+          "unit": "millirad/s",
+          "p50": 0.0,
+          "p95": 975.7999999999997,
+          "maximum": 1077.0
+        }
+      },
+      "raw_accelerometer": {
+        "xacc_mg": {
+          "count": 782,
+          "unit": "mg",
+          "p50": -124.0,
+          "p95": 3.0,
+          "maximum": 43.0
+        },
+        "yacc_mg": {
+          "count": 782,
+          "unit": "mg",
+          "p50": 52.0,
+          "p95": 231.94999999999993,
+          "maximum": 250.0
+        },
+        "zacc_mg": {
+          "count": 782,
+          "unit": "mg",
+          "p50": -974.0,
+          "p95": -890.0,
+          "maximum": -860.0
+        }
+      }
+    }
+  },
+  "vehicle_quaternion_modified_directly": false,
+  "passed": true
+}

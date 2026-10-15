@@ -1,0 +1,152 @@
+{
+  "classification": "SIMULATION_EVALUATOR_ONLY",
+  "profiles": {
+    "IDEAL_CONTROL": {
+      "classification": "SIMULATION_EVALUATOR_ONLY_TRUTH_VS_AUTOPILOT_ESTIMATE",
+      "position_error_3d_m": {
+        "count": 1118,
+        "unit": "m",
+        "p50": 0.12567755338159703,
+        "p95": 0.2337726753804806,
+        "maximum": 0.27227466721529314
+      },
+      "horizontal_position_error_m": {
+        "count": 1118,
+        "unit": "m",
+        "p50": 0.0849237001064902,
+        "p95": 0.20889404733502492,
+        "maximum": 0.24969626719230953
+      },
+      "altitude_error_m": {
+        "count": 1118,
+        "unit": "m",
+        "p50": 0.0926645955123222,
+        "p95": 0.134501513801297,
+        "maximum": 0.15870725719469414
+      },
+      "velocity_error_mps": {
+        "count": 1118,
+        "unit": "m/s",
+        "p50": 0.026928410869764795,
+        "p95": 0.12973072096751012,
+        "maximum": 0.30371285886353067
+      },
+      "attitude_angular_error_deg": {
+        "count": 1118,
+        "unit": "deg",
+        "p50": 0.5434503001320077,
+        "p95": 1.6950705961619572,
+        "maximum": 3.0373670146419056
+      },
+      "heading_error_deg": {
+        "count": 1118,
+        "unit": "deg",
+        "p50": 0.459000174243954,
+        "p95": 1.5869031191723382,
+        "maximum": 3.0529203589009626
+      },
+      "ekf_initialization_time_s": 0.0,
+      "ekf_healthy_time_s": 0.0,
+      "truth_used_by_autonomy": false
+    },
+    "REFERENCE_NOMINAL": {
+      "classification": "SIMULATION_EVALUATOR_ONLY_TRUTH_VS_AUTOPILOT_ESTIMATE",
+      "position_error_3d_m": {
+        "count": 1112,
+        "unit": "m",
+        "p50": 0.5618392881389266,
+        "p95": 0.7545099620926575,
+        "maximum": 0.8932575061691171
+      },
+      "horizontal_position_error_m": {
+        "count": 1112,
+        "unit": "m",
+        "p50": 0.5522904075612245,
+        "p95": 0.7499110157412308,
+        "maximum": 0.885248685647189
+      },
+      "altitude_error_m": {
+        "count": 1112,
+        "unit": "m",
+        "p50": 0.08439714965015957,
+        "p95": 0.12087727045921906,
+        "maximum": 0.2251596187641005
+      },
+      "velocity_error_mps": {
+        "count": 1112,
+        "unit": "m/s",
+        "p50": 0.1126709876519664,
+        "p95": 0.17698652414189908,
+        "maximum": 0.3603745432852998
+      },
+      "attitude_angular_error_deg": {
+        "count": 1112,
+        "unit": "deg",
+        "p50": 1.7878112076631036,
+        "p95": 2.690710190212619,
+        "maximum": 5.0989126334703325
+      },
+      "heading_error_deg": {
+        "count": 1112,
+        "unit": "deg",
+        "p50": 1.766690894663455,
+        "p95": 2.750031940162579,
+        "maximum": 5.274484055913433
+      },
+      "ekf_initialization_time_s": 0.0,
+      "ekf_healthy_time_s": 0.0,
+      "truth_used_by_autonomy": false
+    },
+    "REFERENCE_CHALLENGING": {
+      "classification": "SIMULATION_EVALUATOR_ONLY_TRUTH_VS_AUTOPILOT_ESTIMATE",
+      "position_error_3d_m": {
+        "count": 1363,
+        "unit": "m",
+        "p50": 0.6872373623727519,
+        "p95": 1.1582696954577922,
+        "maximum": 1.5193306579150179
+      },
+      "horizontal_position_error_m": {
+        "count": 1363,
+        "unit": "m",
+        "p50": 0.6588427181027572,
+        "p95": 1.14402624203357,
+        "maximum": 1.5161018322721689
+      },
+      "altitude_error_m": {
+        "count": 1363,
+        "unit": "m",
+        "p50": 0.183499547285491,
+        "p95": 0.31475517216963755,
+        "maximum": 0.37602666938447893
+      },
+      "velocity_error_mps": {
+        "count": 1362,
+        "unit": "m/s",
+        "p50": 0.09758177754194901,
+        "p95": 0.296612371458372,
+        "maximum": 0.5218820442905597
+      },
+      "attitude_angular_error_deg": {
+        "count": 1363,
+        "unit": "deg",
+        "p50": 1.703316148286274,
+        "p95": 2.5549973100648846,
+        "maximum": 4.756100909474024
+      },
+      "heading_error_deg": {
+        "count": 1363,
+        "unit": "deg",
+        "p50": 1.7300967546775041,
+        "p95": 2.538833426448477,
+        "maximum": 4.851793819708064
+      },
+      "ekf_initialization_time_s": 0.0,
+      "ekf_healthy_time_s": 0.0,
+      "truth_used_by_autonomy": false
+    }
+  },
+  "observer_only": true,
+  "autonomy_feedback": false,
+  "passed": true
+}

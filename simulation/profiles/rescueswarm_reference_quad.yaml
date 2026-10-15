@@ -1,0 +1,52 @@
+schema_version: "1.0"
+profile_id: rescueswarm_reference_quad
+vehicle_name: RescueSwarm Reference QUAD_X (not measured hardware)
+frame_type: MULTIROTOR
+rotor_count: 4
+rotor_layout: QUAD_X
+# Simulation-only reference dynamics are intentionally aligned with the
+# official ardupilot_gazebo Iris reference, not asserted as RescueSwarm mass.
+mass_kg: {value: 1.5, unit: kg, provenance: REFERENCE_PRESET}
+body_length_m: {value: 0.32, unit: m, provenance: REFERENCE_PRESET}
+body_width_m: {value: 0.24, unit: m, provenance: REFERENCE_PRESET}
+body_height_m: {value: 0.14, unit: m, provenance: REFERENCE_PRESET}
+arm_length_m: {value: 0.255, unit: m, provenance: REFERENCE_PRESET}
+center_of_mass: {value: [0.0, 0.0, 0.02], unit: m_BODY_FRD, provenance: ENGINEERING_ESTIMATE}
+inertia:
+  ixx: {value: 0.008, unit: kg_m2, provenance: REFERENCE_PRESET}
+  iyy: {value: 0.015, unit: kg_m2, provenance: REFERENCE_PRESET}
+  izz: {value: 0.017, unit: kg_m2, provenance: REFERENCE_PRESET}
+  ixy: {value: 0.0, unit: kg_m2, provenance: ENGINEERING_ESTIMATE}
+  ixz: {value: 0.0, unit: kg_m2, provenance: ENGINEERING_ESTIMATE}
+  iyz: {value: 0.0, unit: kg_m2, provenance: ENGINEERING_ESTIMATE}
+drag_parameters:
+  linear_coefficient: {value: 0.12, unit: N_per_mps, provenance: ENGINEERING_ESTIMATE}
+  angular_coefficient: {value: 0.02, unit: Nm_per_radps, provenance: ENGINEERING_ESTIMATE}
+payload_mass_kg: {value: 0.2, unit: kg, provenance: PHYSICAL_UNVERIFIED}
+battery_mass_kg: {value: 0.55, unit: kg, provenance: ENGINEERING_ESTIMATE}
+max_commanded_speed_mps: {value: 8.0, unit: mps, provenance: SIMULATION_ONLY}
+cruise_speed_mps: {value: 4.0, unit: mps, provenance: SIMULATION_ONLY}
+acceleration_limit_mps2: {value: 2.0, unit: mps2, provenance: SIMULATION_ONLY}
+rotors:
+  - &rotor_fr
+    rotor_id: front_right
+    position_body_frd: {value: [0.13, 0.22, -0.023], unit: m_BODY_FRD, provenance: REFERENCE_PRESET}
+    thrust_axis_body_frd: {value: [0.0, 0.0, -1.0], unit: unit_vector_BODY_FRD, provenance: REFERENCE_PRESET}
+    rotation_direction: CCW
+    diameter: {value: 0.254, unit: m, provenance: REFERENCE_PRESET}
+    thrust_model:
+      motor_constant: {value: 8.54858e-6, unit: N_per_radps2, provenance: REFERENCE_PRESET}
+      moment_constant: {value: 0.016, unit: m, provenance: REFERENCE_PRESET}
+      max_rotor_velocity: {value: 838.0, unit: radps, provenance: REFERENCE_PRESET}
+    motor_time_constant: {value: 0.02, unit: s, provenance: REFERENCE_PRESET}
+  - <<: *rotor_fr
+    rotor_id: rear_left
+    position_body_frd: {value: [-0.13, -0.20, -0.023], unit: m_BODY_FRD, provenance: REFERENCE_PRESET}
+  - <<: *rotor_fr
+    rotor_id: front_left
+    position_body_frd: {value: [0.13, -0.22, -0.023], unit: m_BODY_FRD, provenance: REFERENCE_PRESET}
+    rotation_direction: CW
+  - <<: *rotor_fr
+    rotor_id: rear_right
+    position_body_frd: {value: [-0.13, 0.20, -0.023], unit: m_BODY_FRD, provenance: REFERENCE_PRESET}
+    rotation_direction: CW

@@ -1,0 +1,1 @@
+import subprocess; print(subprocess.run(['wsl.exe', '-d', 'Ubuntu', '--', 'bash', '-c', 'export GZ_VERSION=harmonic; gz topic -t /test -m gz.msgs.Empty -p \'\''], capture_output=True, text=True).stderr)

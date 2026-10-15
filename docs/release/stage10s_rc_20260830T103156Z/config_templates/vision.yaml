@@ -1,0 +1,65 @@
+application:
+  stage: 4
+  mode: development
+
+camera:
+  source: synthetic       # UNVERIFIED DEFAULT; set picamera2 only after mode discovery
+  source_id: vision_camera_01
+  profile: detection
+  profiles:
+    detection:
+      width: 1280
+      height: 800
+      fps: 30.0
+      pixel_format: Y8
+      verification: UNVERIFIED_DEFAULT
+    evidence:
+      width: 1280
+      height: 800
+      fps: 10.0
+      pixel_format: Y8
+      verification: UNVERIFIED_DEFAULT
+    benchmark:
+      width: 640
+      height: 480
+      fps: 30.0
+      pixel_format: Y8
+      verification: UNVERIFIED_DEFAULT
+  no_frame_timeout_s: 2.0
+  restart_attempts: 3
+  restart_backoff_s: 2.0
+
+detector:
+  backend: mock
+  model_id: baseline_person_mock
+  confidence_threshold: 0.25
+  person_class_ids: [0]
+  input_width: 640
+  input_height: 640
+  strategy: full_frame
+  normalization: zero_to_one
+  tile_width: 640
+  tile_height: 640
+  tile_overlap: 0.20
+  nms_iou_threshold: 0.45
+
+queue:
+  size: 2
+  drop_policy: drop_oldest
+
+benchmark:
+  warmup_frames: 20
+  duration_s: 60
+  resource_sample_interval_s: 1.0
+
+evidence:
+  enabled: true
+  confidence_threshold: 0.50
+  cooldown_s: 5.0
+  sample_interval_s: 10.0
+  max_images: 100
+
+runtime:
+  event_output: data/vision_status.json
+  run_root: data/vision_runs
+  model_manifest: models/manifest.yaml

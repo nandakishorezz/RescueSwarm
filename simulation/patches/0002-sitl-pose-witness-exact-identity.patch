@@ -1,0 +1,42 @@
+diff --git a/libraries/SITL/SIM_JSON.cpp b/libraries/SITL/SIM_JSON.cpp
+--- a/libraries/SITL/SIM_JSON.cpp
++++ b/libraries/SITL/SIM_JSON.cpp
+@@ -542,4 +542,5 @@ void JSON::recv_fdm(const struct sitl_input &input)
+     last_timestamp_s = state.timestamp_s;
+     frame_counter++;
++    ap_sim_source_time_now_us.store(time_now_us, std::memory_order_relaxed);
+ 
+ #if CONFIG_HAL_BOARD == HAL_BOARD_SITL
+@@ -556,4 +557,3 @@ void JSON::recv_fdm(const struct sitl_input &input)
+         const int64_t gazebo_fdm_timestamp_ns = (int64_t)(state.timestamp_s * 1.0e9);
+         const uint64_t ardupilot_time_now_us = time_now_us;
+-    ap_sim_source_time_now_us.store(time_now_us, std::memory_order_relaxed);
+         const uint64_t ardupilot_micros64_us = AP_HAL::micros64();
+diff --git a/libraries/GCS_MAVLink/GCS_Common.cpp b/libraries/GCS_MAVLink/GCS_Common.cpp
+--- a/libraries/GCS_MAVLink/GCS_Common.cpp
++++ b/libraries/GCS_MAVLink/GCS_Common.cpp
+@@ -6148,5 +6148,5 @@ void GCS_MAVLINK::send_attitude() const
+     const Vector3f omega = ahrs.get_gyro();
+     mavlink_msg_attitude_send(
+         chan,
+-        AP_HAL::millis(),
++        attitude_boot_ms,
+         ahrs.get_roll_rad(),
+@@ -6161,10 +6161,10 @@ void GCS_MAVLINK::send_attitude_quaternion() const
+ {
+ #if AP_AHRS_ENABLED
+     const uint32_t atq_boot_ms = AP_HAL::millis();
+-    emit_pose_source_witness(chan, MAVLINK_MSG_ID_ATTITUDE_QUATERNION, atq_boot_ms);
+     const AP_AHRS &ahrs = AP::ahrs();
+     Quaternion quat;
+     if (!ahrs.get_quaternion(quat)) {
+         return;
+     }
++    emit_pose_source_witness(chan, MAVLINK_MSG_ID_ATTITUDE_QUATERNION, atq_boot_ms);
+     const Vector3f omega = ahrs.get_gyro();
+@@ -6173,5 +6173,5 @@ void GCS_MAVLINK::send_attitude_quaternion() const
+     mavlink_msg_attitude_quaternion_send(
+         chan,
+-        AP_HAL::millis(),
++        atq_boot_ms,
+         quat.q1,

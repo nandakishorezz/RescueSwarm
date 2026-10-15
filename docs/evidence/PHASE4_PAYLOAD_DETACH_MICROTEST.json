@@ -1,0 +1,73 @@
+{
+  "attempts": [
+    {
+      "run_id": "phase4_payload_detach_repeat_1",
+      "source_run_directory": "data/simulation_runs/phase4_payload_detach_repeat_1",
+      "transport_publish_success": true,
+      "detach_ack": true,
+      "physical_detach": true,
+      "physical_fall": false,
+      "physical_impact": false,
+      "rode_vehicle_to_home": true,
+      "impact_position": [
+        0.00032777225579322855,
+        6.710653114999771e-09,
+        0.07499999424788514
+      ],
+      "fall_distance_m": 0.0,
+      "release_position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "run_id": "phase4_payload_detach_repeat_2",
+      "source_run_directory": "data/simulation_runs/phase4_payload_detach_repeat_2",
+      "transport_publish_success": true,
+      "detach_ack": true,
+      "physical_detach": true,
+      "physical_fall": false,
+      "physical_impact": false,
+      "rode_vehicle_to_home": true,
+      "impact_position": [
+        0.00032777225579322855,
+        6.710653114999771e-09,
+        0.07499999424788514
+      ],
+      "fall_distance_m": 0.0,
+      "release_position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "run_id": "phase4_payload_detach_repeat_3",
+      "source_run_directory": "data/simulation_runs/phase4_payload_detach_repeat_3",
+      "transport_publish_success": true,
+      "detach_ack": true,
+      "physical_detach": true,
+      "physical_fall": false,
+      "physical_impact": false,
+      "rode_vehicle_to_home": true,
+      "impact_position": [
+        0.00032877225624362583,
+        6.674027015417565e-09,
+        0.07499999425006301
+      ],
+      "fall_distance_m": 0.0,
+      "release_position": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "attempt_count": 3,
+  "detach_success_count": 3,
+  "fall_success_count": 0,
+  "impact_success_count": 0,
+  "rode_home_count": 3,
+  "passed": false
+}

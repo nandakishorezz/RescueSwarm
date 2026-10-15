@@ -1,0 +1,26 @@
+{
+  "IDEAL_CONTROL": {
+    "ekf_position_p50_m": 0.0849237001064902,
+    "ekf_attitude_p50_deg": 0.5434503001320077,
+    "detections": 27,
+    "geolocation_best_m": 0.717369711742607,
+    "uncertainty_contained": 1,
+    "mission_wall_duration_s": 215.83393299998716
+  },
+  "REFERENCE_NOMINAL": {
+    "ekf_position_p50_m": 0.5522904075612245,
+    "ekf_attitude_p50_deg": 1.7878112076631036,
+    "detections": 4,
+    "geolocation_best_m": 1.255345213481049,
+    "uncertainty_contained": 0,
+    "mission_wall_duration_s": 229.2590439999476
+  },
+  "REFERENCE_CHALLENGING": {
+    "ekf_position_p50_m": 0.6588427181027572,
+    "ekf_attitude_p50_deg": 1.703316148286274,
+    "detections": 10,
+    "geolocation_best_m": 1.866013899276181,
+    "uncertainty_contained": 1,
+    "mission_wall_duration_s": 261.17831899999874
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "classification": "SIMULATION_EVALUATOR_ONLY",
+  "model": "ArduPilot SITL barometer noise/drift/delay before EKF3",
+  "controls_held_constant": [
+    "route",
+    "survivor",
+    "camera",
+    "detector",
+    "GPS",
+    "IMU",
+    "compass"
+  ],
+  "profiles": {
+    "IDEAL_CONTROL": {
+      "profile_id": "IDEAL_CONTROL",
+      "isolation_component": "BAROMETER",
+      "ekf_horizontal_position_error_m": {
+        "count": 1118,
+        "unit": "m",
+        "p50": 0.0849237001064902,
+        "p95": 0.20889404733502492,
+        "maximum": 0.24969626719230953
+      },
+      "ekf_altitude_error_m": {
+        "count": 1118,
+        "unit": "m",
+        "p50": 0.0926645955123222,
+        "p95": 0.134501513801297,
+        "maximum": 0.15870725719469414
+      },
+      "ekf_attitude_error_deg": {
+        "count": 1118,
+        "unit": "deg",
+        "p50": 0.5434503001320077,
+        "p95": 1.6950705961619572,
+        "maximum": 3.0373670146419056
+      },
+      "ekf_heading_error_deg": {
+        "count": 1118,
+        "unit": "deg",
+        "p50": 0.459000174243954,
+        "p95": 1.5869031191723382,
+        "maximum": 3.0529203589009626
+      },
+      "target_best_geolocation_error_m": 0.717369711742607,
+      "target_geolocated_observations": 27,
+      "measured_update_rate_hz": 8.336181528689359
+    },
+    "REFERENCE_NOMINAL_BAROMETER_ONLY": {
+      "profile_id": "REFERENCE_NOMINAL",
+      "isolation_component": "BAROMETER",
+      "ekf_horizontal_position_error_m": {
+        "count": 787,
+        "unit": "m",
+        "p50": 0.05975491916670467,
+        "p95": 0.2463373466859862,
+        "maximum": 0.30828310195240594
+      },
+      "ekf_altitude_error_m": {
+        "count": 787,
+        "unit": "m",
+        "p50": 0.07204439684684072,
+        "p95": 0.11604772587827669,
+        "maximum": 0.2275270944068848
+      },
+      "ekf_attitude_error_deg": {
+        "count": 787,
+        "unit": "deg",
+        "p50": 0.49245369508865533,
+        "p95": 1.8479829646123707,
+        "maximum": 3.69916460566781
+      },
+      "ekf_heading_error_deg": {
+        "count": 787,
+        "unit": "deg",
+        "p50": 0.3766810668423659,
+        "p95": 1.69801803771597,
+        "maximum": 3.62424619849304
+      },
+      "target_best_geolocation_error_m": 0.9021464487371061,
+      "target_geolocated_observations": 25,
+      "measured_update_rate_hz": 8.477449983045096
+    }
+  },
+  "ekf_altitude_modified_directly": false,
+  "passed": true
+}

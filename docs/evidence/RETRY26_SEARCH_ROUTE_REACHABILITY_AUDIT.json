@@ -1,0 +1,1591 @@
+{
+  "artifact": "RETRY26_SEARCH_ROUTE_REACHABILITY_AUDIT",
+  "run_id": "phase4_alignment_qualification_1_retry26",
+  "evidence_scope": "OFFLINE_FORENSIC_ONLY_NO_RUNTIME_TRUTH",
+  "planned_route": {
+    "search_legs": 56,
+    "all_segments_including_transits": 110,
+    "length_m": 3999.672574084238,
+    "duration_s": 1333.2241913614127,
+    "reconstructed_length_m": 3999.6725740842385,
+    "search_leg_details": [
+      {
+        "index": 1,
+        "segment_id": "priority_search_000",
+        "start_enu": [
+          17.49682606830296,
+          -19.998023668208752
+        ],
+        "end_enu": [
+          17.496904949410286,
+          19.998034145019975
+        ],
+        "length_m": 39.996057813306514,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 0.0,
+        "cumulative_end_m": 39.996057813306514,
+        "estimated_cumulative_time_s": 13.33201927110217,
+        "target_min_distance_m": 0.0031404069715098583,
+        "target_projection_fraction": 0.4249924768807119,
+        "target_closest_enu": [
+          17.49685959218014,
+          -2.9999999927005234
+        ],
+        "estimated_source_elapsed_s": 32.65205427110217
+      },
+      {
+        "index": 3,
+        "segment_id": "priority_search_001",
+        "start_enu": [
+          -17.503095050521754,
+          19.99810311799288
+        ],
+        "end_enu": [
+          -17.503173931629085,
+          -19.997954696850204
+        ],
+        "length_m": 39.99605781492087,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 74.99605781330652,
+        "cumulative_end_m": 114.9921156282274,
+        "estimated_cumulative_time_s": 38.33070520940913,
+        "target_min_distance_m": 35.00314040697151,
+        "target_projection_fraction": 0.5750075217259686,
+        "target_closest_enu": [
+          -17.50314040775179,
+          -2.999930964928602
+        ],
+        "estimated_source_elapsed_s": 57.650740209409136
+      },
+      {
+        "index": 4,
+        "segment_id": "search_000",
+        "start_enu": [
+          34.99690414593776,
+          19.622999658534372
+        ],
+        "end_enu": [
+          -34.996826803091466,
+          19.62313770171427
+        ],
+        "length_m": 69.99373094916535,
+        "connector_before_m": 65.7729292504301,
+        "cumulative_before_m": 180.76504487865748,
+        "cumulative_end_m": 250.75877582782283,
+        "estimated_cumulative_time_s": 83.58625860927428,
+        "target_min_distance_m": 22.623034165164732,
+        "target_projection_fraction": 0.24997752358537267,
+        "target_closest_enu": [
+          17.50004461679858,
+          19.62303416622663
+        ],
+        "estimated_source_elapsed_s": 102.90629360927429
+      },
+      {
+        "index": 6,
+        "segment_id": "search_001",
+        "start_enu": [
+          -34.99682828106698,
+          18.87313770171573
+        ],
+        "end_enu": [
+          34.99690266797996,
+          18.872999658535832
+        ],
+        "length_m": 69.99373094918307,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 251.50877582782283,
+        "cumulative_end_m": 321.5025067770059,
+        "estimated_cumulative_time_s": 107.16750225900198,
+        "target_min_distance_m": 21.87303416516474,
+        "target_projection_fraction": 0.7500224763974213,
+        "target_closest_enu": [
+          17.500043137632034,
+          18.873034166228095
+        ],
+        "estimated_source_elapsed_s": 126.48753725900198
+      },
+      {
+        "index": 8,
+        "segment_id": "search_002",
+        "start_enu": [
+          34.99690119002216,
+          18.122999658537285
+        ],
+        "end_enu": [
+          -34.9968297590425,
+          18.123137701717184
+        ],
+        "length_m": 69.99373094920078,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 322.2525067770059,
+        "cumulative_end_m": 392.2462377262067,
+        "estimated_cumulative_time_s": 130.74874590873557,
+        "target_min_distance_m": 21.123034165164732,
+        "target_projection_fraction": 0.24997752361978462,
+        "target_closest_enu": [
+          17.5000416584655,
+          18.123034166229548
+        ],
+        "estimated_source_elapsed_s": 150.06878090873556
+      },
+      {
+        "index": 10,
+        "segment_id": "search_003",
+        "start_enu": [
+          -34.99683123701802,
+          17.37313770171864
+        ],
+        "end_enu": [
+          34.99689971206435,
+          17.372999658538742
+        ],
+        "length_m": 69.99373094921849,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 392.9962377262067,
+        "cumulative_end_m": 462.9899686754252,
+        "estimated_cumulative_time_s": 154.32998955847506,
+        "target_min_distance_m": 20.373034165164736,
+        "target_projection_fraction": 0.7500224763630097,
+        "target_closest_enu": [
+          17.500040179298963,
+          17.373034166231008
+        ],
+        "estimated_source_elapsed_s": 173.65002455847505
+      },
+      {
+        "index": 12,
+        "segment_id": "search_004",
+        "start_enu": [
+          34.996898234106546,
+          16.6229996585402
+        ],
+        "end_enu": [
+          -34.99683271499354,
+          16.623137701720097
+        ],
+        "length_m": 69.99373094923621,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 463.7399686754252,
+        "cumulative_end_m": 533.7336996246614,
+        "estimated_cumulative_time_s": 177.91123320822047,
+        "target_min_distance_m": 19.623034165164736,
+        "target_projection_fraction": 0.24997752365419654,
+        "target_closest_enu": [
+          17.50003870013241,
+          16.62303416623247
+        ],
+        "estimated_source_elapsed_s": 197.23126820822046
+      },
+      {
+        "index": 14,
+        "segment_id": "search_005",
+        "start_enu": [
+          -34.996834192969054,
+          15.873137701721555
+        ],
+        "end_enu": [
+          34.99689675614874,
+          15.872999658541657
+        ],
+        "length_m": 69.99373094925393,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 534.4836996246614,
+        "cumulative_end_m": 604.4774305739154,
+        "estimated_cumulative_time_s": 201.4924768579718,
+        "target_min_distance_m": 18.873034165164732,
+        "target_projection_fraction": 0.7500224763285974,
+        "target_closest_enu": [
+          17.500037220965872,
+          15.873034166233927
+        ],
+        "estimated_source_elapsed_s": 220.8125118579718
+      },
+      {
+        "index": 16,
+        "segment_id": "search_006",
+        "start_enu": [
+          34.99689527819094,
+          15.122999658543113
+        ],
+        "end_enu": [
+          -34.99683567094457,
+          15.123137701723012
+        ],
+        "length_m": 69.99373094927164,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 605.2274305739154,
+        "cumulative_end_m": 675.221161523187,
+        "estimated_cumulative_time_s": 225.073720507729,
+        "target_min_distance_m": 18.123034165164736,
+        "target_projection_fraction": 0.24997752368860848,
+        "target_closest_enu": [
+          17.50003574179933,
+          15.123034166235387
+        ],
+        "estimated_source_elapsed_s": 244.393755507729
+      },
+      {
+        "index": 18,
+        "segment_id": "search_007",
+        "start_enu": [
+          -34.996837148920086,
+          14.373137701724469
+        ],
+        "end_enu": [
+          34.99689380023313,
+          14.37299965854457
+        ],
+        "length_m": 69.99373094928934,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 675.971161523187,
+        "cumulative_end_m": 745.9648924724763,
+        "estimated_cumulative_time_s": 248.65496415749212,
+        "target_min_distance_m": 17.373034165164736,
+        "target_projection_fraction": 0.7500224762941857,
+        "target_closest_enu": [
+          17.500034262632795,
+          14.373034166236845
+        ],
+        "estimated_source_elapsed_s": 267.9749991574921
+      },
+      {
+        "index": 20,
+        "segment_id": "search_008",
+        "start_enu": [
+          34.996892322275336,
+          13.622999658546025
+        ],
+        "end_enu": [
+          -34.996838626895595,
+          13.623137701725923
+        ],
+        "length_m": 69.99373094930705,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 746.7148924724763,
+        "cumulative_end_m": 816.7086234217834,
+        "estimated_cumulative_time_s": 272.2362078072611,
+        "target_min_distance_m": 16.623034165164736,
+        "target_projection_fraction": 0.2499775237230205,
+        "target_closest_enu": [
+          17.500032783466246,
+          13.623034166238304
+        ],
+        "estimated_source_elapsed_s": 291.5562428072611
+      },
+      {
+        "index": 22,
+        "segment_id": "search_009",
+        "start_enu": [
+          -34.99684010487112,
+          12.87313770172738
+        ],
+        "end_enu": [
+          34.996890844317534,
+          12.872999658547482
+        ],
+        "length_m": 69.99373094932479,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 817.4586234217834,
+        "cumulative_end_m": 887.4523543711082,
+        "estimated_cumulative_time_s": 295.81745145703604,
+        "target_min_distance_m": 15.873034165164736,
+        "target_projection_fraction": 0.7500224762597737,
+        "target_closest_enu": [
+          17.500031304299718,
+          12.873034166239762
+        ],
+        "estimated_source_elapsed_s": 315.13748645703606
+      },
+      {
+        "index": 24,
+        "segment_id": "search_010",
+        "start_enu": [
+          34.996889366359724,
+          12.122999658548938
+        ],
+        "end_enu": [
+          -34.996841582846635,
+          12.123137701728838
+        ],
+        "length_m": 69.99373094934249,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 888.2023543711082,
+        "cumulative_end_m": 958.1960853204507,
+        "estimated_cumulative_time_s": 319.3986951068169,
+        "target_min_distance_m": 15.123034165164736,
+        "target_projection_fraction": 0.24997752375743235,
+        "target_closest_enu": [
+          17.50002982513316,
+          12.12303416624122
+        ],
+        "estimated_source_elapsed_s": 338.7187301068169
+      },
+      {
+        "index": 26,
+        "segment_id": "search_011",
+        "start_enu": [
+          -34.99684306082215,
+          11.373137701730293
+        ],
+        "end_enu": [
+          34.99688788840192,
+          11.372999658550395
+        ],
+        "length_m": 69.9937309493602,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 958.9460853204507,
+        "cumulative_end_m": 1028.939816269811,
+        "estimated_cumulative_time_s": 342.97993875660364,
+        "target_min_distance_m": 14.373034165164738,
+        "target_projection_fraction": 0.7500224762253617,
+        "target_closest_enu": [
+          17.50002834596662,
+          11.37303416624268
+        ],
+        "estimated_source_elapsed_s": 362.29997375660366
+      },
+      {
+        "index": 28,
+        "segment_id": "search_012",
+        "start_enu": [
+          34.99688641044412,
+          10.622999658551851
+        ],
+        "end_enu": [
+          -34.99684453879767,
+          10.62313770173175
+        ],
+        "length_m": 69.9937309493779,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 1029.689816269811,
+        "cumulative_end_m": 1099.683547219189,
+        "estimated_cumulative_time_s": 366.5611824063963,
+        "target_min_distance_m": 13.623034165164738,
+        "target_projection_fraction": 0.24997752379184435,
+        "target_closest_enu": [
+          17.50002686680008,
+          10.623034166244139
+        ],
+        "estimated_source_elapsed_s": 385.88121740639633
+      },
+      {
+        "index": 30,
+        "segment_id": "search_013",
+        "start_enu": [
+          -34.99684601677318,
+          9.873137701733206
+        ],
+        "end_enu": [
+          34.99688493248631,
+          9.872999658553306
+        ],
+        "length_m": 69.99373094939561,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 1100.433547219189,
+        "cumulative_end_m": 1170.4272781685845,
+        "estimated_cumulative_time_s": 390.14242605619484,
+        "target_min_distance_m": 12.873034165164736,
+        "target_projection_fraction": 0.75002247619095,
+        "target_closest_enu": [
+          17.50002538763355,
+          9.873034166245596
+        ],
+        "estimated_source_elapsed_s": 409.46246105619485
+      },
+      {
+        "index": 32,
+        "segment_id": "search_014",
+        "start_enu": [
+          34.99688345452851,
+          9.122999658554763
+        ],
+        "end_enu": [
+          -34.9968474947487,
+          9.123137701734661
+        ],
+        "length_m": 69.99373094941333,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 1171.1772781685845,
+        "cumulative_end_m": 1241.1710091179978,
+        "estimated_cumulative_time_s": 413.72366970599927,
+        "target_min_distance_m": 12.123034165164738,
+        "target_projection_fraction": 0.2499775238262562,
+        "target_closest_enu": [
+          17.500023908466996,
+          9.123034166247056
+        ],
+        "estimated_source_elapsed_s": 433.0437047059993
+      },
+      {
+        "index": 34,
+        "segment_id": "search_015",
+        "start_enu": [
+          -34.99684897272422,
+          8.373137701736118
+        ],
+        "end_enu": [
+          34.996881976570705,
+          8.37299965855622
+        ],
+        "length_m": 69.99373094943105,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 1241.9210091179978,
+        "cumulative_end_m": 1311.9147400674287,
+        "estimated_cumulative_time_s": 437.30491335580956,
+        "target_min_distance_m": 11.373034165164738,
+        "target_projection_fraction": 0.7500224761565378,
+        "target_closest_enu": [
+          17.500022429300458,
+          8.373034166248514
+        ],
+        "estimated_source_elapsed_s": 456.6249483558096
+      },
+      {
+        "index": 36,
+        "segment_id": "search_016",
+        "start_enu": [
+          34.9968804986129,
+          7.622999658557676
+        ],
+        "end_enu": [
+          -34.99685045069974,
+          7.6231377017375745
+        ],
+        "length_m": 69.99373094944876,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 1312.6647400674287,
+        "cumulative_end_m": 1382.6584710168775,
+        "estimated_cumulative_time_s": 460.8861570056258,
+        "target_min_distance_m": 10.623034165164738,
+        "target_projection_fraction": 0.2499775238606682,
+        "target_closest_enu": [
+          17.500020950133912,
+          7.6230341662499725
+        ],
+        "estimated_source_elapsed_s": 480.20619200562584
+      },
+      {
+        "index": 38,
+        "segment_id": "search_017",
+        "start_enu": [
+          -34.99685192867525,
+          6.873137701739031
+        ],
+        "end_enu": [
+          34.9968790206551,
+          6.872999658559132
+        ],
+        "length_m": 69.99373094946647,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 1383.4084710168775,
+        "cumulative_end_m": 1453.402201966344,
+        "estimated_cumulative_time_s": 484.467400655448,
+        "target_min_distance_m": 9.873034165164736,
+        "target_projection_fraction": 0.7500224761221259,
+        "target_closest_enu": [
+          17.500019470967374,
+          6.873034166251431
+        ],
+        "estimated_source_elapsed_s": 503.787435655448
+      },
+      {
+        "index": 40,
+        "segment_id": "search_018",
+        "start_enu": [
+          34.9968775426973,
+          6.122999658560588
+        ],
+        "end_enu": [
+          -34.996853406650764,
+          6.123137701740487
+        ],
+        "length_m": 69.99373094948419,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 1454.152201966344,
+        "cumulative_end_m": 1524.145932915828,
+        "estimated_cumulative_time_s": 508.048644305276,
+        "target_min_distance_m": 9.123034165164736,
+        "target_projection_fraction": 0.2499775238950801,
+        "target_closest_enu": [
+          17.500017991800835,
+          6.12303416625289
+        ],
+        "estimated_source_elapsed_s": 527.368679305276
+      },
+      {
+        "index": 42,
+        "segment_id": "search_019",
+        "start_enu": [
+          -34.99685488462628,
+          5.373137701741943
+        ],
+        "end_enu": [
+          34.996876064739496,
+          5.372999658562044
+        ],
+        "length_m": 69.99373094950191,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 1524.895932915828,
+        "cumulative_end_m": 1594.88966386533,
+        "estimated_cumulative_time_s": 531.62988795511,
+        "target_min_distance_m": 8.373034165164736,
+        "target_projection_fraction": 0.7500224760877138,
+        "target_closest_enu": [
+          17.50001651263429,
+          5.373034166254348
+        ],
+        "estimated_source_elapsed_s": 550.94992295511
+      },
+      {
+        "index": 44,
+        "segment_id": "search_020",
+        "start_enu": [
+          34.996874586781686,
+          4.6229996585635
+        ],
+        "end_enu": [
+          -34.9968563626018,
+          4.623137701743399
+        ],
+        "length_m": 69.99373094951962,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 1595.63966386533,
+        "cumulative_end_m": 1665.6333948148497,
+        "estimated_cumulative_time_s": 555.2111316049499,
+        "target_min_distance_m": 7.623034165164736,
+        "target_projection_fraction": 0.24997752392949202,
+        "target_closest_enu": [
+          17.500015033467747,
+          4.623034166255806
+        ],
+        "estimated_source_elapsed_s": 574.5311666049498
+      },
+      {
+        "index": 46,
+        "segment_id": "search_021",
+        "start_enu": [
+          -34.99685784057732,
+          3.873137701744855
+        ],
+        "end_enu": [
+          34.996873108823884,
+          3.872999658564956
+        ],
+        "length_m": 69.99373094953732,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 1666.3833948148497,
+        "cumulative_end_m": 1736.377125764387,
+        "estimated_cumulative_time_s": 578.7923752547957,
+        "target_min_distance_m": 6.873034165164736,
+        "target_projection_fraction": 0.7500224760533022,
+        "target_closest_enu": [
+          17.500013554301212,
+          3.873034166257265
+        ],
+        "estimated_source_elapsed_s": 598.1124102547957
+      },
+      {
+        "index": 48,
+        "segment_id": "search_022",
+        "start_enu": [
+          34.99687163086608,
+          3.1229996585664126
+        ],
+        "end_enu": [
+          -34.996859318552836,
+          3.1231377017463116
+        ],
+        "length_m": 69.99373094955504,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 1737.127125764387,
+        "cumulative_end_m": 1807.1208567139422,
+        "estimated_cumulative_time_s": 602.3736189046474,
+        "target_min_distance_m": 6.123034165164736,
+        "target_projection_fraction": 0.2499775239639039,
+        "target_closest_enu": [
+          17.50001207513467,
+          3.1230341662587238
+        ],
+        "estimated_source_elapsed_s": 621.6936539046474
+      },
+      {
+        "index": 50,
+        "segment_id": "search_023",
+        "start_enu": [
+          -34.99686079652835,
+          2.3731377017477677
+        ],
+        "end_enu": [
+          34.99687015290828,
+          2.3729996585678683
+        ],
+        "length_m": 69.99373094957276,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 1807.8708567139422,
+        "cumulative_end_m": 1877.864587663515,
+        "estimated_cumulative_time_s": 625.954862554505,
+        "target_min_distance_m": 5.373034165164735,
+        "target_projection_fraction": 0.7500224760188899,
+        "target_closest_enu": [
+          17.50001059596812,
+          2.373034166260182
+        ],
+        "estimated_source_elapsed_s": 645.274897554505
+      },
+      {
+        "index": 52,
+        "segment_id": "search_024",
+        "start_enu": [
+          34.99686867495047,
+          1.6229996585693247
+        ],
+        "end_enu": [
+          -34.99686227450387,
+          1.623137701749224
+        ],
+        "length_m": 69.99373094959047,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 1878.614587663515,
+        "cumulative_end_m": 1948.6083186131054,
+        "estimated_cumulative_time_s": 649.5361062043685,
+        "target_min_distance_m": 4.623034165164736,
+        "target_projection_fraction": 0.24997752399831583,
+        "target_closest_enu": [
+          17.500009116801586,
+          1.6230341662616408
+        ],
+        "estimated_source_elapsed_s": 668.8561412043684
+      },
+      {
+        "index": 54,
+        "segment_id": "search_025",
+        "start_enu": [
+          -34.996863752479385,
+          0.8731377017506802
+        ],
+        "end_enu": [
+          34.99686719699267,
+          0.872999658570781
+        ],
+        "length_m": 69.99373094960818,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 1949.3583186131054,
+        "cumulative_end_m": 2019.3520495627135,
+        "estimated_cumulative_time_s": 673.1173498542379,
+        "target_min_distance_m": 3.8730341651647353,
+        "target_projection_fraction": 0.7500224759844781,
+        "target_closest_enu": [
+          17.500007637635044,
+          0.8730341662630994
+        ],
+        "estimated_source_elapsed_s": 692.4373848542378
+      },
+      {
+        "index": 56,
+        "segment_id": "search_026",
+        "start_enu": [
+          34.99686571903487,
+          0.12299965857223713
+        ],
+        "end_enu": [
+          -34.996865230454894,
+          0.12313770175213636
+        ],
+        "length_m": 69.99373094962588,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 2020.1020495627135,
+        "cumulative_end_m": 2090.0957805123394,
+        "estimated_cumulative_time_s": 696.6985935041131,
+        "target_min_distance_m": 3.1230341651647353,
+        "target_projection_fraction": 0.2499775240327279,
+        "target_closest_enu": [
+          17.500006158468505,
+          0.12303416626455795
+        ],
+        "estimated_source_elapsed_s": 716.018628504113
+      },
+      {
+        "index": 58,
+        "segment_id": "search_027",
+        "start_enu": [
+          -34.99686670843042,
+          -0.6268622982464074
+        ],
+        "end_enu": [
+          34.99686424107706,
+          -0.6270003414263067
+        ],
+        "length_m": 69.9937309496436,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 2090.8457805123394,
+        "cumulative_end_m": 2160.839511461983,
+        "estimated_cumulative_time_s": 720.2798371539943,
+        "target_min_distance_m": 2.3730341651647353,
+        "target_projection_fraction": 0.7500224759500662,
+        "target_closest_enu": [
+          17.50000467930196,
+          -0.6269658337339835
+        ],
+        "estimated_source_elapsed_s": 739.5998721539943
+      },
+      {
+        "index": 60,
+        "segment_id": "search_028",
+        "start_enu": [
+          34.99686276311926,
+          -1.3770003414248504
+        ],
+        "end_enu": [
+          -34.99686818640593,
+          -1.3768622982449512
+        ],
+        "length_m": 69.99373094966133,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 2161.589511461983,
+        "cumulative_end_m": 2231.5832424116443,
+        "estimated_cumulative_time_s": 743.8610808038815,
+        "target_min_distance_m": 1.6230341651647355,
+        "target_projection_fraction": 0.24997752406713972,
+        "target_closest_enu": [
+          17.50000320013542,
+          -1.3769658337325248
+        ],
+        "estimated_source_elapsed_s": 763.1811158038814
+      },
+      {
+        "index": 62,
+        "segment_id": "search_029",
+        "start_enu": [
+          -34.99686966438145,
+          -2.126862298243495
+        ],
+        "end_enu": [
+          34.99686128516146,
+          -2.1270003414233942
+        ],
+        "length_m": 69.99373094967903,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 2232.3332424116443,
+        "cumulative_end_m": 2302.3269733613233,
+        "estimated_cumulative_time_s": 767.4423244537744,
+        "target_min_distance_m": 0.8730341651647354,
+        "target_projection_fraction": 0.7500224759156543,
+        "target_closest_enu": [
+          17.500001720968882,
+          -2.126965833731066
+        ],
+        "estimated_source_elapsed_s": 786.7623594537744
+      },
+      {
+        "index": 64,
+        "segment_id": "search_030",
+        "start_enu": [
+          34.99685980720365,
+          -2.877000341421938
+        ],
+        "end_enu": [
+          -34.996871142356966,
+          -2.8768622982420387
+        ],
+        "length_m": 69.99373094969674,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 2303.0769733613233,
+        "cumulative_end_m": 2373.07070431102,
+        "estimated_cumulative_time_s": 791.0235681036734,
+        "target_min_distance_m": 0.12303416516473523,
+        "target_projection_fraction": 0.24997752410155163,
+        "target_closest_enu": [
+          17.50000024180234,
+          -2.876965833729608
+        ],
+        "estimated_source_elapsed_s": 810.3436031036733
+      },
+      {
+        "index": 66,
+        "segment_id": "search_031",
+        "start_enu": [
+          -34.99687262033248,
+          -3.6268622982405825
+        ],
+        "end_enu": [
+          34.996858329245846,
+          -3.627000341420482
+        ],
+        "length_m": 69.99373094971445,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 2373.82070431102,
+        "cumulative_end_m": 2443.8144352607346,
+        "estimated_cumulative_time_s": 814.6048117535782,
+        "target_min_distance_m": 0.6269658348352646,
+        "target_projection_fraction": 0.7500224758812424,
+        "target_closest_enu": [
+          17.49999876263579,
+          -3.626965833728149
+        ],
+        "estimated_source_elapsed_s": 833.9248467535782
+      },
+      {
+        "index": 68,
+        "segment_id": "search_032",
+        "start_enu": [
+          34.996856851288044,
+          -4.377000341419025
+        ],
+        "end_enu": [
+          -34.996874098308,
+          -4.376862298239126
+        ],
+        "length_m": 69.99373094973217,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 2444.5644352607346,
+        "cumulative_end_m": 2514.558166210467,
+        "estimated_cumulative_time_s": 838.1860554034889,
+        "target_min_distance_m": 1.3769658348352647,
+        "target_projection_fraction": 0.24997752413596358,
+        "target_closest_enu": [
+          17.49999728346926,
+          -4.376965833726691
+        ],
+        "estimated_source_elapsed_s": 857.5060904034889
+      },
+      {
+        "index": 70,
+        "segment_id": "search_033",
+        "start_enu": [
+          -34.99687557628352,
+          -5.12686229823767
+        ],
+        "end_enu": [
+          34.99685537333024,
+          -5.1270003414175696
+        ],
+        "length_m": 69.99373094974989,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 2515.308166210467,
+        "cumulative_end_m": 2585.301897160217,
+        "estimated_cumulative_time_s": 861.7672990534056,
+        "target_min_distance_m": 2.126965834835265,
+        "target_projection_fraction": 0.7500224758468306,
+        "target_closest_enu": [
+          17.499995804302728,
+          -5.126965833725232
+        ],
+        "estimated_source_elapsed_s": 881.0873340534056
+      },
+      {
+        "index": 72,
+        "segment_id": "search_034",
+        "start_enu": [
+          34.99685389537243,
+          -5.877000341416113
+        ],
+        "end_enu": [
+          -34.99687705425904,
+          -5.8768622982362135
+        ],
+        "length_m": 69.9937309497676,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 2586.051897160217,
+        "cumulative_end_m": 2656.0456281099846,
+        "estimated_cumulative_time_s": 885.3485427033282,
+        "target_min_distance_m": 2.8769658348352642,
+        "target_projection_fraction": 0.24997752417037544,
+        "target_closest_enu": [
+          17.499994325136175,
+          -5.876965833723773
+        ],
+        "estimated_source_elapsed_s": 904.6685777033282
+      },
+      {
+        "index": 74,
+        "segment_id": "search_035",
+        "start_enu": [
+          -34.99687853223455,
+          -6.626862298234757
+        ],
+        "end_enu": [
+          34.99685241741464,
+          -6.627000341414656
+        ],
+        "length_m": 69.9937309497853,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 2656.7956281099846,
+        "cumulative_end_m": 2726.78935905977,
+        "estimated_cumulative_time_s": 908.9297863532566,
+        "target_min_distance_m": 3.6269658348352647,
+        "target_projection_fraction": 0.7500224758124185,
+        "target_closest_enu": [
+          17.499992845969636,
+          -6.6269658337223145
+        ],
+        "estimated_source_elapsed_s": 928.2498213532566
+      },
+      {
+        "index": 76,
+        "segment_id": "search_036",
+        "start_enu": [
+          34.996850939456834,
+          -7.377000341413201
+        ],
+        "end_enu": [
+          -34.99688001021006,
+          -7.376862298233301
+        ],
+        "length_m": 69.99373094980302,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 2727.53935905977,
+        "cumulative_end_m": 2797.5330900095732,
+        "estimated_cumulative_time_s": 932.5110300031911,
+        "target_min_distance_m": 4.376965834835264,
+        "target_projection_fraction": 0.24997752420478758,
+        "target_closest_enu": [
+          17.499991366803087,
+          -7.376965833720856
+        ],
+        "estimated_source_elapsed_s": 951.831065003191
+      },
+      {
+        "index": 78,
+        "segment_id": "search_037",
+        "start_enu": [
+          -34.99688148818558,
+          -8.126862298231844
+        ],
+        "end_enu": [
+          34.996849461499025,
+          -8.127000341411744
+        ],
+        "length_m": 69.99373094982073,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 2798.2830900095732,
+        "cumulative_end_m": 2868.276820959394,
+        "estimated_cumulative_time_s": 956.0922736531314,
+        "target_min_distance_m": 5.1269658348352625,
+        "target_projection_fraction": 0.7500224757780064,
+        "target_closest_enu": [
+          17.499989887636538,
+          -8.126965833719396
+        ],
+        "estimated_source_elapsed_s": 975.4123086531314
+      },
+      {
+        "index": 80,
+        "segment_id": "search_038",
+        "start_enu": [
+          34.99684798354122,
+          -8.877000341410287
+        ],
+        "end_enu": [
+          -34.996882966161095,
+          -8.876862298230387
+        ],
+        "length_m": 69.99373094983845,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 2869.026820959394,
+        "cumulative_end_m": 2939.020551909233,
+        "estimated_cumulative_time_s": 979.6735173030776,
+        "target_min_distance_m": 5.876965834835263,
+        "target_projection_fraction": 0.24997752423919944,
+        "target_closest_enu": [
+          17.499988408470006,
+          -8.876965833717938
+        ],
+        "estimated_source_elapsed_s": 998.9935523030775
+      },
+      {
+        "index": 82,
+        "segment_id": "search_039",
+        "start_enu": [
+          -34.99688444413662,
+          -9.626862298228932
+        ],
+        "end_enu": [
+          34.99684650558342,
+          -9.62700034140883
+        ],
+        "length_m": 69.99373094985616,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 2939.770551909233,
+        "cumulative_end_m": 3009.764282859089,
+        "estimated_cumulative_time_s": 1003.2547609530296,
+        "target_min_distance_m": 6.626965834835263,
+        "target_projection_fraction": 0.7500224757435947,
+        "target_closest_enu": [
+          17.499986929303468,
+          -9.62696583371648
+        ],
+        "estimated_source_elapsed_s": 1022.5747959530296
+      },
+      {
+        "index": 84,
+        "segment_id": "search_040",
+        "start_enu": [
+          34.99684502762561,
+          -10.377000341407376
+        ],
+        "end_enu": [
+          -34.996885922112135,
+          -10.376862298227476
+        ],
+        "length_m": 69.99373094987386,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 3010.514282859089,
+        "cumulative_end_m": 3080.5080138089625,
+        "estimated_cumulative_time_s": 1026.8360046029875,
+        "target_min_distance_m": 7.376965834835263,
+        "target_projection_fraction": 0.24997752427361136,
+        "target_closest_enu": [
+          17.499985450136922,
+          -10.37696583371502
+        ],
+        "estimated_source_elapsed_s": 1046.1560396029874
+      },
+      {
+        "index": 86,
+        "segment_id": "search_041",
+        "start_enu": [
+          -34.99688740008765,
+          -11.126862298226019
+        ],
+        "end_enu": [
+          34.99684354966781,
+          -11.12700034140592
+        ],
+        "length_m": 69.99373094989159,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 3081.2580138089625,
+        "cumulative_end_m": 3151.251744758854,
+        "estimated_cumulative_time_s": 1050.4172482529514,
+        "target_min_distance_m": 8.126965834835264,
+        "target_projection_fraction": 0.7500224757091828,
+        "target_closest_enu": [
+          17.49998397097039,
+          -11.126965833713562
+        ],
+        "estimated_source_elapsed_s": 1069.7372832529513
+      },
+      {
+        "index": 88,
+        "segment_id": "search_042",
+        "start_enu": [
+          34.996842071710006,
+          -11.877000341404463
+        ],
+        "end_enu": [
+          -34.99688887806317,
+          -11.876862298224564
+        ],
+        "length_m": 69.9937309499093,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 3152.001744758854,
+        "cumulative_end_m": 3221.995475708763,
+        "estimated_cumulative_time_s": 1073.998491902921,
+        "target_min_distance_m": 8.876965834835264,
+        "target_projection_fraction": 0.24997752430802325,
+        "target_closest_enu": [
+          17.49998249180384,
+          -11.876965833712104
+        ],
+        "estimated_source_elapsed_s": 1093.318526902921
+      },
+      {
+        "index": 90,
+        "segment_id": "search_043",
+        "start_enu": [
+          -34.99689035603868,
+          -12.626862298223108
+        ],
+        "end_enu": [
+          34.996840593752204,
+          -12.627000341403008
+        ],
+        "length_m": 69.99373094992701,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 3222.745475708763,
+        "cumulative_end_m": 3292.73920665869,
+        "estimated_cumulative_time_s": 1097.5797355528966,
+        "target_min_distance_m": 9.626965834835264,
+        "target_projection_fraction": 0.7500224756747708,
+        "target_closest_enu": [
+          17.4999810126373,
+          -12.626965833710646
+        ],
+        "estimated_source_elapsed_s": 1116.8997705528966
+      },
+      {
+        "index": 92,
+        "segment_id": "search_044",
+        "start_enu": [
+          34.9968391157944,
+          -13.377000341401551
+        ],
+        "end_enu": [
+          -34.99689183401419,
+          -13.376862298221651
+        ],
+        "length_m": 69.99373094994472,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 3293.48920665869,
+        "cumulative_end_m": 3363.4829376086345,
+        "estimated_cumulative_time_s": 1121.1609792028783,
+        "target_min_distance_m": 10.376965834835264,
+        "target_projection_fraction": 0.24997752434243525,
+        "target_closest_enu": [
+          17.49997953347076,
+          -13.376965833709187
+        ],
+        "estimated_source_elapsed_s": 1140.4810142028782
+      },
+      {
+        "index": 94,
+        "segment_id": "search_045",
+        "start_enu": [
+          -34.996893311989716,
+          -14.126862298220196
+        ],
+        "end_enu": [
+          34.9968376378366,
+          -14.127000341400095
+        ],
+        "length_m": 69.99373094996244,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 3364.2329376086345,
+        "cumulative_end_m": 3434.226668558597,
+        "estimated_cumulative_time_s": 1144.7422228528656,
+        "target_min_distance_m": 11.126965834835264,
+        "target_projection_fraction": 0.7500224756403588,
+        "target_closest_enu": [
+          17.499978054304222,
+          -14.126965833707729
+        ],
+        "estimated_source_elapsed_s": 1164.0622578528655
+      },
+      {
+        "index": 96,
+        "segment_id": "search_046",
+        "start_enu": [
+          34.9968361598788,
+          -14.877000341398638
+        ],
+        "end_enu": [
+          -34.99689478996523,
+          -14.876862298218738
+        ],
+        "length_m": 69.99373094998016,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 3434.976668558597,
+        "cumulative_end_m": 3504.970399508577,
+        "estimated_cumulative_time_s": 1168.323466502859,
+        "target_min_distance_m": 11.876965834835262,
+        "target_projection_fraction": 0.24997752437684723,
+        "target_closest_enu": [
+          17.499976575137673,
+          -14.876965833706269
+        ],
+        "estimated_source_elapsed_s": 1187.643501502859
+      },
+      {
+        "index": 98,
+        "segment_id": "search_047",
+        "start_enu": [
+          -34.99689626794075,
+          -15.626862298217281
+        ],
+        "end_enu": [
+          34.99683468192099,
+          -15.627000341397181
+        ],
+        "length_m": 69.99373094999787,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 3505.720399508577,
+        "cumulative_end_m": 3575.714130458575,
+        "estimated_cumulative_time_s": 1191.9047101528583,
+        "target_min_distance_m": 12.626965834835264,
+        "target_projection_fraction": 0.7500224756059469,
+        "target_closest_enu": [
+          17.499975095971145,
+          -15.62696583370481
+        ],
+        "estimated_source_elapsed_s": 1211.2247451528583
+      },
+      {
+        "index": 100,
+        "segment_id": "search_048",
+        "start_enu": [
+          34.996833203963185,
+          -16.37700034139573
+        ],
+        "end_enu": [
+          -34.996897745916264,
+          -16.376862298215826
+        ],
+        "length_m": 69.99373095001557,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 3576.464130458575,
+        "cumulative_end_m": 3646.4578614085904,
+        "estimated_cumulative_time_s": 1215.4859538028634,
+        "target_min_distance_m": 13.376965834835268,
+        "target_projection_fraction": 0.2499775244112591,
+        "target_closest_enu": [
+          17.499973616804592,
+          -16.376965833703355
+        ],
+        "estimated_source_elapsed_s": 1234.8059888028633
+      },
+      {
+        "index": 102,
+        "segment_id": "search_049",
+        "start_enu": [
+          -34.99689922389178,
+          -17.126862298214373
+        ],
+        "end_enu": [
+          34.99683172600538,
+          -17.12700034139427
+        ],
+        "length_m": 69.99373095003328,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 3647.2078614085904,
+        "cumulative_end_m": 3717.2015923586237,
+        "estimated_cumulative_time_s": 1239.0671974528746,
+        "target_min_distance_m": 14.126965834835266,
+        "target_projection_fraction": 0.7500224755715351,
+        "target_closest_enu": [
+          17.49997213763806,
+          -17.126965833701895
+        ],
+        "estimated_source_elapsed_s": 1258.3872324528745
+      },
+      {
+        "index": 104,
+        "segment_id": "search_050",
+        "start_enu": [
+          34.99683024804758,
+          -17.877000341392815
+        ],
+        "end_enu": [
+          -34.9969007018673,
+          -17.876862298212917
+        ],
+        "length_m": 69.993730950051,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 3717.9515923586237,
+        "cumulative_end_m": 3787.9453233086747,
+        "estimated_cumulative_time_s": 1262.6484411028916,
+        "target_min_distance_m": 14.876965834835268,
+        "target_projection_fraction": 0.24997752444567106,
+        "target_closest_enu": [
+          17.49997065847151,
+          -17.87696583370044
+        ],
+        "estimated_source_elapsed_s": 1281.9684761028916
+      },
+      {
+        "index": 106,
+        "segment_id": "search_051",
+        "start_enu": [
+          -34.99690217984282,
+          -18.626862298211456
+        ],
+        "end_enu": [
+          34.99682877008977,
+          -18.62700034139136
+        ],
+        "length_m": 69.99373095006872,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 3788.6953233086747,
+        "cumulative_end_m": 3858.6890542587435,
+        "estimated_cumulative_time_s": 1286.2296847529144,
+        "target_min_distance_m": 15.626965834835266,
+        "target_projection_fraction": 0.750022475537123,
+        "target_closest_enu": [
+          17.49996917930497,
+          -18.62696583369898
+        ],
+        "estimated_source_elapsed_s": 1305.5497197529144
+      },
+      {
+        "index": 108,
+        "segment_id": "search_052",
+        "start_enu": [
+          34.99682729213197,
+          -19.377000341389902
+        ],
+        "end_enu": [
+          -34.996903657818336,
+          -19.376862298210003
+        ],
+        "length_m": 69.99373095008643,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 3859.4390542587435,
+        "cumulative_end_m": 3929.43278520883,
+        "estimated_cumulative_time_s": 1309.8109284029433,
+        "target_min_distance_m": 16.376965834835264,
+        "target_projection_fraction": 0.2499775244800829,
+        "target_closest_enu": [
+          17.49996770013843,
+          -19.37696583369752
+        ],
+        "estimated_source_elapsed_s": 1329.1309634029433
+      },
+      {
+        "index": 110,
+        "segment_id": "search_053",
+        "start_enu": [
+          -34.99690414270845,
+          -19.62292022352551
+        ],
+        "end_enu": [
+          34.996826807247665,
+          -19.623058266705414
+        ],
+        "length_m": 69.99373095009224,
+        "connector_before_m": 0.0,
+        "cumulative_before_m": 3929.678843134146,
+        "cumulative_end_m": 3999.6725740842385,
+        "estimated_cumulative_time_s": 1333.2241913614127,
+        "target_min_distance_m": 16.623023760151256,
+        "target_projection_fraction": 0.7500224755142723,
+        "target_closest_enu": [
+          17.49996721485757,
+          -19.62302375901303
+        ],
+        "estimated_source_elapsed_s": 1352.5442263614127
+      }
+    ]
+  },
+  "actual_route": {
+    "search_start_s": 19.320035,
+    "search_end_s": 240.039696,
+    "distance_0p5s_sampled_m": 553.4736710485907,
+    "closest_target_distance_m": 0.08023626585458404,
+    "closest_target_sample": {
+      "t": 26.639575,
+      "e": 17.421154930369074,
+      "n": -2.985123390175741,
+      "u": 8.006,
+      "v": [
+        2.6663641929626465,
+        0.29651719331741333,
+        0.01995166763663292
+      ],
+      "q": [
+        0.9895659330918608,
+        -0.04840154319076026,
+        -0.13557362887772417,
+        -0.006028750593024366
+      ]
+    },
+    "reached_segment_endpoints": [
+      {
+        "segment": 1,
+        "segment_id": "priority_search_000",
+        "time_s": 33.920128,
+        "distance_m": 1.9538310363995133
+      },
+      {
+        "segment": 2,
+        "segment_id": "priority_transit_001",
+        "time_s": 46.439919,
+        "distance_m": 1.9602966957580108
+      },
+      {
+        "segment": 3,
+        "segment_id": "priority_search_001",
+        "time_s": 60.602159,
+        "distance_m": 1.938492140904204
+      },
+      {
+        "segment": 4,
+        "segment_id": "search_000",
+        "time_s": 109.519608,
+        "distance_m": 1.9258276800487333
+      },
+      {
+        "segment": 5,
+        "segment_id": "transit_001",
+        "time_s": 109.599594,
+        "distance_m": 1.9454313235104548
+      },
+      {
+        "segment": 6,
+        "segment_id": "search_001",
+        "time_s": 139.43958,
+        "distance_m": 1.9596108098136553
+      },
+      {
+        "segment": 7,
+        "segment_id": "transit_002",
+        "time_s": 139.519567,
+        "distance_m": 1.9386586663973755
+      },
+      {
+        "segment": 8,
+        "segment_id": "search_002",
+        "time_s": 168.439708,
+        "distance_m": 1.9986980613590826
+      },
+      {
+        "segment": 9,
+        "segment_id": "transit_003",
+        "time_s": 168.479701,
+        "distance_m": 1.9440422571160296
+      },
+      {
+        "segment": 10,
+        "segment_id": "search_003",
+        "time_s": 198.519653,
+        "distance_m": 1.9221507787769432
+      },
+      {
+        "segment": 11,
+        "segment_id": "transit_004",
+        "time_s": 198.59964,
+        "distance_m": 1.9727712679794518
+      },
+      {
+        "segment": 12,
+        "segment_id": "search_004",
+        "time_s": 227.239696,
+        "distance_m": 1.9561835759618198
+      },
+      {
+        "segment": 13,
+        "segment_id": "transit_005",
+        "time_s": 227.319696,
+        "distance_m": 1.95059024448506
+      }
+    ],
+    "search_legs_completed": 7,
+    "active_segment": 14,
+    "active_segment_id": "search_005",
+    "planned_progress_m": 554.3396963180518,
+    "planned_progress_percent": 13.85962690820943,
+    "termination_enu": [
+      -15.140837385690274,
+      15.930864383755031,
+      7.989
+    ],
+    "projected_raw_visibility_interval_s": [
+      26.119749,
+      29.039768
+    ],
+    "projected_raw_visibility_first_pixel": [
+      610.5139550828018,
+      9.406070686033672
+    ]
+  },
+  "termination": {
+    "event": "RTL_COMMANDED",
+    "simulation_elapsed_s": 240.039696,
+    "cause": "MAX_SIM_TIME_240_S",
+    "natural_route_completion": false,
+    "failsafe": false
+  },
+  "survivor_offline_truth_enu_m": [
+    17.499999999151644,
+    -2.9999999988941037,
+    -2.4706626717163616e-05
+  ],
+  "camera": {
+    "pitch_deg_forward_from_nadir": 0.0,
+    "search_altitude_m": 8.0,
+    "resolution": [
+      1280,
+      800
+    ],
+    "fov_deg": [
+      77.32,
+      53.13
+    ],
+    "generated_sdf_camera_link_pose": [
+      0.0,
+      -0.0,
+      -0.08,
+      0.0,
+      1.5707963267948966,
+      0.0
+    ],
+    "raw_ground_footprint_m": {
+      "cross_track_width": 12.800087814952327,
+      "along_track_height": 7.999982135837729
+    },
+    "detector_qualified_footprint": {
+      "cross_track_interval_m": [
+        -0.25,
+        0.5
+      ],
+      "cross_track_width_m": 0.75,
+      "qualified_along_track_interval_m": [
+        6.75,
+        7.0
+      ],
+      "basis": "REAL_RENDER_REAL_YOLO_CONTIGUOUS_SUCCESSES_PLUS_YAW_ROLL_PERTURBATIONS"
+    }
+  },
+  "priority_pass": {
+    "rule": "TRUTH_INDEPENDENT_ORIGINAL_35_M_COVERAGE_PLAN_PREPENDED_IN_DETERMINISTIC_PLANNER_ORDER",
+    "search_legs": 2,
+    "search_length_m": 79.99211562822738,
+    "safe_polygon_area_m2": 2799.473309686862,
+    "raw_footprint_coverage_percent_approx": 36.57495504608547,
+    "detector_corridor_coverage_percent_approx": 2.1430490697509534,
+    "first_leg_target_cross_track_distance_m": 0.0031404069715098583
+  },
+  "reachability": {
+    "closest_executed_vehicle_center_distance_m": 0.08023626585458404,
+    "closest_full_route_segment_distance_m": 0.0031404069715098583,
+    "first_raw_visibility_planned_search_leg": 1,
+    "first_raw_visibility_planned_elapsed_s": 23.65271253587414,
+    "first_raw_visibility_telemetry_projection_elapsed_s": 26.119749,
+    "first_detector_opportunity_planned_search_leg": 1,
+    "first_detector_opportunity_planned_elapsed_s": 22.736042891847095,
+    "expected_before_240_s": true,
+    "executed_route_entered_raw_footprint": true,
+    "executed_route_entered_detector_design_corridor": true,
+    "full_route_raw_coverage": true,
+    "full_route_detector_coverage": true
+  },
+  "live_render_discrepancy": {
+    "telemetry_projected_raw_visible_interval_elapsed_s": [
+      26.119749,
+      29.039768
+    ],
+    "inference_frames_in_projected_visible_interval": 72,
+    "unique_frame_checksums_in_interval": 1,
+    "person_detections_in_interval": 0,
+    "evaluator_truth_visible_frames_full_run": 0,
+    "finding": "EXECUTED_GEOMETRY_REQUIRED_VISIBILITY_BUT_LIVE_RENDER_EVIDENCE_REMAINED_UNCHANGED"
+  },
+  "route_density": {
+    "spacing_m": 0.75,
+    "derivation": "REAL_YOLO",
+    "minimum_successful_cross_track_margin_m": 0.25,
+    "robust_contiguous_cross_track_corridor_m": [
+      -0.25,
+      0.5
+    ],
+    "recommended_maximum_spacing_m": 0.75,
+    "recomputed_search_legs": 56,
+    "recomputed_length_m": 3999.672574084238,
+    "recomputed_duration_s": 1333.2241913614127,
+    "competition_1800_s_feasible": true,
+    "whole_route_240_s_feasible": false
+  },
+  "classification": {
+    "primary": "CAMERA_RENDER_TRANSFORM_FAIL",
+    "confidence": "HIGH",
+    "qualification_horizon_only": false,
+    "reason": "The first executed priority leg crossed within 0.0803 m of the survivor and the telemetry camera model put it in raw FOV for 2.920 s, yet 72 inference frames were identical and both YOLO and the evaluator reported zero visibility."
+  },
+  "changes": {
+    "production_search_route_changed": false,
+    "camera_changed": false,
+    "delivery_code_changed": false
+  },
+  "search_only_smoke": {
+    "executed": false,
+    "reason": "AUTHORIZED_ONLY_FOR_CLASS_A_OR_B_NOT_CLASS_D"
+  }
+}

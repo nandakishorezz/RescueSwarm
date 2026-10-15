@@ -1,0 +1,60 @@
+{
+  "retry15_raw_result": "ALIGNMENT_FAIL",
+  "retry15_artifact_consistent": false,
+  "retry15_release_evidence": {
+    "payload_release_occurred": "NO",
+    "fresh_same_target_observation_at_release": "NO",
+    "observation_age_at_release": "N/A",
+    "delivery_gate_all_passed_before_release": "NO",
+    "dwell_ge_2_0_s": "NO"
+  },
+  "retry15_payload_evidence": {
+    "physical_detach": "NO",
+    "physical_fall": "NO",
+    "physical_impact": "NO",
+    "impact_error": "N/A",
+    "impact_le_2_0_m": "NO",
+    "runner_exit": "other",
+    "manual_interventions": 0
+  },
+  "retry16_final_reacquisition_time": 134613828000,
+  "retry16_post_revalidation_gate_stats": {
+    "position_pass_samples": 24,
+    "speed_pass_samples": 218,
+    "altitude_pass_samples": 0,
+    "freshness_pass_samples": 37,
+    "position_speed_longest_duration_samples": 4,
+    "position_speed_altitude_longest_duration_samples": 0,
+    "all_gates_longest_duration_samples": 0
+  },
+  "retry16_dwell_stats": {
+    "dwell_ever_started": "NO",
+    "dwell_start_count": 0,
+    "dwell_reset_count": 0,
+    "maximum_partial_dwell_achieved": 0.0,
+    "first_blocking_predicate": "ALTITUDE_GATE"
+  },
+  "retry16_error_speed_stats": {
+    "minimum_horizontal_error": 0.163380096065073,
+    "speed_at_minimum_error": 2.809590717524529,
+    "minimum_horizontal_speed": 0.053851648071345036,
+    "error_at_minimum_speed": 0.5269304523889521,
+    "overshoot_status": "OVERSHOOT_STILL_PRESENT"
+  },
+  "retry16_descent_stats": {
+    "descent_starts": 27,
+    "descent_pauses": 27,
+    "minimum_altitude_reached": 6.169974862918259,
+    "descent_gating_correct": "YES"
+  },
+  "retry16_freshness_stats": {
+    "stale_transitions": 1,
+    "freshness_became_final_blocker": "NO"
+  },
+  "retry16_primary_failure": "POSITION_SPEED_PHASE_MISMATCH",
+  "retry16_exact_root_cause": "The controller behaves as an underdamped oscillator. Maximum horizontal speed (~2.8 m/s) occurs precisely at minimum position error (~0.16 m), and minimum speed (~0.05 m/s) occurs at maximum position error (~0.52 m), preventing simultaneous satisfaction of the 0.5 m and 0.5 m/s gates long enough to descend and satisfy the 2.0s dwell.",
+  "confidence": "HIGH",
+  "production_code_change_required": "YES",
+  "recommended_smallest_fix": "Tune the alignment velocity controller PID gains (increase damping/derivative gain or reduce proportional gain) to eliminate the underdamped overshoot and phase mismatch.",
+  "successful_alignment_trials": "0 / 3"
+}

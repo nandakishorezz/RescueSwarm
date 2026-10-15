@@ -1,0 +1,22 @@
+{
+  "run_id": "phase4_multitarget_gold_final_retry25",
+  "target_id": "664443fa-3e89-5be1-a8d0-6114927fa1fa",
+  "service_index": 0,
+  "alignment_samples_summary": {
+    "count": 194,
+    "start_ns": 78621945000,
+    "end_ns": 130701899000
+  },
+  "successful_reference_run": "phase4_accuracy_trial_3",
+  "comparison": {
+    "failed_time_spent_aligning_s": 90.0,
+    "failed_observation_gap_max_s": 41.7,
+    "failed_horizontal_speed": 0.524
+  },
+  "failed_gate": "delivery_altitude_error_m, alignment_error_m",
+  "impact_predictor_branch_used": true,
+  "target_identity_consistent": true,
+  "timeout_clock_source": "ap_sim_source_time_ns (simulation clock)",
+  "evidence_based_root_cause": "Sparse detections (confidence ~0.27) trigger bounded cross-search reacquisition which commands the drone back to 8.0m altitude. The reacquisition iterator (5 points) exhausts at 130.7s. Instead of restarting the pattern, the except StopIteration block traps the drone in a silent hover (navigator.hold) until the 90.0s overall timeout expires at 168.6s.",
+  "recommended_smallest_fix": "Re-instantiate or itertools.cycle() the alignment_reacquisition_points iterator in phase4_service.py so the drone continues searching instead of silently hovering indefinitely."
+}

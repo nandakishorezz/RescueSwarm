@@ -1,0 +1,7 @@
+{
+  "target_id": "test-target",
+  "reacquired": false,
+  "truth_used": false,
+  "bounded_radius_m": 2.0,
+  "timeout_s": 15.0
+}

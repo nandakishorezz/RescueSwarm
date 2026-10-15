@@ -1,0 +1,71 @@
+{
+  "attempts": [
+    {
+      "run_id": "phase4_microtest_fresh_3",
+      "release_attempted": true,
+      "transport_publish_success": true,
+      "detach_ack": true,
+      "physical_detach": true,
+      "physical_fall": true,
+      "physical_impact": true,
+      "release_altitude_m": 1.8552630950454658,
+      "fall_distance_m": 1.7817186770328883,
+      "impact_position_xyz": [
+        18.46195551915368,
+        -5.5937923767291595,
+        0.07499996969399642
+      ],
+      "impact_error_m": 2.7664268148240647,
+      "evaluation_radius_m": 2.0,
+      "rode_vehicle_to_home": false,
+      "passed": false
+    },
+    {
+      "run_id": "phase4_microtest_fresh_4",
+      "release_attempted": true,
+      "transport_publish_success": true,
+      "detach_ack": true,
+      "physical_detach": true,
+      "physical_fall": true,
+      "physical_impact": true,
+      "release_altitude_m": 1.9287323720611895,
+      "fall_distance_m": 1.8541659703624616,
+      "impact_position_xyz": [
+        18.539103190765168,
+        -5.685014790767829,
+        0.07499989944958478
+      ],
+      "impact_error_m": 2.879069272421578,
+      "evaluation_radius_m": 2.0,
+      "rode_vehicle_to_home": false,
+      "passed": false
+    },
+    {
+      "run_id": "phase4_microtest_fresh_5",
+      "release_attempted": true,
+      "transport_publish_success": true,
+      "detach_ack": true,
+      "physical_detach": true,
+      "physical_fall": true,
+      "physical_impact": true,
+      "release_altitude_m": 1.8914496788631576,
+      "fall_distance_m": 1.8172972672092553,
+      "impact_position_xyz": [
+        18.53680578087942,
+        -5.67047262404846,
+        0.07499997360631991
+      ],
+      "impact_error_m": 2.8646797850236148,
+      "evaluation_radius_m": 2.0,
+      "rode_vehicle_to_home": false,
+      "passed": false
+    }
+  ],
+  "attempt_count": 3,
+  "detach_success_count": 3,
+  "fall_success_count": 3,
+  "impact_success_count": 3,
+  "within_2m_count": 0,
+  "rode_home_count": 0,
+  "gate_passed": false
+}

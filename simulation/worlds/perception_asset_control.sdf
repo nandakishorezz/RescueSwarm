@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- Non-gold engineering control: validates pixels and the generic detector. -->
+<sdf version="1.9">
+  <world name="phase2_asset_control">
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors"><render_engine>ogre2</render_engine></plugin>
+    <scene><ambient>0.45 0.45 0.45 1</ambient><background>0.62 0.76 0.88 1</background><shadows>true</shadows></scene>
+    <light name="sun" type="directional"><direction>-0.4 0.2 -0.9</direction><diffuse>0.9 0.9 0.9 1</diffuse><cast_shadows>true</cast_shadows></light>
+    <model name="ground"><static>true</static><link name="link">
+      <collision name="collision"><geometry><box><size>30 30 0.1</size></box></geometry></collision>
+      <visual name="visual"><geometry><box><size>30 30 0.1</size></box></geometry><material><diffuse>0.23 0.34 0.20 1</diffuse></material></visual>
+    </link></model>
+    <model name="survivor_control"><static>true</static><pose>5 0 0 0 0 3.14159265</pose><link name="person">
+      <visual name="licensed_human"><geometry><mesh><uri>model://gazebo_actor/meshes/stand.dae</uri><scale>1 1 1</scale></mesh></geometry></visual>
+    </link><plugin filename="gz-sim-label-system" name="gz::sim::systems::Label"><label>101</label></plugin></model>
+    <model name="camera_control"><static>true</static><pose>0 0 1.15 0 0 0</pose><link name="camera_link">
+      <sensor name="autonomy_camera" type="camera"><topic>/phase2/control/image</topic><always_on>true</always_on><update_rate>30</update_rate>
+        <camera><horizontal_fov>1.349481884447</horizontal_fov><image><width>1280</width><height>800</height><format>L_INT8</format></image><clip><near>0.05</near><far>100</far></clip></camera>
+      </sensor>
+      <sensor name="evaluator_camera" type="segmentation_camera"><topic>/phase2/control/evaluator_segmentation</topic><always_on>true</always_on><update_rate>30</update_rate>
+        <camera><segmentation_type>semantic</segmentation_type><horizontal_fov>1.349481884447</horizontal_fov><image><width>1280</width><height>800</height></image><clip><near>0.05</near><far>100</far></clip></camera>
+      </sensor>
+    </link></model>
+  </world>
+</sdf>

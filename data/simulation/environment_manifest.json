@@ -1,0 +1,18 @@
+{
+  "host_os": "Windows-11-10.0.26200-SP0",
+  "linux_os": "Ubuntu 24.04.3 LTS",
+  "wsl": true,
+  "kernel": "Linux LAPTOP-IN3S7LQ9 6.6.87.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Apr 21 17:08:54 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux",
+  "gazebo_version": "Gazebo Harmonic",
+  "gz_sim_version": "8.15.0",
+  "ardupilot_gazebo_path": "/home/nandakishore7/ardupilot_gazebo",
+  "ardupilot_gazebo_commit": "082a0fe231f6e63bc8d1598f1cba461d9e2ea7f5",
+  "ardupilot_path": "/home/nandakishore7/ardupilot",
+  "ardupilot_version": "4,8,0,FIRMWARE_VERSION_TYPE_DEV",
+  "ardupilot_commit": "af2a1bafc8ab993418e6714cbc2674dcc178d11a",
+  "render_engine": "OGRE2 / SOFTWARE LLVMPipe",
+  "gpu_opengl": "name of display: :0\ndisplay: :0  screen: 0\ndirect rendering: Yes\nExtended renderer info (GLX_MESA_query_renderer):\n    Vendor: Mesa (0xffffffff)\n    Device: llvmpipe (LLVM 20.1.2, 256 bits) (0xffffffff)\n    Version: 25.2.8\n    Accelerated: no\n    Video memory: 7566MB\n    Unified memory: yes\n    Preferred profile: core (0x1)\n    Max core profile version: 4.5\n    Max compat profile version: 4.5\n    Max GLES1 profile version: 1.1\n    Max GLES[23] profile version: 3.2\nMemory info (GL_ATI_meminfo):\n    VBO free memory - total: 0 MB, largest block: 0 MB\n    VBO free aux. memory - total: 6862 MB, largest block: 6862 MB\n    Texture free memory - total: 0 MB, largest block: 0 MB\n    Texture free aux. memory - total: 6862 MB, largest block: 6862 MB\n    Renderbuffer free memory - total: 0 MB, largest block: 0 MB\n    Renderbuffer free aux. memory - total: 6862 MB, largest block: 6862 MB\nMemory info (GL_NVX_gpu_memory_info):\n    Dedicated video memory: 0 MB\n    Total available memory: 7566 MB\n    Currently available dedicated video memory: 0 MB\nOpenGL vendor string: Mesa\nOpenGL renderer string: llvmpipe (LLVM 20.1.2, 256 bits)\nOpenGL core profile version string: 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2\nOpenGL core profile shading language version string: 4.50\nOpenGL core profile context flags: (none)\nOpenGL core profile profile mask: core profile\n\nOpenGL version string: 4.5 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.24.04.2\nOpenGL shading language version string: 4.50\nOpenGL context flags: (none)\nOpenGL profile mask: compatibility profile\n\nOpenGL ES profile version string: OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2\nOpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.20",
+  "gstreamer_version": "/bin/bash: line 1: gst-launch-1.0: command not found",
+  "cmake_version": "cmake version 3.28.3\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).",
+  "python_version": "Python 3.12.3"
+}

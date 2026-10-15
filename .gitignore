@@ -1,0 +1,96 @@
+# Python virtual environment & caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.env
+
+# Node & Frontend
+node_modules/
+ground/frontend/node_modules/
+ground/frontend/dist/
+ground/frontend/coverage/
+
+# OS / Editor artifacts
+.DS_Store
+Thumbs.db
+*.log
+*.pid
+*.tmp
+*.bak
+.backup/
+scratch/
+
+# Local sensitive configs
+config/local_hardware.yaml
+config/local_vision.yaml
+deployment/pi4/.env
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Data and runtime directories
+data/*.ndjson
+data/*.jsonl
+data/diagnostics/*
+!data/diagnostics/.gitkeep
+data/uploads/*
+!data/uploads/.gitkeep
+data/vision_runs/*
+!data/vision_runs/.gitkeep
+data/geolocation_runs/*
+!data/geolocation_runs/.gitkeep
+data/hardware_runs/*
+!data/hardware_runs/.gitkeep
+data/physical_vision/*
+!data/physical_vision/.gitkeep
+data/fleet_runs/
+data/fleet_state/
+data/recovery_snapshots/
+data/outbox/
+data/runs/
+data/simulation_runs/
+data/rescue_runs/
+data/qualification_runs/
+data/resilience_runs/
+data/pytest_*/
+data/pt_config_*/
+data/stage11s_runs/
+data/stage12u_screenshots/
+data/stage13sim_phase1_ui/
+data/audit_hidden_01/
+
+# Training runs (keep primary best.pt model)
+data/training/*
+!data/training/stage13sim_nadir_person_v3
+data/training/stage13sim_nadir_person_v3/*
+!data/training/stage13sim_nadir_person_v3/training_runs
+data/training/stage13sim_nadir_person_v3/training_runs/*
+!data/training/stage13sim_nadir_person_v3/training_runs/primary
+data/training/stage13sim_nadir_person_v3/training_runs/primary/*
+!data/training/stage13sim_nadir_person_v3/training_runs/primary/weights
+data/training/stage13sim_nadir_person_v3/training_runs/primary/weights/*
+!data/training/stage13sim_nadir_person_v3/training_runs/primary/weights/best.pt
+
+# Calibration & Models
+calibration/datasets/*
+calibration/checkerboard*.svg
+models/artifacts/*
+!models/artifacts/.gitkeep
+models/development/*
+!models/development/.gitkeep
+datasets/*/images/*
+datasets/*/labels/*
+!datasets/*/images/.gitkeep
+!datasets/*/labels/.gitkeep
+
+# Temporary reports
+STAGE_1_REPORT.md
+OFFLINE_COMPLIANCE_REPORT.md

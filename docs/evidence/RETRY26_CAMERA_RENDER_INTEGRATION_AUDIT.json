@@ -1,0 +1,299 @@
+{
+  "artifact": "RETRY26_CAMERA_RENDER_INTEGRATION_AUDIT",
+  "run_id": "phase4_alignment_qualification_1_retry26",
+  "checksum": {
+    "field": "frame_checksum_sha256",
+    "algorithm": "SHA-256",
+    "source": "rescue_core/simulation/gazebo_bridge/image_bridge.py:DropOldestImages.put",
+    "bytes": "RAW_GAZEBO_GZ_MSGS_IMAGE_DATA_BEFORE_MONO_CONVERSION_OR_INFERENCE",
+    "dominant_hash": "6ed723fc0b0226fbc63513a193e4a39d093c92090de5e25fa341963159e76c75",
+    "dominant_hash_is_uniform_mono8_value_26": true
+  },
+  "frames": {
+    "generated": 6969,
+    "received": 6962,
+    "inferred_persisted": 4754,
+    "unique_inferred_raw_hashes": 812,
+    "dominant_uniform_count": 3943,
+    "longest_identical_inferred_streak": {
+      "count": 645,
+      "start_frame_id": "drone_01_gazebo_camera:000000003072",
+      "end_frame_id": "drone_01_gazebo_camera:000000003992",
+      "start_sim_s": 165.562,
+      "end_sim_s": 195.922,
+      "hash": "6ed723fc0b0226fbc63513a193e4a39d093c92090de5e25fa341963159e76c75"
+    },
+    "first_hash_change_sim_s": 74.416,
+    "last_hash_change_sim_s": 283.57,
+    "timestamps_advance": true,
+    "frame_ids_advance": true,
+    "motion_windows": {
+      "start": {
+        "camera_frames": 130,
+        "unique_raw_hashes": 1,
+        "vehicle_start_enu_m": [
+          0.7311345898339089,
+          -0.6607553348910549,
+          8.21002197265625
+        ],
+        "vehicle_end_enu_m": [
+          11.153107299615485,
+          -12.57041035585278,
+          8.32000732421875
+        ],
+        "vehicle_displacement_m": 15.826228061648457,
+        "attitude_start_deg": [
+          13.99,
+          -0.58,
+          99.69
+        ],
+        "attitude_end_deg": [
+          3.47,
+          -10.9,
+          138.35
+        ]
+      },
+      "mid": {
+        "camera_frames": 147,
+        "unique_raw_hashes": 146,
+        "vehicle_start_enu_m": [
+          15.179523604149347,
+          4.641040369395463,
+          8.1199951171875
+        ],
+        "vehicle_end_enu_m": [
+          29.872243932369773,
+          15.95301795713892,
+          8.1199951171875
+        ],
+        "vehicle_displacement_m": 18.54283871441781,
+        "attitude_start_deg": [
+          -2.11,
+          -12.19,
+          51.02
+        ],
+        "attitude_end_deg": [
+          -5.38,
+          -11.48,
+          51.3
+        ]
+      },
+      "late": {
+        "camera_frames": 113,
+        "unique_raw_hashes": 16,
+        "vehicle_start_enu_m": [
+          -27.857535479480912,
+          17.469393279663375,
+          8.04998779296875
+        ],
+        "vehicle_end_enu_m": [
+          -35.52792401295812,
+          18.078170122181724,
+          7.989990234375
+        ],
+        "vehicle_displacement_m": 7.694742959028742,
+        "attitude_start_deg": [
+          1.97,
+          -21.78,
+          267.82
+        ],
+        "attitude_end_deg": [
+          0.15,
+          0.58,
+          114.07
+        ]
+      }
+    }
+  },
+  "crossing": {
+    "predicted_visible_inferred_frame_count_from_SIM_truth": 84,
+    "predicted_visible_sim_interval_s": [
+      79.828,
+      130.879
+    ],
+    "unique_raw_hashes": 11,
+    "all_uniform_26": false,
+    "closest_persisted_inferred_frame": {
+      "frame_id": "drone_01_gazebo_camera:000000000488",
+      "gazebo_sim_s": 80.29,
+      "vehicle_SIM_truth": {
+        "ap_ns": 80279138000,
+        "position_enu_m": [
+          17.463651124633984,
+          -3.05153423387599,
+          8.32000732421875
+        ],
+        "q_body_to_ned": [
+          0.9886261820793152,
+          -0.05402282997965813,
+          -0.13911406695842743,
+          -0.01863158494234085
+        ],
+        "rpy_deg": [
+          -6.07,
+          -16.08,
+          358.69
+        ]
+      },
+      "target_top_projection_u_v_depth": [
+        558.2418839024825,
+        159.45469850882108,
+        6.999525810197641
+      ],
+      "raw_hash": "6ed723fc0b0226fbc63513a193e4a39d093c92090de5e25fa341963159e76c75"
+    },
+    "static_exact_SIM_truth_pose_render": {
+      "survivor_visible_pixels": true,
+      "real_yolo_detection": false,
+      "frame": "scratch/camera_route_coddesign_sweep/retry26_closest_001_retry26_closest_sim_truth.png"
+    }
+  },
+  "runtime_camera": {
+    "model": "drone_01",
+    "link": "camera_link",
+    "link_pose": [
+      0.0,
+      -0.0,
+      -0.08,
+      0.0,
+      1.5707963267948966,
+      -2.2204460492503126e-16
+    ],
+    "joint": {
+      "type": "fixed",
+      "parent": "base_link",
+      "child": "camera_link"
+    },
+    "sensors": [
+      {
+        "name": "ov9281_phase2_oblique_simulation",
+        "type": "camera",
+        "topic": "/drone_01/ov9281_phase2_oblique_simulation/image",
+        "pose": "IDENTITY_TO_LINK"
+      },
+      {
+        "name": "ov9281_phase2_oblique_simulation_evaluator_segmentation",
+        "type": "segmentation_camera",
+        "topic": "/drone_01/ov9281_phase2_oblique_simulation/evaluator_segmentation",
+        "pose": "IDENTITY_TO_LINK"
+      }
+    ]
+  },
+  "runtime_camera_probe": {
+    "scope": "GENERATED_MODEL_OFFLINE_INTEGRATION_PROBE_NOT_A_QUALIFICATION_RUN",
+    "exact_SIM_truth_pose_rendered_survivor": true,
+    "camera_link_relative_pose_reported": {
+      "position_m": [
+        -7.105427357601002e-15,
+        3.552713678800501e-15,
+        -0.0799999999999983
+      ],
+      "quaternion_xyzw": [
+        -2.220446049250313e-16,
+        -0.7071067811865471,
+        2.7755575615628914e-16,
+        -0.7071067811865475
+      ]
+    },
+    "configured_relative_pose": [
+      0.0,
+      0.0,
+      -0.08,
+      0.0,
+      1.5707963267948966,
+      0.0
+    ],
+    "attachment_and_extrinsic_reproduced": true,
+    "raw_frame_stats": {
+      "min": 3,
+      "max": 186,
+      "mean": 47.8774189453125,
+      "std": 3.656664540905992
+    },
+    "frame": "scratch/retry26_runtime_mount_probe/runtime_camera.png"
+  },
+  "retry25_camera": {
+    "model": "drone_01",
+    "link": "camera_link",
+    "link_pose": [
+      0.0,
+      -0.0,
+      -0.08,
+      -0.0,
+      0.9599310885968813,
+      -0.0
+    ],
+    "joint": {
+      "type": "fixed",
+      "parent": "base_link",
+      "child": "camera_link"
+    },
+    "sensors": [
+      {
+        "name": "ov9281_phase2_oblique_simulation",
+        "type": "camera",
+        "topic": "/drone_01/ov9281_phase2_oblique_simulation/image",
+        "pose": "IDENTITY_TO_LINK"
+      },
+      {
+        "name": "ov9281_phase2_oblique_simulation_evaluator_segmentation",
+        "type": "segmentation_camera",
+        "topic": "/drone_01/ov9281_phase2_oblique_simulation/evaluator_segmentation",
+        "pose": "IDENTITY_TO_LINK"
+      }
+    ]
+  },
+  "survivor": {
+    "entity": "survivor_hidden_01",
+    "position_enu_m": [
+      17.499999999151644,
+      -2.9999999988941037,
+      -2.4706626717163616e-05
+    ],
+    "static": true,
+    "visual": "licensed_gazebo_human_mesh",
+    "mesh": "model://gazebo_actor/meshes/stand.dae",
+    "evaluator_label": 101,
+    "same_world_definition_as_retry25": true
+  },
+  "evaluator_retention": {
+    "first_persisted_evaluation_sim_s": 130.582,
+    "crossing_not_retained": true,
+    "zero_visible_frames_does_not_score_crossing": true
+  },
+  "retry25_vs_retry26": {
+    "same_world_survivor_and_sensor_topics": true,
+    "retry25_inferred_frames": 2245,
+    "retry25_unique_raw_hashes": 2076,
+    "retry25_max_same_hash_count": 170,
+    "retry26_inferred_frames": 4754,
+    "retry26_unique_raw_hashes": 812,
+    "retry26_dominant_uniform_count": 3943,
+    "first_material_camera_difference": "CAMERA_LINK_PITCH_0.9599310885968813_RAD_TO_1.5707963267948966_RAD"
+  },
+  "configuration_propagation": {
+    "profile_pitch_deg_forward_from_nadir": 0.0,
+    "generated_runtime_sdf_camera_link_pitch_rad": 1.5707963267948966,
+    "rgb_sensor_local_pose": "IDENTITY_TO_CAMERA_LINK",
+    "segmentation_sensor_local_pose": "IDENTITY_TO_CAMERA_LINK",
+    "camera_adapter_profile_pitch_deg": 0.0,
+    "offline_projection_pitch_deg": 0.0,
+    "rgb_evaluator_extrinsics_equal": true,
+    "body_frd_optical_axis": [
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "classification": {
+    "primary": "RAW_CAMERA_STREAM_FROZEN_DURING_EXPECTED_CROSSING",
+    "confidence": "MEDIUM",
+    "repair_authorized": false,
+    "reason": "Raw Gazebo bytes were a uniform clear-color frame throughout the SIM-truth crossing, but the exact generated model reproduces its attachment, extrinsic, topic, survivor, and expected pixels offline. Retry26 did not persist live link/sensor world poses or raw images, so the component-level reason for the live clear buffer cannot be distinguished from a transient render-pose stall. No speculative production repair is authorized."
+  },
+  "production_change": null,
+  "short_diagnostic": {
+    "executed": false,
+    "reason": "HIGH_CONFIDENCE_ROOT_CAUSE_NOT_ESTABLISHED"
+  }
+}

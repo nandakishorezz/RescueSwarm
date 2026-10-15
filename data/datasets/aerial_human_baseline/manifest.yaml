@@ -1,0 +1,12 @@
+schema_version: 1
+id: aerial_human_baseline
+camera: UNKNOWN
+resolution: UNKNOWN
+channels: UNKNOWN
+altitude_agl_m: UNKNOWN
+lighting: UNKNOWN
+scene: UNKNOWN
+annotation_format: yolo_bbox
+annotation_status: NOT_AVAILABLE
+class_names: [person]
+notes: Do not populate unknown metadata by assumption. Precision and recall require real labelled imagery.

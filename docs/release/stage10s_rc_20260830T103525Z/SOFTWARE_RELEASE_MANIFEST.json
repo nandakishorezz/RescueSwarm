@@ -1,0 +1,105 @@
+{
+  "release_candidate_id": "stage10s_rc_20260830T103525Z",
+  "created_at": "2026-08-30T10:35:40.911634+00:00",
+  "software_release_candidate": "PASS",
+  "software_architecture": "FROZEN",
+  "hardware_gate_h1": "PENDING",
+  "physical_ready": false,
+  "competition_ready": false,
+  "rescueswarm_commit": "UNKNOWN",
+  "source_declared_name": "rescue-swarm",
+  "source_declared_version": "0.10.0rc1",
+  "source_manifest_sha256": "6eaad295d05ed645145f26687b33cf4c09ebe9816d41d68943ddc0eb42d57e65",
+  "configuration_hashes": {
+    "competition_profile.yaml": "b3d98b60cb746ff19fc2e34f6fc4cd53261ed8ee69fab1ef640e73f97fae5d64",
+    "geolocation.yaml": "55934860f563d5ae69b9e576a6f908d0b812bc6c99e0880b8025b0bcc4027b8f",
+    "ground.yaml": "309d1c9a59e9057e768bb5f5be664d795204785f02d337fd8fdc309f3c6f11e6",
+    "logging.yaml": "8a46ba9c652476eca38ecc6543c85a722a70784bb8e21b93d71b419862d0f211",
+    "prototype.yaml": "0d41b98682db34449e2032bbdd4ffc1653bbcbff5757b98fa3cf7ab88b2feb32",
+    "rescue_orchestration.yaml": "447c8f0541f2999db587a37d097de25acf596ace3527e3f211fb9f6bdb17fc11",
+    "resilience_scenarios.yaml": "71da3e76997472b7a810fb448d26823058bc59d7e94d52f4ee1220f7bdba0acc",
+    "stage6.yaml": "4a5e55b2863e903861f8cc6c3eb7225f22e2ecfecbf6797dcd8dcfe4f3b26e7b",
+    "vision.yaml": "6bfe32ee10f498d21049c8221b4c6a544cdd749d8d6781dd9ce934c829ba534e"
+  },
+  "frontend_build_sha256": "8b6feca1bf9a3f42d68930f4bedc98b1f7fade4456e745694b52e48747745376",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "rescue-swarm": "0.2.0",
+    "pydantic": "2.12.5",
+    "pymavlink": "2.4.49",
+    "shapely": "2.1.2",
+    "fastapi": "0.124.4",
+    "psutil": "7.1.3"
+  },
+  "installed_package_note": "Installed environment metadata may predate this source tree; source_declared_version and source_manifest_sha256 are release-authoritative.",
+  "ardupilot": {
+    "version": "ArduCopter 4.8.0",
+    "commit": "af2a1bafc8ab993418e6714cbc2674dcc178d11a",
+    "evidence": "Stage 9S live SITL; verify current installation for every new live campaign"
+  },
+  "models": [
+    {
+      "model_id": "baseline_person_mock",
+      "backend": "mock",
+      "artifact": null,
+      "sha256": null
+    },
+    {
+      "model_id": "yolo11n_person_onnx",
+      "backend": "onnx",
+      "artifact": "models\\artifacts\\yolo11n.onnx",
+      "sha256": "417c59a7ff8ddd316d9863fb8ba0e7f3cfc5a27264c774a4ad3ec7526f2a5e2d"
+    }
+  ],
+  "offline_compliance": "PASS",
+  "secret_audit": {
+    "passed": true,
+    "finding_count": 0,
+    "findings": []
+  },
+  "competition_profile": {
+    "profile_id": "rescueswarm_stage10s_competition_rc",
+    "evidence_class": "SOFTWARE_SITL_ONLY",
+    "competition": {
+      "max_search_area_hectares": 10.0,
+      "max_survivors": 10,
+      "minimum_drones": 2,
+      "max_mission_flight_time_s": 1800.0,
+      "max_setup_time_s": 300.0,
+      "external_network_allowed": false,
+      "allowed_operator_actions": [
+        "MISSION_START",
+        "SAFETY_ABORT",
+        "EMERGENCY_RECALL"
+      ]
+    },
+    "physical_requirements": {
+      "evidence_status": "PENDING_H1",
+      "combined_auw_limit_kg": 25.0,
+      "payload_mass_g": 200.0,
+      "payload_size_cm": {
+        "length": 20.0,
+        "width": 10.0,
+        "height": 5.0
+      },
+      "launch_landing_zone_ft": {
+        "width": 12.0,
+        "length": 12.0
+      }
+    },
+    "qualification": {
+      "primary_fleet_size": 2,
+      "smoke_fleet_size": 3,
+      "coverage_requirement_percent": 98.0,
+      "rtl_reserve_s": 180.0,
+      "landing_queue_reserve_s": 60.0,
+      "target_service_estimate_s": 150.0,
+      "deadline_safety_factor": 1.25,
+      "setup_benchmark_iterations": 20,
+      "maximum_websocket_pending_messages": 1
+    },
+    "hardware_gate_h1": "PENDING"
+  },
+  "test_summary": "See STAGE_10S_REPORT.md"
+}

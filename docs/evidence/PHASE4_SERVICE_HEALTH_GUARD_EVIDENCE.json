@@ -1,0 +1,22 @@
+{
+  "run": "phase4_lockstep_health_smoke_2",
+  "guard_installed": true,
+  "guard_locations": [
+    "_wait_arrival",
+    "_wait_reacquisition_region",
+    "_move_until_visible",
+    "alignment_loop (service)"
+  ],
+  "stall_condition_checks": [
+    "VEHICLE_STATE_STALL",
+    "SIMULATION_CLOCK_STALL",
+    "MAVLINK_STALL",
+    "ROUTER_THREAD_FAILURE"
+  ],
+  "result": {
+    "status": "RUNNING_HEALTHY",
+    "stale_process_contamination_present": false,
+    "simulation_elapsed_s_passed_barrier": true,
+    "evidence": "TARGET_SERVICE_TRAJECTORY.jsonl shows ap_sim_source_time_ns progressing smoothly from 83s past 163s, indicating no FDM lockstep freeze. The drone is actively executing REACQUIRING behavior without triggering the injected synchronous health guard."
+  }
+}
